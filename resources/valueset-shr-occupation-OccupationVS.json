@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-occupation-OccupationVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH OccupationVS ValueSet</b></p>\n<p></p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/ValueSet/shr-occupation-OccupationVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.occupation.OccupationVS"
+    }
+  ],
+  "name": "OccupationVS",
+  "title": "ODH OccupationVS ValueSet",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-06",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.11.7186"
+      }
+    ]
+  }
+}

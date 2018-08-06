@@ -1,0 +1,42 @@
+
+<p> </p>
+<p><b>ODH Mapping Source</b></p>
+<p>This structure represents the following ODH mapping definition:</p>
+<pre>
+shr.occupation.CodedSocialHistoryObservation maps to Observation:
+  PersonOfRecord maps to subject
+  ObservationTopic.TopicCode maps to code
+  ObservationTopic.FindingMethod maps to method
+  ObservationTopic.Details maps to comment
+  ObservationTopic.Category maps to category
+  ObservationTopic.ReferenceRange maps to referenceRange
+  ObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low
+  ObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high
+  ObservationTopic.ReferenceRange.Type maps to referenceRange.type
+  ObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo
+  ObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age	
+  ObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)
+  ObservationTopic.EvaluationComponent._Concept maps to component.code
+  ObservationTopic.EvaluationComponent.Quantity maps to component.value[x]
+  ObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]
+  ObservationTopic.EvaluationComponent.string maps to component.value[x]
+  ObservationTopic.EvaluationComponent.Range maps to component.value[x]
+  ObservationTopic.EvaluationComponent.Ratio maps to component.value[x]
+  ObservationTopic.EvaluationComponent.Media maps to component.value[x]
+  ObservationTopic.EvaluationComponent.time maps to component.value[x]
+  ObservationTopic.EvaluationComponent.dateTime maps to component.value[x]
+  ObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]
+  ObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]
+  ObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason
+  ObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation
+  ObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange
+  constrain related to 0..0
+  ResultValue maps to value[x]
+  ExceptionValue maps to dataAbsentReason
+  Interpretation maps to interpretation
+  Issued maps to issued
+  FindingStatus maps to status
+  RelevantTime maps to effective[x]
+  Encounter maps to context
+
+</pre>

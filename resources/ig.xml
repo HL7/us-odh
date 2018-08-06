@@ -1,0 +1,2459 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+    <id value="1" />
+    <url value="http://hl7.org/fhir/us/odh/ImplementationGuide/1" />
+    <name value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1 (Standard for Trial Use) FHIR Profiles" />
+    <status value="draft" />
+    <fhirVersion value="3.0.1"/>
+    <package>
+        <name value="Profiles in this Implementation Guide" />
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-AccessionIdentifier" />
+                <display value="ODH AccessionIdentifier Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Address" />
+                <display value="ODH Address Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-AnatomicalLocation" />
+                <display value="ODH AnatomicalLocation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-ClinicalNote" />
+                <display value="ODH ClinicalNote Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-ClinicalStatement" />
+                <display value="ODH ClinicalStatement Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-CodedSocialHistoryObservation" />
+                <display value="ODH CodedSocialHistoryObservation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-CombatZonePeriod" />
+                <display value="ODH CombatZonePeriod Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-composition-Composition" />
+                <display value="ODH Composition Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-ContactPoint" />
+                <display value="ODH ContactPoint Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-DateOfRetirement" />
+                <display value="ODH DateOfRetirement Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Device" />
+                <display value="ODH Device Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-encounter-Encounter" />
+                <display value="ODH Encounter Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Entity" />
+                <display value="ODH Entity Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-FindingStatement" />
+                <display value="ODH FindingStatement Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Group" />
+                <display value="ODH Group Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-HistoryOfEmploymentStatus" />
+                <display value="ODH HistoryOfEmploymentStatus Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-HumanName" />
+                <display value="ODH HumanName Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-Identifier" />
+                <display value="ODH Identifier Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Medication" />
+                <display value="ODH Medication Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-NationalProviderIdentifier" />
+                <display value="ODH NationalProviderIdentifier Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-Observation" />
+                <display value="ODH Observation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-OccupationalDataComposition" />
+                <display value="ODH OccupationalDataComposition Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-OrganizationIdentifier" />
+                <display value="ODH OrganizationIdentifier Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Organization" />
+                <display value="ODH Organization Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-PastOrPresentOccupation" />
+                <display value="ODH PastOrPresentOccupation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Patient" />
+                <display value="ODH Patient Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Person" />
+                <display value="ODH Person Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Practitioner" />
+                <display value="ODH Practitioner Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Ratio" />
+                <display value="ODH Ratio Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-RelatedPerson" />
+                <display value="ODH RelatedPerson Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-Signature" />
+                <display value="ODH Signature Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-SocialHistoryObservation" />
+                <display value="ODH SocialHistoryObservation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpecimenContainer" />
+                <display value="ODH SpecimenContainer Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Specimen" />
+                <display value="ODH Specimen Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpecimenTreatment" />
+                <display value="ODH SpecimenTreatment Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Substance" />
+                <display value="ODH Substance Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-UsualOccupation" />
+                <display value="ODH UsualOccupation Profile" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-AccessTime-extension" />
+                <display value="ODH AccessTime Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-ActiveFlagAsaCodeableConcept-extension" />
+                <display value="ODH ActiveFlagAsaCodeableConcept Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-ActiveFlag-extension" />
+                <display value="ODH ActiveFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Additive-extension" />
+                <display value="ODH Additive Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Address-extension" />
+                <display value="ODH Address Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-AdministrativeGender-extension" />
+                <display value="ODH AdministrativeGender Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-extension" />
+                <display value="ODH AnonymizedFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-Attribution-extension" />
+                <display value="ODH Attribution Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Capacity-extension" />
+                <display value="ODH Capacity Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Category-extension" />
+                <display value="ODH Category Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-ClinicalNote-extension" />
+                <display value="ODH ClinicalNote Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-CollectionMethod-extension" />
+                <display value="ODH CollectionMethod Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-CollectionSite-extension" />
+                <display value="ODH CollectionSite Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-CollectionTime-extension" />
+                <display value="ODH CollectionTime Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-ContactPoint-extension" />
+                <display value="ODH ContactPoint Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-ContextCode-extension" />
+                <display value="ODH ContextCode Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Country-extension" />
+                <display value="ODH Country Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-CountryOfIssue-extension" />
+                <display value="ODH CountryOfIssue Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-DateOfBirth-extension" />
+                <display value="ODH DateOfBirth Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Details-extension" />
+                <display value="ODH Details Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-encounter-Diagnosis-extension" />
+                <display value="ODH Diagnosis Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-extension" />
+                <display value="ODH DriversLicenseNumber Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-extension" />
+                <display value="ODH EffectiveTimePeriod Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-occupation-Employer-extension" />
+                <display value="ODH Employer Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-encounter-EncounterClass-extension" />
+                <display value="ODH EncounterClass Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-encounter-Encounter-extension" />
+                <display value="ODH Encounter Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-EntityOrRole-extension" />
+                <display value="ODH EntityOrRole Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-extension" />
+                <display value="ODH ExternalHealthRecord Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-FathersName-extension" />
+                <display value="ODH FathersName Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-extension" />
+                <display value="ODH FictionalPersonFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-FindingStatus-extension" />
+                <display value="ODH FindingStatus Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-HandlingRisk-extension" />
+                <display value="ODH HandlingRisk Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-Headshot-extension" />
+                <display value="ODH Headshot Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-HumanName-extension" />
+                <display value="ODH HumanName Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-Identifier-extension" />
+                <display value="ODH Identifier Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-Independent-extension" />
+                <display value="ODH Independent Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-Interpretation-extension" />
+                <display value="ODH Interpretation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Language-extension" />
+                <display value="ODH Language Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-LanguageQualifier-extension" />
+                <display value="ODH LanguageQualifier Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-LanguageUsed-extension" />
+                <display value="ODH LanguageUsed Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-Observer-extension" />
+                <display value="ODH Observer Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-PartOf-extension" />
+                <display value="ODH PartOf Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-PassportNumber-extension" />
+                <display value="ODH PassportNumber Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-PersonOfRecord-extension" />
+                <display value="ODH PersonOfRecord Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-PreferredFlag-extension" />
+                <display value="ODH PreferredFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-PriorityRank-extension" />
+                <display value="ODH PriorityRank Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-Recorded-extension" />
+                <display value="ODH Recorded Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-RecordedOn-extension" />
+                <display value="ODH RecordedOn Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension" />
+                <display value="ODH RelationshipToPersonOfRecord Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-statement-RelevantTime-extension" />
+                <display value="ODH RelevantTime Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SequenceNumber-extension" />
+                <display value="ODH SequenceNumber Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-element-Signature-extension" />
+                <display value="ODH Signature Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-Signed-extension" />
+                <display value="ODH Signed Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-extension" />
+                <display value="ODH SocialSecurityNumber Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-SourceOfInformation-extension" />
+                <display value="ODH SourceOfInformation Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpecialHandling-extension" />
+                <display value="ODH SpecialHandling Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpecimenQuantity-extension" />
+                <display value="ODH SpecimenQuantity Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpecimenTreatment-extension" />
+                <display value="ODH SpecimenTreatment Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-SpokenLanguageProficiency-extension" />
+                <display value="ODH SpokenLanguageProficiency Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-State-extension" />
+                <display value="ODH State Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-StateOfIssue-extension" />
+                <display value="ODH StateOfIssue Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-topic-StatementTopic-extension" />
+                <display value="ODH StatementTopic Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension" />
+                <display value="ODH SubjectIfNotPersonOfRecord Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-topic-TopicCode-extension" />
+                <display value="ODH TopicCode Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/shr-core-Type-extension" />
+                <display value="ODH Type Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-WrittenLanguageProficiency-extension" />
+                <display value="ODH WrittenLanguageProficiency Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-code-extension" />
+                <display value="ODH code Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/primitive-string-extension" />
+                <display value="ODH string Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-AllUnitsVS" />
+                <display value="ODH AllUnitsVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-element-AnatomicalDirectionVS" />
+                <display value="ODH AnatomicalDirectionVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-element-AnatomicalLocationVS" />
+                <display value="ODH AnatomicalLocationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-statement-DeltaFlagVS" />
+                <display value="ODH DeltaFlagVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-entity-DeviceVS" />
+                <display value="ODH DeviceVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-EmploymentStatusVS" />
+                <display value="ODH EmploymentStatusVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-statement-ExceptionValueVS" />
+                <display value="ODH ExceptionValueVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-IndustryVS" />
+                <display value="ODH IndustryVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-entity-LanguageQualifierVS" />
+                <display value="ODH LanguageQualifierVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-OccupationVS" />
+                <display value="ODH OccupationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-PerformanceGradingScaleVS" />
+                <display value="ODH PerformanceGradingScaleVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-SupervisoryLevelVS" />
+                <display value="ODH SupervisoryLevelVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-WorkClassificationVS" />
+                <display value="ODH WorkClassificationVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-occupation-WorkScheduleVS" />
+                <display value="ODH WorkScheduleVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-YesNoUnknownVS" />
+                <display value="ODH YesNoUnknownVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/shr-core-YesNoVS" />
+                <display value="ODH YesNoVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/cimi-element-AnatomicalDirectionCS" />
+                <display value="ODH AnatomicalDirectionCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/cimi-statement-ExceptionValueCS" />
+                <display value="ODH ExceptionValueCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/cimi-entity-LanguageQualifierCS" />
+                <display value="ODH LanguageQualifierCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/shr-core-PerformanceGradingScaleCS" />
+                <display value="ODH PerformanceGradingScaleCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/shr-core-YesNoCS" />
+                <display value="ODH YesNoCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/shr-core-YesNoUnknownCS" />
+                <display value="ODH YesNoUnknownCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-AccessTime-model" />
+                  <display value="AccessTimeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-AccessionIdentifier-model" />
+                  <display value="AccessionIdentifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ActiveFlagAsaCodeableConcept-model" />
+                  <display value="ActiveFlagAsaCodeableConceptModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ActiveFlag-model" />
+                  <display value="ActiveFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Actual-model" />
+                  <display value="ActualModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Additive-model" />
+                  <display value="AdditiveModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-AddressLine-model" />
+                  <display value="AddressLineModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Address-model" />
+                  <display value="AddressModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-AdministrativeGender-model" />
+                  <display value="AdministrativeGenderModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-AgeAtDeath-model" />
+                  <display value="AgeAtDeathModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Age-model" />
+                  <display value="AgeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-AnatomicalDirection-model" />
+                  <display value="AnatomicalDirectionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-AnatomicalLocation-model" />
+                  <display value="AnatomicalLocationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-model" />
+                  <display value="AnonymizedFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ApplicableAgeRange-model" />
+                  <display value="ApplicableAgeRangeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ApplicableSubpopulation-model" />
+                  <display value="ApplicableSubpopulationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Attribution-model" />
+                  <display value="AttributionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-BinaryData-model" />
+                  <display value="BinaryDataModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-BirthSex-model" />
+                  <display value="BirthSexModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Brand-model" />
+                  <display value="BrandModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-BrandName-model" />
+                  <display value="BrandNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Capacity-model" />
+                  <display value="CapacityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Category-model" />
+                  <display value="CategoryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-City-model" />
+                  <display value="CityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ClinicalNote-model" />
+                  <display value="ClinicalNoteModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ClinicalStatement-model" />
+                  <display value="ClinicalStatementModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-CodeSystem-model" />
+                  <display value="CodeSystemModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-CodeSystemVersion-model" />
+                  <display value="CodeSystemVersionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-CodedEvaluationComponent-model" />
+                  <display value="CodedEvaluationComponentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-CodedSocialHistoryObservation-model" />
+                  <display value="CodedSocialHistoryObservationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-CollectionMethod-model" />
+                  <display value="CollectionMethodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-CollectionSite-model" />
+                  <display value="CollectionSiteModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-CollectionSource-model" />
+                  <display value="CollectionSourceModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-CollectionTime-model" />
+                  <display value="CollectionTimeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-CombatZonePeriod-model" />
+                  <display value="CombatZonePeriodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Comparator-model" />
+                  <display value="ComparatorModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-composition-Composition-model" />
+                  <display value="CompositionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-ContactPoint-model" />
+                  <display value="ContactPointModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Content-model" />
+                  <display value="ContentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-ContentType-model" />
+                  <display value="ContentTypeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ContextCode-model" />
+                  <display value="ContextCodeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Count-model" />
+                  <display value="CountModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Country-model" />
+                  <display value="CountryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-CountryOfIssue-model" />
+                  <display value="CountryOfIssueModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-CreationTime-model" />
+                  <display value="CreationTimeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-DailyWorkHours-model" />
+                  <display value="DailyWorkHoursModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-DateOfBirth-model" />
+                  <display value="DateOfBirthModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-DateOfDeath-model" />
+                  <display value="DateOfDeathModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-DateOfRetirement-model" />
+                  <display value="DateOfRetirementModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Deceased-model" />
+                  <display value="DeceasedModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-DeltaFlag-model" />
+                  <display value="DeltaFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Denominator-model" />
+                  <display value="DenominatorModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Details-model" />
+                  <display value="DetailsModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Device-model" />
+                  <display value="DeviceModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-DeviceUdi-model" />
+                  <display value="DeviceUdiModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-encounter-Diagnosis-model" />
+                  <display value="DiagnosisModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-DisplayText-model" />
+                  <display value="DisplayTextModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-District-model" />
+                  <display value="DistrictModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-DoseForm-model" />
+                  <display value="DoseFormModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-model" />
+                  <display value="DriversLicenseNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-model" />
+                  <display value="EffectiveTimePeriodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-EmbeddedContent-model" />
+                  <display value="EmbeddedContentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-Employer-model" />
+                  <display value="EmployerModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-encounter-EncounterClass-model" />
+                  <display value="EncounterClassModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-encounter-Encounter-model" />
+                  <display value="EncounterModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-encounter-EncounterType-model" />
+                  <display value="EncounterTypeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Entity-model" />
+                  <display value="EntityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-EntityOrRole-model" />
+                  <display value="EntityOrRoleModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-EthnicityDetail-model" />
+                  <display value="EthnicityDetailModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Ethnicity-model" />
+                  <display value="EthnicityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-EvaluationComponent-model" />
+                  <display value="EvaluationComponentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ExceptionValue-model" />
+                  <display value="ExceptionValueModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ExcludeFlag-model" />
+                  <display value="ExcludeFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ExpirationDate-model" />
+                  <display value="ExpirationDateModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-model" />
+                  <display value="ExternalHealthRecordModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-FamilyName-model" />
+                  <display value="FamilyNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-FathersName-model" />
+                  <display value="FathersNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-model" />
+                  <display value="FictionalPersonFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-FindingMethod-model" />
+                  <display value="FindingMethodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-FindingStatement-model" />
+                  <display value="FindingStatementModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-FindingStatus-model" />
+                  <display value="FindingStatusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-FindingTopic-model" />
+                  <display value="FindingTopicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Focus-model" />
+                  <display value="FocusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-GeopoliticalLocation-model" />
+                  <display value="GeopoliticalLocationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-GivenName-model" />
+                  <display value="GivenNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-GroupCharacteristicCode-model" />
+                  <display value="GroupCharacteristicCodeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-GroupCharacteristic-model" />
+                  <display value="GroupCharacteristicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Group-model" />
+                  <display value="GroupModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-HandlingRisk-model" />
+                  <display value="HandlingRiskModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Hash-model" />
+                  <display value="HashModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Headshot-model" />
+                  <display value="HeadshotModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-HistoryOfEmploymentStatus-model" />
+                  <display value="HistoryOfEmploymentStatusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-HumanName-model" />
+                  <display value="HumanNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Identifier-model" />
+                  <display value="IdentifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Independent-model" />
+                  <display value="IndependentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-InformationEntry-model" />
+                  <display value="InformationEntryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-IngredientAmount-model" />
+                  <display value="IngredientAmountModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Ingredient-model" />
+                  <display value="IngredientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-IntegerQuantity-model" />
+                  <display value="IntegerQuantityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Interpretation-model" />
+                  <display value="InterpretationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-IsActiveIngredient-model" />
+                  <display value="IsActiveIngredientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Issued-model" />
+                  <display value="IssuedModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Issuer-model" />
+                  <display value="IssuerModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-JobDuty-model" />
+                  <display value="JobDutyModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Language-model" />
+                  <display value="LanguageModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-LanguageQualifier-model" />
+                  <display value="LanguageQualifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-LanguageUsed-model" />
+                  <display value="LanguageUsedModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Laterality-model" />
+                  <display value="LateralityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Locatable-model" />
+                  <display value="LocatableModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-LotNumber-model" />
+                  <display value="LotNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-LowerBound-model" />
+                  <display value="LowerBoundModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ManufactureDate-model" />
+                  <display value="ManufactureDateModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Manufacturer-model" />
+                  <display value="ManufacturerModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-ManufacturerName-model" />
+                  <display value="ManufacturerNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MaritalStatus-model" />
+                  <display value="MaritalStatusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Media-model" />
+                  <display value="MediaModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MedicalInterpreterNeeded-model" />
+                  <display value="MedicalInterpreterNeededModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MedicationIngredient-model" />
+                  <display value="MedicationIngredientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Medication-model" />
+                  <display value="MedicationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Member-model" />
+                  <display value="MemberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-MiddleName-model" />
+                  <display value="MiddleNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MothersMaidenName-model" />
+                  <display value="MothersMaidenNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MultipleBirth-model" />
+                  <display value="MultipleBirthModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-MultipleBirthOrder-model" />
+                  <display value="MultipleBirthOrderModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-NameAsText-model" />
+                  <display value="NameAsTextModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Name-model" />
+                  <display value="NameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-NationalProviderIdentifier-model" />
+                  <display value="NationalProviderIdentifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-NonIndependent-model" />
+                  <display value="NonIndependentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Numerator-model" />
+                  <display value="NumeratorModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Observation-model" />
+                  <display value="ObservationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ObservationTopic-model" />
+                  <display value="ObservationTopicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Observer-model" />
+                  <display value="ObserverModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-OccupationalDataComposition-model" />
+                  <display value="OccupationalDataCompositionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-OccupationalDataSection-model" />
+                  <display value="OccupationalDataSectionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-OccupationalHazard-model" />
+                  <display value="OccupationalHazardModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-OnBehalfOf-model" />
+                  <display value="OnBehalfOfModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-OrganizationAlias-model" />
+                  <display value="OrganizationAliasModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-OrganizationIdentifier-model" />
+                  <display value="OrganizationIdentifierModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Organization-model" />
+                  <display value="OrganizationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-OrganizationName-model" />
+                  <display value="OrganizationNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-OverTheCounter-model" />
+                  <display value="OverTheCounterModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Package-model" />
+                  <display value="PackageModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-PanelMembers-model" />
+                  <display value="PanelMembersModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-PartOf-model" />
+                  <display value="PartOfModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ParticipationPeriod-model" />
+                  <display value="ParticipationPeriodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-PassportNumber-model" />
+                  <display value="PassportNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-PastOrPresentIndustry-model" />
+                  <display value="PastOrPresentIndustryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-PastOrPresentOccupation-model" />
+                  <display value="PastOrPresentOccupationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Patient-model" />
+                  <display value="PatientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Person-model" />
+                  <display value="PersonModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-PersonName-model" />
+                  <display value="PersonNameModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-PersonOfRecord-model" />
+                  <display value="PersonOfRecordModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-PlaceOfBirth-model" />
+                  <display value="PlaceOfBirthModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-PostalCode-model" />
+                  <display value="PostalCodeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Practitioner-model" />
+                  <display value="PractitionerModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-Precondition-model" />
+                  <display value="PreconditionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-PreferredFlag-model" />
+                  <display value="PreferredFlagModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Prefix-model" />
+                  <display value="PrefixModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-PriorityRank-model" />
+                  <display value="PriorityRankModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Purpose-model" />
+                  <display value="PurposeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Qualification-model" />
+                  <display value="QualificationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Quantity-model" />
+                  <display value="QuantityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-RaceDetail-model" />
+                  <display value="RaceDetailModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Race-model" />
+                  <display value="RaceModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Range-model" />
+                  <display value="RangeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Ratio-model" />
+                  <display value="RatioModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-ReceivedTime-model" />
+                  <display value="ReceivedTimeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Recorded-model" />
+                  <display value="RecordedModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-RecordedOn-model" />
+                  <display value="RecordedOnModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ReferenceRange-model" />
+                  <display value="ReferenceRangeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-RelatedPerson-model" />
+                  <display value="RelatedPersonModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model" />
+                  <display value="RelationshipToPersonOfRecordModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-RelevantTime-model" />
+                  <display value="RelevantTimeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-ResourceLocation-model" />
+                  <display value="ResourceLocationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-ResourceSize-model" />
+                  <display value="ResourceSizeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-statement-ResultValue-model" />
+                  <display value="ResultValueModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Role-model" />
+                  <display value="RoleModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-composition-Section-model" />
+                  <display value="SectionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SequenceNumber-model" />
+                  <display value="SequenceNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Signatory-model" />
+                  <display value="SignatoryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Signature-model" />
+                  <display value="SignatureModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-SignatureType-model" />
+                  <display value="SignatureTypeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-Signed-model" />
+                  <display value="SignedModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-SimpleQuantity-model" />
+                  <display value="SimpleQuantityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-SocialHistoryObservation-model" />
+                  <display value="SocialHistoryObservationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-model" />
+                  <display value="SocialSecurityNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-SourceOfInformation-model" />
+                  <display value="SourceOfInformationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SourceSpecimen-model" />
+                  <display value="SourceSpecimenModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpecialHandling-model" />
+                  <display value="SpecialHandlingModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpecimenContainer-model" />
+                  <display value="SpecimenContainerModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Specimen-model" />
+                  <display value="SpecimenModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpecimenQuantity-model" />
+                  <display value="SpecimenQuantityModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpecimenStatus-model" />
+                  <display value="SpecimenStatusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpecimenTreatment-model" />
+                  <display value="SpecimenTreatmentModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-SpokenLanguageProficiency-model" />
+                  <display value="SpokenLanguageProficiencyModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-State-model" />
+                  <display value="StateModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-StateOfIssue-model" />
+                  <display value="StateOfIssueModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-StatementTopic-model" />
+                  <display value="StatementTopicModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Status-model" />
+                  <display value="StatusModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model" />
+                  <display value="SubjectIfNotPersonOfRecordModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Substance-model" />
+                  <display value="SubstanceModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-element-Suffix-model" />
+                  <display value="SuffixModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-SupervisoryLevel-model" />
+                  <display value="SupervisoryLevelModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-TelecomNumberOrAddress-model" />
+                  <display value="TelecomNumberOrAddressModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-TimePeriodEnd-model" />
+                  <display value="TimePeriodEndModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-TimePeriod-model" />
+                  <display value="TimePeriodModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-TimePeriodStart-model" />
+                  <display value="TimePeriodStartModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Title-model" />
+                  <display value="TitleModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-topic-TopicCode-model" />
+                  <display value="TopicCodeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Type-model" />
+                  <display value="TypeModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Units-model" />
+                  <display value="UnitsModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-UpperBound-model" />
+                  <display value="UpperBoundModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-Url-model" />
+                  <display value="UrlModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-UsualIndustry-model" />
+                  <display value="UsualIndustryModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-UsualOccupationDuration-model" />
+                  <display value="UsualOccupationDurationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-UsualOccupation-model" />
+                  <display value="UsualOccupationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-VendorModelNumber-model" />
+                  <display value="VendorModelNumberModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-core-Version-model" />
+                  <display value="VersionModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-WeeklyWorkDays-model" />
+                  <display value="WeeklyWorkDaysModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-WorkClassification-model" />
+                  <display value="WorkClassificationModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/shr-occupation-WorkSchedule-model" />
+                  <display value="WorkScheduleModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-entity-WrittenLanguageProficiency-model" />
+                  <display value="WrittenLanguageProficiencyModel" />
+              </sourceReference>
+          </resource>
+          
+    </package>
+    <page>
+        <source value="index.html" />
+        <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1 (Standard for Trial Use)" />
+        <kind value="page" />
+    </page>
+</ImplementationGuide>

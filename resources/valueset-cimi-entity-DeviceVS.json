@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cimi-entity-DeviceVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH DeviceVS ValueSet</b></p>\n<p>Codes describing medical devices.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/ValueSet/cimi-entity-DeviceVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.DeviceVS"
+    }
+  ],
+  "name": "DeviceVS",
+  "title": "ODH DeviceVS ValueSet",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-06",
+  "description": "Codes describing medical devices.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "49062001"
+          }
+        ]
+      }
+    ]
+  }
+}

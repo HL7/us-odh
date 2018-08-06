@@ -1,0 +1,323 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+<div id="segment-breadcrumb" class="segmnt">
+  <!-- segment-breadcrumb -->
+  <div class="container">
+    <!-- container -->
+    <ul class="breadcrumb">
+      <li title="home"><a href="index.html"><b>Home</b></a></li>
+      <li><b>Extensions</b></li>
+    </ul>
+  </div>
+  <!-- /container -->
+</div>
+<!-- /segment-breadcrumb -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>
+  Extensions defined as part of this Implementation Guide
+</h2>
+<table class="codes">
+  <thead>
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-AccessTime-extension.html">AccessTime</a></td>
+      <td>{% capture md_text %}Point in time when data was accessed.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-ActiveFlagAsaCodeableConcept-extension.html">ActiveFlagAsaCodeableConcept</a></td>
+      <td>{% capture md_text %}If the ActiveFlag is false, it indicates the record or item is no longer to be used and should generally be hidden for the user in the UI.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-ActiveFlag-extension.html">ActiveFlag</a></td>
+      <td>{% capture md_text %}If the ActiveFlag is false, it indicates the record or item is no longer to be used and should generally be hidden for the user in the UI.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Additive-extension.html">Additive</a></td>
+      <td>{% capture md_text %}Additive associated with container.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Address-extension.html">Address</a></td>
+      <td>{% capture md_text %}An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-AdministrativeGender-extension.html">AdministrativeGender</a></td>
+      <td>{% capture md_text %}A gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-AnonymizedFlag-extension.html">AnonymizedFlag</a></td>
+      <td>{% capture md_text %}Flag indicating if personally identifiable information has been withheld or disguised.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-Attribution-extension.html">Attribution</a></td>
+      <td>{% capture md_text %}Information ascribing the record to a particular contributor or responsible person.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Capacity-extension.html">Capacity</a></td>
+      <td>{% capture md_text %}Container volume or size.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Category-extension.html">Category</a></td>
+      <td>{% capture md_text %}A class or division of people or things having particular shared characteristics{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-ClinicalNote-extension.html">ClinicalNote</a></td>
+      <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-CollectionMethod-extension.html">CollectionMethod</a></td>
+      <td>{% capture md_text %}How the specimen was obtained.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-CollectionSite-extension.html">CollectionSite</a></td>
+      <td>{% capture md_text %}The body site where specimen was collected{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-CollectionTime-extension.html">CollectionTime</a></td>
+      <td>{% capture md_text %}When the sample was obtained, as a specific time or time period.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-ContactPoint-extension.html">ContactPoint</a></td>
+      <td>{% capture md_text %}An electronic means of contacting an organization or individual.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-ContextCode-extension.html">ContextCode</a></td>
+      <td>{% capture md_text %}Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Country-extension.html">Country</a></td>
+      <td>{% capture md_text %}Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-CountryOfIssue-extension.html">CountryOfIssue</a></td>
+      <td>{% capture md_text %}A country acting as an assuing authority for a document.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-DateOfBirth-extension.html">DateOfBirth</a></td>
+      <td>{% capture md_text %}A date of birth or approximate year or period (year or date range), if estimated.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Details-extension.html">Details</a></td>
+      <td>{% capture md_text %}A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-encounter-Diagnosis-extension.html">Diagnosis</a></td>
+      <td>{% capture md_text %}A diagnosis, which is a disease or injury determined to be present through evaluation of patient history, examination, and/or review of laboratory data.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-DriversLicenseNumber-extension.html">DriversLicenseNumber</a></td>
+      <td>{% capture md_text %}Identifying information from a drivers license.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-EffectiveTimePeriod-extension.html">EffectiveTimePeriod</a></td>
+      <td>{% capture md_text %}The date and time span for which something is active, valid, or in force.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-Employer-extension.html">Employer</a></td>
+      <td>{% capture md_text %}A person or organization that hires the services of another.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-encounter-EncounterClass-extension.html">EncounterClass</a></td>
+      <td>{% capture md_text %}Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-encounter-Encounter-extension.html">Encounter</a></td>
+      <td>{% capture md_text %}A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-EntityOrRole-extension.html">EntityOrRole</a></td>
+      <td>{% capture md_text %}Parent class entity and role.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-ExternalHealthRecord-extension.html">ExternalHealthRecord</a></td>
+      <td>{% capture md_text %}A health record other than the current health record; may have been used to help populate the current record.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-FathersName-extension.html">FathersName</a></td>
+      <td>{% capture md_text %}The name of the father as it was or likely to have been recorded on the birth certificate of the subject; most likely the name of the father at the time of birth of the subject.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-FictionalPersonFlag-extension.html">FictionalPersonFlag</a></td>
+      <td>{% capture md_text %}Flag indicating if this record represents a fictional (synthetic, not real) person.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-FindingStatus-extension.html">FindingStatus</a></td>
+      <td>{% capture md_text %}Indicates whether the finding is preliminary, amended, final, etc.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-HandlingRisk-extension.html">HandlingRisk</a></td>
+      <td>{% capture md_text %}Cautions on the handling of this specimen.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Headshot-extension.html">Headshot</a></td>
+      <td>{% capture md_text %}A photograph showing a person's face.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-HumanName-extension.html">HumanName</a></td>
+      <td>{% capture md_text %}The CIMI person name, constrained to map correctly to FHIR.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-Identifier-extension.html">Identifier</a></td>
+      <td>{% capture md_text %}A unique string that identifies a specific person or thing.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-Independent-extension.html">Independent</a></td>
+      <td>{% capture md_text %}Base class for classes in CIMI that stand alone. Analogous to FHIR's DomainResource.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-Interpretation-extension.html">Interpretation</a></td>
+      <td>{% capture md_text %}A clinical interpretation of a finding (applies to both assertions and observation).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Language-extension.html">Language</a></td>
+      <td>{% capture md_text %}A human language, spoken or written.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-LanguageQualifier-extension.html">LanguageQualifier</a></td>
+      <td>{% capture md_text %}Additional information about a person's use of language.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-LanguageUsed-extension.html">LanguageUsed</a></td>
+      <td>{% capture md_text %}Language used for communication by a human, either the subject of record, parent, or other involved person.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-Observer-extension.html">Observer</a></td>
+      <td>{% capture md_text %}The person or organization who observed or informed the reporter about the characteristic, potentially the clinician, the patient, or a related person.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-PartOf-extension.html">PartOf</a></td>
+      <td>{% capture md_text %}The larger entity that this is a portion of. For example, an organization might be part of a larger organization, or an encounter with a hospitalist might be part of a larger hospitalization encounter.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-PassportNumber-extension.html">PassportNumber</a></td>
+      <td>{% capture md_text %}Credential indicating citizenship.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-PersonOfRecord-extension.html">PersonOfRecord</a></td>
+      <td>{% capture md_text %}The person this entry belongs to.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-PreferredFlag-extension.html">PreferredFlag</a></td>
+      <td>{% capture md_text %}Code indicating the preference associated with the use of this name.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-PriorityRank-extension.html">PriorityRank</a></td>
+      <td>{% capture md_text %}An indication of the importance of an action.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-Recorded-extension.html">Recorded</a></td>
+      <td>{% capture md_text %}The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-RecordedOn-extension.html">RecordedOn</a></td>
+      <td>{% capture md_text %}The time of the attribution action.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-RelationshipToPersonOfRecord-extension.html">RelationshipToPersonOfRecord</a></td>
+      <td>{% capture md_text %}The relationship of the SubjectIfNotPersonOfRecord to the subject of record.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-RelevantTime-extension.html">RelevantTime</a></td>
+      <td>{% capture md_text %}The time or time period that the finding addresses.
+The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SequenceNumber-extension.html">SequenceNumber</a></td>
+      <td>{% capture md_text %}The sequence number for this specimen in a collection of specimens.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-Signature-extension.html">Signature</a></td>
+      <td>{% capture md_text %}A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-Signed-extension.html">Signed</a></td>
+      <td>{% capture md_text %}Provenance information specific to the signing of the clinical statement.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SocialSecurityNumber-extension.html">SocialSecurityNumber</a></td>
+      <td>{% capture md_text %}A US social security number (SSN).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-SourceOfInformation-extension.html">SourceOfInformation</a></td>
+      <td>{% capture md_text %}The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpecialHandling-extension.html">SpecialHandling</a></td>
+      <td>{% capture md_text %}Information about the proper handling of the specimen.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpecimenQuantity-extension.html">SpecimenQuantity</a></td>
+      <td>{% capture md_text %}Quantity of specimen within container.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpecimenTreatment-extension.html">SpecimenTreatment</a></td>
+      <td>{% capture md_text %}Treatment performed on the specimen.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpokenLanguageProficiency-extension.html">SpokenLanguageProficiency</a></td>
+      <td>{% capture md_text %}Accuracy and fluency in spoken communication in a language.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-State-extension.html">State</a></td>
+      <td>{% capture md_text %}Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-StateOfIssue-extension.html">StateOfIssue</a></td>
+      <td>{% capture md_text %}A state or country acting as an assuing authority for a document.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-topic-StatementTopic-extension.html">StatementTopic</a></td>
+      <td>{% capture md_text %}Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.
+
+StatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-core-SubjectIfNotPersonOfRecord-extension.html">SubjectIfNotPersonOfRecord</a></td>
+      <td>{% capture md_text %}The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-topic-TopicCode-extension.html">TopicCode</a></td>
+      <td>{% capture md_text %}The concept representing the finding or action that is the topic of the statement.
+
+For action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic  of the action or the finding.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Type-extension.html">Type</a></td>
+      <td>{% capture md_text %}The most specific code (lowest level term) describing the kind or sort of thing being represented.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-WrittenLanguageProficiency-extension.html">WrittenLanguageProficiency</a></td>
+      <td>{% capture md_text %}Accuracy and fluency of reading and writing in a language.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-primitive-code-extension.html">code</a></td>
+      <td>{% capture md_text %}The code that represents the value of the ODH element to which it is applied.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-primitive-string-extension.html">string</a></td>
+      <td>{% capture md_text %}The string that represents the value of the ODH element to which it is applied.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}

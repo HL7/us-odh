@@ -1,0 +1,382 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-occupation-OccupationalDataSection-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataSection Logical Model</b></p>\n  <p>Single section in the current OccupationalDataComposition, containing the person&#039;s history of employment and occupation, past and present.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-OccupationalDataSection-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.occupation.OccupationalDataSection"
+    }
+  ],
+  "name": "OccupationalDataSectionModel",
+  "title": "ODH OccupationalDataSection Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-occupation-OccupationalDataSection-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-occupation-OccupationalDataSection-model",
+        "path": "shr-occupation-OccupationalDataSection-model",
+        "definition": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+        "short": "A special type of information entry consisting of a topic and a context.",
+        "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+          "min": 0,
+          "max": "1"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "74165-2",
+            "display": "HistoryOfEmploymentStatus"
+          }
+        ],
+        "short": "A person’s state of being employed during the time period specified.",
+        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-HistoryOfEmploymentStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87510-4",
+            "display": "Date of Retirement"
+          }
+        ],
+        "short": "If present, the patient is retired, and this observation records the retirement date.",
+        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-DateOfRetirement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87511-2"
+          }
+        ],
+        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-CombatZonePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "21843-8"
+          }
+        ],
+        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-UsualOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "11341-5",
+            "display": "History of Occupation"
+          }
+        ],
+        "short": "A single job, past or present. The relevant time is the period the job was held.",
+        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-PastOrPresentOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-occupation-OccupationalDataSection-model",
+        "path": "shr-occupation-OccupationalDataSection-model",
+        "definition": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+        "short": "A special type of information entry consisting of a topic and a context.",
+        "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement",
+          "min": 0,
+          "max": "1"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "74165-2",
+            "display": "HistoryOfEmploymentStatus"
+          }
+        ],
+        "short": "A person’s state of being employed during the time period specified.",
+        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.historyOfEmploymentStatus",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-HistoryOfEmploymentStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87510-4",
+            "display": "Date of Retirement"
+          }
+        ],
+        "short": "If present, the patient is retired, and this observation records the retirement date.",
+        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.dateOfRetirement",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-DateOfRetirement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87511-2"
+          }
+        ],
+        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.combatZonePeriod",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-CombatZonePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "21843-8"
+          }
+        ],
+        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.usualOccupation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-UsualOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+        "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "11341-5",
+            "display": "History of Occupation"
+          }
+        ],
+        "short": "A single job, past or present. The relevant time is the period the job was held.",
+        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataSection-model.clinicalStatement.pastOrPresentOccupation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-PastOrPresentOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-YesNoVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH YesNoVS ValueSet</b></p>\n<p>Code set indicating yes or no.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-YesNoVS",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.core.YesNoVS"
+    }
+  ],
+  "name": "YesNoVS",
+  "title": "ODH YesNoVS ValueSet",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-06",
+  "description": "Code set indicating yes or no.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/odh/CodeSystem/shr-core-YesNoCS",
+        "concept": [
+          {
+            "code": "yes",
+            "display": "Yes, or true"
+          },
+          {
+            "code": "no",
+            "display": "No, or false"
+          }
+        ]
+      }
+    ]
+  }
+}

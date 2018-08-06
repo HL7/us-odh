@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "shr-core-YesNoUnknownCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH YesNoUnknownCS CodeSystem</b></p>\n<p>Code set indicating yes, no, or unknown.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/CodeSystem/shr-core-YesNoUnknownCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/odh",
+    "value": "shr.core.YesNoUnknownCS"
+  },
+  "name": "YesNoUnknownCS",
+  "title": "ODH YesNoUnknownCS CodeSystem",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-06",
+  "description": "Code set indicating yes, no, or unknown.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "yes",
+      "definition": "Yes, or true",
+      "display": "Yes, or true"
+    },
+    {
+      "code": "no",
+      "definition": "No, or false",
+      "display": "No, or false"
+    },
+    {
+      "code": "unknown",
+      "definition": "Unknown",
+      "display": "Unknown"
+    }
+  ]
+}

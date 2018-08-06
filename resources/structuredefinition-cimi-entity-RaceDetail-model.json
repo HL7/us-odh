@@ -1,0 +1,260 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-RaceDetail-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH RaceDetail Logical Model</b></p>\n  <p>Additional description of race or heritage.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-RaceDetail-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.RaceDetail"
+    }
+  ],
+  "name": "RaceDetailModel",
+  "title": "ODH RaceDetail Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Additional description of race or heritage.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-RaceDetail-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-RaceDetail-model",
+        "path": "cimi-entity-RaceDetail-model",
+        "definition": "Additional description of race or heritage.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.value[x]",
+        "path": "cimi-entity-RaceDetail-model.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Code or code representing additional description of race or heritage.",
+        "definition": "Code or code representing additional description of race or heritage.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.valueCoding:CodeableConcept",
+        "path": "cimi-entity-RaceDetail-model.valueCoding",
+        "sliceName": "CodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.valueCoding:CodeableConcept",
+        "path": "cimi-entity-RaceDetail-model.valueCoding",
+        "sliceName": "CodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-RaceDetail-model",
+        "path": "cimi-entity-RaceDetail-model",
+        "definition": "Additional description of race or heritage.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.value[x]",
+        "path": "cimi-entity-RaceDetail-model.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Code or code representing additional description of race or heritage.",
+        "definition": "Code or code representing additional description of race or heritage.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.valueCoding:CodeableConcept",
+        "path": "cimi-entity-RaceDetail-model.valueCoding",
+        "sliceName": "CodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-RaceDetail-model.valueCoding:CodeableConcept",
+        "path": "cimi-entity-RaceDetail-model.valueCoding",
+        "sliceName": "CodeableConcept",
+        "short": "A set of codes drawn from different coding systems, representing the same concept.",
+        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-RaceDetail-model.value[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      }
+    ]
+  }
+}

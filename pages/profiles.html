@@ -1,0 +1,260 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+<div id="segment-breadcrumb" class="segmnt">
+  <!-- segment-breadcrumb -->
+  <div class="container">
+    <!-- container -->
+    <ul class="breadcrumb">
+      <li title="home"><a href="index.html"><b>Home</b></a></li>
+      <li><b>Profiles</b></li>
+    </ul>
+  </div>
+  <!-- /container -->
+</div>
+<!-- /segment-breadcrumb -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>
+  Primary profiles defined as part of this Implementation Guide
+</h2>
+<table class="codes">
+  <thead>
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Based On</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-CombatZonePeriod.html">CombatZonePeriod</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-DateOfRetirement.html">DateOfRetirement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}If present, the patient is retired, and this observation records the retirement date.
+This is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-HistoryOfEmploymentStatus.html">HistoryOfEmploymentStatus</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}A person’s state of being employed during the time period specified.
+Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-OccupationalDataComposition.html">OccupationalDataComposition</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
+      <td>{% capture md_text %}Current and past activities for profit, wages, salary, or as a service to others.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-PastOrPresentOccupation.html">PastOrPresentOccupation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}A single job, past or present. The relevant time is the period the job was held.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-UsualOccupation.html">UsualOccupation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h2 id="supporting-profiles-header" style="display: none">
+  Supporting profiles defined as part of this Implementation Guide
+</h2>
+<table id="supporting-profiles-table" class="codes" style="display: none">
+  <thead>
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Based On</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-AccessionIdentifier.html">AccessionIdentifier</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td>{% capture md_text %}Identifier assigned by the lab{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Address.html">Address</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
+      <td>{% capture md_text %}An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-AnatomicalLocation.html">AnatomicalLocation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/bodysite.html">BodySite</a></td>
+      <td>{% capture md_text %}A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-ClinicalNote.html">ClinicalNote</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
+      <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-ClinicalStatement.html">ClinicalStatement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
+      <td>{% capture md_text %}A special type of information entry consisting of a topic and a context.
+The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-CodedSocialHistoryObservation.html">CodedSocialHistoryObservation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}The result of social history questions, whose answer is expressed as a code.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-composition-Composition.html">Composition</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
+      <td>{% capture md_text %}A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-ContactPoint.html">ContactPoint</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#contactpoint">ContactPoint</a></td>
+      <td>{% capture md_text %}An electronic means of contacting an organization or individual.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Device.html">Device</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/device.html">Device</a></td>
+      <td>{% capture md_text %}A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-encounter-Encounter.html">Encounter</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/encounter.html">Encounter</a></td>
+      <td>{% capture md_text %}A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Entity.html">Entity</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
+      <td>{% capture md_text %}Root class for entities such as people, organizations, and devices that have a separately identifiable existence.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-FindingStatement.html">FindingStatement</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
+      <td>{% capture md_text %}Any clinical statement representing a finding.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Group.html">Group</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/group.html">Group</a></td>
+      <td>{% capture md_text %}A set of entities (personnel, material, or places) to be considered together. May be a pool of like-type resources, a team, or combination of personnel, material and places.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-HumanName.html">HumanName</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#humanname">HumanName</a></td>
+      <td>{% capture md_text %}The CIMI person name, constrained to map correctly to FHIR.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-Identifier.html">Identifier</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td>{% capture md_text %}A unique string that identifies a specific person or thing.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Medication.html">Medication</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/medication.html">Medication</a></td>
+      <td>{% capture md_text %}A type of prescription drug or over-the-counter drug that is used to prevent, treat, or relieve symptoms of a disease or abnormal condition, but excluding vaccines.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-NationalProviderIdentifier.html">NationalProviderIdentifier</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td>{% capture md_text %}A unique 10 digit number to allow US healthcare providers to identify themselves in a standard way throughout the healthcare industry.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-Observation.html">Observation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Represents the result of evaluations (measurements, tests, or questions) that have been performed.
+Observation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-OrganizationIdentifier.html">OrganizationIdentifier</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td>{% capture md_text %}An identifier of the organization. An NPI preferred, tax id is allowed, and a local id is allowed in addition to ‘authoritative’ identifier{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Organization.html">Organization</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/organization.html">Organization</a></td>
+      <td>{% capture md_text %}A social or legal structure formed by human beings.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Patient.html">Patient</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
+      <td>{% capture md_text %}A person in the role of a patient, including extended demographic information about the subject of this health record.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Person.html">Person</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
+      <td>{% capture md_text %}A person relevant to the health or social situation of the subject (including the person of record him or herself).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Practitioner.html">Practitioner</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
+      <td>{% capture md_text %}A person who practices a healing art.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-Ratio.html">Ratio</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#ratio">Ratio</a></td>
+      <td>{% capture md_text %}A unit of measurement for the quotient of the amount of one entity to another.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-RelatedPerson.html">RelatedPerson</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
+      <td>{% capture md_text %}A person in a role defined in relationship to a patient{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-element-Signature.html">Signature</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#signature">Signature</a></td>
+      <td>{% capture md_text %}A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-occupation-SocialHistoryObservation.html">SocialHistoryObservation</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}A simplified observation for social histories.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpecimenContainer.html">SpecimenContainer</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
+      <td>{% capture md_text %}Direct container of specimen (tube&#47;slide, etc.){% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Specimen.html">Specimen</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/specimen.html">Specimen</a></td>
+      <td>{% capture md_text %}A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-SpecimenTreatment.html">SpecimenTreatment</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
+      <td>{% capture md_text %}Treatment performed on the specimen.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-entity-Substance.html">Substance</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/substance.html">Substance</a></td>
+      <td>{% capture md_text %}Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+{% include footer.html %}

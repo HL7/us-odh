@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-VendorModelNumber-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH VendorModelNumber Logical Model</b></p>\n  <p>The model number of the device, assigned by the manufacturer or vendor.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-VendorModelNumber-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.VendorModelNumber"
+    }
+  ],
+  "name": "VendorModelNumberModel",
+  "title": "ODH VendorModelNumber Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "The model number of the device, assigned by the manufacturer or vendor.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-VendorModelNumber-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-VendorModelNumber-model",
+        "path": "cimi-entity-VendorModelNumber-model",
+        "definition": "The model number of the device, assigned by the manufacturer or vendor.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-VendorModelNumber-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-VendorModelNumber-model.value",
+        "path": "cimi-entity-VendorModelNumber-model.value",
+        "short": "String representing the model number of the device, assigned by the manufacturer or vendor.",
+        "definition": "String representing the model number of the device, assigned by the manufacturer or vendor.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-VendorModelNumber-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-VendorModelNumber-model",
+        "path": "cimi-entity-VendorModelNumber-model",
+        "definition": "The model number of the device, assigned by the manufacturer or vendor.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-VendorModelNumber-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-VendorModelNumber-model.value",
+        "path": "cimi-entity-VendorModelNumber-model.value",
+        "short": "String representing the model number of the device, assigned by the manufacturer or vendor.",
+        "definition": "String representing the model number of the device, assigned by the manufacturer or vendor.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-VendorModelNumber-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

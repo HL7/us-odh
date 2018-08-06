@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-core-Details-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Details Logical Model</b></p>\n  <p>A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.core.Details"
+    }
+  ],
+  "name": "DetailsModel",
+  "title": "ODH Details Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0947611"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-core-Details-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-core-Details-model",
+        "path": "shr-core-Details-model",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-core-Details-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-Details-model.value",
+        "path": "shr-core-Details-model.value",
+        "short": "String representing a text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "String representing a text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Details-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-core-Details-model",
+        "path": "shr-core-Details-model",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-core-Details-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-Details-model.value",
+        "path": "shr-core-Details-model.value",
+        "short": "String representing a text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "String representing a text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-core-Details-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

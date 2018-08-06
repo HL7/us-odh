@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-Issued-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Issued Logical Model</b></p>\n  <p>The date and time this observation was made available to providers, typically after the results have been reviewed and verified.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Issued-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.statement.Issued"
+    }
+  ],
+  "name": "IssuedModel",
+  "title": "ODH Issued Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "The date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-Issued-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-Issued-model",
+        "path": "cimi-statement-Issued-model",
+        "definition": "The date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-Issued-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-Issued-model.value",
+        "path": "cimi-statement-Issued-model.value",
+        "short": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "definition": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "alias": [
+          "instant"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-Issued-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-Issued-model",
+        "path": "cimi-statement-Issued-model",
+        "definition": "The date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-Issued-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-Issued-model.value",
+        "path": "cimi-statement-Issued-model.value",
+        "short": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "definition": "Instant representing the date and time this observation was made available to providers, typically after the results have been reviewed and verified.",
+        "alias": [
+          "instant"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-Issued-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

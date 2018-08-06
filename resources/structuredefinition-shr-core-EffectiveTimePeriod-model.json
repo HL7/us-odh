@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-core-EffectiveTimePeriod-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH EffectiveTimePeriod Logical Model</b></p>\n  <p>The date and time span for which something is active, valid, or in force.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-EffectiveTimePeriod-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.core.EffectiveTimePeriod"
+    }
+  ],
+  "name": "EffectiveTimePeriodModel",
+  "title": "ODH EffectiveTimePeriod Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "The date and time span for which something is active, valid, or in force.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C2985763"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-core-EffectiveTimePeriod-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-core-EffectiveTimePeriod-model",
+        "path": "shr-core-EffectiveTimePeriod-model",
+        "definition": "The date and time span for which something is active, valid, or in force.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+        "path": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1301880"
+          }
+        ],
+        "short": "The time at which something is to take effect, start, or did start. Boundary is considered inclusive.",
+        "definition": "The time at which something is to take effect, start, or did start. Boundary is considered inclusive.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriodStart-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+        "path": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1522314"
+          }
+        ],
+        "short": "The time at which something is to end or did end. Boundary is considered inclusive.",
+        "definition": "The time at which something is to end or did end. Boundary is considered inclusive.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriodEnd-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-core-EffectiveTimePeriod-model",
+        "path": "shr-core-EffectiveTimePeriod-model",
+        "definition": "The date and time span for which something is active, valid, or in force.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+        "path": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1301880"
+          }
+        ],
+        "short": "The time at which something is to take effect, start, or did start. Boundary is considered inclusive.",
+        "definition": "The time at which something is to take effect, start, or did start. Boundary is considered inclusive.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model.timePeriodStart",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriodStart-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+        "path": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1522314"
+          }
+        ],
+        "short": "The time at which something is to end or did end. Boundary is considered inclusive.",
+        "definition": "The time at which something is to end or did end. Boundary is considered inclusive.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "shr-core-EffectiveTimePeriod-model.timePeriodEnd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriodEnd-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

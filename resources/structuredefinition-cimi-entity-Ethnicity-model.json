@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-Ethnicity-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Ethnicity Logical Model</b></p>\n  <p>Indicator of Hispanic or Latino origin.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Ethnicity-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.Ethnicity"
+    }
+  ],
+  "name": "EthnicityModel",
+  "title": "ODH Ethnicity Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicator of Hispanic or Latino origin.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0015031"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-Ethnicity-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-Ethnicity-model",
+        "path": "cimi-entity-Ethnicity-model",
+        "definition": "Indicator of Hispanic or Latino origin.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Ethnicity-model.value",
+        "path": "cimi-entity-Ethnicity-model.value",
+        "short": "Code representing indicator of Hispanic or Latino origin.",
+        "definition": "Code representing indicator of Hispanic or Latino origin.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-Ethnicity-model.ethnicityDetail",
+        "path": "cimi-entity-Ethnicity-model.ethnicityDetail",
+        "short": "Additional description of ethnicity.",
+        "definition": "Additional description of ethnicity.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model.ethnicityDetail",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EthnicityDetail-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-Ethnicity-model",
+        "path": "cimi-entity-Ethnicity-model",
+        "definition": "Indicator of Hispanic or Latino origin.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Ethnicity-model.value",
+        "path": "cimi-entity-Ethnicity-model.value",
+        "short": "Code representing indicator of Hispanic or Latino origin.",
+        "definition": "Code representing indicator of Hispanic or Latino origin.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"
+          }
+        }
+      },
+      {
+        "id": "cimi-entity-Ethnicity-model.ethnicityDetail",
+        "path": "cimi-entity-Ethnicity-model.ethnicityDetail",
+        "short": "Additional description of ethnicity.",
+        "definition": "Additional description of ethnicity.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-Ethnicity-model.ethnicityDetail",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EthnicityDetail-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

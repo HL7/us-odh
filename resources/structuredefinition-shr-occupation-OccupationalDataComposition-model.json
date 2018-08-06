@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "shr-occupation-OccupationalDataComposition-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataComposition Logical Model</b></p>\n  <p>Current and past activities for profit, wages, salary, or as a service to others.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-OccupationalDataComposition-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "shr.occupation.OccupationalDataComposition"
+    }
+  ],
+  "name": "OccupationalDataCompositionModel",
+  "title": "ODH OccupationalDataComposition Logical Model",
+  "status": "draft",
+  "date": "2018-08-06",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Current and past activities for profit, wages, salary, or as a service to others.",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "74166-0"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "shr-occupation-OccupationalDataComposition-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "shr-occupation-OccupationalDataComposition-model",
+        "path": "shr-occupation-OccupationalDataComposition-model",
+        "definition": "Current and past activities for profit, wages, salary, or as a service to others.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataComposition-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+        "path": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+        "short": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "definition": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "alias": [
+          "section"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-OccupationalDataSection-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "shr-occupation-OccupationalDataComposition-model",
+        "path": "shr-occupation-OccupationalDataComposition-model",
+        "definition": "Current and past activities for profit, wages, salary, or as a service to others.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "shr-occupation-OccupationalDataComposition-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+        "path": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+        "short": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "definition": "Single section in the current OccupationalDataComposition, containing the person's history of employment and occupation, past and present.",
+        "alias": [
+          "section"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "shr-occupation-OccupationalDataComposition-model.occupationalDataSection",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-occupation-OccupationalDataSection-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

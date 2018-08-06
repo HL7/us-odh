@@ -1,0 +1,139 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cimi-statement-ExceptionValueCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH ExceptionValueCS CodeSystem</b></p>\n<p>Reasons that a value associated with a test or other finding is missing. Includes all codes from \thttp://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/CodeSystem/cimi-statement-ExceptionValueCS",
+  "identifier": {
+    "system": "http://hl7.org/fhir/us/odh",
+    "value": "cimi.statement.ExceptionValueCS"
+  },
+  "name": "ExceptionValueCS",
+  "title": "ODH ExceptionValueCS CodeSystem",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "date": "2018-08-06",
+  "description": "Reasons that a value associated with a test or other finding is missing. Includes all codes from \thttp://hl7.org/fhir/ValueSet/data-absent-reason version 3.3.0 and additional codes covering other missing value circumstances.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 21,
+  "concept": [
+    {
+      "code": "unknown",
+      "definition": "Unknown: The value is not known.",
+      "display": "Unknown: The value is not known."
+    },
+    {
+      "code": "asked-unknown",
+      "definition": "Asked But Unknown: The source human does not know the value.",
+      "display": "Asked But Unknown: The source human does not know the value."
+    },
+    {
+      "code": "temp-unknown",
+      "definition": "Temporarily Unknown: There is reason to expect (from the workflow) that the value may become known.",
+      "display": "Temporarily Unknown: There is reason to expect (from the workflow) that the value may become known."
+    },
+    {
+      "code": "not-asked",
+      "definition": "Not Asked: The workflow didn't lead to this value being known.",
+      "display": "Not Asked: The workflow didn't lead to this value being known."
+    },
+    {
+      "code": "asked-declined",
+      "definition": "Asked But Declined: The source was asked but declined to answer.",
+      "display": "Asked But Declined: The source was asked but declined to answer."
+    },
+    {
+      "code": "masked",
+      "definition": "Masked: The information is not available due to security, privacy or related reasons.",
+      "display": "Masked: The information is not available due to security, privacy or related reasons."
+    },
+    {
+      "code": "not-applicable",
+      "definition": "Not Applicable: There is no proper value for this element (e.g. last menstrual period for a male)",
+      "display": "Not Applicable: There is no proper value for this element (e.g. last menstrual period for a male)"
+    },
+    {
+      "code": "unsupported",
+      "definition": "Unsupported: The source system wasn't capable of supporting this element.",
+      "display": "Unsupported: The source system wasn't capable of supporting this element."
+    },
+    {
+      "code": "as-text",
+      "definition": "As Text: The content of the data is represented in the resource narrative.",
+      "display": "As Text: The content of the data is represented in the resource narrative."
+    },
+    {
+      "code": "error",
+      "definition": "Error: Some system or workflow process error means that the information is not available.",
+      "display": "Error: Some system or workflow process error means that the information is not available."
+    },
+    {
+      "code": "not-a-number",
+      "definition": "Not a Number (NaN): The numeric value is undefined or unrepresentable due to a floating point processing error.",
+      "display": "Not a Number (NaN): The numeric value is undefined or unrepresentable due to a floating point processing error."
+    },
+    {
+      "code": "negative-infinity",
+      "definition": "Negative Infinity (NINF): The numeric value is excessively low and unrepresentable due to a floating point processing error.",
+      "display": "Negative Infinity (NINF): The numeric value is excessively low and unrepresentable due to a floating point processing error."
+    },
+    {
+      "code": "positive-infinity",
+      "definition": "Positive Infinity (PINF): The numeric value is excessively high and unrepresentable due to a floating point processing error.",
+      "display": "Positive Infinity (PINF): The numeric value is excessively high and unrepresentable due to a floating point processing error."
+    },
+    {
+      "code": "not-performed",
+      "definition": "Not Performed: The value is not available because the observation procedure  (test, etc.) was not performed.",
+      "display": "Not Performed: The value is not available because the observation procedure  (test, etc.) was not performed."
+    },
+    {
+      "code": "not-permitted",
+      "definition": "Not Permitted: The value is not permitted in this context (e.g. due to profiles, or the base data types)",
+      "display": "Not Permitted: The value is not permitted in this context (e.g. due to profiles, or the base data types)"
+    },
+    {
+      "code": "indeterminate-value",
+      "definition": "The value could not be determined or established with accuracy or certainty.",
+      "display": "The value could not be determined or established with accuracy or certainty."
+    },
+    {
+      "code": "no-further-explanation",
+      "definition": "The reason the information is not present is not known.",
+      "display": "The reason the information is not present is not known."
+    },
+    {
+      "code": "null-answer",
+      "definition": "The answer is appears missing because the correct answer is null or empty; e.g., a question that asks for a list of the names of siblings applied to an only child.",
+      "display": "The answer is appears missing because the correct answer is null or empty; e.g., a question that asks for a list of the names of siblings applied to an only child."
+    },
+    {
+      "code": "specimen-unavailable",
+      "definition": "Missing due to a problem collecting, identifying, or locating the specimen, including patient refusal or unable to provide specimen",
+      "display": "Missing due to a problem collecting, identifying, or locating the specimen, including patient refusal or unable to provide specimen"
+    },
+    {
+      "code": "specimen-inadequate",
+      "definition": "Missing due to a problem with the specimen, e.g. inadequate specimen, contamination, clotting, improper tube type, improper storage, too small, etc.",
+      "display": "Missing due to a problem with the specimen, e.g. inadequate specimen, contamination, clotting, improper tube type, improper storage, too small, etc."
+    },
+    {
+      "code": "instrument-malfunction",
+      "definition": "Missing due to instrument malfunction.",
+      "display": "Missing due to instrument malfunction."
+    }
+  ]
+}
