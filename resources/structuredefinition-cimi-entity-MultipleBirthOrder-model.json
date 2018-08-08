@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-MultipleBirthOrder-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH MultipleBirthOrder Logical Model</b></p>\n  <p>Order of birth of the person in multiple birth event (if part of multiple birth).</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-MultipleBirthOrder-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.MultipleBirthOrder"
+    }
+  ],
+  "name": "MultipleBirthOrderModel",
+  "title": "ODH MultipleBirthOrder Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Order of birth of the person in multiple birth event (if part of multiple birth).",
+  "keyword": [
+    {
+      "system": "http://loinc.org",
+      "code": "73771-8"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-MultipleBirthOrder-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-MultipleBirthOrder-model",
+        "path": "cimi-entity-MultipleBirthOrder-model",
+        "definition": "Order of birth of the person in multiple birth event (if part of multiple birth).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-MultipleBirthOrder-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-MultipleBirthOrder-model.value",
+        "path": "cimi-entity-MultipleBirthOrder-model.value",
+        "short": "Integer representing order of birth of the person in multiple birth event (if part of multiple birth).",
+        "definition": "Integer representing order of birth of the person in multiple birth event (if part of multiple birth).",
+        "alias": [
+          "integer"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-MultipleBirthOrder-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-MultipleBirthOrder-model",
+        "path": "cimi-entity-MultipleBirthOrder-model",
+        "definition": "Order of birth of the person in multiple birth event (if part of multiple birth).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-MultipleBirthOrder-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-MultipleBirthOrder-model.value",
+        "path": "cimi-entity-MultipleBirthOrder-model.value",
+        "short": "Integer representing order of birth of the person in multiple birth event (if part of multiple birth).",
+        "definition": "Integer representing order of birth of the person in multiple birth event (if part of multiple birth).",
+        "alias": [
+          "integer"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-MultipleBirthOrder-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

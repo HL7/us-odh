@@ -1,0 +1,224 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-PassportNumber-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PassportNumber Logical Model</b></p>\n  <p>Credential indicating citizenship.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-PassportNumber-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.PassportNumber"
+    }
+  ],
+  "name": "PassportNumberModel",
+  "title": "ODH PassportNumber Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Credential indicating citizenship.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C1549737"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-PassportNumber-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-PassportNumber-model",
+        "path": "cimi-entity-PassportNumber-model",
+        "definition": "Credential indicating citizenship.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.value",
+        "path": "cimi-entity-PassportNumber-model.value",
+        "short": "String representing credential indicating citizenship.",
+        "definition": "String representing credential indicating citizenship.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.countryOfIssue",
+        "path": "cimi-entity-PassportNumber-model.countryOfIssue",
+        "short": "A country acting as an assuing authority for a document.",
+        "definition": "A country acting as an assuing authority for a document.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.countryOfIssue",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CountryOfIssue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+        "path": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2985763"
+          }
+        ],
+        "short": "The date and time span for which something is active, valid, or in force.",
+        "definition": "The date and time span for which something is active, valid, or in force.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-EffectiveTimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-PassportNumber-model",
+        "path": "cimi-entity-PassportNumber-model",
+        "definition": "Credential indicating citizenship.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.value",
+        "path": "cimi-entity-PassportNumber-model.value",
+        "short": "String representing credential indicating citizenship.",
+        "definition": "String representing credential indicating citizenship.",
+        "alias": [
+          "string"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.countryOfIssue",
+        "path": "cimi-entity-PassportNumber-model.countryOfIssue",
+        "short": "A country acting as an assuing authority for a document.",
+        "definition": "A country acting as an assuing authority for a document.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.countryOfIssue",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CountryOfIssue-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+        "path": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C2985763"
+          }
+        ],
+        "short": "The date and time span for which something is active, valid, or in force.",
+        "definition": "The date and time span for which something is active, valid, or in force.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-PassportNumber-model.effectiveTimePeriod",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-EffectiveTimePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

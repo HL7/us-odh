@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-SpokenLanguageProficiency-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH SpokenLanguageProficiency Logical Model</b></p>\n  <p>Accuracy and fluency in spoken communication in a language.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpokenLanguageProficiency-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.SpokenLanguageProficiency"
+    }
+  ],
+  "name": "SpokenLanguageProficiencyModel",
+  "title": "ODH SpokenLanguageProficiency Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Accuracy and fluency in spoken communication in a language.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C0678997"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-SpokenLanguageProficiency-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-SpokenLanguageProficiency-model",
+        "path": "cimi-entity-SpokenLanguageProficiency-model",
+        "definition": "Accuracy and fluency in spoken communication in a language.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-SpokenLanguageProficiency-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-SpokenLanguageProficiency-model.value",
+        "path": "cimi-entity-SpokenLanguageProficiency-model.value",
+        "short": "Code representing accuracy and fluency in spoken communication in a language.",
+        "definition": "Code representing accuracy and fluency in spoken communication in a language.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-SpokenLanguageProficiency-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-SpokenLanguageProficiency-model",
+        "path": "cimi-entity-SpokenLanguageProficiency-model",
+        "definition": "Accuracy and fluency in spoken communication in a language.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-SpokenLanguageProficiency-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-SpokenLanguageProficiency-model.value",
+        "path": "cimi-entity-SpokenLanguageProficiency-model.value",
+        "short": "Code representing accuracy and fluency in spoken communication in a language.",
+        "definition": "Code representing accuracy and fluency in spoken communication in a language.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-SpokenLanguageProficiency-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
+      }
+    ]
+  }
+}

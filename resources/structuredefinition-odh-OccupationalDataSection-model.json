@@ -1,0 +1,388 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "odh-OccupationalDataSection-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataSection Logical Model</b></p>\n  <p>Single section in the current OccupationalDataSummary, containing the person&#039;s history of employment and occupation, past and present.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataSection-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "odh.OccupationalDataSection"
+    }
+  ],
+  "name": "OccupationalDataSectionModel",
+  "title": "ODH OccupationalDataSection Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "odh-OccupationalDataSection-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "odh-OccupationalDataSection-model",
+        "path": "odh-OccupationalDataSection-model",
+        "definition": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation",
+        "short": "A simplified observation for social histories.",
+        "definition": "A simplified observation for social histories.",
+        "alias": [
+          "clinicalStatement"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation",
+          "min": 0,
+          "max": "1"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "74165-2",
+            "display": "HistoryOfEmploymentStatus"
+          }
+        ],
+        "short": "A person’s state of being employed during the time period specified.",
+        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-HistoryOfEmploymentStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87510-4",
+            "display": "Date of Retirement"
+          }
+        ],
+        "short": "If present, the patient is retired, and this observation records the retirement date.",
+        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DateOfRetirement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87511-2"
+          }
+        ],
+        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "21843-8"
+          }
+        ],
+        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "11341-5",
+            "display": "History of Occupation"
+          }
+        ],
+        "short": "A single job, past or present. The relevant time is the period the job was held.",
+        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "odh-OccupationalDataSection-model",
+        "path": "odh-OccupationalDataSection-model",
+        "definition": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation",
+        "short": "A simplified observation for social histories.",
+        "definition": "A simplified observation for social histories.",
+        "alias": [
+          "clinicalStatement"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation",
+          "min": 0,
+          "max": "1"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "74165-2",
+            "display": "HistoryOfEmploymentStatus"
+          }
+        ],
+        "short": "A person’s state of being employed during the time period specified.",
+        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-HistoryOfEmploymentStatus-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87510-4",
+            "display": "Date of Retirement"
+          }
+        ],
+        "short": "If present, the patient is retired, and this observation records the retirement date.",
+        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DateOfRetirement-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "87511-2"
+          }
+        ],
+        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.combatZonePeriod",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "21843-8"
+          }
+        ],
+        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "11341-5",
+            "display": "History of Occupation"
+          }
+        ],
+        "short": "A single job, past or present. The relevant time is the period the job was held.",
+        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentOccupation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

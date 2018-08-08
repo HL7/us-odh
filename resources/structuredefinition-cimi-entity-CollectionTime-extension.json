@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "description": "When the sample was obtained, as a specific time or time period.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

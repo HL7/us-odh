@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance",
   "name": "SubstanceProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "publisher": "HL7",
   "contact": [
     {
@@ -315,7 +315,7 @@
       {
         "id": "Substance:cimi-entity-Substance.extension:category",
         "path": "Substance.extension",
-        "definition": "A class or division of people or things having particular shared characteristics",
+        "definition": "The type, kind, or class of this item.",
         "min": 0,
         "max": "*",
         "type": [
@@ -1125,7 +1125,7 @@
       {
         "id": "Substance:cimi-entity-Substance.extension:category",
         "path": "Substance.extension",
-        "definition": "A class or division of people or things having particular shared characteristics",
+        "definition": "The type, kind, or class of this item.",
         "min": 0,
         "max": "*",
         "type": [

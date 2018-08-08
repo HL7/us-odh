@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-BirthSex-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH BirthSex Logical Model</b></p>\n  <p>Administrative sex assigned at birth and recorded on birth certificate.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-BirthSex-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.BirthSex"
+    }
+  ],
+  "name": "BirthSexModel",
+  "title": "ODH BirthSex Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Administrative sex assigned at birth and recorded on birth certificate.",
+  "keyword": [
+    {
+      "system": "http://ncimeta.nci.nih.gov",
+      "code": "C4086849"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-BirthSex-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-BirthSex-model",
+        "path": "cimi-entity-BirthSex-model",
+        "definition": "Administrative sex assigned at birth and recorded on birth certificate.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-BirthSex-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-BirthSex-model.value",
+        "path": "cimi-entity-BirthSex-model.value",
+        "short": "Code representing administrative sex assigned at birth and recorded on birth certificate.",
+        "definition": "Code representing administrative sex assigned at birth and recorded on birth certificate.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-BirthSex-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex"
+          }
+        }
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-BirthSex-model",
+        "path": "cimi-entity-BirthSex-model",
+        "definition": "Administrative sex assigned at birth and recorded on birth certificate.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-BirthSex-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-BirthSex-model.value",
+        "path": "cimi-entity-BirthSex-model.value",
+        "short": "Code representing administrative sex assigned at birth and recorded on birth certificate.",
+        "definition": "Code representing administrative sex assigned at birth and recorded on birth certificate.",
+        "alias": [
+          "codeableConcept"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-BirthSex-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex"
+          }
+        }
+      }
+    ]
+  }
+}

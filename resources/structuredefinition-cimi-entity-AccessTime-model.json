@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-AccessTime-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH AccessTime Logical Model</b></p>\n  <p>Point in time when data was accessed.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AccessTime-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.AccessTime"
+    }
+  ],
+  "name": "AccessTimeModel",
+  "title": "ODH AccessTime Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Point in time when data was accessed.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-AccessTime-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-AccessTime-model",
+        "path": "cimi-entity-AccessTime-model",
+        "definition": "Point in time when data was accessed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-AccessTime-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-AccessTime-model.value",
+        "path": "cimi-entity-AccessTime-model.value",
+        "short": "DateTime representing point in time when data was accessed.",
+        "definition": "DateTime representing point in time when data was accessed.",
+        "alias": [
+          "dateTime"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-AccessTime-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-AccessTime-model",
+        "path": "cimi-entity-AccessTime-model",
+        "definition": "Point in time when data was accessed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-AccessTime-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-AccessTime-model.value",
+        "path": "cimi-entity-AccessTime-model.value",
+        "short": "DateTime representing point in time when data was accessed.",
+        "definition": "DateTime representing point in time when data was accessed.",
+        "alias": [
+          "dateTime"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-AccessTime-model.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

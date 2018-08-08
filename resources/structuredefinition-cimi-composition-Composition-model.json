@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-composition-Composition-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Composition Logical Model</b></p>\n  <p>A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-composition-Composition-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.composition.Composition"
+    }
+  ],
+  "name": "CompositionModel",
+  "title": "ODH Composition Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-composition-Composition-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-composition-Composition-model",
+        "path": "cimi-composition-Composition-model",
+        "definition": "A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-composition-Composition-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-composition-Composition-model.section",
+        "path": "cimi-composition-Composition-model.section",
+        "short": "Represents a section containing entries in a composition.",
+        "definition": "Represents a section containing entries in a composition.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-composition-Composition-model.section",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-composition-Section-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-composition-Composition-model",
+        "path": "cimi-composition-Composition-model",
+        "definition": "A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-composition-Composition-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-composition-Composition-model.section",
+        "path": "cimi-composition-Composition-model.section",
+        "short": "Represents a section containing entries in a composition.",
+        "definition": "Represents a section containing entries in a composition.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-composition-Composition-model.section",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-composition-Section-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

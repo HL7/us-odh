@@ -1,0 +1,170 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-entity-ExternalHealthRecord-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ExternalHealthRecord Logical Model</b></p>\n  <p>A health record other than the current health record; may have been used to help populate the current record.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExternalHealthRecord-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.entity.ExternalHealthRecord"
+    }
+  ],
+  "name": "ExternalHealthRecordModel",
+  "title": "ODH ExternalHealthRecord Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "A health record other than the current health record; may have been used to help populate the current record.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-entity-ExternalHealthRecord-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model",
+        "path": "cimi-entity-ExternalHealthRecord-model",
+        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model.identifier",
+        "path": "cimi-entity-ExternalHealthRecord-model.identifier",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0600091"
+          }
+        ],
+        "short": "A unique string that identifies a specific person or thing.",
+        "definition": "A unique string that identifies a specific person or thing.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model.identifier",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Identifier-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model.accessTime",
+        "path": "cimi-entity-ExternalHealthRecord-model.accessTime",
+        "short": "Point in time when data was accessed.",
+        "definition": "Point in time when data was accessed.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model.accessTime",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AccessTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model",
+        "path": "cimi-entity-ExternalHealthRecord-model",
+        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model.identifier",
+        "path": "cimi-entity-ExternalHealthRecord-model.identifier",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0600091"
+          }
+        ],
+        "short": "A unique string that identifies a specific person or thing.",
+        "definition": "A unique string that identifies a specific person or thing.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model.identifier",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Identifier-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-entity-ExternalHealthRecord-model.accessTime",
+        "path": "cimi-entity-ExternalHealthRecord-model.accessTime",
+        "short": "Point in time when data was accessed.",
+        "definition": "Point in time when data was accessed.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-ExternalHealthRecord-model.accessTime",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AccessTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}

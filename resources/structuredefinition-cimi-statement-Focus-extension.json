@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "description": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

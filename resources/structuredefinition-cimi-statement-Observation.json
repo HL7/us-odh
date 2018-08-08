@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation",
   "name": "ObservationProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "publisher": "HL7",
   "contact": [
     {
@@ -739,7 +739,7 @@
         "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:relationshiptopersonofrecord",
         "path": "Observation.extension.extension",
         "sliceName": "relationshiptopersonofrecord",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship to the person of record.",
         "min": 0,
         "max": "1",
         "base": {

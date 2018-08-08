@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod",
   "name": "CombatZonePeriodProfile",
   "status": "draft",
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "publisher": "HL7",
   "contact": [
     {

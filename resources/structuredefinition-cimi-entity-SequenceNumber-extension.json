@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "description": "The sequence number for this specimen in a collection of specimens.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

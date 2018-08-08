@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-07",
+  "date": "2018-08-08",
   "description": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -160,7 +160,7 @@
         "id": "Extension:sourceofinformation.extension:relationshiptopersonofrecord",
         "path": "Extension.extension",
         "sliceName": "relationshiptopersonofrecord",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship to the person of record.",
         "min": 0,
         "max": "1",
         "base": {
@@ -376,7 +376,7 @@
         "id": "Extension:sourceofinformation.extension:relationshiptopersonofrecord",
         "path": "Extension.extension",
         "sliceName": "relationshiptopersonofrecord",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship to the person of record.",
         "min": 0,
         "max": "1",
         "type": [

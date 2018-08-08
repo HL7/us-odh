@@ -3,7 +3,7 @@
   "id": "cimi-core-RelationshipToPersonOfRecord-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH RelationshipToPersonOfRecord Extension</b></p>\n  <p>The relationship of the SubjectIfNotPersonOfRecord to the subject of record.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH RelationshipToPersonOfRecord Extension</b></p>\n  <p>The relationship to the person of record.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-07",
-  "description": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+  "date": "2018-08-08",
+  "description": "The relationship to the person of record.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:relationshiptopersonofrecord",
         "path": "Extension",
         "short": "ODH RelationshipToPersonOfRecord Extension",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship to the person of record.",
         "min": 0,
         "max": "*",
         "base": {
@@ -187,7 +187,7 @@
         "id": "Extension:relationshiptopersonofrecord",
         "path": "Extension",
         "short": "ODH RelationshipToPersonOfRecord Extension",
-        "definition": "The relationship of the SubjectIfNotPersonOfRecord to the subject of record.",
+        "definition": "The relationship to the person of record.",
         "min": 0,
         "max": "*"
       },

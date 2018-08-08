@@ -1,0 +1,530 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cimi-statement-FindingStatement-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH FindingStatement Logical Model</b></p>\n  <p>Any clinical statement representing a finding.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingStatement-model",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/us/odh",
+      "value": "cimi.statement.FindingStatement"
+    }
+  ],
+  "name": "FindingStatementModel",
+  "title": "ODH FindingStatement Logical Model",
+  "status": "draft",
+  "date": "2018-08-08",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://standardhealthrecord.org"
+        }
+      ]
+    }
+  ],
+  "description": "Any clinical statement representing a finding.",
+  "kind": "logical",
+  "abstract": false,
+  "type": "cimi-statement-FindingStatement-model",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "cimi-statement-FindingStatement-model",
+        "path": "cimi-statement-FindingStatement-model",
+        "definition": "Any clinical statement representing a finding.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.personOfRecord",
+        "path": "cimi-statement-FindingStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.personOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
+        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.sourceOfInformation",
+        "path": "cimi-statement-FindingStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.recorded",
+        "path": "cimi-statement-FindingStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.signed",
+        "path": "cimi-statement-FindingStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.contextCode",
+        "path": "cimi-statement-FindingStatement-model.contextCode",
+        "short": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
+        "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.contextCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.statementTopic",
+        "path": "cimi-statement-FindingStatement-model.statementTopic",
+        "short": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.statementTopic",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-StatementTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.encounter",
+        "path": "cimi-statement-FindingStatement-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.interpretation",
+        "path": "cimi-statement-FindingStatement-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.relevantTime",
+        "path": "cimi-statement-FindingStatement-model.relevantTime",
+        "short": "The time or time period that the finding addresses.",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.relevantTime",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "cimi-statement-FindingStatement-model",
+        "path": "cimi-statement-FindingStatement-model",
+        "definition": "Any clinical statement representing a finding.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model",
+          "min": 0,
+          "max": "*"
+        },
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.personOfRecord",
+        "path": "cimi-statement-FindingStatement-model.personOfRecord",
+        "short": "The person this entry belongs to.",
+        "definition": "The person this entry belongs to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.personOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+        "path": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
+        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.subjectIfNotPersonOfRecord",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.sourceOfInformation",
+        "path": "cimi-statement-FindingStatement-model.sourceOfInformation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0449416"
+          }
+        ],
+        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.sourceOfInformation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.recorded",
+        "path": "cimi-statement-FindingStatement-model.recorded",
+        "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.recorded",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.signed",
+        "path": "cimi-statement-FindingStatement-model.signed",
+        "short": "Provenance information specific to the signing of the clinical statement.",
+        "definition": "Provenance information specific to the signing of the clinical statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.signed",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.contextCode",
+        "path": "cimi-statement-FindingStatement-model.contextCode",
+        "short": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
+        "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.contextCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.statementTopic",
+        "path": "cimi-statement-FindingStatement-model.statementTopic",
+        "short": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.",
+        "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.statementTopic",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-StatementTopic-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.encounter",
+        "path": "cimi-statement-FindingStatement-model.encounter",
+        "short": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-encounter-Encounter-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.interpretation",
+        "path": "cimi-statement-FindingStatement-model.interpretation",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0420833"
+          }
+        ],
+        "short": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.interpretation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-FindingStatement-model.relevantTime",
+        "path": "cimi-statement-FindingStatement-model.relevantTime",
+        "short": "The time or time period that the finding addresses.",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-FindingStatement-model.relevantTime",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      }
+    ]
+  }
+}
