@@ -40,34 +40,34 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-CombatZonePeriod.html">CombatZonePeriod</a></td>
+      <td><a href="StructureDefinition-odh-CombatZonePeriod.html">CombatZonePeriod</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-DateOfRetirement.html">DateOfRetirement</a></td>
+      <td><a href="StructureDefinition-odh-DateOfRetirement.html">DateOfRetirement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}If present, the patient is retired, and this observation records the retirement date.
 This is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-HistoryOfEmploymentStatus.html">HistoryOfEmploymentStatus</a></td>
+      <td><a href="StructureDefinition-odh-HistoryOfEmploymentStatus.html">HistoryOfEmploymentStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}A person’s state of being employed during the time period specified.
 Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-OccupationalDataComposition.html">OccupationalDataComposition</a></td>
+      <td><a href="StructureDefinition-odh-OccupationalDataSummary.html">OccupationalDataSummary</a></td>
       <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
       <td>{% capture md_text %}Current and past activities for profit, wages, salary, or as a service to others.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-PastOrPresentOccupation.html">PastOrPresentOccupation</a></td>
+      <td><a href="StructureDefinition-odh-PastOrPresentOccupation.html">PastOrPresentOccupation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}A single job, past or present. The relevant time is the period the job was held.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-UsualOccupation.html">UsualOccupation</a></td>
+      <td><a href="StructureDefinition-odh-UsualOccupation.html">UsualOccupation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -99,11 +99,6 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
       <td>{% capture md_text %}Identifier assigned by the lab{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-core-Address.html">Address</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>{% capture md_text %}An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-element-AnatomicalLocation.html">AnatomicalLocation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/bodysite.html">BodySite</a></td>
       <td>{% capture md_text %}A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -120,7 +115,7 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
 The ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-CodedSocialHistoryObservation.html">CodedSocialHistoryObservation</a></td>
+      <td><a href="StructureDefinition-odh-CodedSocialHistoryObservation.html">CodedSocialHistoryObservation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}The result of social history questions, whose answer is expressed as a code.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -140,6 +135,11 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td>{% capture md_text %}A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-odh-EmployerPerson.html">EmployerPerson</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
+      <td>{% capture md_text %}A related person who is an employer{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-cimi-encounter-Encounter.html">Encounter</a></td>
       <td><a href="http://hl7.org/fhir/STU3/encounter.html">Encounter</a></td>
       <td>{% capture md_text %}A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.{% endcapture %}{{ md_text | markdownify }}</td>
@@ -153,6 +153,11 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-statement-FindingStatement.html">FindingStatement</a></td>
       <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
       <td>{% capture md_text %}Any clinical statement representing a finding.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-odh-FocalSubject.html">FocalSubject</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
+      <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-entity-Group.html">Group</a></td>
@@ -216,17 +221,17 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td>{% capture md_text %}A unit of measurement for the quotient of the amount of one entity to another.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-entity-RelatedPerson.html">RelatedPerson</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
-      <td>{% capture md_text %}A person in a role defined in relationship to a patient{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-element-Signature.html">Signature</a></td>
       <td><a href="http://hl7.org/fhir/STU3/datatypes.html#signature">Signature</a></td>
       <td>{% capture md_text %}A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-SocialHistoryObservation.html">SocialHistoryObservation</a></td>
+      <td><a href="StructureDefinition-odh-SocialHistoryComposition.html">SocialHistoryComposition</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
+      <td>{% capture md_text %}A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-odh-SocialHistoryObservation.html">SocialHistoryObservation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>{% capture md_text %}A simplified observation for social histories.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>

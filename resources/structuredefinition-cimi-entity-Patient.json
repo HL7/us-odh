@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient",
   "name": "PatientProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -1625,8 +1625,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "isSummary": true,
@@ -3252,16 +3251,6 @@
         "type": [
           {
             "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Patient:cimi-entity-Patient.address",
-        "path": "Patient.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
           }
         ]
       },

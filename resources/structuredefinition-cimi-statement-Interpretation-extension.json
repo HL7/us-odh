@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "description": "A clinical interpretation of a finding (applies to both assertions and observation).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

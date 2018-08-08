@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "description": "A health record other than the current health record; may have been used to help populate the current record.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

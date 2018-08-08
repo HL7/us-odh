@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "description": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

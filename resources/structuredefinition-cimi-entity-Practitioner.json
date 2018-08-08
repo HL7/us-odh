@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Practitioner",
   "name": "PractitionerProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -1156,8 +1156,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "isSummary": true,
@@ -1630,16 +1629,6 @@
           {
             "code": "ContactPoint",
             "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ContactPoint"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.address",
-        "path": "Practitioner.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
           }
         ]
       },

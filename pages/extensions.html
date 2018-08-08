@@ -81,6 +81,10 @@
       <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-shr-core-CodeableConcept-extension.html">CodeableConcept</a></td>
+      <td>{% capture md_text %}A set of codes drawn from different coding systems, representing the same concept.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-cimi-entity-CollectionMethod-extension.html">CollectionMethod</a></td>
       <td>{% capture md_text %}How the specimen was obtained.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -129,7 +133,7 @@
       <td>{% capture md_text %}The date and time span for which something is active, valid, or in force.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-shr-occupation-Employer-extension.html">Employer</a></td>
+      <td><a href="StructureDefinition-odh-Employer-extension.html">Employer</a></td>
       <td>{% capture md_text %}A person or organization that hires the services of another.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
@@ -157,8 +161,12 @@
       <td>{% capture md_text %}Flag indicating if this record represents a fictional (synthetic, not real) person.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-statement-FindingStatus-extension.html">FindingStatus</a></td>
-      <td>{% capture md_text %}Indicates whether the finding is preliminary, amended, final, etc.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td><a href="StructureDefinition-odh-FocalSubject-extension.html">FocalSubject</a></td>
+      <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-Focus-extension.html">Focus</a></td>
+      <td>{% capture md_text %}The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion){% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-entity-HandlingRisk-extension.html">HandlingRisk</a></td>
@@ -197,8 +205,8 @@
       <td>{% capture md_text %}Language used for communication by a human, either the subject of record, parent, or other involved person.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-statement-Observer-extension.html">Observer</a></td>
-      <td>{% capture md_text %}The person or organization who observed or informed the reporter about the characteristic, potentially the clinician, the patient, or a related person.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td><a href="StructureDefinition-shr-core-Media-extension.html">Media</a></td>
+      <td>{% capture md_text %}A file that contains audio, video, image, or similar content.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-element-PartOf-extension.html">PartOf</a></td>
@@ -211,6 +219,10 @@
     <tr>
       <td><a href="StructureDefinition-cimi-core-PersonOfRecord-extension.html">PersonOfRecord</a></td>
       <td>{% capture md_text %}The person this entry belongs to.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-cimi-statement-Precondition-extension.html">Precondition</a></td>
+      <td>{% capture md_text %}A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-element-PreferredFlag-extension.html">PreferredFlag</a></td>

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization",
   "name": "OrganizationProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -947,8 +947,7 @@
         },
         "type": [
           {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
+            "code": "Address"
           }
         ],
         "condition": [
@@ -1861,16 +1860,6 @@
             "reference": "http://hl7.org/fhir/ValueSet/organization-type"
           }
         }
-      },
-      {
-        "id": "Organization:cimi-entity-Organization.address",
-        "path": "Organization.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Address"
-          }
-        ]
       },
       {
         "id": "Organization:cimi-entity-Organization.partOf",

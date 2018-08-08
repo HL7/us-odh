@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "description": "The date and time span for which something is active, valid, or in force.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

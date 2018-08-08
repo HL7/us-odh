@@ -3,12 +3,12 @@
   "id": "cimi-statement-Observation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Observation Profile</b></p>\n  <p>Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  ObservationTopic.TopicCode maps to code\n  ObservationTopic.FindingMethod maps to method\n  ObservationTopic.Details maps to comment\n  ObservationTopic.Category maps to category\n  ObservationTopic.AnatomicalLocation maps to bodySite\n  ObservationTopic.Device maps to device\n  ObservationTopic.Specimen maps to specimen\n  ObservationTopic.ReferenceRange maps to referenceRange\n  ObservationTopic.ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ObservationTopic.ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ObservationTopic.ReferenceRange.Type maps to referenceRange.type\n  ObservationTopic.ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ObservationTopic.ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  ObservationTopic.EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  ObservationTopic.EvaluationComponent._Concept maps to component.code\n  ObservationTopic.EvaluationComponent.Quantity maps to component.value[x]\n  ObservationTopic.EvaluationComponent.CodeableConcept maps to component.value[x]\n  ObservationTopic.EvaluationComponent.string maps to component.value[x]\n  ObservationTopic.EvaluationComponent.Range maps to component.value[x]\n  ObservationTopic.EvaluationComponent.Ratio maps to component.value[x]\n  ObservationTopic.EvaluationComponent.Media maps to component.value[x]\n  ObservationTopic.EvaluationComponent.time maps to component.value[x]\n  ObservationTopic.EvaluationComponent.dateTime maps to component.value[x]\n  ObservationTopic.EvaluationComponent.TimePeriod maps to component.value[x]\n  ObservationTopic.EvaluationComponent.IntegerQuantity maps to component.value[x]\n  ObservationTopic.EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  ObservationTopic.EvaluationComponent.Interpretation maps to component.interpretation\n  ObservationTopic.EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  ObservationTopic.PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ResultValue maps to value[x]\n  ExceptionValue maps to dataAbsentReason\n  Interpretation maps to interpretation\n  Issued maps to issued\n  FindingStatus maps to status\n  RelevantTime maps to effective[x]\n  Encounter maps to context\n  DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Observation Profile</b></p>\n  <p>Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  TopicCode maps to code\n  FindingMethod maps to method\n  Details maps to comment\n  Category maps to category\n  AnatomicalLocation maps to bodySite\n  Device maps to device\n  Specimen maps to specimen\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ResultValue maps to value[x]\n  ExceptionValue maps to dataAbsentReason\n  Interpretation maps to interpretation\n  RelevantTime maps to effective[x]\n  Encounter maps to context\n  DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation",
   "name": "ObservationProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -1446,18 +1446,46 @@
         ]
       },
       {
-        "id": "Observation:cimi-statement-Observation.extension:observer",
+        "id": "Observation:cimi-statement-Observation.extension:focus",
         "path": "Observation.extension",
-        "definition": "The person or organization who observed or informed the reporter about the characteristic, potentially the clinician, the patient, or a related person.",
+        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-extension"
+          }
+        ],
+        "sliceName": "focus"
+      },
+      {
+        "id": "Observation:cimi-statement-Observation.extension:precondition",
+        "path": "Observation.extension",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observer-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-extension"
           }
         ],
-        "sliceName": "observer"
+        "sliceName": "precondition"
+      },
+      {
+        "id": "Observation:cimi-statement-Observation.extension:media",
+        "path": "Observation.extension",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-extension"
+          }
+        ],
+        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.modifierExtension",
@@ -1788,7 +1816,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "mustSupport": true,
@@ -2126,7 +2154,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -3202,7 +3230,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         },
         "mapping": [
@@ -3717,18 +3745,46 @@
         "fixedCode": "424975005"
       },
       {
-        "id": "Observation:cimi-statement-Observation.extension:observer",
+        "id": "Observation:cimi-statement-Observation.extension:focus",
         "path": "Observation.extension",
-        "definition": "The person or organization who observed or informed the reporter about the characteristic, potentially the clinician, the patient, or a related person.",
+        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-extension"
+          }
+        ],
+        "sliceName": "focus"
+      },
+      {
+        "id": "Observation:cimi-statement-Observation.extension:precondition",
+        "path": "Observation.extension",
+        "definition": "A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "min": 0,
         "max": "*",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observer-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-extension"
           }
         ],
-        "sliceName": "observer"
+        "sliceName": "precondition"
+      },
+      {
+        "id": "Observation:cimi-statement-Observation.extension:media",
+        "path": "Observation.extension",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-extension"
+          }
+        ],
+        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.category",
@@ -3746,16 +3802,6 @@
             "reference": "http://hl7.org/fhir/ValueSet/observation-category"
           }
         }
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.subject",
-        "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
-          }
-        ]
       },
       {
         "id": "Observation:cimi-statement-Observation.context",
@@ -3807,7 +3853,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       },
@@ -3935,7 +3981,7 @@
         "binding": {
           "strength": "extensible",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-ExceptionValueVS"
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
           }
         }
       }

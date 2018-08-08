@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "description": "If the ActiveFlag is false, it indicates the record or item is no longer to be used and should generally be hidden for the user in the UI.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

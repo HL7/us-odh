@@ -3,7 +3,7 @@
   "id": "shr-core-AllUnitsVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH AllUnitsVS ValueSet</b></p>\n<p></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ODH AllUnitsVS ValueSet</b></p>\n<p>Includes all codes from UCUM and monetary units from ISO.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-AllUnitsVS",
   "identifier": [
@@ -26,7 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-06",
+  "date": "2018-08-07",
+  "description": "Includes all codes from UCUM and monetary units from ISO.",
   "compose": {
     "include": [
       {

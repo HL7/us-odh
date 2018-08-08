@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ClinicalStatement",
   "name": "ClinicalStatementProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -256,7 +256,7 @@
           "extensions",
           "user content"
         ],
-        "min": 1,
+        "min": 0,
         "max": "*",
         "type": [
           {
@@ -428,7 +428,7 @@
           "rules": "open"
         },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -508,12 +508,6 @@
         "definition": "A special type of information entry consisting of a topic and a context.\nThe ClinicalStatement class provides the core pattern for more specific clinical statement classes, such as a statement that a finding has been found in a patient or that a procedure has been proposed by a clinical decision support system. The ClinicalStatement pattern defines the core attributes common to most clinical statements and specifies a composition pattern that encourage model component reuse and better alignment with the SNOMED CT Concept Model."
       },
       {
-        "id": "DomainResource:cimi-statement-ClinicalStatement.extension",
-        "path": "DomainResource.extension",
-        "min": 1,
-        "max": "*"
-      },
-      {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:personofrecord",
         "path": "DomainResource.extension",
         "slicing": {
@@ -671,7 +665,7 @@
           "rules": "open"
         },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

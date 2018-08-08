@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ClinicalNote",
   "name": "ClinicalNoteProfile",
   "status": "draft",
-  "date": "2018-08-06",
+  "date": "2018-08-07",
   "publisher": "HL7",
   "contact": [
     {
@@ -256,7 +256,7 @@
           "extensions",
           "user content"
         ],
-        "min": 4,
+        "min": 2,
         "max": "*",
         "type": [
           {
@@ -780,7 +780,7 @@
           "rules": "open"
         },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -837,30 +837,6 @@
           }
         ],
         "sliceName": "interpretation"
-      },
-      {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingstatus",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingStatus-extension"
-          }
-        ],
-        "sliceName": "findingstatus"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:relevanttime",
@@ -958,7 +934,7 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension",
         "path": "DomainResource.extension",
-        "min": 4,
+        "min": 2,
         "max": "*"
       },
       {
@@ -1165,7 +1141,7 @@
           "rules": "open"
         },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -1222,30 +1198,6 @@
           }
         ],
         "sliceName": "interpretation"
-      },
-      {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingstatus",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Indicates whether the finding is preliminary, amended, final, etc.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingStatus-extension"
-          }
-        ],
-        "sliceName": "findingstatus"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:relevanttime",
