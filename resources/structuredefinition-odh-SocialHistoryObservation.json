@@ -3,12 +3,12 @@
   "id": "odh-SocialHistoryObservation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH SocialHistoryObservation Profile</b></p>\n  <p>A simplified observation for social histories.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.SocialHistoryObservation maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  constrain related to 0..0\n  ResultValue maps to value[x]\n  ExceptionValue maps to dataAbsentReason\n  RelevantTime maps to effective[x]\n  Encounter maps to context\n  Focus maps to http://hl7.org/fhir/StructureDefinition/observation-focal-subject\n  constrain basedOn to 0..0\n  constrain bodySite to 0..0\n  constrain method to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n  constrain referenceRange to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH SocialHistoryObservation Profile</b></p>\n  <p>A simplified observation for social histories.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.SocialHistoryObservation maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  ResultValue maps to value[x]\n  RelevantTime maps to effective[x]\n  constrain bodySite to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-SocialHistoryObservation",
   "name": "SocialHistoryObservationProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -344,32 +344,7 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ],
-        "slicing": {
-          "id": "2",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.extension:focalsubject",
-        "path": "Observation.extension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-extension"
-          }
-        ],
-        "sliceName": "focalsubject"
+        ]
       },
       {
         "id": "Observation:odh-SocialHistoryObservation.modifierExtension",
@@ -399,7 +374,34 @@
             "identity": "rim",
             "map": "N/A"
           }
-        ]
+        ],
+        "slicing": {
+          "id": "2",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation:odh-SocialHistoryObservation.modifierExtension:focalsubjectmodifier",
+        "path": "Observation.modifierExtension",
+        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-extension"
+          }
+        ],
+        "isModifier": true,
+        "sliceName": "focalsubjectmodifier",
+        "mustSupport": true
       },
       {
         "id": "Observation:odh-SocialHistoryObservation.identifier",
@@ -444,7 +446,7 @@
           "Fulfills"
         ],
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -1029,12 +1031,12 @@
         "definition": "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.",
         "comment": "One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.\r\rIf the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient's own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.",
         "requirements": "Observations have no value if you don't know who or what they're about.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "isSummary": true,
@@ -1068,11 +1070,15 @@
           "Encounter"
         ],
         "min": 0,
-        "max": "0",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-encounter-Encounter"
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Encounter"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
           }
         ],
         "mapping": [
@@ -1235,8 +1241,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "time"
@@ -1283,7 +1288,7 @@
         "comment": "Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  \"detected\", \"not detected\", \"inconclusive\", or  \"specimen unsatisfactory\".   The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code \"error\" could be used when the measurement was not completed. Note that an observation may only be reported if there are values to report. For example differential cell counts values may be reported only when > 0.  Because of these options, use-case agreements are required to interpret general observations for null or exceptional values.",
         "requirements": "For many results it is necessary to handle exceptional values in measurements.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -1293,9 +1298,16 @@
           "obs-6"
         ],
         "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationValueAbsentReason"
+            }
+          ],
           "strength": "extensible",
+          "description": "Codes specifying why the result (Observation.value[x]) is missing.",
           "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+            "reference": "http://hl7.org/fhir/ValueSet/observation-valueabsentreason"
           }
         },
         "mapping": [
@@ -1442,7 +1454,7 @@
         "comment": "Only used if not implicit in code for Observation.code.",
         "requirements": "In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -1550,7 +1562,7 @@
         "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
         "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "BackboneElement"
@@ -1861,7 +1873,7 @@
         "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4).",
         "requirements": "Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "BackboneElement"
@@ -2236,8 +2248,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "Attachment"
@@ -2660,24 +2671,20 @@
         "definition": "A simplified observation for social histories."
       },
       {
-        "id": "Observation:odh-SocialHistoryObservation.extension:focalsubject",
-        "path": "Observation.extension",
+        "id": "Observation:odh-SocialHistoryObservation.modifierExtension:focalsubjectmodifier",
+        "path": "Observation.modifierExtension",
         "definition": "The focus of the observation, if someone other than the person of record (subject).",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-extension"
           }
         ],
-        "sliceName": "focalsubject"
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.basedOn",
-        "path": "Observation.basedOn",
-        "min": 0,
-        "max": "0"
+        "isModifier": true,
+        "sliceName": "focalsubjectmodifier",
+        "mustSupport": true
       },
       {
         "id": "Observation:odh-SocialHistoryObservation.category",
@@ -2729,24 +2736,12 @@
       {
         "id": "Observation:odh-SocialHistoryObservation.subject",
         "path": "Observation.subject",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
-          }
-        ]
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.context",
-        "path": "Observation.context",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-encounter-Encounter"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ]
       },
@@ -2770,8 +2765,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "time"
@@ -2785,26 +2779,8 @@
         ]
       },
       {
-        "id": "Observation:odh-SocialHistoryObservation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
-        "min": 0,
-        "max": "0",
-        "binding": {
-          "strength": "extensible",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
-          }
-        }
-      },
-      {
         "id": "Observation:odh-SocialHistoryObservation.bodySite",
         "path": "Observation.bodySite",
-        "min": 0,
-        "max": "0"
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.method",
-        "path": "Observation.method",
         "min": 0,
         "max": "0"
       },
@@ -2817,18 +2793,6 @@
       {
         "id": "Observation:odh-SocialHistoryObservation.device",
         "path": "Observation.device",
-        "min": 0,
-        "max": "0"
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.referenceRange",
-        "path": "Observation.referenceRange",
-        "min": 0,
-        "max": "0"
-      },
-      {
-        "id": "Observation:odh-SocialHistoryObservation.related",
-        "path": "Observation.related",
         "min": 0,
         "max": "0"
       },
@@ -2853,8 +2817,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "Attachment"

@@ -3,7 +3,7 @@
   "id": "cimi-statement-ClinicalNote-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Extension</b></p>\n  <p>An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Extension</b></p>\n  <p>An entry concerning a patient where the result is a narrative text.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ClinicalNote-extension",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-08",
-  "description": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+  "date": "2018-08-13",
+  "description": "An entry concerning a patient where the result is a narrative text.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:clinicalnote",
         "path": "Extension",
         "short": "ODH ClinicalNote Extension",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "*",
         "base": {
@@ -182,7 +182,7 @@
         "id": "Extension:clinicalnote",
         "path": "Extension",
         "short": "ODH ClinicalNote Extension",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "*"
       },

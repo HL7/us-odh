@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person",
   "name": "PersonProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -324,34 +324,6 @@
         "sliceName": "humanname"
       },
       {
-        "id": "Basic:cimi-entity-Person.extension:anonymizedflag",
-        "path": "Basic.extension",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnonymizedFlag-extension"
-          }
-        ],
-        "sliceName": "anonymizedflag"
-      },
-      {
-        "id": "Basic:cimi-entity-Person.extension:fictionalpersonflag",
-        "path": "Basic.extension",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-FictionalPersonFlag-extension"
-          }
-        ],
-        "sliceName": "fictionalpersonflag"
-      },
-      {
         "id": "Basic:cimi-entity-Person.extension:dateofbirth",
         "path": "Basic.extension",
         "definition": "A date of birth or approximate year or period (year or date range), if estimated.",
@@ -398,7 +370,7 @@
         "path": "Basic.extension",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -448,20 +420,6 @@
           }
         ],
         "sliceName": "activeflag"
-      },
-      {
-        "id": "Basic:cimi-entity-Person.extension:externalhealthrecord",
-        "path": "Basic.extension",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExternalHealthRecord-extension"
-          }
-        ],
-        "sliceName": "externalhealthrecord"
       },
       {
         "id": "Basic:cimi-entity-Person.modifierExtension",
@@ -559,7 +517,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-Person"
             }
           ]
@@ -682,34 +640,6 @@
         "sliceName": "humanname"
       },
       {
-        "id": "Basic:cimi-entity-Person.extension:anonymizedflag",
-        "path": "Basic.extension",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnonymizedFlag-extension"
-          }
-        ],
-        "sliceName": "anonymizedflag"
-      },
-      {
-        "id": "Basic:cimi-entity-Person.extension:fictionalpersonflag",
-        "path": "Basic.extension",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-FictionalPersonFlag-extension"
-          }
-        ],
-        "sliceName": "fictionalpersonflag"
-      },
-      {
         "id": "Basic:cimi-entity-Person.extension:dateofbirth",
         "path": "Basic.extension",
         "definition": "A date of birth or approximate year or period (year or date range), if estimated.",
@@ -756,7 +686,7 @@
         "path": "Basic.extension",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -808,26 +738,12 @@
         "sliceName": "activeflag"
       },
       {
-        "id": "Basic:cimi-entity-Person.extension:externalhealthrecord",
-        "path": "Basic.extension",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExternalHealthRecord-extension"
-          }
-        ],
-        "sliceName": "externalhealthrecord"
-      },
-      {
         "id": "Basic:cimi-entity-Person.code",
         "path": "Basic.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-Person"
             }
           ]

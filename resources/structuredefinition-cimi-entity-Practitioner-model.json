@@ -15,7 +15,7 @@
   "name": "PractitionerModel",
   "title": "ODH Practitioner Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -105,60 +105,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-HumanName-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "path": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C3858751"
-          }
-        ],
-        "short": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.anonymizedFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnonymizedFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "path": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0887933"
-          }
-        ],
-        "short": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.fictionalPersonFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-FictionalPersonFlag-model"
           }
         ],
         "mustSupport": false,
@@ -256,11 +202,11 @@
         "short": "A photograph showing a person's face.",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "cimi-entity-Person-model.headshot",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -334,28 +280,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "path": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "short": "A health record other than the current health record; may have been used to help populate the current record.",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "cimi-entity-Person-model.externalHealthRecord",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExternalHealthRecord-model"
           }
         ],
         "mustSupport": false,
@@ -491,60 +415,6 @@
         "isSummary": false
       },
       {
-        "id": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "path": "cimi-entity-Practitioner-model.person.anonymizedFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C3858751"
-          }
-        ],
-        "short": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "definition": "Flag indicating if personally identifiable information has been withheld or disguised.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.anonymizedFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnonymizedFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "path": "cimi-entity-Practitioner-model.person.fictionalPersonFlag",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0887933"
-          }
-        ],
-        "short": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "definition": "Flag indicating if this record represents a fictional (synthetic, not real) person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Person-model.fictionalPersonFlag",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-FictionalPersonFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "cimi-entity-Practitioner-model.person.dateOfBirth",
         "path": "cimi-entity-Practitioner-model.person.dateOfBirth",
         "code": [
@@ -635,11 +505,11 @@
         "short": "A photograph showing a person's face.",
         "definition": "A photograph showing a person's face.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "cimi-entity-Person-model.headshot",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -713,28 +583,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "path": "cimi-entity-Practitioner-model.person.externalHealthRecord",
-        "short": "A health record other than the current health record; may have been used to help populate the current record.",
-        "definition": "A health record other than the current health record; may have been used to help populate the current record.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "cimi-entity-Person-model.externalHealthRecord",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExternalHealthRecord-model"
           }
         ],
         "mustSupport": false,

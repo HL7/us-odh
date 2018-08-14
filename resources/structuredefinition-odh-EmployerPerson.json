@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmployerPerson",
   "name": "EmployerPersonProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {

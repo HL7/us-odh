@@ -3,7 +3,7 @@
   "id": "cimi-entity-EntityOrRole-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH EntityOrRole Extension</b></p>\n  <p>Parent class entity and role.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH EntityOrRole Extension</b></p>\n  <p>CIMI parent class for both Entity and Role.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EntityOrRole-extension",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-08",
-  "description": "Parent class entity and role.",
+  "date": "2018-08-13",
+  "description": "CIMI parent class for both Entity and Role.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:entityorrole",
         "path": "Extension",
         "short": "ODH EntityOrRole Extension",
-        "definition": "Parent class entity and role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 0,
         "max": "*",
         "base": {
@@ -302,7 +302,7 @@
         "id": "Extension:entityorrole",
         "path": "Extension",
         "short": "ODH EntityOrRole Extension",
-        "definition": "Parent class entity and role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 0,
         "max": "*"
       },

@@ -15,7 +15,7 @@
   "name": "AttributionModel",
   "title": "ODH Attribution Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -53,8 +53,8 @@
       {
         "id": "cimi-core-Attribution-model.entityOrRole",
         "path": "cimi-core-Attribution-model.entityOrRole",
-        "short": "Parent class entity and role.",
-        "definition": "Parent class entity and role.",
+        "short": "CIMI parent class for both Entity and Role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 1,
         "max": "1",
         "base": {
@@ -135,8 +135,8 @@
       {
         "id": "cimi-core-Attribution-model.entityOrRole",
         "path": "cimi-core-Attribution-model.entityOrRole",
-        "short": "Parent class entity and role.",
-        "definition": "Parent class entity and role.",
+        "short": "CIMI parent class for both Entity and Role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 1,
         "max": "1",
         "base": {

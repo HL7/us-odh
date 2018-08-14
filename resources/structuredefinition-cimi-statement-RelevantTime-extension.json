@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "description": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

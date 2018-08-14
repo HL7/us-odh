@@ -3,7 +3,7 @@
   "id": "cimi-entity-EntityOrRole-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH EntityOrRole Logical Model</b></p>\n  <p>Parent class entity and role.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH EntityOrRole Logical Model</b></p>\n  <p>CIMI parent class for both Entity and Role.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EntityOrRole-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "EntityOrRoleModel",
   "title": "ODH EntityOrRole Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Parent class entity and role.",
+  "description": "CIMI parent class for both Entity and Role.",
   "kind": "logical",
   "abstract": false,
   "type": "cimi-entity-EntityOrRole-model",
@@ -38,7 +38,7 @@
       {
         "id": "cimi-entity-EntityOrRole-model",
         "path": "cimi-entity-EntityOrRole-model",
-        "definition": "Parent class entity and role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 0,
         "max": "*",
         "base": {
@@ -73,7 +73,7 @@
       {
         "id": "cimi-entity-EntityOrRole-model",
         "path": "cimi-entity-EntityOrRole-model",
-        "definition": "Parent class entity and role.",
+        "definition": "CIMI parent class for both Entity and Role.",
         "min": 0,
         "max": "*",
         "base": {

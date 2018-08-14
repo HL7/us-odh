@@ -38,29 +38,37 @@
   <tbody>
     <tr>
         <td><a href="StructureDefinition-odh-CombatZonePeriod-model.html">CombatZonePeriod</a></td>
-        <td>{% capture md_text %}Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-odh-DateOfRetirement-model.html">DateOfRetirement</a></td>
-        <td>{% capture md_text %}If present, the patient is retired, and this observation records the retirement date.
-This is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-odh-HistoryOfEmploymentStatus-model.html">HistoryOfEmploymentStatus</a></td>
-        <td>{% capture md_text %}A person’s state of being employed during the time period specified.
-Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.
+Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-OccupationalDataSummary-model.html">OccupationalDataSummary</a></td>
         <td>{% capture md_text %}Current and past activities for profit, wages, salary, or as a service to others.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-odh-PastOrPresentOccupation-model.html">PastOrPresentOccupation</a></td>
-        <td>{% capture md_text %}A single job, past or present. The relevant time is the period the job was held.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="StructureDefinition-odh-PastOrPresentJob-model.html">PastOrPresentJob</a></td>
+        <td>{% capture md_text %}Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.
+A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.
+A person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.
+At a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-odh-UsualOccupation-model.html">UsualOccupation</a></td>
-        <td>{% capture md_text %}The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td><a href="StructureDefinition-odh-PersonEmploymentStatus-model.html">PersonEmploymentStatus</a></td>
+        <td>{% capture md_text %}A person’s state of being employed during the time period specified.
+Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-odh-RetirementDate-model.html">RetirementDate</a></td>
+        <td>{% capture md_text %}A self-reported date that a person considers themselves to have ‘retired’.
+A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.
+Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-odh-UsualWork-model.html">UsualWork</a></td>
+        <td>{% capture md_text %}Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.
+Knowledge of person's Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person's Usual Work on their health and guide appropriate use of screening tests to detect early disease.
+Example: a person has worked for a total of 30 years as a 'secretary' (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is 'secretary' and her Usual Industry is 'hotel construction.'
+Usual Work does not include work that was unpaid or voluntary.   Usual Work does not include work that was unpaid or voluntary.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       
   </tbody>
@@ -82,10 +90,6 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
   </thead>
   <tbody>
     <tr>
-        <td><a href="StructureDefinition-cimi-entity-AccessTime-model.html">AccessTime</a></td>
-        <td>{% capture md_text %}Point in time when data was accessed.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-entity-AccessionIdentifier-model.html">AccessionIdentifier</a></td>
         <td>{% capture md_text %}Identifier assigned by the lab{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -100,6 +104,10 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Actual-model.html">Actual</a></td>
         <td>{% capture md_text %}True if the group is an actual group (as opposed to definitional).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-cimi-core-AdditionalText-model.html">AdditionalText</a></td>
+        <td>{% capture md_text %}A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Additive-model.html">Additive</a></td>
@@ -118,24 +126,12 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
         <td>{% capture md_text %}A gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-AgeAtDeath-model.html">AgeAtDeath</a></td>
-        <td>{% capture md_text %}The age, age range, or age group when the cessation of life happens.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-shr-core-Age-model.html">Age</a></td>
-        <td>{% capture md_text %}How long someone has been alive, or something has existed.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-element-AnatomicalDirection-model.html">AnatomicalDirection</a></td>
         <td>{% capture md_text %}Anatomical location or specimen further detailing directionality.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-element-AnatomicalLocation-model.html">AnatomicalLocation</a></td>
         <td>{% capture md_text %}A location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-AnonymizedFlag-model.html">AnonymizedFlag</a></td>
-        <td>{% capture md_text %}Flag indicating if personally identifiable information has been withheld or disguised.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-statement-ApplicableAgeRange-model.html">ApplicableAgeRange</a></td>
@@ -150,12 +146,8 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
         <td>{% capture md_text %}Information ascribing the record to a particular contributor or responsible person.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-BinaryData-model.html">BinaryData</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-BinaryData-model.html">BinaryData</a></td>
         <td>{% capture md_text %}The data itself.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-BirthSex-model.html">BirthSex</a></td>
-        <td>{% capture md_text %}Administrative sex assigned at birth and recorded on birth certificate.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Brand-model.html">Brand</a></td>
@@ -170,7 +162,7 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
         <td>{% capture md_text %}Container volume or size.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-Category-model.html">Category</a></td>
+        <td><a href="StructureDefinition-cimi-element-Category-model.html">Category</a></td>
         <td>{% capture md_text %}The type, kind, or class of this item.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -179,7 +171,7 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-statement-ClinicalNote-model.html">ClinicalNote</a></td>
-        <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-statement-ClinicalStatement-model.html">ClinicalStatement</a></td>
@@ -235,7 +227,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
         <td>{% capture md_text %}Abstract ancestor of all concrete content types. A unit of content that makes up a composition - e.g., a clinical statement in a patient record, a simple or composite action is a knowledge document, a catalog entry in a catalog.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-ContentType-model.html">ContentType</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-ContentType-model.html">ContentType</a></td>
         <td>{% capture md_text %}Mime type of the content, with charset etc.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -251,11 +243,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
         <td>{% capture md_text %}Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-CountryOfIssue-model.html">CountryOfIssue</a></td>
-        <td>{% capture md_text %}A country acting as an assuing authority for a document.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-shr-core-CreationTime-model.html">CreationTime</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-CreationTime-model.html">CreationTime</a></td>
         <td>{% capture md_text %}The point in time when the information was recorded in the system of record.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -268,24 +256,12 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}A date of birth or approximate year or period (year or date range), if estimated.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-DateOfDeath-model.html">DateOfDeath</a></td>
-        <td>{% capture md_text %}The calendar date of subject's death.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-Deceased-model.html">Deceased</a></td>
-        <td>{% capture md_text %}An indication that the person is no longer living, given by a date, time of death, or a boolean value which, when true, indicates the person is deceased.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-statement-DeltaFlag-model.html">DeltaFlag</a></td>
         <td>{% capture md_text %}Indicator of significant change (delta) from the last or previous measurement.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-Denominator-model.html">Denominator</a></td>
         <td>{% capture md_text %}The divisor of a fraction.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-shr-core-Details-model.html">Details</a></td>
-        <td>{% capture md_text %}A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Device-model.html">Device</a></td>
@@ -312,15 +288,11 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}The form in which active and/or inert ingredient(s) are physically presented.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-DriversLicenseNumber-model.html">DriversLicenseNumber</a></td>
-        <td>{% capture md_text %}Identifying information from a drivers license.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-shr-core-EffectiveTimePeriod-model.html">EffectiveTimePeriod</a></td>
         <td>{% capture md_text %}The date and time span for which something is active, valid, or in force.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-EmbeddedContent-model.html">EmbeddedContent</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-EmbeddedContent-model.html">EmbeddedContent</a></td>
         <td>{% capture md_text %}Abstract class defining the common metadata of all types of encapsulated data, such as images.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -353,15 +325,7 @@ This information is most useful coupled with weekly work days and helps to revea
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-EntityOrRole-model.html">EntityOrRole</a></td>
-        <td>{% capture md_text %}Parent class entity and role.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-EthnicityDetail-model.html">EthnicityDetail</a></td>
-        <td>{% capture md_text %}Additional description of ethnicity.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-Ethnicity-model.html">Ethnicity</a></td>
-        <td>{% capture md_text %}Indicator of Hispanic or Latino origin.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}CIMI parent class for both Entity and Role.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-statement-EvaluationComponent-model.html">EvaluationComponent</a></td>
@@ -380,23 +344,11 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}When the item (medication, device, etc.) will expire.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-ExternalHealthRecord-model.html">ExternalHealthRecord</a></td>
-        <td>{% capture md_text %}A health record other than the current health record; may have been used to help populate the current record.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-element-FamilyName-model.html">FamilyName</a></td>
         <td>{% capture md_text %}The portion of a person's name that reflects the genealogy of the person. In western cultures, this is the 'last' name. In eastern cultures, the family name appears before the person's given name(s). In some cultures (e.g. Eritrea) the family name of a son is the first name of his father. (Source: HL7 V3).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-FathersName-model.html">FathersName</a></td>
-        <td>{% capture md_text %}The name of the father as it was or likely to have been recorded on the birth certificate of the subject; most likely the name of the father at the time of birth of the subject.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-FictionalPersonFlag-model.html">FictionalPersonFlag</a></td>
-        <td>{% capture md_text %}Flag indicating if this record represents a fictional (synthetic, not real) person.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-topic-FindingMethod-model.html">FindingMethod</a></td>
+        <td><a href="StructureDefinition-cimi-statement-FindingMethod-model.html">FindingMethod</a></td>
         <td>{% capture md_text %}The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -404,12 +356,8 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}Any clinical statement representing a finding.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-odh-FocalSubject-model.html">FocalSubject</a></td>
+        <td><a href="StructureDefinition-odh-FocalSubjectModifier-model.html">FocalSubjectModifier</a></td>
         <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject).{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-statement-Focus-model.html">Focus</a></td>
-        <td>{% capture md_text %}The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion){% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-GeopoliticalLocation-model.html">GeopoliticalLocation</a></td>
@@ -436,7 +384,7 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}Cautions on the handling of this specimen.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-Hash-model.html">Hash</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-Hash-model.html">Hash</a></td>
         <td>{% capture md_text %}A hash code of the data (sha-1, base64ed){% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -488,7 +436,7 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-Language-model.html">Language</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-Language-model.html">Language</a></td>
         <td>{% capture md_text %}A human language, spoken or written.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -532,12 +480,8 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}The most recent marital status of a person.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-Media-model.html">Media</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-Media-model.html">Media</a></td>
         <td>{% capture md_text %}A file that contains audio, video, image, or similar content.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-MedicalInterpreterNeeded-model.html">MedicalInterpreterNeeded</a></td>
-        <td>{% capture md_text %}Whether the subject requires an interpreter to communicate with an English-speaking provider.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-MedicationIngredient-model.html">MedicationIngredient</a></td>
@@ -554,18 +498,6 @@ This information is most useful coupled with weekly work days and helps to revea
       <tr>
         <td><a href="StructureDefinition-cimi-element-MiddleName-model.html">MiddleName</a></td>
         <td>{% capture md_text %}The person's middle name.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-MothersMaidenName-model.html">MothersMaidenName</a></td>
-        <td>{% capture md_text %}The name of the mother as it was or likely to have been recorded on the birth certificate of the subject. This is most likely the name prior to marriage of the mother (aka the maiden name).{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-MultipleBirth-model.html">MultipleBirth</a></td>
-        <td>{% capture md_text %}Indication if the person was part of a multiple birth event.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-MultipleBirthOrder-model.html">MultipleBirthOrder</a></td>
-        <td>{% capture md_text %}Order of birth of the person in multiple birth event (if part of multiple birth).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-element-NameAsText-model.html">NameAsText</a></td>
@@ -643,10 +575,6 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
         <td>{% capture md_text %}The point in time or span of time the participant is involved.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-PassportNumber-model.html">PassportNumber</a></td>
-        <td>{% capture md_text %}Credential indicating citizenship.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-odh-PastOrPresentIndustry-model.html">PastOrPresentIndustry</a></td>
         <td>{% capture md_text %}The type of business (industry) in which the subject currently holds or has held a job in the past.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -667,10 +595,6 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
         <td>{% capture md_text %}The person this entry belongs to.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-PlaceOfBirth-model.html">PlaceOfBirth</a></td>
-        <td>{% capture md_text %}The location of a birth event. There may be multiple entries, but a person has only one place of birth.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-shr-core-PostalCode-model.html">PostalCode</a></td>
         <td>{% capture md_text %}A sequence of letters and digits used as part of a postal address, often designating a geographic region{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -681,10 +605,6 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
       <tr>
         <td><a href="StructureDefinition-cimi-statement-Precondition-model.html">Precondition</a></td>
         <td>{% capture md_text %}A description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-element-PreferredFlag-model.html">PreferredFlag</a></td>
-        <td>{% capture md_text %}Code indicating the preference associated with the use of this name.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-element-Prefix-model.html">Prefix</a></td>
@@ -705,14 +625,6 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
       <tr>
         <td><a href="StructureDefinition-shr-core-Quantity-model.html">Quantity</a></td>
         <td>{% capture md_text %}A quantity with units, whose value may be bounded from above or below, as defined in FHIR{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-RaceDetail-model.html">RaceDetail</a></td>
-        <td>{% capture md_text %}Additional description of race or heritage.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-entity-Race-model.html">Race</a></td>
-        <td>{% capture md_text %}Subjective association of a person with a named category of humans sharing common history, traits, place of family origin, nationality, tribe, or other inherited background.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-Range-model.html">Range</a></td>
@@ -748,11 +660,11 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
 The clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-ResourceLocation-model.html">ResourceLocation</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-ResourceLocation-model.html">ResourceLocation</a></td>
         <td>{% capture md_text %}URI where data can be found.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-shr-core-ResourceSize-model.html">ResourceSize</a></td>
+        <td><a href="StructureDefinition-cimi-datatypes-ResourceSize-model.html">ResourceSize</a></td>
         <td>{% capture md_text %}Number of bytes of content in the resource (if url provided){% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -804,14 +716,6 @@ The clinically relevant time is not necessarily when the information is gathered
         <td>{% capture md_text %}Represents a section containing entries in a social history composition.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-SocialSecurityNumber-model.html">SocialSecurityNumber</a></td>
-        <td>{% capture md_text %}A US social security number (SSN).{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-core-SourceOfInformation-model.html">SourceOfInformation</a></td>
-        <td>{% capture md_text %}The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-entity-SourceSpecimen-model.html">SourceSpecimen</a></td>
         <td>{% capture md_text %}Identifier for the source specimen from which this specimen was derived.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -848,10 +752,6 @@ The clinically relevant time is not necessarily when the information is gathered
         <td>{% capture md_text %}Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-cimi-entity-StateOfIssue-model.html">StateOfIssue</a></td>
-        <td>{% capture md_text %}A state or country acting as an assuing authority for a document.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
         <td><a href="StructureDefinition-cimi-topic-StatementTopic-model.html">StatementTopic</a></td>
         <td>{% capture md_text %}Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.
 
@@ -860,10 +760,6 @@ StatementTopic class attributes are aligned with SNOMED CT Concept Model attribu
       <tr>
         <td><a href="StructureDefinition-cimi-element-Status-model.html">Status</a></td>
         <td>{% capture md_text %}The current standing or state.{% endcapture %}{{ md_text | markdownify }}</td>
-      </tr>
-      <tr>
-        <td><a href="StructureDefinition-cimi-core-SubjectIfNotPersonOfRecord-model.html">SubjectIfNotPersonOfRecord</a></td>
-        <td>{% capture md_text %}The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Substance-model.html">Substance</a></td>

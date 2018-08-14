@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "description": "Language used for communication by a human, either the subject of record, parent, or other involved person.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -145,7 +145,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Language-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-extension"
           }
         ],
         "isModifier": false,
@@ -420,7 +420,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Language-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-extension"
           }
         ]
       },

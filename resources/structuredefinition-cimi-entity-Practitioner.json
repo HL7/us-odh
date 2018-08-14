@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Practitioner",
   "name": "PractitionerProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -578,16 +578,6 @@
             "code": "uri"
           }
         ],
-        "example": [
-          {
-            "label": "General",
-            "valueUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"
-          },
-          {
-            "label": "General",
-            "valueUri": "NPI preferred, Tax id is allowed, Local id is allowed in addition to 'authoritative' identifier"
-          }
-        ],
         "mustSupport": true,
         "isSummary": true,
         "mapping": [
@@ -621,12 +611,6 @@
         "type": [
           {
             "code": "string"
-          }
-        ],
-        "example": [
-          {
-            "label": "General",
-            "valueString": "123456"
           }
         ],
         "mustSupport": true,
@@ -762,8 +746,7 @@
         },
         "type": [
           {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-HumanName"
+            "code": "HumanName"
           }
         ],
         "mustSupport": true,
@@ -1120,8 +1103,7 @@
         },
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ],
         "isSummary": true,
@@ -1267,7 +1249,7 @@
         "definition": "Image of the person.",
         "requirements": "Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Practitioner.photo",
           "min": 0,
@@ -1613,35 +1595,9 @@
         ]
       },
       {
-        "id": "Practitioner:cimi-entity-Practitioner.name",
-        "path": "Practitioner.name",
-        "type": [
-          {
-            "code": "HumanName",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-HumanName"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.telecom",
-        "path": "Practitioner.telecom",
-        "type": [
-          {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ContactPoint"
-          }
-        ]
-      },
-      {
         "id": "Practitioner:cimi-entity-Practitioner.gender",
         "path": "Practitioner.gender",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Practitioner:cimi-entity-Practitioner.photo",
-        "path": "Practitioner.photo",
-        "min": 0,
         "max": "1"
       },
       {

@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "description": "A digital Signature - XML DigSig, JWT, Graphical image of signature, etc.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

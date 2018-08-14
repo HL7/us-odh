@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance",
   "name": "SubstanceProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -321,7 +321,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-extension"
           }
         ],
         "sliceName": "category"
@@ -393,7 +393,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-extension",
+        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-extension",
         "mapping": [
           {
             "identity": "rim",
@@ -551,7 +551,7 @@
         }
       },
       {
-        "id": "Substance:cimi-entity-Substance.extension:details",
+        "id": "Substance:cimi-entity-Substance.extension:additionaltext",
         "path": "Substance.extension",
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
@@ -559,10 +559,10 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "additionaltext"
       },
       {
         "id": "Substance:cimi-entity-Substance.modifierExtension",
@@ -1063,8 +1063,7 @@
         "max": "1",
         "type": [
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           }
         ],
         "isSummary": true,
@@ -1131,7 +1130,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-extension"
           }
         ],
         "sliceName": "category"
@@ -1171,7 +1170,7 @@
         }
       },
       {
-        "id": "Substance:cimi-entity-Substance.extension:details",
+        "id": "Substance:cimi-entity-Substance.extension:additionaltext",
         "path": "Substance.extension",
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
@@ -1179,10 +1178,10 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "additionaltext"
       },
       {
         "id": "Substance:cimi-entity-Substance.code",
@@ -1204,16 +1203,6 @@
       {
         "id": "Substance:cimi-entity-Substance.ingredient",
         "path": "Substance.ingredient"
-      },
-      {
-        "id": "Substance:cimi-entity-Substance.ingredient.quantity",
-        "path": "Substance.ingredient.quantity",
-        "type": [
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
-          }
-        ]
       },
       {
         "id": "Substance:cimi-entity-Substance.ingredient.substance[x]",

@@ -3,7 +3,7 @@
   "id": "odh-CombatZonePeriod-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Logical Model</b></p>\n  <p>Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Logical Model</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "CombatZonePeriodModel",
   "title": "ODH CombatZonePeriod Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+  "description": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-CombatZonePeriod-model",
         "path": "odh-CombatZonePeriod-model",
-        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
         "min": 0,
         "max": "*",
         "base": {
@@ -61,123 +61,16 @@
         "path": "odh-CombatZonePeriod-model.personOfRecord",
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.personOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-        "path": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation.value",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation.value",
+          "path": "odh-CombatZonePeriod-model.personOfRecord",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -220,6 +113,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.additionalText",
+        "path": "odh-CombatZonePeriod-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.additionalText",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -601,6 +521,48 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.findingMethod",
+        "path": "odh-CombatZonePeriod-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.findingMethod",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.media",
+        "path": "odh-CombatZonePeriod-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.media",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -1041,7 +1003,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -1059,7 +1021,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -1346,27 +1308,6 @@
         "isSummary": false
       },
       {
-        "id": "odh-CombatZonePeriod-model.focus",
-        "path": "odh-CombatZonePeriod-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "odh-CombatZonePeriod-model.device",
         "path": "odh-CombatZonePeriod-model.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -1499,89 +1440,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-CombatZonePeriod-model.findingMethod",
-        "path": "odh-CombatZonePeriod-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.findingMethod",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-FindingMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.details",
-        "path": "odh-CombatZonePeriod-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.details",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.media",
-        "path": "odh-CombatZonePeriod-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.focalSubject",
-        "path": "odh-CombatZonePeriod-model.focalSubject",
+        "id": "odh-CombatZonePeriod-model.focalSubjectModifier",
+        "path": "odh-CombatZonePeriod-model.focalSubjectModifier",
         "short": "The focus of the observation, if someone other than the person of record (subject).",
         "definition": "The focus of the observation, if someone other than the person of record (subject).",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "odh-CombatZonePeriod-model.focalSubject",
+          "path": "odh-CombatZonePeriod-model.focalSubjectModifier",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
           }
         ],
         "mustSupport": false,
@@ -1595,7 +1467,7 @@
       {
         "id": "odh-CombatZonePeriod-model",
         "path": "odh-CombatZonePeriod-model",
-        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1612,123 +1484,16 @@
         "path": "odh-CombatZonePeriod-model.personOfRecord",
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.personOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-        "path": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation.value",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation.value",
+          "path": "odh-CombatZonePeriod-model.personOfRecord",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -1771,6 +1536,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.additionalText",
+        "path": "odh-CombatZonePeriod-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.additionalText",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -2152,6 +1944,48 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.findingMethod",
+        "path": "odh-CombatZonePeriod-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.findingMethod",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-CombatZonePeriod-model.media",
+        "path": "odh-CombatZonePeriod-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-CombatZonePeriod-model.media",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -2592,7 +2426,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -2610,7 +2444,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -2897,27 +2731,6 @@
         "isSummary": false
       },
       {
-        "id": "odh-CombatZonePeriod-model.focus",
-        "path": "odh-CombatZonePeriod-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "odh-CombatZonePeriod-model.device",
         "path": "odh-CombatZonePeriod-model.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -3050,89 +2863,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-CombatZonePeriod-model.findingMethod",
-        "path": "odh-CombatZonePeriod-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.findingMethod",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-FindingMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.details",
-        "path": "odh-CombatZonePeriod-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.details",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.media",
-        "path": "odh-CombatZonePeriod-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.focalSubject",
-        "path": "odh-CombatZonePeriod-model.focalSubject",
+        "id": "odh-CombatZonePeriod-model.focalSubjectModifier",
+        "path": "odh-CombatZonePeriod-model.focalSubjectModifier",
         "short": "The focus of the observation, if someone other than the person of record (subject).",
         "definition": "The focus of the observation, if someone other than the person of record (subject).",
         "min": 0,
         "max": "0",
         "base": {
-          "path": "odh-CombatZonePeriod-model.focalSubject",
+          "path": "odh-CombatZonePeriod-model.focalSubjectModifier",
           "min": 0,
           "max": "0"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
           }
         ],
         "mustSupport": false,

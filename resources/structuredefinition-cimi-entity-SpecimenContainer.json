@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenContainer",
   "name": "SpecimenContainerProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -338,7 +338,7 @@
         "sliceName": "identifier"
       },
       {
-        "id": "Basic:cimi-entity-SpecimenContainer.extension:details",
+        "id": "Basic:cimi-entity-SpecimenContainer.extension:additionaltext",
         "path": "Basic.extension",
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
@@ -346,10 +346,10 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "additionaltext"
       },
       {
         "id": "Basic:cimi-entity-SpecimenContainer.extension:capacity",
@@ -503,7 +503,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-SpecimenContainer"
             }
           ]
@@ -634,7 +634,7 @@
         "sliceName": "identifier"
       },
       {
-        "id": "Basic:cimi-entity-SpecimenContainer.extension:details",
+        "id": "Basic:cimi-entity-SpecimenContainer.extension:additionaltext",
         "path": "Basic.extension",
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
@@ -642,10 +642,10 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "additionaltext"
       },
       {
         "id": "Basic:cimi-entity-SpecimenContainer.extension:capacity",
@@ -709,7 +709,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-SpecimenContainer"
             }
           ]

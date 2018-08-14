@@ -15,7 +15,7 @@
   "name": "SpecimenContainerModel",
   "title": "ODH SpecimenContainer Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -105,8 +105,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-entity-SpecimenContainer-model.details",
-        "path": "cimi-entity-SpecimenContainer-model.details",
+        "id": "cimi-entity-SpecimenContainer-model.additionalText",
+        "path": "cimi-entity-SpecimenContainer-model.additionalText",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -118,13 +118,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-SpecimenContainer-model.details",
+          "path": "cimi-entity-SpecimenContainer-model.additionalText",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -289,8 +289,8 @@
         "isSummary": false
       },
       {
-        "id": "cimi-entity-SpecimenContainer-model.details",
-        "path": "cimi-entity-SpecimenContainer-model.details",
+        "id": "cimi-entity-SpecimenContainer-model.additionalText",
+        "path": "cimi-entity-SpecimenContainer-model.additionalText",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -302,13 +302,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-SpecimenContainer-model.details",
+          "path": "cimi-entity-SpecimenContainer-model.additionalText",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,

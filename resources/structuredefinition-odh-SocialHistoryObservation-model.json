@@ -15,7 +15,7 @@
   "name": "SocialHistoryObservationModel",
   "title": "ODH SocialHistoryObservation Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,123 +55,16 @@
         "path": "odh-SocialHistoryObservation-model.personOfRecord",
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.personOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-        "path": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
+          "path": "odh-SocialHistoryObservation-model.personOfRecord",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -214,6 +107,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-SocialHistoryObservation-model.additionalText",
+        "path": "odh-SocialHistoryObservation-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.additionalText",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -602,6 +522,48 @@
         "isSummary": false
       },
       {
+        "id": "odh-SocialHistoryObservation-model.findingMethod",
+        "path": "odh-SocialHistoryObservation-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.findingMethod",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-SocialHistoryObservation-model.media",
+        "path": "odh-SocialHistoryObservation-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.media",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "odh-SocialHistoryObservation-model.topicCode",
         "path": "odh-SocialHistoryObservation-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
@@ -735,7 +697,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -753,7 +715,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -1040,27 +1002,6 @@
         "isSummary": false
       },
       {
-        "id": "odh-SocialHistoryObservation-model.focus",
-        "path": "odh-SocialHistoryObservation-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "odh-SocialHistoryObservation-model.device",
         "path": "odh-SocialHistoryObservation-model.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -1193,89 +1134,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-SocialHistoryObservation-model.findingMethod",
-        "path": "odh-SocialHistoryObservation-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.findingMethod",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-FindingMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.details",
-        "path": "odh-SocialHistoryObservation-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.details",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.media",
-        "path": "odh-SocialHistoryObservation-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.focalSubject",
-        "path": "odh-SocialHistoryObservation-model.focalSubject",
+        "id": "odh-SocialHistoryObservation-model.focalSubjectModifier",
+        "path": "odh-SocialHistoryObservation-model.focalSubjectModifier",
         "short": "The focus of the observation, if someone other than the person of record (subject).",
         "definition": "The focus of the observation, if someone other than the person of record (subject).",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "odh-SocialHistoryObservation-model.focalSubject",
+          "path": "odh-SocialHistoryObservation-model.focalSubjectModifier",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
           }
         ],
         "mustSupport": false,
@@ -1306,123 +1178,16 @@
         "path": "odh-SocialHistoryObservation-model.personOfRecord",
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.personOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-        "path": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
-        "short": "AnyPersonOrOrganization",
-        "definition": "AnyPersonOrOrganization",
-        "alias": [
-          "entityOrRole",
-          "anyPersonOrOrganization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation.value",
+          "path": "odh-SocialHistoryObservation-model.personOfRecord",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AnyPersonOrOrganization-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "path": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0015608"
-          }
-        ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.sourceOfInformation.relationshipToPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
           }
         ],
         "mustSupport": false,
@@ -1465,6 +1230,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-SocialHistoryObservation-model.additionalText",
+        "path": "odh-SocialHistoryObservation-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.additionalText",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -1853,6 +1645,48 @@
         "isSummary": false
       },
       {
+        "id": "odh-SocialHistoryObservation-model.findingMethod",
+        "path": "odh-SocialHistoryObservation-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.findingMethod",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-SocialHistoryObservation-model.media",
+        "path": "odh-SocialHistoryObservation-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "odh-SocialHistoryObservation-model.media",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "odh-SocialHistoryObservation-model.topicCode",
         "path": "odh-SocialHistoryObservation-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
@@ -1986,7 +1820,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -2004,7 +1838,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -2291,27 +2125,6 @@
         "isSummary": false
       },
       {
-        "id": "odh-SocialHistoryObservation-model.focus",
-        "path": "odh-SocialHistoryObservation-model.focus",
-        "short": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.focus",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "odh-SocialHistoryObservation-model.device",
         "path": "odh-SocialHistoryObservation-model.device",
         "short": "A specific durable physical device used in diagnosis or treatment. The value is the coding for a type of device, for example, a CPAP machine. The same device might be used on multiple patients.",
@@ -2444,89 +2257,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-SocialHistoryObservation-model.findingMethod",
-        "path": "odh-SocialHistoryObservation-model.findingMethod",
-        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.findingMethod",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-FindingMethod-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.details",
-        "path": "odh-SocialHistoryObservation-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.details",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.media",
-        "path": "odh-SocialHistoryObservation-model.media",
-        "short": "A file that contains audio, video, image, or similar content.",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "odh-SocialHistoryObservation-model.media",
-          "min": 0,
-          "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-SocialHistoryObservation-model.focalSubject",
-        "path": "odh-SocialHistoryObservation-model.focalSubject",
+        "id": "odh-SocialHistoryObservation-model.focalSubjectModifier",
+        "path": "odh-SocialHistoryObservation-model.focalSubjectModifier",
         "short": "The focus of the observation, if someone other than the person of record (subject).",
         "definition": "The focus of the observation, if someone other than the person of record (subject).",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "odh-SocialHistoryObservation-model.focalSubject",
+          "path": "odh-SocialHistoryObservation-model.focalSubjectModifier",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubject-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
           }
         ],
         "mustSupport": false,

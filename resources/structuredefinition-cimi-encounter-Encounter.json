@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-encounter-Encounter",
   "name": "EncounterProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -312,34 +312,6 @@
         }
       },
       {
-        "id": "Encounter:cimi-encounter-Encounter.extension:subjectifnotpersonofrecord",
-        "path": "Encounter.extension",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "Encounter:cimi-encounter-Encounter.extension:sourceofinformation",
-        "path": "Encounter.extension",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
         "id": "Encounter:cimi-encounter-Encounter.extension:recorded",
         "path": "Encounter.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -366,6 +338,20 @@
           }
         ],
         "sliceName": "signed"
+      },
+      {
+        "id": "Encounter:cimi-encounter-Encounter.extension:additionaltext",
+        "path": "Encounter.extension",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
+          }
+        ],
+        "sliceName": "additionaltext"
       },
       {
         "id": "Encounter:cimi-encounter-Encounter.extension:encounterclass",
@@ -878,7 +864,7 @@
       {
         "id": "Encounter:cimi-encounter-Encounter.extension:clinicalnote",
         "path": "Encounter.extension",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1469,7 +1455,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "isSummary": true,
@@ -2771,34 +2757,6 @@
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient."
       },
       {
-        "id": "Encounter:cimi-encounter-Encounter.extension:subjectifnotpersonofrecord",
-        "path": "Encounter.extension",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "Encounter:cimi-encounter-Encounter.extension:sourceofinformation",
-        "path": "Encounter.extension",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
         "id": "Encounter:cimi-encounter-Encounter.extension:recorded",
         "path": "Encounter.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -2825,6 +2783,20 @@
           }
         ],
         "sliceName": "signed"
+      },
+      {
+        "id": "Encounter:cimi-encounter-Encounter.extension:additionaltext",
+        "path": "Encounter.extension",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
+          }
+        ],
+        "sliceName": "additionaltext"
       },
       {
         "id": "Encounter:cimi-encounter-Encounter.extension:encounterclass",
@@ -2877,7 +2849,7 @@
       {
         "id": "Encounter:cimi-encounter-Encounter.extension:clinicalnote",
         "path": "Encounter.extension",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "1",
         "type": [
@@ -2904,7 +2876,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ]
       }

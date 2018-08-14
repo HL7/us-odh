@@ -58,20 +58,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-ContactPoint" />
-                <display value="ODH ContactPoint Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/odh-DateOfRetirement" />
-                <display value="ODH DateOfRetirement Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-Device" />
                 <display value="ODH Device Profile" />
             </sourceReference>
@@ -107,8 +93,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/odh-FocalSubject" />
-                <display value="ODH FocalSubject Profile" />
+                <reference value="StructureDefinition/odh-FocalSubjectModifier" />
+                <display value="ODH FocalSubjectModifier Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -116,20 +102,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-Group" />
                 <display value="ODH Group Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/odh-HistoryOfEmploymentStatus" />
-                <display value="ODH HistoryOfEmploymentStatus Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-HumanName" />
-                <display value="ODH HumanName Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -184,15 +156,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/odh-PastOrPresentOccupation" />
-                <display value="ODH PastOrPresentOccupation Profile" />
+                <reference value="StructureDefinition/odh-PastOrPresentJob" />
+                <display value="ODH PastOrPresentJob Profile" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-Patient" />
-                <display value="ODH Patient Profile" />
+                <reference value="StructureDefinition/odh-PersonEmploymentStatus" />
+                <display value="ODH PersonEmploymentStatus Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -212,8 +184,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Ratio" />
-                <display value="ODH Ratio Profile" />
+                <reference value="StructureDefinition/odh-RetirementDate" />
+                <display value="ODH RetirementDate Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -268,15 +240,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/odh-UsualOccupation" />
-                <display value="ODH UsualOccupation Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-AccessTime-extension" />
-                <display value="ODH AccessTime Extension" />
+                <reference value="StructureDefinition/odh-UsualWork" />
+                <display value="ODH UsualWork Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -291,6 +256,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-ActiveFlag-extension" />
                 <display value="ODH ActiveFlag Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-AdditionalText-extension" />
+                <display value="ODH AdditionalText Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -317,13 +289,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-extension" />
-                <display value="ODH AnonymizedFlag Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-core-Attribution-extension" />
                 <display value="ODH Attribution Extension" />
             </sourceReference>
@@ -338,7 +303,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Category-extension" />
+                <reference value="StructureDefinition/cimi-element-Category-extension" />
                 <display value="ODH Category Extension" />
             </sourceReference>
         </resource>
@@ -347,13 +312,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-ClinicalNote-extension" />
                 <display value="ODH ClinicalNote Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-CodeableConcept-extension" />
-                <display value="ODH CodeableConcept Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -394,20 +352,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Country-extension" />
-                <display value="ODH Country Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-CountryOfIssue-extension" />
-                <display value="ODH CountryOfIssue Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-DateOfBirth-extension" />
                 <display value="ODH DateOfBirth Extension" />
             </sourceReference>
@@ -415,29 +359,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Details-extension" />
-                <display value="ODH Details Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-encounter-Diagnosis-extension" />
                 <display value="ODH Diagnosis Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-extension" />
-                <display value="ODH DriversLicenseNumber Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-extension" />
-                <display value="ODH EffectiveTimePeriod Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -471,36 +394,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-extension" />
-                <display value="ODH ExternalHealthRecord Extension" />
+                <reference value="StructureDefinition/cimi-statement-FindingMethod-extension" />
+                <display value="ODH FindingMethod Extension" />
             </sourceReference>
         </resource>
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-FathersName-extension" />
-                <display value="ODH FathersName Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-extension" />
-                <display value="ODH FictionalPersonFlag Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/odh-FocalSubject-extension" />
-                <display value="ODH FocalSubject Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-statement-Focus-extension" />
-                <display value="ODH Focus Extension" />
+                <reference value="StructureDefinition/odh-FocalSubjectModifier-extension" />
+                <display value="ODH FocalSubjectModifier Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -548,7 +450,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Language-extension" />
+                <reference value="StructureDefinition/cimi-datatypes-Language-extension" />
                 <display value="ODH Language Extension" />
             </sourceReference>
         </resource>
@@ -569,7 +471,7 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-Media-extension" />
+                <reference value="StructureDefinition/cimi-datatypes-Media-extension" />
                 <display value="ODH Media Extension" />
             </sourceReference>
         </resource>
@@ -578,13 +480,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-element-PartOf-extension" />
                 <display value="ODH PartOf Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-PassportNumber-extension" />
-                <display value="ODH PassportNumber Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -599,13 +494,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-statement-Precondition-extension" />
                 <display value="ODH Precondition Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-element-PreferredFlag-extension" />
-                <display value="ODH PreferredFlag Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -627,13 +515,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-core-RecordedOn-extension" />
                 <display value="ODH RecordedOn Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension" />
-                <display value="ODH RelationshipToPersonOfRecord Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -667,20 +548,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-extension" />
-                <display value="ODH SocialSecurityNumber Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-SourceOfInformation-extension" />
-                <display value="ODH SourceOfInformation Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-SpecialHandling-extension" />
                 <display value="ODH SpecialHandling Extension" />
             </sourceReference>
@@ -709,29 +576,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/shr-core-State-extension" />
-                <display value="ODH State Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-entity-StateOfIssue-extension" />
-                <display value="ODH StateOfIssue Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-topic-StatementTopic-extension" />
                 <display value="ODH StatementTopic Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension" />
-                <display value="ODH SubjectIfNotPersonOfRecord Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -760,13 +606,6 @@
             <sourceReference>
                 <reference value="StructureDefinition/primitive-code-extension" />
                 <display value="ODH code Extension" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="StructureDefinition/primitive-string-extension" />
-                <display value="ODH string Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -821,22 +660,15 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="ValueSet/shr-core-YesNoUnknownVS" />
-                <display value="ODH YesNoUnknownVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="ValueSet/shr-core-YesNoVS" />
-                <display value="ODH YesNoVS ValueSet" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="CodeSystem/cimi-element-AnatomicalDirectionCS" />
                 <display value="ODH AnatomicalDirectionCS CodeSystem" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="CodeSystem/ODH-basic-resource-type" />
+                <display value="ODH Basic Resource Type CodeSystem" />
             </sourceReference>
         </resource>
         <resource>
@@ -854,27 +686,6 @@
             </sourceReference>
         </resource>
         <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/shr-core-YesNoCS" />
-                <display value="ODH YesNoCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
-                <reference value="CodeSystem/shr-core-YesNoUnknownCS" />
-                <display value="ODH YesNoUnknownCS CodeSystem" />
-            </sourceReference>
-        </resource>
-        <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AccessTime-model" />
-                  <display value="AccessTimeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
               <example value="false" />
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-AccessionIdentifier-model" />
@@ -900,6 +711,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Actual-model" />
                   <display value="ActualModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/cimi-core-AdditionalText-model" />
+                  <display value="AdditionalTextModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -933,20 +751,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AgeAtDeath-model" />
-                  <display value="AgeAtDeathModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Age-model" />
-                  <display value="AgeModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-element-AnatomicalDirection-model" />
                   <display value="AnatomicalDirectionModel" />
               </sourceReference>
@@ -956,13 +760,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-element-AnatomicalLocation-model" />
                   <display value="AnatomicalLocationModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-AnonymizedFlag-model" />
-                  <display value="AnonymizedFlagModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -989,15 +786,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-BinaryData-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-BinaryData-model" />
                   <display value="BinaryDataModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-BirthSex-model" />
-                  <display value="BirthSexModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1024,7 +814,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Category-model" />
+                  <reference value="StructureDefinition/cimi-element-Category-model" />
                   <display value="CategoryModel" />
               </sourceReference>
           </resource>
@@ -1143,7 +933,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-ContentType-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-ContentType-model" />
                   <display value="ContentTypeModel" />
               </sourceReference>
           </resource>
@@ -1171,14 +961,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-CountryOfIssue-model" />
-                  <display value="CountryOfIssueModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-core-CreationTime-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-CreationTime-model" />
                   <display value="CreationTimeModel" />
               </sourceReference>
           </resource>
@@ -1199,27 +982,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-DateOfDeath-model" />
-                  <display value="DateOfDeathModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/odh-DateOfRetirement-model" />
-                  <display value="DateOfRetirementModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Deceased-model" />
-                  <display value="DeceasedModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-DeltaFlag-model" />
                   <display value="DeltaFlagModel" />
               </sourceReference>
@@ -1229,13 +991,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Denominator-model" />
                   <display value="DenominatorModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Details-model" />
-                  <display value="DetailsModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1283,13 +1038,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-DriversLicenseNumber-model" />
-                  <display value="DriversLicenseNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-EffectiveTimePeriod-model" />
                   <display value="EffectiveTimePeriodModel" />
               </sourceReference>
@@ -1297,7 +1045,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-EmbeddedContent-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-EmbeddedContent-model" />
                   <display value="EmbeddedContentModel" />
               </sourceReference>
           </resource>
@@ -1360,20 +1108,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-EthnicityDetail-model" />
-                  <display value="EthnicityDetailModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Ethnicity-model" />
-                  <display value="EthnicityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-EvaluationComponent-model" />
                   <display value="EvaluationComponentModel" />
               </sourceReference>
@@ -1402,13 +1136,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-ExternalHealthRecord-model" />
-                  <display value="ExternalHealthRecordModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-element-FamilyName-model" />
                   <display value="FamilyNameModel" />
               </sourceReference>
@@ -1416,21 +1143,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-FathersName-model" />
-                  <display value="FathersNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-FictionalPersonFlag-model" />
-                  <display value="FictionalPersonFlagModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-topic-FindingMethod-model" />
+                  <reference value="StructureDefinition/cimi-statement-FindingMethod-model" />
                   <display value="FindingMethodModel" />
               </sourceReference>
           </resource>
@@ -1444,15 +1157,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/odh-FocalSubject-model" />
-                  <display value="FocalSubjectModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-statement-Focus-model" />
-                  <display value="FocusModel" />
+                  <reference value="StructureDefinition/odh-FocalSubjectModifier-model" />
+                  <display value="FocalSubjectModifierModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1500,7 +1206,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Hash-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-Hash-model" />
                   <display value="HashModel" />
               </sourceReference>
           </resource>
@@ -1509,13 +1215,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Headshot-model" />
                   <display value="HeadshotModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/odh-HistoryOfEmploymentStatus-model" />
-                  <display value="HistoryOfEmploymentStatusModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1598,7 +1297,7 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Language-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-Language-model" />
                   <display value="LanguageModel" />
               </sourceReference>
           </resource>
@@ -1675,15 +1374,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-Media-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-Media-model" />
                   <display value="MediaModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MedicalInterpreterNeeded-model" />
-                  <display value="MedicalInterpreterNeededModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1712,27 +1404,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-element-MiddleName-model" />
                   <display value="MiddleNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MothersMaidenName-model" />
-                  <display value="MothersMaidenNameModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MultipleBirth-model" />
-                  <display value="MultipleBirthModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-MultipleBirthOrder-model" />
-                  <display value="MultipleBirthOrderModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1871,13 +1542,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-PassportNumber-model" />
-                  <display value="PassportNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/odh-PastOrPresentIndustry-model" />
                   <display value="PastOrPresentIndustryModel" />
               </sourceReference>
@@ -1885,8 +1549,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/odh-PastOrPresentOccupation-model" />
-                  <display value="PastOrPresentOccupationModel" />
+                  <reference value="StructureDefinition/odh-PastOrPresentJob-model" />
+                  <display value="PastOrPresentJobModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1894,6 +1558,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-Patient-model" />
                   <display value="PatientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/odh-PersonEmploymentStatus-model" />
+                  <display value="PersonEmploymentStatusModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1920,13 +1591,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-PlaceOfBirth-model" />
-                  <display value="PlaceOfBirthModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/shr-core-PostalCode-model" />
                   <display value="PostalCodeModel" />
               </sourceReference>
@@ -1943,13 +1607,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-Precondition-model" />
                   <display value="PreconditionModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-element-PreferredFlag-model" />
-                  <display value="PreferredFlagModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -1985,20 +1642,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/shr-core-Quantity-model" />
                   <display value="QuantityModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-RaceDetail-model" />
-                  <display value="RaceDetailModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-Race-model" />
-                  <display value="RaceModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2060,14 +1703,14 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-ResourceLocation-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-ResourceLocation-model" />
                   <display value="ResourceLocationModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/shr-core-ResourceSize-model" />
+                  <reference value="StructureDefinition/cimi-datatypes-ResourceSize-model" />
                   <display value="ResourceSizeModel" />
               </sourceReference>
           </resource>
@@ -2076,6 +1719,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-statement-ResultValue-model" />
                   <display value="ResultValueModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/odh-RetirementDate-model" />
+                  <display value="RetirementDateModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2158,20 +1808,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-SocialSecurityNumber-model" />
-                  <display value="SocialSecurityNumberModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-SourceOfInformation-model" />
-                  <display value="SourceOfInformationModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-SourceSpecimen-model" />
                   <display value="SourceSpecimenModel" />
               </sourceReference>
@@ -2235,13 +1871,6 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/cimi-entity-StateOfIssue-model" />
-                  <display value="StateOfIssueModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
                   <reference value="StructureDefinition/cimi-topic-StatementTopic-model" />
                   <display value="StatementTopicModel" />
               </sourceReference>
@@ -2251,13 +1880,6 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-element-Status-model" />
                   <display value="StatusModel" />
-              </sourceReference>
-          </resource>
-          <resource>
-              <example value="false" />
-              <sourceReference>
-                  <reference value="StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model" />
-                  <display value="SubjectIfNotPersonOfRecordModel" />
               </sourceReference>
           </resource>
           <resource>
@@ -2368,8 +1990,8 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/odh-UsualOccupation-model" />
-                  <display value="UsualOccupationModel" />
+                  <reference value="StructureDefinition/odh-UsualWork-model" />
+                  <display value="UsualWorkModel" />
               </sourceReference>
           </resource>
           <resource>

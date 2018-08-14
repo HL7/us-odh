@@ -3,12 +3,12 @@
   "id": "cimi-entity-Specimen",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Specimen Profile</b></p>\n  <p>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.entity.Specimen maps to Specimen:\n  AccessionIdentifier maps to accessionIdentifier\n  SpecimenStatus maps to status\n  Type maps to type\n  CollectionSource maps to subject\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  SpecimenContainer.Identifier maps to container.identifier\n  SpecimenContainer.Details maps to container.description\n  SpecimenContainer.Type maps to container.type\n  SpecimenContainer.Capacity maps to container.capacity\n  SpecimenContainer.SpecimenQuantity maps to container.specimenQuantity\n  SpecimenContainer.Additive maps to container.additive[x]\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Specimen Profile</b></p>\n  <p>A specimen is a substance, physical object, or collection of objects, that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. A specimen may include multiple physical pieces as long as they are considered a single unit within the laboratory workflow. A specimen results from one to many specimen collection procedures, and may be contained in multiple specimen containers. Specimen may have one or more processing activities.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.entity.Specimen maps to Specimen:\n  AccessionIdentifier maps to accessionIdentifier\n  SpecimenStatus maps to status\n  Type maps to type\n  CollectionSource maps to subject\n  SourceSpecimen maps to parent\n  ReceivedTime maps to receivedTime\n  SpecimenContainer.Identifier maps to container.identifier\n  SpecimenContainer.AdditionalText maps to container.description\n  SpecimenContainer.Type maps to container.type\n  SpecimenContainer.Capacity maps to container.capacity\n  SpecimenContainer.SpecimenQuantity maps to container.specimenQuantity\n  SpecimenContainer.Additive maps to container.additive[x]\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Specimen",
   "name": "SpecimenProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -575,7 +575,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           },
           {
             "code": "Reference",
@@ -1609,7 +1609,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           },
           {
             "code": "Reference",

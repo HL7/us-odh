@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "description": "An electronic means of contacting an organization or individual.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -163,8 +163,7 @@
         },
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ],
         "mapping": [
@@ -208,8 +207,7 @@
         "min": 1,
         "type": [
           {
-            "code": "ContactPoint",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ContactPoint"
+            "code": "ContactPoint"
           }
         ]
       }

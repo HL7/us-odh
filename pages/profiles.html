@@ -42,19 +42,8 @@
     <tr>
       <td><a href="StructureDefinition-odh-CombatZonePeriod.html">CombatZonePeriod</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-odh-DateOfRetirement.html">DateOfRetirement</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}If present, the patient is retired, and this observation records the retirement date.
-This is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-odh-HistoryOfEmploymentStatus.html">HistoryOfEmploymentStatus</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}A person’s state of being employed during the time period specified.
-Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.
+Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-odh-OccupationalDataSummary.html">OccupationalDataSummary</a></td>
@@ -62,14 +51,33 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
       <td>{% capture md_text %}Current and past activities for profit, wages, salary, or as a service to others.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-PastOrPresentOccupation.html">PastOrPresentOccupation</a></td>
+      <td><a href="StructureDefinition-odh-PastOrPresentJob.html">PastOrPresentJob</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}A single job, past or present. The relevant time is the period the job was held.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.
+A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.
+A person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.
+At a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-UsualOccupation.html">UsualOccupation</a></td>
+      <td><a href="StructureDefinition-odh-PersonEmploymentStatus.html">PersonEmploymentStatus</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
-      <td>{% capture md_text %}The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}A person’s state of being employed during the time period specified.
+Generally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-odh-RetirementDate.html">RetirementDate</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}A self-reported date that a person considers themselves to have ‘retired’.
+A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.
+Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).{% endcapture %}{{ md_text | markdownify }}</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-odh-UsualWork.html">UsualWork</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
+      <td>{% capture md_text %}Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.
+Knowledge of person's Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person's Usual Work on their health and guide appropriate use of screening tests to detect early disease.
+Example: a person has worked for a total of 30 years as a 'secretary' (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is 'secretary' and her Usual Industry is 'hotel construction.'
+Usual Work does not include work that was unpaid or voluntary.   Usual Work does not include work that was unpaid or voluntary.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     
   </tbody>
@@ -106,7 +114,7 @@ Generally, employment status refers to whether or not a person has a job (e.g. e
     <tr>
       <td><a href="StructureDefinition-cimi-statement-ClinicalNote.html">ClinicalNote</a></td>
       <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td>{% capture md_text %}An entry concerning a patient where the result is a narrative text.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-statement-ClinicalStatement.html">ClinicalStatement</a></td>
@@ -123,11 +131,6 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-composition-Composition.html">Composition</a></td>
       <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
       <td>{% capture md_text %}A composition represents a document such as a patient record, a knowledge artifact, or a catalog definition.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-shr-core-ContactPoint.html">ContactPoint</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#contactpoint">ContactPoint</a></td>
-      <td>{% capture md_text %}An electronic means of contacting an organization or individual.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-entity-Device.html">Device</a></td>
@@ -155,7 +158,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td>{% capture md_text %}Any clinical statement representing a finding.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-FocalSubject.html">FocalSubject</a></td>
+      <td><a href="StructureDefinition-odh-FocalSubjectModifier.html">FocalSubjectModifier</a></td>
       <td><a href="http://hl7.org/fhir/STU3/relatedperson.html">RelatedPerson</a></td>
       <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -163,11 +166,6 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       <td><a href="StructureDefinition-cimi-entity-Group.html">Group</a></td>
       <td><a href="http://hl7.org/fhir/STU3/group.html">Group</a></td>
       <td>{% capture md_text %}A set of entities (personnel, material, or places) to be considered together. May be a pool of like-type resources, a team, or combination of personnel, material and places.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-shr-core-HumanName.html">HumanName</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#humanname">HumanName</a></td>
-      <td>{% capture md_text %}The CIMI person name, constrained to map correctly to FHIR.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-element-Identifier.html">Identifier</a></td>
@@ -201,11 +199,6 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td>{% capture md_text %}A social or legal structure formed by human beings.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-cimi-entity-Patient.html">Patient</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
-      <td>{% capture md_text %}A person in the role of a patient, including extended demographic information about the subject of this health record.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-cimi-entity-Person.html">Person</a></td>
       <td><a href="http://hl7.org/fhir/STU3/basic.html">Basic</a></td>
       <td>{% capture md_text %}A person relevant to the health or social situation of the subject (including the person of record him or herself).{% endcapture %}{{ md_text | markdownify }}</td>
@@ -214,11 +207,6 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       <td><a href="StructureDefinition-cimi-entity-Practitioner.html">Practitioner</a></td>
       <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
       <td>{% capture md_text %}A person who practices a healing art.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-shr-core-Ratio.html">Ratio</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#ratio">Ratio</a></td>
-      <td>{% capture md_text %}A unit of measurement for the quotient of the amount of one entity to another.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-cimi-element-Signature.html">Signature</a></td>

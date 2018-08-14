@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Entity",
   "name": "EntityProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -394,7 +394,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-Entity"
             }
           ]
@@ -502,7 +502,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/odh/basic-resource-type",
+              "system": "http://hl7.org/fhir/us/odh/CodeSystem/ODH-basic-resource-type",
               "code": "cimi-entity-Entity"
             }
           ]

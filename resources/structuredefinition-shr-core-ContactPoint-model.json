@@ -15,7 +15,7 @@
   "name": "ContactPointModel",
   "title": "ODH ContactPoint Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,11 +61,11 @@
         "path": "shr-core-ContactPoint-model.telecomNumberOrAddress",
         "short": "A user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
         "definition": "A user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-ContactPoint-model.telecomNumberOrAddress",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -88,11 +88,11 @@
         ],
         "short": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
         "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-ContactPoint-model.type",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -269,11 +269,11 @@
         "path": "shr-core-ContactPoint-model.telecomNumberOrAddress",
         "short": "A user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
         "definition": "A user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-ContactPoint-model.telecomNumberOrAddress",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -296,11 +296,11 @@
         ],
         "short": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
         "definition": "The most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-ContactPoint-model.type",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [

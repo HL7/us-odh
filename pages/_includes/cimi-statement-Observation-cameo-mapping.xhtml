@@ -4,9 +4,10 @@
 <p>This structure represents the following ODH mapping definition:</p>
 <pre>
 cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:
+  PersonOfRecord maps to subject
   TopicCode maps to code
   FindingMethod maps to method
-  Details maps to comment
+  AdditionalText maps to comment
   Category maps to category
   AnatomicalLocation maps to bodySite
   Device maps to device
@@ -33,6 +34,7 @@ cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefiniti
   EvaluationComponent.Interpretation maps to component.interpretation
   EvaluationComponent.ReferenceRange maps to component.referenceRange
   fix related.type to #has-member
+  PanelMembers maps to related
   PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)
   ResultValue maps to value[x]
   ExceptionValue maps to dataAbsentReason

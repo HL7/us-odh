@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "description": "The person this entry belongs to.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -164,7 +164,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ],
         "mapping": [
@@ -209,7 +209,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient"
+            "targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           }
         ]
       }

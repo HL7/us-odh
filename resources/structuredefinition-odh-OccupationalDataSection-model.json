@@ -15,7 +15,7 @@
   "name": "OccupationalDataSectionModel",
   "title": "ODH OccupationalDataSection Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -70,8 +70,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
         "code": [
           {
             "system": "http://loinc.org",
@@ -84,13 +84,13 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-HistoryOfEmploymentStatus-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PersonEmploymentStatus-model"
           }
         ],
         "mustSupport": false,
@@ -98,8 +98,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
         "code": [
           {
             "system": "http://loinc.org",
@@ -107,18 +107,18 @@
             "display": "Date of Retirement"
           }
         ],
-        "short": "If present, the patient is retired, and this observation records the retirement date.",
-        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "short": "A self-reported date that a person considers themselves to have ‘retired’.",
+        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DateOfRetirement-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate-model"
           }
         ],
         "mustSupport": false,
@@ -134,8 +134,8 @@
             "code": "87511-2"
           }
         ],
-        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
-        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "short": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
         "min": 0,
         "max": "*",
         "base": {
@@ -153,26 +153,26 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
         "code": [
           {
             "system": "http://loinc.org",
             "code": "21843-8"
           }
         ],
-        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
-        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "short": "Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.",
+        "definition": "Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.\nKnowledge of person's Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person's Usual Work on their health and guide appropriate use of screening tests to detect early disease.\nExample: a person has worked for a total of 30 years as a 'secretary' (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is 'secretary' and her Usual Industry is 'hotel construction.'\nUsual Work does not include work that was unpaid or voluntary.   Usual Work does not include work that was unpaid or voluntary.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualOccupation-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork-model"
           }
         ],
         "mustSupport": false,
@@ -180,8 +180,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
         "code": [
           {
             "system": "http://loinc.org",
@@ -189,18 +189,18 @@
             "display": "History of Occupation"
           }
         ],
-        "short": "A single job, past or present. The relevant time is the period the job was held.",
-        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "short": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.",
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentOccupation-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob-model"
           }
         ],
         "mustSupport": false,
@@ -246,8 +246,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
         "code": [
           {
             "system": "http://loinc.org",
@@ -260,13 +260,13 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.historyOfEmploymentStatus",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.personEmploymentStatus",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-HistoryOfEmploymentStatus-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PersonEmploymentStatus-model"
           }
         ],
         "mustSupport": false,
@@ -274,8 +274,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
         "code": [
           {
             "system": "http://loinc.org",
@@ -283,18 +283,18 @@
             "display": "Date of Retirement"
           }
         ],
-        "short": "If present, the patient is retired, and this observation records the retirement date.",
-        "definition": "If present, the patient is retired, and this observation records the retirement date.\nThis is a self-identified statement about the date of being retired as self-identified by the patient. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+        "short": "A self-reported date that a person considers themselves to have ‘retired’.",
+        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.dateOfRetirement",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.retirementDate",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DateOfRetirement-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate-model"
           }
         ],
         "mustSupport": false,
@@ -310,8 +310,8 @@
             "code": "87511-2"
           }
         ],
-        "short": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
-        "definition": "Indicates the date range(s) an individual hs worked in what is considered a combat or hazardous duty zone; both civilian and military.",
+        "short": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
         "min": 0,
         "max": "*",
         "base": {
@@ -329,26 +329,26 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
         "code": [
           {
             "system": "http://loinc.org",
             "code": "21843-8"
           }
         ],
-        "short": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
-        "definition": "The type of work a person has held for the longest duration during his or her working history at the point in time the statement is recorded.",
+        "short": "Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.",
+        "definition": "Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.\nKnowledge of person's Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person's Usual Work on their health and guide appropriate use of screening tests to detect early disease.\nExample: a person has worked for a total of 30 years as a 'secretary' (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is 'secretary' and her Usual Industry is 'hotel construction.'\nUsual Work does not include work that was unpaid or voluntary.   Usual Work does not include work that was unpaid or voluntary.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualOccupation",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.usualWork",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualOccupation-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork-model"
           }
         ],
         "mustSupport": false,
@@ -356,8 +356,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
-        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+        "id": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
+        "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
         "code": [
           {
             "system": "http://loinc.org",
@@ -365,18 +365,18 @@
             "display": "History of Occupation"
           }
         ],
-        "short": "A single job, past or present. The relevant time is the period the job was held.",
-        "definition": "A single job, past or present. The relevant time is the period the job was held.",
+        "short": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.",
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentOccupation",
+          "path": "odh-OccupationalDataSection-model.socialHistoryObservation.pastOrPresentJob",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentOccupation-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob-model"
           }
         ],
         "mustSupport": false,

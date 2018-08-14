@@ -71,12 +71,6 @@
     "StructureDefinition/cimi-composition-Composition": {
       "base": "StructureDefinition-cimi-composition-Composition.html"
     },
-    "StructureDefinition/shr-core-ContactPoint": {
-      "base": "StructureDefinition-shr-core-ContactPoint.html"
-    },
-    "StructureDefinition/odh-DateOfRetirement": {
-      "base": "StructureDefinition-odh-DateOfRetirement.html"
-    },
     "StructureDefinition/cimi-entity-Device": {
       "base": "StructureDefinition-cimi-entity-Device.html"
     },
@@ -92,17 +86,11 @@
     "StructureDefinition/cimi-statement-FindingStatement": {
       "base": "StructureDefinition-cimi-statement-FindingStatement.html"
     },
-    "StructureDefinition/odh-FocalSubject": {
-      "base": "StructureDefinition-odh-FocalSubject.html"
+    "StructureDefinition/odh-FocalSubjectModifier": {
+      "base": "StructureDefinition-odh-FocalSubjectModifier.html"
     },
     "StructureDefinition/cimi-entity-Group": {
       "base": "StructureDefinition-cimi-entity-Group.html"
-    },
-    "StructureDefinition/odh-HistoryOfEmploymentStatus": {
-      "base": "StructureDefinition-odh-HistoryOfEmploymentStatus.html"
-    },
-    "StructureDefinition/shr-core-HumanName": {
-      "base": "StructureDefinition-shr-core-HumanName.html"
     },
     "StructureDefinition/cimi-element-Identifier": {
       "base": "StructureDefinition-cimi-element-Identifier.html"
@@ -125,11 +113,11 @@
     "StructureDefinition/cimi-entity-Organization": {
       "base": "StructureDefinition-cimi-entity-Organization.html"
     },
-    "StructureDefinition/odh-PastOrPresentOccupation": {
-      "base": "StructureDefinition-odh-PastOrPresentOccupation.html"
+    "StructureDefinition/odh-PastOrPresentJob": {
+      "base": "StructureDefinition-odh-PastOrPresentJob.html"
     },
-    "StructureDefinition/cimi-entity-Patient": {
-      "base": "StructureDefinition-cimi-entity-Patient.html"
+    "StructureDefinition/odh-PersonEmploymentStatus": {
+      "base": "StructureDefinition-odh-PersonEmploymentStatus.html"
     },
     "StructureDefinition/cimi-entity-Person": {
       "base": "StructureDefinition-cimi-entity-Person.html"
@@ -137,8 +125,8 @@
     "StructureDefinition/cimi-entity-Practitioner": {
       "base": "StructureDefinition-cimi-entity-Practitioner.html"
     },
-    "StructureDefinition/shr-core-Ratio": {
-      "base": "StructureDefinition-shr-core-Ratio.html"
+    "StructureDefinition/odh-RetirementDate": {
+      "base": "StructureDefinition-odh-RetirementDate.html"
     },
     "StructureDefinition/cimi-element-Signature": {
       "base": "StructureDefinition-cimi-element-Signature.html"
@@ -161,12 +149,8 @@
     "StructureDefinition/cimi-entity-Substance": {
       "base": "StructureDefinition-cimi-entity-Substance.html"
     },
-    "StructureDefinition/odh-UsualOccupation": {
-      "base": "StructureDefinition-odh-UsualOccupation.html"
-    },
-    "StructureDefinition/cimi-entity-AccessTime-extension": {
-      "base": "StructureDefinition-cimi-entity-AccessTime-extension.html",
-      "template-base": "sd-extension.html"
+    "StructureDefinition/odh-UsualWork": {
+      "base": "StructureDefinition-odh-UsualWork.html"
     },
     "StructureDefinition/cimi-entity-ActiveFlagAsaCodeableConcept-extension": {
       "base": "StructureDefinition-cimi-entity-ActiveFlagAsaCodeableConcept-extension.html",
@@ -174,6 +158,10 @@
     },
     "StructureDefinition/cimi-entity-ActiveFlag-extension": {
       "base": "StructureDefinition-cimi-entity-ActiveFlag-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/cimi-core-AdditionalText-extension": {
+      "base": "StructureDefinition-cimi-core-AdditionalText-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-entity-Additive-extension": {
@@ -188,10 +176,6 @@
       "base": "StructureDefinition-cimi-entity-AdministrativeGender-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-AnonymizedFlag-extension": {
-      "base": "StructureDefinition-cimi-entity-AnonymizedFlag-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-core-Attribution-extension": {
       "base": "StructureDefinition-cimi-core-Attribution-extension.html",
       "template-base": "sd-extension.html"
@@ -200,16 +184,12 @@
       "base": "StructureDefinition-cimi-entity-Capacity-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Category-extension": {
-      "base": "StructureDefinition-shr-core-Category-extension.html",
+    "StructureDefinition/cimi-element-Category-extension": {
+      "base": "StructureDefinition-cimi-element-Category-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-statement-ClinicalNote-extension": {
       "base": "StructureDefinition-cimi-statement-ClinicalNote-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/shr-core-CodeableConcept-extension": {
-      "base": "StructureDefinition-shr-core-CodeableConcept-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-entity-CollectionMethod-extension": {
@@ -232,32 +212,12 @@
       "base": "StructureDefinition-cimi-statement-ContextCode-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Country-extension": {
-      "base": "StructureDefinition-shr-core-Country-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-CountryOfIssue-extension": {
-      "base": "StructureDefinition-cimi-entity-CountryOfIssue-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-entity-DateOfBirth-extension": {
       "base": "StructureDefinition-cimi-entity-DateOfBirth-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Details-extension": {
-      "base": "StructureDefinition-shr-core-Details-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-encounter-Diagnosis-extension": {
       "base": "StructureDefinition-cimi-encounter-Diagnosis-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-DriversLicenseNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-DriversLicenseNumber-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/shr-core-EffectiveTimePeriod-extension": {
-      "base": "StructureDefinition-shr-core-EffectiveTimePeriod-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/odh-Employer-extension": {
@@ -276,24 +236,12 @@
       "base": "StructureDefinition-cimi-entity-EntityOrRole-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-ExternalHealthRecord-extension": {
-      "base": "StructureDefinition-cimi-entity-ExternalHealthRecord-extension.html",
+    "StructureDefinition/cimi-statement-FindingMethod-extension": {
+      "base": "StructureDefinition-cimi-statement-FindingMethod-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-FathersName-extension": {
-      "base": "StructureDefinition-cimi-entity-FathersName-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-FictionalPersonFlag-extension": {
-      "base": "StructureDefinition-cimi-entity-FictionalPersonFlag-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/odh-FocalSubject-extension": {
-      "base": "StructureDefinition-odh-FocalSubject-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-statement-Focus-extension": {
-      "base": "StructureDefinition-cimi-statement-Focus-extension.html",
+    "StructureDefinition/odh-FocalSubjectModifier-extension": {
+      "base": "StructureDefinition-odh-FocalSubjectModifier-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-entity-HandlingRisk-extension": {
@@ -320,8 +268,8 @@
       "base": "StructureDefinition-cimi-statement-Interpretation-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Language-extension": {
-      "base": "StructureDefinition-shr-core-Language-extension.html",
+    "StructureDefinition/cimi-datatypes-Language-extension": {
+      "base": "StructureDefinition-cimi-datatypes-Language-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-entity-LanguageQualifier-extension": {
@@ -332,16 +280,12 @@
       "base": "StructureDefinition-cimi-entity-LanguageUsed-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-Media-extension": {
-      "base": "StructureDefinition-shr-core-Media-extension.html",
+    "StructureDefinition/cimi-datatypes-Media-extension": {
+      "base": "StructureDefinition-cimi-datatypes-Media-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-element-PartOf-extension": {
       "base": "StructureDefinition-cimi-element-PartOf-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-PassportNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-PassportNumber-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-core-PersonOfRecord-extension": {
@@ -350,10 +294,6 @@
     },
     "StructureDefinition/cimi-statement-Precondition-extension": {
       "base": "StructureDefinition-cimi-statement-Precondition-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-element-PreferredFlag-extension": {
-      "base": "StructureDefinition-cimi-element-PreferredFlag-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/shr-core-PriorityRank-extension": {
@@ -366,10 +306,6 @@
     },
     "StructureDefinition/cimi-core-RecordedOn-extension": {
       "base": "StructureDefinition-cimi-core-RecordedOn-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension": {
-      "base": "StructureDefinition-cimi-core-RelationshipToPersonOfRecord-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-statement-RelevantTime-extension": {
@@ -388,14 +324,6 @@
       "base": "StructureDefinition-cimi-core-Signed-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/cimi-entity-SocialSecurityNumber-extension": {
-      "base": "StructureDefinition-cimi-entity-SocialSecurityNumber-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-core-SourceOfInformation-extension": {
-      "base": "StructureDefinition-cimi-core-SourceOfInformation-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-entity-SpecialHandling-extension": {
       "base": "StructureDefinition-cimi-entity-SpecialHandling-extension.html",
       "template-base": "sd-extension.html"
@@ -412,20 +340,8 @@
       "base": "StructureDefinition-cimi-entity-SpokenLanguageProficiency-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/shr-core-State-extension": {
-      "base": "StructureDefinition-shr-core-State-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-entity-StateOfIssue-extension": {
-      "base": "StructureDefinition-cimi-entity-StateOfIssue-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/cimi-topic-StatementTopic-extension": {
       "base": "StructureDefinition-cimi-topic-StatementTopic-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension": {
-      "base": "StructureDefinition-cimi-core-SubjectIfNotPersonOfRecord-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-topic-TopicCode-extension": {
@@ -442,10 +358,6 @@
     },
     "StructureDefinition/primitive-code-extension": {
       "base": "StructureDefinition-primitive-code-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/primitive-string-extension": {
-      "base": "StructureDefinition-primitive-string-extension.html",
       "template-base": "sd-extension.html"
     },
     "ValueSet/shr-core-AllUnitsVS": {
@@ -469,33 +381,17 @@
     "ValueSet/shr-core-PerformanceGradingScaleVS": {
       "base": "ValueSet-shr-core-PerformanceGradingScaleVS.html"
     },
-    "ValueSet/shr-core-YesNoUnknownVS": {
-      "base": "ValueSet-shr-core-YesNoUnknownVS.html"
-    },
-    "ValueSet/shr-core-YesNoVS": {
-      "base": "ValueSet-shr-core-YesNoVS.html"
-    },
     "CodeSystem/cimi-element-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-element-AnatomicalDirectionCS.html"
+    },
+    "CodeSystem/ODH-basic-resource-type": {
+      "base": "CodeSystem-ODH-basic-resource-type.html"
     },
     "CodeSystem/cimi-entity-LanguageQualifierCS": {
       "base": "CodeSystem-cimi-entity-LanguageQualifierCS.html"
     },
     "CodeSystem/shr-core-PerformanceGradingScaleCS": {
       "base": "CodeSystem-shr-core-PerformanceGradingScaleCS.html"
-    },
-    "CodeSystem/shr-core-YesNoCS": {
-      "base": "CodeSystem-shr-core-YesNoCS.html"
-    },
-    "CodeSystem/shr-core-YesNoUnknownCS": {
-      "base": "CodeSystem-shr-core-YesNoUnknownCS.html"
-    },
-    "StructureDefinition/cimi-entity-AccessTime-model": {
-      "base": "StructureDefinition-cimi-entity-AccessTime-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
     },
     "StructureDefinition/cimi-entity-AccessionIdentifier-model": {
       "base": "StructureDefinition-cimi-entity-AccessionIdentifier-model.html",
@@ -520,6 +416,13 @@
     },
     "StructureDefinition/cimi-entity-Actual-model": {
       "base": "StructureDefinition-cimi-entity-Actual-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/cimi-core-AdditionalText-model": {
+      "base": "StructureDefinition-cimi-core-AdditionalText-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -553,20 +456,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-AgeAtDeath-model": {
-      "base": "StructureDefinition-cimi-entity-AgeAtDeath-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/shr-core-Age-model": {
-      "base": "StructureDefinition-shr-core-Age-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-element-AnatomicalDirection-model": {
       "base": "StructureDefinition-cimi-element-AnatomicalDirection-model.html",
       "template-base": "sd-logical.html",
@@ -576,13 +465,6 @@
     },
     "StructureDefinition/cimi-element-AnatomicalLocation-model": {
       "base": "StructureDefinition-cimi-element-AnatomicalLocation-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-AnonymizedFlag-model": {
-      "base": "StructureDefinition-cimi-entity-AnonymizedFlag-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -609,15 +491,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-BinaryData-model": {
-      "base": "StructureDefinition-shr-core-BinaryData-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-BirthSex-model": {
-      "base": "StructureDefinition-cimi-entity-BirthSex-model.html",
+    "StructureDefinition/cimi-datatypes-BinaryData-model": {
+      "base": "StructureDefinition-cimi-datatypes-BinaryData-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -644,8 +519,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-Category-model": {
-      "base": "StructureDefinition-shr-core-Category-model.html",
+    "StructureDefinition/cimi-element-Category-model": {
+      "base": "StructureDefinition-cimi-element-Category-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -763,8 +638,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-ContentType-model": {
-      "base": "StructureDefinition-shr-core-ContentType-model.html",
+    "StructureDefinition/cimi-datatypes-ContentType-model": {
+      "base": "StructureDefinition-cimi-datatypes-ContentType-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -791,15 +666,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-CountryOfIssue-model": {
-      "base": "StructureDefinition-cimi-entity-CountryOfIssue-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/shr-core-CreationTime-model": {
-      "base": "StructureDefinition-shr-core-CreationTime-model.html",
+    "StructureDefinition/cimi-datatypes-CreationTime-model": {
+      "base": "StructureDefinition-cimi-datatypes-CreationTime-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -819,27 +687,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-DateOfDeath-model": {
-      "base": "StructureDefinition-cimi-entity-DateOfDeath-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/odh-DateOfRetirement-model": {
-      "base": "StructureDefinition-odh-DateOfRetirement-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Deceased-model": {
-      "base": "StructureDefinition-cimi-entity-Deceased-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-statement-DeltaFlag-model": {
       "base": "StructureDefinition-cimi-statement-DeltaFlag-model.html",
       "template-base": "sd-logical.html",
@@ -849,13 +696,6 @@
     },
     "StructureDefinition/shr-core-Denominator-model": {
       "base": "StructureDefinition-shr-core-Denominator-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/shr-core-Details-model": {
-      "base": "StructureDefinition-shr-core-Details-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -903,13 +743,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-DriversLicenseNumber-model": {
-      "base": "StructureDefinition-cimi-entity-DriversLicenseNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-core-EffectiveTimePeriod-model": {
       "base": "StructureDefinition-shr-core-EffectiveTimePeriod-model.html",
       "template-base": "sd-logical.html",
@@ -917,8 +750,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-EmbeddedContent-model": {
-      "base": "StructureDefinition-shr-core-EmbeddedContent-model.html",
+    "StructureDefinition/cimi-datatypes-EmbeddedContent-model": {
+      "base": "StructureDefinition-cimi-datatypes-EmbeddedContent-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -980,20 +813,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-EthnicityDetail-model": {
-      "base": "StructureDefinition-cimi-entity-EthnicityDetail-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Ethnicity-model": {
-      "base": "StructureDefinition-cimi-entity-Ethnicity-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-statement-EvaluationComponent-model": {
       "base": "StructureDefinition-cimi-statement-EvaluationComponent-model.html",
       "template-base": "sd-logical.html",
@@ -1022,13 +841,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-ExternalHealthRecord-model": {
-      "base": "StructureDefinition-cimi-entity-ExternalHealthRecord-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-element-FamilyName-model": {
       "base": "StructureDefinition-cimi-element-FamilyName-model.html",
       "template-base": "sd-logical.html",
@@ -1036,22 +848,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-FathersName-model": {
-      "base": "StructureDefinition-cimi-entity-FathersName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-FictionalPersonFlag-model": {
-      "base": "StructureDefinition-cimi-entity-FictionalPersonFlag-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-topic-FindingMethod-model": {
-      "base": "StructureDefinition-cimi-topic-FindingMethod-model.html",
+    "StructureDefinition/cimi-statement-FindingMethod-model": {
+      "base": "StructureDefinition-cimi-statement-FindingMethod-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1064,15 +862,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/odh-FocalSubject-model": {
-      "base": "StructureDefinition-odh-FocalSubject-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-statement-Focus-model": {
-      "base": "StructureDefinition-cimi-statement-Focus-model.html",
+    "StructureDefinition/odh-FocalSubjectModifier-model": {
+      "base": "StructureDefinition-odh-FocalSubjectModifier-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1120,8 +911,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-Hash-model": {
-      "base": "StructureDefinition-shr-core-Hash-model.html",
+    "StructureDefinition/cimi-datatypes-Hash-model": {
+      "base": "StructureDefinition-cimi-datatypes-Hash-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1129,13 +920,6 @@
     },
     "StructureDefinition/cimi-entity-Headshot-model": {
       "base": "StructureDefinition-cimi-entity-Headshot-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/odh-HistoryOfEmploymentStatus-model": {
-      "base": "StructureDefinition-odh-HistoryOfEmploymentStatus-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1218,8 +1002,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-Language-model": {
-      "base": "StructureDefinition-shr-core-Language-model.html",
+    "StructureDefinition/cimi-datatypes-Language-model": {
+      "base": "StructureDefinition-cimi-datatypes-Language-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1295,15 +1079,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-Media-model": {
-      "base": "StructureDefinition-shr-core-Media-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MedicalInterpreterNeeded-model": {
-      "base": "StructureDefinition-cimi-entity-MedicalInterpreterNeeded-model.html",
+    "StructureDefinition/cimi-datatypes-Media-model": {
+      "base": "StructureDefinition-cimi-datatypes-Media-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1332,27 +1109,6 @@
     },
     "StructureDefinition/cimi-element-MiddleName-model": {
       "base": "StructureDefinition-cimi-element-MiddleName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MothersMaidenName-model": {
-      "base": "StructureDefinition-cimi-entity-MothersMaidenName-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MultipleBirth-model": {
-      "base": "StructureDefinition-cimi-entity-MultipleBirth-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-MultipleBirthOrder-model": {
-      "base": "StructureDefinition-cimi-entity-MultipleBirthOrder-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1491,13 +1247,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-PassportNumber-model": {
-      "base": "StructureDefinition-cimi-entity-PassportNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/odh-PastOrPresentIndustry-model": {
       "base": "StructureDefinition-odh-PastOrPresentIndustry-model.html",
       "template-base": "sd-logical.html",
@@ -1505,8 +1254,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/odh-PastOrPresentOccupation-model": {
-      "base": "StructureDefinition-odh-PastOrPresentOccupation-model.html",
+    "StructureDefinition/odh-PastOrPresentJob-model": {
+      "base": "StructureDefinition-odh-PastOrPresentJob-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1514,6 +1263,13 @@
     },
     "StructureDefinition/cimi-entity-Patient-model": {
       "base": "StructureDefinition-cimi-entity-Patient-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/odh-PersonEmploymentStatus-model": {
+      "base": "StructureDefinition-odh-PersonEmploymentStatus-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1540,13 +1296,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-PlaceOfBirth-model": {
-      "base": "StructureDefinition-cimi-entity-PlaceOfBirth-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/shr-core-PostalCode-model": {
       "base": "StructureDefinition-shr-core-PostalCode-model.html",
       "template-base": "sd-logical.html",
@@ -1563,13 +1312,6 @@
     },
     "StructureDefinition/cimi-statement-Precondition-model": {
       "base": "StructureDefinition-cimi-statement-Precondition-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-element-PreferredFlag-model": {
-      "base": "StructureDefinition-cimi-element-PreferredFlag-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1605,20 +1347,6 @@
     },
     "StructureDefinition/shr-core-Quantity-model": {
       "base": "StructureDefinition-shr-core-Quantity-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-RaceDetail-model": {
-      "base": "StructureDefinition-cimi-entity-RaceDetail-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-entity-Race-model": {
-      "base": "StructureDefinition-cimi-entity-Race-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1680,15 +1408,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-ResourceLocation-model": {
-      "base": "StructureDefinition-shr-core-ResourceLocation-model.html",
+    "StructureDefinition/cimi-datatypes-ResourceLocation-model": {
+      "base": "StructureDefinition-cimi-datatypes-ResourceLocation-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/shr-core-ResourceSize-model": {
-      "base": "StructureDefinition-shr-core-ResourceSize-model.html",
+    "StructureDefinition/cimi-datatypes-ResourceSize-model": {
+      "base": "StructureDefinition-cimi-datatypes-ResourceSize-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1696,6 +1424,13 @@
     },
     "StructureDefinition/cimi-statement-ResultValue-model": {
       "base": "StructureDefinition-cimi-statement-ResultValue-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/odh-RetirementDate-model": {
+      "base": "StructureDefinition-odh-RetirementDate-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1778,20 +1513,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-SocialSecurityNumber-model": {
-      "base": "StructureDefinition-cimi-entity-SocialSecurityNumber-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-core-SourceOfInformation-model": {
-      "base": "StructureDefinition-cimi-core-SourceOfInformation-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-entity-SourceSpecimen-model": {
       "base": "StructureDefinition-cimi-entity-SourceSpecimen-model.html",
       "template-base": "sd-logical.html",
@@ -1855,13 +1576,6 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/cimi-entity-StateOfIssue-model": {
-      "base": "StructureDefinition-cimi-entity-StateOfIssue-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
     "StructureDefinition/cimi-topic-StatementTopic-model": {
       "base": "StructureDefinition-cimi-topic-StatementTopic-model.html",
       "template-base": "sd-logical.html",
@@ -1871,13 +1585,6 @@
     },
     "StructureDefinition/cimi-element-Status-model": {
       "base": "StructureDefinition-cimi-element-Status-model.html",
-      "template-base": "sd-logical.html",
-      "pseudo-json": false,
-      "pseudo-xml": false,
-      "pseudo-ttl": false
-    },
-    "StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model": {
-      "base": "StructureDefinition-cimi-core-SubjectIfNotPersonOfRecord-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
@@ -1988,8 +1695,8 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/odh-UsualOccupation-model": {
-      "base": "StructureDefinition-odh-UsualOccupation-model.html",
+    "StructureDefinition/odh-UsualWork-model": {
+      "base": "StructureDefinition-odh-UsualWork-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

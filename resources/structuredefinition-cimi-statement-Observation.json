@@ -3,12 +3,12 @@
   "id": "cimi-statement-Observation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Observation Profile</b></p>\n  <p>Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  TopicCode maps to code\n  FindingMethod maps to method\n  Details maps to comment\n  Category maps to category\n  AnatomicalLocation maps to bodySite\n  Device maps to device\n  Specimen maps to specimen\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ResultValue maps to value[x]\n  ExceptionValue maps to dataAbsentReason\n  Interpretation maps to interpretation\n  RelevantTime maps to effective[x]\n  Encounter maps to context\n  DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Observation Profile</b></p>\n  <p>Represents the result of evaluations (measurements, tests, or questions) that have been performed.\nObservation has a value representing the result (answer), or an ExceptionValue indicating why the value is not present. The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.Observation maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  FindingMethod maps to method\n  AdditionalText maps to comment\n  Category maps to category\n  AnatomicalLocation maps to bodySite\n  Device maps to device\n  Specimen maps to specimen\n  ReferenceRange maps to referenceRange\n  ReferenceRange.Range.LowerBound maps to referenceRange.low\n  ReferenceRange.Range.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\t\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  fix related.type to #has-member\n  PanelMembers maps to related\n  PanelMembers.Observation maps to related.target (slice at = related; slice on = target.reference.resolve(); slice on type = profile; slice strategy = includes)\n  ResultValue maps to value[x]\n  ExceptionValue maps to dataAbsentReason\n  Interpretation maps to interpretation\n  RelevantTime maps to effective[x]\n  Encounter maps to context\n  DeltaFlag maps to http://hl7.org/fhir/StructureDefinition/observation-delta\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation",
   "name": "ObservationProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -404,526 +404,6 @@
           }
         ],
         "sliceName": "deltaflag"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:subjectifnotpersonofrecord",
-        "path": "Observation.extension",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation",
-        "path": "Observation.extension",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.id",
-        "path": "Observation.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension",
-        "path": "Observation.extension.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Extension",
-        "definition": "An Extension",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:entityorrole",
-        "path": "Observation.extension.extension",
-        "sliceName": "entityorrole",
-        "definition": "Parent class entity and role.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EntityOrRole-extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:entityorrole.id",
-        "path": "Observation.extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:entityorrole.extension",
-        "path": "Observation.extension.extension.extension",
-        "slicing": {
-          "id": "1",
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Extension",
-        "definition": "An Extension",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:entityorrole.url",
-        "path": "Observation.extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "identifies the meaning of the extension",
-        "definition": "Source of the definition for the extension code - a logical name or a URL.",
-        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.url",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-EntityOrRole-extension",
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:entityorrole.value[x]",
-        "path": "Observation.extension.extension.value[x]",
-        "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "Meta"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension:relationshiptopersonofrecord",
-        "path": "Observation.extension.extension",
-        "sliceName": "relationshiptopersonofrecord",
-        "definition": "The relationship to the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.url",
-        "path": "Observation.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "identifies the meaning of the extension",
-        "definition": "Source of the definition for the extension code - a logical name or a URL.",
-        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.url",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension",
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.value[x]",
-        "path": "Observation.extension.value[x]",
-        "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "Meta"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
       },
       {
         "id": "Observation:cimi-statement-Observation.extension:recorded",
@@ -1446,18 +926,18 @@
         ]
       },
       {
-        "id": "Observation:cimi-statement-Observation.extension:focus",
+        "id": "Observation:cimi-statement-Observation.extension:media",
         "path": "Observation.extension",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
+        "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-extension"
           }
         ],
-        "sliceName": "focus"
+        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.extension:precondition",
@@ -1472,20 +952,6 @@
           }
         ],
         "sliceName": "precondition"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:media",
-        "path": "Observation.extension",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-extension"
-          }
-        ],
-        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.modifierExtension",
@@ -2061,8 +1527,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "time"
@@ -2771,7 +2236,7 @@
         "comment": "For a discussion on the ways Observations can assembled in groups together see [Notes below](observation.html#4.20.4).",
         "requirements": "Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Observation.related",
           "min": 0,
@@ -3169,8 +2634,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "Attachment"
@@ -3623,40 +3087,6 @@
         "sliceName": "deltaflag"
       },
       {
-        "id": "Observation:cimi-statement-Observation.extension:subjectifnotpersonofrecord",
-        "path": "Observation.extension",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation",
-        "path": "Observation.extension",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:sourceofinformation.extension",
-        "path": "Observation.extension.extension",
-        "min": 1,
-        "max": "*"
-      },
-      {
         "id": "Observation:cimi-statement-Observation.extension:recorded",
         "path": "Observation.extension",
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -3745,18 +3175,18 @@
         "fixedCode": "424975005"
       },
       {
-        "id": "Observation:cimi-statement-Observation.extension:focus",
+        "id": "Observation:cimi-statement-Observation.extension:media",
         "path": "Observation.extension",
-        "definition": "The aspect or attribute of the subject of information that the finding relates to, other than an anatomical location. For example, the finding could deal with a condition, a behavior, a wound, or tumor. These are entities that are implied by clinical statements (see cimi.entity.MaterializedAssertion)",
+        "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Focus-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-extension"
           }
         ],
-        "sliceName": "focus"
+        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.extension:precondition",
@@ -3771,20 +3201,6 @@
           }
         ],
         "sliceName": "precondition"
-      },
-      {
-        "id": "Observation:cimi-statement-Observation.extension:media",
-        "path": "Observation.extension",
-        "definition": "A file that contains audio, video, image, or similar content.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-extension"
-          }
-        ],
-        "sliceName": "media"
       },
       {
         "id": "Observation:cimi-statement-Observation.category",
@@ -3833,8 +3249,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "time"
@@ -3920,7 +3335,9 @@
       },
       {
         "id": "Observation:cimi-statement-Observation.related",
-        "path": "Observation.related"
+        "path": "Observation.related",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Observation:cimi-statement-Observation.related.type",
@@ -3958,8 +3375,7 @@
             "code": "Range"
           },
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           },
           {
             "code": "Attachment"

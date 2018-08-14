@@ -15,7 +15,7 @@
   "name": "SubstanceModel",
   "title": "ODH Substance Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -127,7 +127,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -145,7 +145,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -216,8 +216,8 @@
         }
       },
       {
-        "id": "cimi-entity-Substance-model.details",
-        "path": "cimi-entity-Substance-model.details",
+        "id": "cimi-entity-Substance-model.additionalText",
+        "path": "cimi-entity-Substance-model.additionalText",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -229,13 +229,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Substance-model.details",
+          "path": "cimi-entity-Substance-model.additionalText",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -359,7 +359,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Category-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
           }
         ],
         "mustSupport": false,
@@ -377,7 +377,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "shr-core-Category-model.value",
+          "path": "cimi-element-Category-model.value",
           "min": 1,
           "max": "1"
         },
@@ -448,8 +448,8 @@
         }
       },
       {
-        "id": "cimi-entity-Substance-model.details",
-        "path": "cimi-entity-Substance-model.details",
+        "id": "cimi-entity-Substance-model.additionalText",
+        "path": "cimi-entity-Substance-model.additionalText",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -461,13 +461,13 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Substance-model.details",
+          "path": "cimi-entity-Substance-model.additionalText",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,

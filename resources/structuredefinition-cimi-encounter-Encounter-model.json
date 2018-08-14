@@ -15,7 +15,7 @@
   "name": "EncounterModel",
   "title": "ODH Encounter Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -72,60 +72,6 @@
         "isSummary": false
       },
       {
-        "id": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Encounter-model.sourceOfInformation",
-        "path": "cimi-encounter-Encounter-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "cimi-encounter-Encounter-model.recorded",
         "path": "cimi-encounter-Encounter-model.recorded",
         "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -161,6 +107,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-encounter-Encounter-model.additionalText",
+        "path": "cimi-encounter-Encounter-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-encounter-Encounter-model.additionalText",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -296,9 +269,6 @@
           },
           {
             "code": "Coding"
-          },
-          {
-            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -411,8 +381,8 @@
             "display": "Progress Note"
           }
         ],
-        "short": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "short": "An entry concerning a patient where the result is a narrative text.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "1",
         "base": {
@@ -471,60 +441,6 @@
         "isSummary": false
       },
       {
-        "id": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Encounter-model.sourceOfInformation",
-        "path": "cimi-encounter-Encounter-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-encounter-Encounter-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
         "id": "cimi-encounter-Encounter-model.recorded",
         "path": "cimi-encounter-Encounter-model.recorded",
         "short": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
@@ -560,6 +476,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-encounter-Encounter-model.additionalText",
+        "path": "cimi-encounter-Encounter-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-encounter-Encounter-model.additionalText",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -695,9 +638,6 @@
           },
           {
             "code": "Coding"
-          },
-          {
-            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -810,8 +750,8 @@
             "display": "Progress Note"
           }
         ],
-        "short": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "short": "An entry concerning a patient where the result is a narrative text.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "1",
         "base": {

@@ -15,7 +15,7 @@
   "name": "HeadshotModel",
   "title": "ODH Headshot Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -67,7 +67,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -110,7 +110,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,

@@ -3,7 +3,7 @@
   "id": "cimi-statement-ClinicalNote-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Logical Model</b></p>\n  <p>An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Logical Model</b></p>\n  <p>An entry concerning a patient where the result is a narrative text.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ClinicalNote-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "ClinicalNoteModel",
   "title": "ODH ClinicalNote Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+  "description": "An entry concerning a patient where the result is a narrative text.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -45,7 +45,7 @@
       {
         "id": "cimi-statement-ClinicalNote-model",
         "path": "cimi-statement-ClinicalNote-model",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "*",
         "base": {
@@ -72,60 +72,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
           }
         ],
         "mustSupport": false,
@@ -168,6 +114,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.additionalText",
+        "path": "cimi-statement-ClinicalNote-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.additionalText",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -556,26 +529,41 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-ClinicalNote-model.details",
-        "path": "cimi-statement-ClinicalNote-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 1,
+        "id": "cimi-statement-ClinicalNote-model.findingMethod",
+        "path": "cimi-statement-ClinicalNote-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-ClinicalNote-model.details",
-          "min": 1,
+          "path": "cimi-statement-ClinicalNote-model.findingMethod",
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.media",
+        "path": "cimi-statement-ClinicalNote-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -589,7 +577,7 @@
       {
         "id": "cimi-statement-ClinicalNote-model",
         "path": "cimi-statement-ClinicalNote-model",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "*",
         "base": {
@@ -616,60 +604,6 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.subjectIfNotPersonOfRecord",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0449416"
-          }
-        ],
-        "short": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ClinicalNote-model.sourceOfInformation",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-model"
           }
         ],
         "mustSupport": false,
@@ -712,6 +646,33 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.additionalText",
+        "path": "cimi-statement-ClinicalNote-model.additionalText",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0947611"
+          }
+        ],
+        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.additionalText",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
           }
         ],
         "mustSupport": false,
@@ -1100,26 +1061,41 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-ClinicalNote-model.details",
-        "path": "cimi-statement-ClinicalNote-model.details",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0947611"
-          }
-        ],
-        "short": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 1,
+        "id": "cimi-statement-ClinicalNote-model.findingMethod",
+        "path": "cimi-statement-ClinicalNote-model.findingMethod",
+        "short": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-ClinicalNote-model.details",
-          "min": 1,
+          "path": "cimi-statement-ClinicalNote-model.findingMethod",
+          "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "cimi-statement-ClinicalNote-model.media",
+        "path": "cimi-statement-ClinicalNote-model.media",
+        "short": "A file that contains audio, video, image, or similar content.",
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "cimi-statement-ClinicalNote-model.media",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,

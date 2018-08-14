@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Medication",
   "name": "MedicationProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -798,8 +798,7 @@
         },
         "type": [
           {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
+            "code": "Ratio"
           }
         ],
         "mapping": [
@@ -1442,16 +1441,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Medication"
-          }
-        ]
-      },
-      {
-        "id": "Medication:cimi-entity-Medication.ingredient.amount",
-        "path": "Medication.ingredient.amount",
-        "type": [
-          {
-            "code": "Ratio",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio"
           }
         ]
       },

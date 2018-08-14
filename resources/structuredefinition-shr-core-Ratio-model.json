@@ -15,7 +15,7 @@
   "name": "RatioModel",
   "title": "ODH Ratio Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -67,11 +67,11 @@
         ],
         "short": "The dividend of a fraction.",
         "definition": "The dividend of a fraction.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Ratio-model.numerator",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -94,11 +94,11 @@
         ],
         "short": "The divisor of a fraction.",
         "definition": "The divisor of a fraction.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Ratio-model.denominator",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -140,11 +140,11 @@
         ],
         "short": "The dividend of a fraction.",
         "definition": "The dividend of a fraction.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Ratio-model.numerator",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -167,11 +167,11 @@
         ],
         "short": "The divisor of a fraction.",
         "definition": "The divisor of a fraction.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "shr-core-Ratio-model.denominator",
-          "min": 1,
+          "min": 0,
           "max": "1"
         },
         "type": [

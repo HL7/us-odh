@@ -3,12 +3,12 @@
   "id": "cimi-statement-ClinicalNote",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Profile</b></p>\n  <p>An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.ClinicalNote maps to DomainResource:\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH ClinicalNote Profile</b></p>\n  <p>An entry concerning a patient where the result is a narrative text.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>cimi.statement.ClinicalNote maps to DomainResource:\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ClinicalNote",
   "name": "ClinicalNoteProfile",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+  "description": "An entry concerning a patient where the result is a narrative text.",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -40,7 +40,7 @@
         "id": "DomainResource:cimi-statement-ClinicalNote",
         "path": "DomainResource",
         "short": "ODH ClinicalNote Profile",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic.",
+        "definition": "An entry concerning a patient where the result is a narrative text.",
         "min": 0,
         "max": "*",
         "constraint": [
@@ -295,54 +295,6 @@
         "sliceName": "personofrecord"
       },
       {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:subjectifnotpersonofrecord",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:sourceofinformation",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
-      },
-      {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:recorded",
         "path": "DomainResource.extension",
         "slicing": {
@@ -389,6 +341,30 @@
           }
         ],
         "sliceName": "signed"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:additionaltext",
+        "path": "DomainResource.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
+          }
+        ],
+        "sliceName": "additionaltext"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode",
@@ -863,7 +839,7 @@
         "sliceName": "relevanttime"
       },
       {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:details",
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingmethod",
         "path": "DomainResource.extension",
         "slicing": {
           "discriminator": [
@@ -875,16 +851,40 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 1,
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "findingmethod"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:media",
+        "path": "DomainResource.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-extension"
+          }
+        ],
+        "sliceName": "media"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.modifierExtension",
@@ -929,7 +929,7 @@
         "id": "DomainResource:cimi-statement-ClinicalNote",
         "path": "DomainResource",
         "short": "ODH ClinicalNote Profile",
-        "definition": "An entry concerning a patient where the result is a narrative text. Can be related to a specific Focus, such as a condition; and evidence and interpretation from FindingTopic."
+        "definition": "An entry concerning a patient where the result is a narrative text."
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension",
@@ -960,54 +960,6 @@
           }
         ],
         "sliceName": "personofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:subjectifnotpersonofrecord",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The subject of the observation, if someone other than the person of record (the patient) is the subject, for example, a relative of the person of record.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SubjectIfNotPersonOfRecord-extension"
-          }
-        ],
-        "sliceName": "subjectifnotpersonofrecord"
-      },
-      {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:sourceofinformation",
-        "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "The person or entity that provided the information in the entry, e.g. the subject (patient), medical professional, family member, device or software program, as distinct from who recorded the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-SourceOfInformation-extension"
-          }
-        ],
-        "sliceName": "sourceofinformation"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:recorded",
@@ -1056,6 +1008,30 @@
           }
         ],
         "sliceName": "signed"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:additionaltext",
+        "path": "DomainResource.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-extension"
+          }
+        ],
+        "sliceName": "additionaltext"
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode",
@@ -1224,7 +1200,7 @@
         "sliceName": "relevanttime"
       },
       {
-        "id": "DomainResource:cimi-statement-ClinicalNote.extension:details",
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingmethod",
         "path": "DomainResource.extension",
         "slicing": {
           "discriminator": [
@@ -1236,16 +1212,40 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
-        "min": 1,
+        "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Details-extension"
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-extension"
           }
         ],
-        "sliceName": "details"
+        "sliceName": "findingmethod"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:media",
+        "path": "DomainResource.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "A file that contains audio, video, image, or similar content.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-extension"
+          }
+        ],
+        "sliceName": "media"
       }
     ]
   },

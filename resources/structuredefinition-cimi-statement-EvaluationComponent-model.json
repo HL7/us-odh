@@ -15,7 +15,7 @@
   "name": "EvaluationComponentModel",
   "title": "ODH EvaluationComponent Logical Model",
   "status": "draft",
-  "date": "2018-08-08",
+  "date": "2018-08-13",
   "publisher": "HL7",
   "contact": [
     {
@@ -91,7 +91,7 @@
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio-model"
           },
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           },
           {
             "code": "time"
@@ -296,7 +296,7 @@
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Ratio-model"
           },
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Media-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           },
           {
             "code": "time"
