@@ -15,7 +15,7 @@
   "name": "UsualWorkModel",
   "title": "ODH UsualWork Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -59,6 +59,12 @@
       {
         "id": "odh-UsualWork-model.personOfRecord",
         "path": "odh-UsualWork-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 1,
@@ -70,7 +76,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -91,7 +98,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -112,7 +119,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -139,7 +146,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -160,30 +167,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.contextCode.value",
-        "path": "odh-UsualWork-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -192,8 +175,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.id",
-        "path": "odh-UsualWork-model.contextCode.value.id",
+        "id": "odh-UsualWork-model.contextCode.id",
+        "path": "odh-UsualWork-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -219,8 +202,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.extension",
-        "path": "odh-UsualWork-model.contextCode.value.extension",
+        "id": "odh-UsualWork-model.contextCode.extension",
+        "path": "odh-UsualWork-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -234,10 +217,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -258,8 +237,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.system",
-        "path": "odh-UsualWork-model.contextCode.value.system",
+        "id": "odh-UsualWork-model.contextCode.system",
+        "path": "odh-UsualWork-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -294,8 +273,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.version",
-        "path": "odh-UsualWork-model.contextCode.value.version",
+        "id": "odh-UsualWork-model.contextCode.version",
+        "path": "odh-UsualWork-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -328,8 +307,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.code",
-        "path": "odh-UsualWork-model.contextCode.value.code",
+        "id": "odh-UsualWork-model.contextCode.code",
+        "path": "odh-UsualWork-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -363,14 +342,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.display",
+        "id": "odh-UsualWork-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.contextCode.value.display",
+        "path": "odh-UsualWork-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -403,8 +382,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.userSelected",
-        "path": "odh-UsualWork-model.contextCode.value.userSelected",
+        "id": "odh-UsualWork-model.contextCode.userSelected",
+        "path": "odh-UsualWork-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -499,12 +478,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.relevantTime",
@@ -538,9 +523,6 @@
         ],
         "short": "A period of time defined by a start and end time, date, or year.",
         "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
-        "alias": [
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -571,12 +553,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.media",
@@ -613,30 +601,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.topicCode.value",
-        "path": "odh-UsualWork-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic  of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -645,8 +609,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.id",
-        "path": "odh-UsualWork-model.topicCode.value.id",
+        "id": "odh-UsualWork-model.topicCode.id",
+        "path": "odh-UsualWork-model.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -672,8 +636,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.extension",
-        "path": "odh-UsualWork-model.topicCode.value.extension",
+        "id": "odh-UsualWork-model.topicCode.extension",
+        "path": "odh-UsualWork-model.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -687,10 +651,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -711,8 +671,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.system",
-        "path": "odh-UsualWork-model.topicCode.value.system",
+        "id": "odh-UsualWork-model.topicCode.system",
+        "path": "odh-UsualWork-model.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -747,8 +707,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.version",
-        "path": "odh-UsualWork-model.topicCode.value.version",
+        "id": "odh-UsualWork-model.topicCode.version",
+        "path": "odh-UsualWork-model.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -781,8 +741,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.code",
-        "path": "odh-UsualWork-model.topicCode.value.code",
+        "id": "odh-UsualWork-model.topicCode.code",
+        "path": "odh-UsualWork-model.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -816,14 +776,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.display",
+        "id": "odh-UsualWork-model.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.topicCode.value.display",
+        "path": "odh-UsualWork-model.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -856,8 +816,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.userSelected",
-        "path": "odh-UsualWork-model.topicCode.value.userSelected",
+        "id": "odh-UsualWork-model.topicCode.userSelected",
+        "path": "odh-UsualWork-model.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -916,9 +876,6 @@
         "path": "odh-UsualWork-model.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -935,7 +892,7 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186"
           }
@@ -952,30 +909,6 @@
           "path": "odh-UsualWork-model.exceptionValue",
           "min": 0,
           "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.exceptionValue.value",
-        "path": "odh-UsualWork-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -1012,12 +945,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.category",
@@ -1033,30 +972,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.category.value",
-        "path": "odh-UsualWork-model.category.value",
-        "short": "Code representing the type, kind, or class of this item.",
-        "definition": "Code representing the type, kind, or class of this item.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1065,8 +980,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.category.value.id",
-        "path": "odh-UsualWork-model.category.value.id",
+        "id": "odh-UsualWork-model.category.id",
+        "path": "odh-UsualWork-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1092,8 +1007,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.extension",
-        "path": "odh-UsualWork-model.category.value.extension",
+        "id": "odh-UsualWork-model.category.extension",
+        "path": "odh-UsualWork-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1107,10 +1022,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1131,8 +1042,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.system",
-        "path": "odh-UsualWork-model.category.value.system",
+        "id": "odh-UsualWork-model.category.system",
+        "path": "odh-UsualWork-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1167,8 +1078,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.version",
-        "path": "odh-UsualWork-model.category.value.version",
+        "id": "odh-UsualWork-model.category.version",
+        "path": "odh-UsualWork-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1201,8 +1112,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.code",
-        "path": "odh-UsualWork-model.category.value.code",
+        "id": "odh-UsualWork-model.category.code",
+        "path": "odh-UsualWork-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1236,14 +1147,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.display",
+        "id": "odh-UsualWork-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.category.value.display",
+        "path": "odh-UsualWork-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1276,8 +1187,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.userSelected",
-        "path": "odh-UsualWork-model.category.value.userSelected",
+        "id": "odh-UsualWork-model.category.userSelected",
+        "path": "odh-UsualWork-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1393,7 +1304,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -1523,8 +1438,14 @@
       {
         "id": "odh-UsualWork-model.focalSubjectModifier",
         "path": "odh-UsualWork-model.focalSubjectModifier",
-        "short": "The focus of the observation, if someone other than the person of record (subject).",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1534,12 +1455,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
       }
     ]
   },
@@ -1563,6 +1490,12 @@
       {
         "id": "odh-UsualWork-model.personOfRecord",
         "path": "odh-UsualWork-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 1,
@@ -1574,7 +1507,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -1595,7 +1529,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -1616,7 +1550,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -1643,7 +1577,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1664,30 +1598,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.contextCode.value",
-        "path": "odh-UsualWork-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1696,8 +1606,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.id",
-        "path": "odh-UsualWork-model.contextCode.value.id",
+        "id": "odh-UsualWork-model.contextCode.id",
+        "path": "odh-UsualWork-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1723,8 +1633,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.extension",
-        "path": "odh-UsualWork-model.contextCode.value.extension",
+        "id": "odh-UsualWork-model.contextCode.extension",
+        "path": "odh-UsualWork-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1738,10 +1648,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1762,8 +1668,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.system",
-        "path": "odh-UsualWork-model.contextCode.value.system",
+        "id": "odh-UsualWork-model.contextCode.system",
+        "path": "odh-UsualWork-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1798,8 +1704,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.version",
-        "path": "odh-UsualWork-model.contextCode.value.version",
+        "id": "odh-UsualWork-model.contextCode.version",
+        "path": "odh-UsualWork-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1832,8 +1738,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.code",
-        "path": "odh-UsualWork-model.contextCode.value.code",
+        "id": "odh-UsualWork-model.contextCode.code",
+        "path": "odh-UsualWork-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1867,14 +1773,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.display",
+        "id": "odh-UsualWork-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.contextCode.value.display",
+        "path": "odh-UsualWork-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1907,8 +1813,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.contextCode.value.userSelected",
-        "path": "odh-UsualWork-model.contextCode.value.userSelected",
+        "id": "odh-UsualWork-model.contextCode.userSelected",
+        "path": "odh-UsualWork-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2003,12 +1909,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.relevantTime",
@@ -2042,9 +1954,6 @@
         ],
         "short": "A period of time defined by a start and end time, date, or year.",
         "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
-        "alias": [
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2075,12 +1984,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.media",
@@ -2117,30 +2032,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.topicCode.value",
-        "path": "odh-UsualWork-model.topicCode.value",
-        "short": "Code representing the concept representing the finding or action that is the topic of the statement.",
-        "definition": "Code representing the concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic  of the action or the finding.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2149,8 +2040,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.id",
-        "path": "odh-UsualWork-model.topicCode.value.id",
+        "id": "odh-UsualWork-model.topicCode.id",
+        "path": "odh-UsualWork-model.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2176,8 +2067,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.extension",
-        "path": "odh-UsualWork-model.topicCode.value.extension",
+        "id": "odh-UsualWork-model.topicCode.extension",
+        "path": "odh-UsualWork-model.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2191,10 +2082,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2215,8 +2102,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.system",
-        "path": "odh-UsualWork-model.topicCode.value.system",
+        "id": "odh-UsualWork-model.topicCode.system",
+        "path": "odh-UsualWork-model.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2251,8 +2138,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.version",
-        "path": "odh-UsualWork-model.topicCode.value.version",
+        "id": "odh-UsualWork-model.topicCode.version",
+        "path": "odh-UsualWork-model.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2285,8 +2172,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.code",
-        "path": "odh-UsualWork-model.topicCode.value.code",
+        "id": "odh-UsualWork-model.topicCode.code",
+        "path": "odh-UsualWork-model.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2320,14 +2207,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.display",
+        "id": "odh-UsualWork-model.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.topicCode.value.display",
+        "path": "odh-UsualWork-model.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2360,8 +2247,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.topicCode.value.userSelected",
-        "path": "odh-UsualWork-model.topicCode.value.userSelected",
+        "id": "odh-UsualWork-model.topicCode.userSelected",
+        "path": "odh-UsualWork-model.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2420,9 +2307,6 @@
         "path": "odh-UsualWork-model.resultValue.valueCodeableConcept",
         "short": "A set of codes drawn from different coding systems, representing the same concept.",
         "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2439,7 +2323,7 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186"
           }
@@ -2456,30 +2340,6 @@
           "path": "odh-UsualWork-model.exceptionValue",
           "min": 0,
           "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.exceptionValue.value",
-        "path": "odh-UsualWork-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -2516,12 +2376,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "odh-UsualWork-model.category",
@@ -2537,30 +2403,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-UsualWork-model.category.value",
-        "path": "odh-UsualWork-model.category.value",
-        "short": "Code representing the type, kind, or class of this item.",
-        "definition": "Code representing the type, kind, or class of this item.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2569,8 +2411,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-UsualWork-model.category.value.id",
-        "path": "odh-UsualWork-model.category.value.id",
+        "id": "odh-UsualWork-model.category.id",
+        "path": "odh-UsualWork-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2596,8 +2438,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.extension",
-        "path": "odh-UsualWork-model.category.value.extension",
+        "id": "odh-UsualWork-model.category.extension",
+        "path": "odh-UsualWork-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2611,10 +2453,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2635,8 +2473,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.system",
-        "path": "odh-UsualWork-model.category.value.system",
+        "id": "odh-UsualWork-model.category.system",
+        "path": "odh-UsualWork-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2671,8 +2509,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.version",
-        "path": "odh-UsualWork-model.category.value.version",
+        "id": "odh-UsualWork-model.category.version",
+        "path": "odh-UsualWork-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2705,8 +2543,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.code",
-        "path": "odh-UsualWork-model.category.value.code",
+        "id": "odh-UsualWork-model.category.code",
+        "path": "odh-UsualWork-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2740,14 +2578,14 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.display",
+        "id": "odh-UsualWork-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-UsualWork-model.category.value.display",
+        "path": "odh-UsualWork-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2780,8 +2618,8 @@
         ]
       },
       {
-        "id": "odh-UsualWork-model.category.value.userSelected",
-        "path": "odh-UsualWork-model.category.value.userSelected",
+        "id": "odh-UsualWork-model.category.userSelected",
+        "path": "odh-UsualWork-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2897,7 +2735,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -3027,8 +2869,14 @@
       {
         "id": "odh-UsualWork-model.focalSubjectModifier",
         "path": "odh-UsualWork-model.focalSubjectModifier",
-        "short": "The focus of the observation, if someone other than the person of record (subject).",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3038,12 +2886,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
       }
     ]
   }

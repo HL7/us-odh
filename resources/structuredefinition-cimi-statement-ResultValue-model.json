@@ -15,7 +15,7 @@
   "name": "ResultValueModel",
   "title": "ODH ResultValue Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,17 +55,6 @@
         "path": "cimi-statement-ResultValue-model.value[x]",
         "short": "Choice of types representing the finding itself, such as the blood pressure value recorded.",
         "definition": "Choice of types representing the finding itself, such as the blood pressure value recorded.",
-        "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -130,17 +119,6 @@
         "path": "cimi-statement-ResultValue-model.value[x]",
         "short": "Choice of types representing the finding itself, such as the blood pressure value recorded.",
         "definition": "Choice of types representing the finding itself, such as the blood pressure value recorded.",
-        "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "boolean",
-          "range",
-          "ratio",
-          "time",
-          "dateTime",
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {

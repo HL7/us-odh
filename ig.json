@@ -86,9 +86,6 @@
     "StructureDefinition/cimi-statement-FindingStatement": {
       "base": "StructureDefinition-cimi-statement-FindingStatement.html"
     },
-    "StructureDefinition/odh-FocalSubjectModifier": {
-      "base": "StructureDefinition-odh-FocalSubjectModifier.html"
-    },
     "StructureDefinition/cimi-entity-Group": {
       "base": "StructureDefinition-cimi-entity-Group.html"
     },
@@ -104,8 +101,8 @@
     "StructureDefinition/cimi-statement-Observation": {
       "base": "StructureDefinition-cimi-statement-Observation.html"
     },
-    "StructureDefinition/odh-OccupationalDataSummary": {
-      "base": "StructureDefinition-odh-OccupationalDataSummary.html"
+    "StructureDefinition/odh-OccupationalDataForHealth": {
+      "base": "StructureDefinition-odh-OccupationalDataForHealth.html"
     },
     "StructureDefinition/cimi-entity-OrganizationIdentifier": {
       "base": "StructureDefinition-cimi-entity-OrganizationIdentifier.html"
@@ -280,6 +277,10 @@
       "base": "StructureDefinition-cimi-entity-LanguageUsed-extension.html",
       "template-base": "sd-extension.html"
     },
+    "StructureDefinition/cimi-entity-MaritalStatus-extension": {
+      "base": "StructureDefinition-cimi-entity-MaritalStatus-extension.html",
+      "template-base": "sd-extension.html"
+    },
     "StructureDefinition/cimi-datatypes-Media-extension": {
       "base": "StructureDefinition-cimi-datatypes-Media-extension.html",
       "template-base": "sd-extension.html"
@@ -306,6 +307,10 @@
     },
     "StructureDefinition/cimi-core-RecordedOn-extension": {
       "base": "StructureDefinition-cimi-core-RecordedOn-extension.html",
+      "template-base": "sd-extension.html"
+    },
+    "StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension": {
+      "base": "StructureDefinition-cimi-core-RelationshipToPersonOfRecord-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/cimi-statement-RelevantTime-extension": {
@@ -374,6 +379,9 @@
     },
     "ValueSet/cimi-entity-DeviceVS": {
       "base": "ValueSet-cimi-entity-DeviceVS.html"
+    },
+    "ValueSet/cimi-statement-FindingMethodVS": {
+      "base": "ValueSet-cimi-statement-FindingMethodVS.html"
     },
     "ValueSet/cimi-entity-LanguageQualifierVS": {
       "base": "ValueSet-cimi-entity-LanguageQualifierVS.html"
@@ -1156,15 +1164,15 @@
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/odh-OccupationalDataSection-model": {
-      "base": "StructureDefinition-odh-OccupationalDataSection-model.html",
+    "StructureDefinition/odh-OccupationalDataForHealth-model": {
+      "base": "StructureDefinition-odh-OccupationalDataForHealth-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,
       "pseudo-ttl": false
     },
-    "StructureDefinition/odh-OccupationalDataSummary-model": {
-      "base": "StructureDefinition-odh-OccupationalDataSummary-model.html",
+    "StructureDefinition/odh-OccupationalDataSection-model": {
+      "base": "StructureDefinition-odh-OccupationalDataSection-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

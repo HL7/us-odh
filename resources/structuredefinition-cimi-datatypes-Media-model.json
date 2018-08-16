@@ -15,7 +15,7 @@
   "name": "MediaModel",
   "title": "ODH Media Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -64,7 +64,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-BinaryData-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,
@@ -85,7 +85,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ContentType-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
@@ -112,12 +112,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/languages"
+          }
+        }
       },
       {
         "id": "cimi-datatypes-Media-model.resourceLocation",
@@ -133,7 +139,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ResourceLocation-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,
@@ -154,7 +160,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ResourceSize-model"
+            "code": "unsignedInt"
           }
         ],
         "mustSupport": false,
@@ -175,7 +181,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Hash-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,
@@ -196,7 +202,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Title-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -223,7 +229,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-CreationTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -263,7 +269,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-BinaryData-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,
@@ -284,7 +290,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ContentType-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
@@ -311,12 +317,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/languages"
+          }
+        }
       },
       {
         "id": "cimi-datatypes-Media-model.resourceLocation",
@@ -332,7 +344,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ResourceLocation-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,
@@ -353,7 +365,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ResourceSize-model"
+            "code": "unsignedInt"
           }
         ],
         "mustSupport": false,
@@ -374,7 +386,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Hash-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,
@@ -395,7 +407,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Title-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -422,7 +434,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-CreationTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,

@@ -15,7 +15,7 @@
   "name": "DoseFormModel",
   "title": "ODH DoseForm Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-entity-DoseForm-model.value",
         "short": "Code representing the form in which active and/or inert ingredient(s) are physically presented.",
         "definition": "Code representing the form in which active and/or inert ingredient(s) are physically presented.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -110,9 +107,6 @@
         "path": "cimi-entity-DoseForm-model.value",
         "short": "Code representing the form in which active and/or inert ingredient(s) are physically presented.",
         "definition": "Code representing the form in which active and/or inert ingredient(s) are physically presented.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {

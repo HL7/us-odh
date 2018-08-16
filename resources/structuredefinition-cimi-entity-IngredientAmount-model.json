@@ -15,7 +15,7 @@
   "name": "IngredientAmountModel",
   "title": "ODH IngredientAmount Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         ],
         "short": "Ratio representing the amount of an ingredient in a mixture, as a ratio. For example, 250 mg per tablet is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
         "definition": "Ratio representing the amount of an ingredient in a mixture, as a ratio. For example, 250 mg per tablet is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
-        "alias": [
-          "ratio"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -110,9 +107,6 @@
         ],
         "short": "Ratio representing the amount of an ingredient in a mixture, as a ratio. For example, 250 mg per tablet is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
         "definition": "Ratio representing the amount of an ingredient in a mixture, as a ratio. For example, 250 mg per tablet is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
-        "alias": [
-          "ratio"
-        ],
         "min": 1,
         "max": "1",
         "base": {

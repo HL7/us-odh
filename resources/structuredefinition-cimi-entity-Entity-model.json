@@ -15,7 +15,7 @@
   "name": "EntityModel",
   "title": "ODH Entity Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -49,22 +49,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Entity-model.intentionallyBlank",
-        "path": "cimi-entity-Entity-model.intentionallyBlank",
-        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-entity-Entity-model.intentionallyBlank",
-          "min": 0,
-          "max": "0"
-        },
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   },
@@ -80,22 +64,6 @@
           "path": "cimi-entity-Entity-model",
           "min": 0,
           "max": "*"
-        },
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Entity-model.intentionallyBlank",
-        "path": "cimi-entity-Entity-model.intentionallyBlank",
-        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "cimi-entity-Entity-model.intentionallyBlank",
-          "min": 0,
-          "max": "0"
         },
         "mustSupport": false,
         "isModifier": false,

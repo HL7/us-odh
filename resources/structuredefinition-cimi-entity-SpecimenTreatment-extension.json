@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "description": "Treatment performed on the specimen.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

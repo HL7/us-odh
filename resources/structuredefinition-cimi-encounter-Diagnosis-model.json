@@ -15,7 +15,7 @@
   "name": "DiagnosisModel",
   "title": "ODH Diagnosis Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-encounter-Diagnosis-model.value",
         "short": "Code representing a diagnosis, which is a disease or injury determined to be present through evaluation of patient history, examination, and/or review of laboratory data.",
         "definition": "Code representing a diagnosis, which is a disease or injury determined to be present through evaluation of patient history, examination, and/or review of laboratory data.",
-        "alias": [
-          "code"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -94,7 +91,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-PriorityRank-model"
+            "code": "positiveInt"
+          },
+          {
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -117,30 +117,6 @@
         "base": {
           "path": "cimi-encounter-Diagnosis-model.type",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Diagnosis-model.type.value",
-        "path": "cimi-encounter-Diagnosis-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -182,9 +158,6 @@
         "path": "cimi-encounter-Diagnosis-model.value",
         "short": "Code representing a diagnosis, which is a disease or injury determined to be present through evaluation of patient history, examination, and/or review of laboratory data.",
         "definition": "Code representing a diagnosis, which is a disease or injury determined to be present through evaluation of patient history, examination, and/or review of laboratory data.",
-        "alias": [
-          "code"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -221,7 +194,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-PriorityRank-model"
+            "code": "positiveInt"
+          },
+          {
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -244,30 +220,6 @@
         "base": {
           "path": "cimi-encounter-Diagnosis-model.type",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-encounter-Diagnosis-model.type.value",
-        "path": "cimi-encounter-Diagnosis-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [

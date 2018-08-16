@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation",
   "name": "ObservationProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -1792,7 +1792,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
           }
         },
         "mapping": [
@@ -3288,7 +3288,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
           }
         }
       },

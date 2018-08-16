@@ -15,7 +15,7 @@
   "name": "MedicationModel",
   "title": "ODH Medication Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -76,30 +76,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Medication-model.type.value",
-        "path": "cimi-entity-Medication-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -133,12 +109,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DoseForm-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/medication-form-codes"
+          }
+        }
       },
       {
         "id": "cimi-entity-Medication-model.brand",
@@ -175,7 +157,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OverTheCounter-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -215,6 +197,10 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1561598"
+          },
+          {
+            "system": "http://ncimeta.nci.nih.gov",
             "code": "C1114744"
           }
         ],
@@ -229,7 +215,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Manufacturer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,
@@ -256,7 +243,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-LotNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -277,7 +264,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -294,30 +281,6 @@
         "base": {
           "path": "cimi-entity-Medication-model.package",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Package-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Medication-model.package.value",
-        "path": "cimi-entity-Medication-model.package.value",
-        "short": "Code representing the kind of container the medication comes in.",
-        "definition": "Code representing the kind of container the medication comes in.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Package-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -374,30 +337,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Medication-model.type.value",
-        "path": "cimi-entity-Medication-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -431,12 +370,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DoseForm-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/medication-form-codes"
+          }
+        }
       },
       {
         "id": "cimi-entity-Medication-model.brand",
@@ -473,7 +418,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OverTheCounter-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -513,6 +458,10 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1561598"
+          },
+          {
+            "system": "http://ncimeta.nci.nih.gov",
             "code": "C1114744"
           }
         ],
@@ -527,7 +476,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Manufacturer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,
@@ -554,7 +504,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-LotNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -575,7 +525,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -592,30 +542,6 @@
         "base": {
           "path": "cimi-entity-Medication-model.package",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Package-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Medication-model.package.value",
-        "path": "cimi-entity-Medication-model.package.value",
-        "short": "Code representing the kind of container the medication comes in.",
-        "definition": "Code representing the kind of container the medication comes in.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Package-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [

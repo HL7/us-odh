@@ -15,7 +15,7 @@
   "name": "IssuerModel",
   "title": "ODH Issuer Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         ],
         "short": "Organization representing an organization who issues a qualification, identifier, or license.",
         "definition": "Organization representing an organization who issues a qualification, identifier, or license.",
-        "alias": [
-          "organization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -111,9 +108,6 @@
         ],
         "short": "Organization representing an organization who issues a qualification, identifier, or license.",
         "definition": "Organization representing an organization who issues a qualification, identifier, or license.",
-        "alias": [
-          "organization"
-        ],
         "min": 1,
         "max": "1",
         "base": {

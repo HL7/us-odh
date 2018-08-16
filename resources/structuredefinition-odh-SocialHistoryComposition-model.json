@@ -15,7 +15,7 @@
   "name": "SocialHistoryCompositionModel",
   "title": "ODH SocialHistoryComposition Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "odh-SocialHistoryComposition-model.socialHistorySection",
         "short": "Represents a section containing entries in a social history composition.",
         "definition": "Represents a section containing entries in a social history composition.",
-        "alias": [
-          "section"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -98,9 +95,6 @@
         "path": "odh-SocialHistoryComposition-model.socialHistorySection",
         "short": "Represents a section containing entries in a social history composition.",
         "definition": "Represents a section containing entries in a social history composition.",
-        "alias": [
-          "section"
-        ],
         "min": 0,
         "max": "*",
         "base": {

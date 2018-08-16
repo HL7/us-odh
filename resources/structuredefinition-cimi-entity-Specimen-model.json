@@ -15,7 +15,7 @@
   "name": "SpecimenModel",
   "title": "ODH Specimen Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -91,30 +91,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenStatus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Specimen-model.specimenStatus.value",
-        "path": "cimi-entity-Specimen-model.specimenStatus.value",
-        "short": "Code representing state of the specimen, such as obtained, processed, used.",
-        "definition": "Code representing state of the specimen, such as obtained, processed, used.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-SpecimenStatus-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -148,30 +124,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Specimen-model.type.value",
-        "path": "cimi-entity-Specimen-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -199,7 +151,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionSource-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Group-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Device-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -220,7 +185,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -241,7 +209,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -251,6 +219,12 @@
       {
         "id": "cimi-entity-Specimen-model.collectionSite",
         "path": "cimi-entity-Specimen-model.collectionSite",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
         "short": "The body site where specimen was collected",
         "definition": "The body site where specimen was collected",
         "min": 0,
@@ -262,7 +236,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionSite-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -283,7 +257,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SourceSpecimen-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -310,7 +285,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ReceivedTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -374,7 +349,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-HandlingRisk-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -395,7 +370,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecialHandling-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -462,30 +437,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenStatus-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Specimen-model.specimenStatus.value",
-        "path": "cimi-entity-Specimen-model.specimenStatus.value",
-        "short": "Code representing state of the specimen, such as obtained, processed, used.",
-        "definition": "Code representing state of the specimen, such as obtained, processed, used.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-SpecimenStatus-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -519,30 +470,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Specimen-model.type.value",
-        "path": "cimi-entity-Specimen-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -570,7 +497,20 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionSource-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Group-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Device-model"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -591,7 +531,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -612,7 +555,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -622,6 +565,12 @@
       {
         "id": "cimi-entity-Specimen-model.collectionSite",
         "path": "cimi-entity-Specimen-model.collectionSite",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "72369-2"
+          }
+        ],
         "short": "The body site where specimen was collected",
         "definition": "The body site where specimen was collected",
         "min": 0,
@@ -633,7 +582,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-CollectionSite-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-AnatomicalLocation-model"
           }
         ],
         "mustSupport": false,
@@ -654,7 +603,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SourceSpecimen-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Specimen-model"
           }
         ],
         "mustSupport": false,
@@ -681,7 +631,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-ReceivedTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -745,7 +695,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-HandlingRisk-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -766,7 +716,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecialHandling-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

@@ -15,7 +15,7 @@
   "name": "AdministrativeGenderModel",
   "title": "ODH AdministrativeGender Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-entity-AdministrativeGender-model.value",
         "short": "Code representing a gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.",
         "definition": "Code representing a gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.",
-        "alias": [
-          "code"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -110,9 +107,6 @@
         "path": "cimi-entity-AdministrativeGender-model.value",
         "short": "Code representing a gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.",
         "definition": "Code representing a gender classification used for administrative purposes. Administrative gender is not necessarily the same as a biological description or a gender identity. This attribute does not include terms related to clinical gender.",
-        "alias": [
-          "code"
-        ],
         "min": 1,
         "max": "1",
         "base": {

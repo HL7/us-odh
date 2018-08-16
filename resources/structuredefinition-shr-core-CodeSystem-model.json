@@ -15,7 +15,7 @@
   "name": "CodeSystemModel",
   "title": "ODH CodeSystem Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-core-CodeSystem-model.value",
         "short": "Uri representing a formal terminology system.",
         "definition": "Uri representing a formal terminology system.",
-        "alias": [
-          "uri"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "shr-core-CodeSystem-model.value",
         "short": "Uri representing a formal terminology system.",
         "definition": "Uri representing a formal terminology system.",
-        "alias": [
-          "uri"
-        ],
         "min": 1,
         "max": "1",
         "base": {

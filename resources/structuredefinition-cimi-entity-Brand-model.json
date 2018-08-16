@@ -15,7 +15,7 @@
   "name": "BrandModel",
   "title": "ODH Brand Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-entity-Brand-model.value",
         "short": "Boolean representing if the product is branded, and if so, the brand name of a product.",
         "definition": "Boolean representing if the product is branded, and if so, the brand name of a product.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -88,7 +85,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-BrandName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -119,9 +116,6 @@
         "path": "cimi-entity-Brand-model.value",
         "short": "Boolean representing if the product is branded, and if so, the brand name of a product.",
         "definition": "Boolean representing if the product is branded, and if so, the brand name of a product.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -152,7 +146,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-BrandName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,

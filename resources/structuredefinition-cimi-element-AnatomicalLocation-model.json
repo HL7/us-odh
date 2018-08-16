@@ -15,7 +15,7 @@
   "name": "AnatomicalLocationModel",
   "title": "ODH AnatomicalLocation Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-element-AnatomicalLocation-model.value",
         "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
         "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -107,12 +104,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Laterality-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
+          }
+        }
       },
       {
         "id": "cimi-element-AnatomicalLocation-model.anatomicalDirection",
@@ -134,12 +137,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-AnatomicalDirection-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-element-AnatomicalDirectionVS"
+          }
+        }
       }
     ]
   },
@@ -165,9 +174,6 @@
         "path": "cimi-element-AnatomicalLocation-model.value",
         "short": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
         "definition": "Code representing a location or structure in the body, including tissues, regions, cavities, and spaces; for example, right elbow, or left ventricle of the heart.",
-        "alias": [
-          "codeableConcept"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -211,12 +217,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Laterality-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
+          }
+        }
       },
       {
         "id": "cimi-element-AnatomicalLocation-model.anatomicalDirection",
@@ -238,12 +250,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-AnatomicalDirection-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-element-AnatomicalDirectionVS"
+          }
+        }
       }
     ]
   }

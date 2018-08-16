@@ -15,7 +15,7 @@
   "name": "EvaluationComponentModel",
   "title": "ODH EvaluationComponent Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,18 +55,6 @@
         "path": "cimi-statement-EvaluationComponent-model.value[x]",
         "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
-        "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "range",
-          "ratio",
-          "media",
-          "time",
-          "dateTime",
-          "timePeriod",
-          "integerQuantity"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -124,7 +112,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -141,30 +129,6 @@
         "base": {
           "path": "cimi-statement-EvaluationComponent-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-EvaluationComponent-model.exceptionValue.value",
-        "path": "cimi-statement-EvaluationComponent-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -202,12 +166,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "cimi-statement-EvaluationComponent-model.referenceRange",
@@ -260,18 +230,6 @@
         "path": "cimi-statement-EvaluationComponent-model.value[x]",
         "short": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
         "definition": "Choice of types representing a simplified, non-separable evaluation consisting of a finding code (represented by the Concept), value (or exception value), reference range, and interpretation. The subject of the evaluation component is the same as in the parent evaluation.",
-        "alias": [
-          "quantity",
-          "codeableConcept",
-          "string",
-          "range",
-          "ratio",
-          "media",
-          "time",
-          "dateTime",
-          "timePeriod",
-          "integerQuantity"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -329,7 +287,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -346,30 +304,6 @@
         "base": {
           "path": "cimi-statement-EvaluationComponent-model.exceptionValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-statement-EvaluationComponent-model.exceptionValue.value",
-        "path": "cimi-statement-EvaluationComponent-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -407,12 +341,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "cimi-statement-EvaluationComponent-model.referenceRange",

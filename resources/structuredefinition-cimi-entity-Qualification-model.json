@@ -15,7 +15,7 @@
   "name": "QualificationModel",
   "title": "ODH Qualification Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -76,30 +76,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Qualification-model.type.value",
-        "path": "cimi-entity-Qualification-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -143,6 +119,12 @@
       {
         "id": "cimi-entity-Qualification-model.issuer",
         "path": "cimi-entity-Qualification-model.issuer",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1561598"
+          }
+        ],
         "short": "An organization who issues a qualification, identifier, or license.",
         "definition": "An organization who issues a qualification, identifier, or license.",
         "min": 0,
@@ -154,7 +136,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Issuer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,
@@ -200,30 +183,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Qualification-model.type.value",
-        "path": "cimi-entity-Qualification-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -267,6 +226,12 @@
       {
         "id": "cimi-entity-Qualification-model.issuer",
         "path": "cimi-entity-Qualification-model.issuer",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1561598"
+          }
+        ],
         "short": "An organization who issues a qualification, identifier, or license.",
         "definition": "An organization who issues a qualification, identifier, or license.",
         "min": 0,
@@ -278,7 +243,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Issuer-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,

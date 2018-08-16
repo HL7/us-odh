@@ -15,7 +15,7 @@
   "name": "NameModel",
   "title": "ODH Name Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -64,7 +64,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-NameAsText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -74,6 +74,12 @@
       {
         "id": "cimi-element-Name-model.purpose",
         "path": "cimi-element-Name-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -85,7 +91,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Purpose-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -152,7 +158,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-NameAsText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -162,6 +168,12 @@
       {
         "id": "cimi-element-Name-model.purpose",
         "path": "cimi-element-Name-model.purpose",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Why the item is used.",
         "definition": "Why the item is used.",
         "min": 0,
@@ -173,7 +185,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Purpose-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

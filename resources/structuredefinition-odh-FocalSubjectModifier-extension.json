@@ -3,7 +3,7 @@
   "id": "odh-FocalSubjectModifier-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH FocalSubjectModifier Extension</b></p>\n  <p>The focus of the observation, if someone other than the person of record (subject).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH FocalSubjectModifier Extension</b></p>\n  <p>The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-extension",
   "identifier": [
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "date": "2018-08-13",
-  "description": "The focus of the observation, if someone other than the person of record (subject).",
+  "date": "2018-08-16",
+  "description": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +44,7 @@
         "id": "Extension:focalsubjectmodifier",
         "path": "Extension",
         "short": "ODH FocalSubjectModifier Extension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "*",
         "base": {
@@ -102,8 +102,90 @@
         ]
       },
       {
-        "id": "Extension:focalsubjectmodifier.extension:extension",
+        "id": "Extension:focalsubjectmodifier.extension",
         "path": "Extension.extension",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord",
+        "path": "Extension.extension",
+        "sliceName": "relationshiptopersonofrecord",
+        "definition": "The relationship to the person of record.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord.extension:extension",
+        "path": "Extension.extension.extension",
         "sliceName": "extension",
         "short": "Extension",
         "definition": "An Extension",
@@ -119,6 +201,65 @@
             "code": "Extension"
           }
         ]
+      },
+      {
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
       },
       {
         "id": "Extension:focalsubjectmodifier.url",
@@ -150,12 +291,12 @@
         ]
       },
       {
-        "id": "Extension:focalsubjectmodifier.valueReference",
-        "path": "Extension.valueReference",
+        "id": "Extension:focalsubjectmodifier.value[x]",
+        "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -163,8 +304,118 @@
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier"
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
           }
         ],
         "mapping": [
@@ -182,15 +433,23 @@
         "id": "Extension:focalsubjectmodifier",
         "path": "Extension",
         "short": "ODH FocalSubjectModifier Extension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "*"
       },
       {
-        "id": "Extension:focalsubjectmodifier.extension:extension",
+        "id": "Extension:focalsubjectmodifier.extension:relationshiptopersonofrecord",
         "path": "Extension.extension",
-        "sliceName": "extension",
-        "max": "0"
+        "sliceName": "relationshiptopersonofrecord",
+        "definition": "The relationship to the person of record.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension"
+          }
+        ]
       },
       {
         "id": "Extension:focalsubjectmodifier.url",
@@ -203,15 +462,10 @@
         "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-extension"
       },
       {
-        "id": "Extension:focalsubjectmodifier.valueReference",
-        "path": "Extension.valueReference",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier"
-          }
-        ]
+        "id": "Extension:focalsubjectmodifier.value[x]",
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
       }
     ]
   }

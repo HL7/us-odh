@@ -15,7 +15,7 @@
   "name": "SpecimenContainerModel",
   "title": "ODH SpecimenContainer Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -70,7 +70,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -124,7 +124,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -145,7 +145,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Capacity-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -166,7 +166,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenQuantity-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -187,7 +187,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Additive-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -208,7 +212,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SequenceNumber-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -254,7 +258,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -308,7 +312,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -329,7 +333,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Capacity-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -350,7 +354,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenQuantity-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -371,7 +375,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Additive-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Substance-model"
           }
         ],
         "mustSupport": false,
@@ -392,7 +400,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SequenceNumber-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,

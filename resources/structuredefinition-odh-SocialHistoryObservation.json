@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-SocialHistoryObservation",
   "name": "SocialHistoryObservationProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -390,7 +390,7 @@
       {
         "id": "Observation:odh-SocialHistoryObservation.modifierExtension:focalsubjectmodifier",
         "path": "Observation.modifierExtension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "type": [
@@ -2673,7 +2673,7 @@
       {
         "id": "Observation:odh-SocialHistoryObservation.modifierExtension:focalsubjectmodifier",
         "path": "Observation.modifierExtension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "type": [

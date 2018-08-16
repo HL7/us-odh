@@ -3,7 +3,7 @@
   "id": "odh-FocalSubjectModifier-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH FocalSubjectModifier Logical Model</b></p>\n  <p>The focus of the observation, if someone other than the person of record (subject).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH FocalSubjectModifier Logical Model</b></p>\n  <p>The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "FocalSubjectModifierModel",
   "title": "ODH FocalSubjectModifier Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The focus of the observation, if someone other than the person of record (subject).",
+  "description": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
   "kind": "logical",
   "abstract": false,
   "type": "odh-FocalSubjectModifier-model",
@@ -38,7 +38,7 @@
       {
         "id": "odh-FocalSubjectModifier-model",
         "path": "odh-FocalSubjectModifier-model",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "*",
         "base": {
@@ -51,44 +51,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
-        "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
+        "id": "odh-FocalSubjectModifier-model.value",
+        "path": "odh-FocalSubjectModifier-model.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
             "code": "C0015608"
           }
         ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
+        "short": "RelationshipToPersonOfRecord representing the focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "RelationshipToPersonOfRecord representing the focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord.value",
-        "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord.value",
-        "short": "Code representing the relationship to the person of record.",
-        "definition": "Code representing the relationship to the person of record.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-core-RelationshipToPersonOfRecord-model.value",
+          "path": "odh-FocalSubjectModifier-model.value",
           "min": 1,
           "max": "1"
         },
@@ -114,7 +90,7 @@
       {
         "id": "odh-FocalSubjectModifier-model",
         "path": "odh-FocalSubjectModifier-model",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "*",
         "base": {
@@ -127,44 +103,20 @@
         "isSummary": false
       },
       {
-        "id": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
-        "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
+        "id": "odh-FocalSubjectModifier-model.value",
+        "path": "odh-FocalSubjectModifier-model.value",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
             "code": "C0015608"
           }
         ],
-        "short": "The relationship to the person of record.",
-        "definition": "The relationship to the person of record.",
+        "short": "RelationshipToPersonOfRecord representing the focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "RelationshipToPersonOfRecord representing the focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-RelationshipToPersonOfRecord-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord.value",
-        "path": "odh-FocalSubjectModifier-model.relationshipToPersonOfRecord.value",
-        "short": "Code representing the relationship to the person of record.",
-        "definition": "Code representing the relationship to the person of record.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-core-RelationshipToPersonOfRecord-model.value",
+          "path": "odh-FocalSubjectModifier-model.value",
           "min": 1,
           "max": "1"
         },

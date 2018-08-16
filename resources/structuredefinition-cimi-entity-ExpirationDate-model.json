@@ -15,7 +15,7 @@
   "name": "ExpirationDateModel",
   "title": "ODH ExpirationDate Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-entity-ExpirationDate-model.value",
         "short": "DateTime representing when the item (medication, device, etc.) will expire.",
         "definition": "DateTime representing when the item (medication, device, etc.) will expire.",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-entity-ExpirationDate-model.value",
         "short": "DateTime representing when the item (medication, device, etc.) will expire.",
         "definition": "DateTime representing when the item (medication, device, etc.) will expire.",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {

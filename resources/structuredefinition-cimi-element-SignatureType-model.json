@@ -15,7 +15,7 @@
   "name": "SignatureTypeModel",
   "title": "ODH SignatureType Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -67,9 +67,6 @@
         ],
         "short": "Code representing type of signature",
         "definition": "Code representing type of signature",
-        "alias": [
-          "coding"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -116,9 +113,6 @@
         ],
         "short": "Code representing type of signature",
         "definition": "Code representing type of signature",
-        "alias": [
-          "coding"
-        ],
         "min": 1,
         "max": "1",
         "base": {

@@ -93,13 +93,6 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/odh-FocalSubjectModifier" />
-                <display value="ODH FocalSubjectModifier Profile" />
-            </sourceReference>
-        </resource>
-        <resource>
-            <example value="false" />
-            <sourceReference>
                 <reference value="StructureDefinition/cimi-entity-Group" />
                 <display value="ODH Group Profile" />
             </sourceReference>
@@ -135,8 +128,8 @@
         <resource>
             <example value="false" />
             <sourceReference>
-                <reference value="StructureDefinition/odh-OccupationalDataSummary" />
-                <display value="ODH OccupationalDataSummary Profile" />
+                <reference value="StructureDefinition/odh-OccupationalDataForHealth" />
+                <display value="ODH OccupationalDataForHealth Profile" />
             </sourceReference>
         </resource>
         <resource>
@@ -471,6 +464,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="StructureDefinition/cimi-entity-MaritalStatus-extension" />
+                <display value="ODH MaritalStatus Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="StructureDefinition/cimi-datatypes-Media-extension" />
                 <display value="ODH Media Extension" />
             </sourceReference>
@@ -515,6 +515,13 @@
             <sourceReference>
                 <reference value="StructureDefinition/cimi-core-RecordedOn-extension" />
                 <display value="ODH RecordedOn Extension" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="StructureDefinition/cimi-core-RelationshipToPersonOfRecord-extension" />
+                <display value="ODH RelationshipToPersonOfRecord Extension" />
             </sourceReference>
         </resource>
         <resource>
@@ -641,6 +648,13 @@
             <sourceReference>
                 <reference value="ValueSet/cimi-entity-DeviceVS" />
                 <display value="ODH DeviceVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
+                <reference value="ValueSet/cimi-statement-FindingMethodVS" />
+                <display value="ODH FindingMethodVS ValueSet" />
             </sourceReference>
         </resource>
         <resource>
@@ -1451,15 +1465,15 @@
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/odh-OccupationalDataSection-model" />
-                  <display value="OccupationalDataSectionModel" />
+                  <reference value="StructureDefinition/odh-OccupationalDataForHealth-model" />
+                  <display value="OccupationalDataForHealthModel" />
               </sourceReference>
           </resource>
           <resource>
               <example value="false" />
               <sourceReference>
-                  <reference value="StructureDefinition/odh-OccupationalDataSummary-model" />
-                  <display value="OccupationalDataSummaryModel" />
+                  <reference value="StructureDefinition/odh-OccupationalDataSection-model" />
+                  <display value="OccupationalDataSectionModel" />
               </sourceReference>
           </resource>
           <resource>

@@ -15,7 +15,7 @@
   "name": "InformationEntryModel",
   "title": "ODH InformationEntry Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -59,6 +59,12 @@
       {
         "id": "cimi-core-InformationEntry-model.personOfRecord",
         "path": "cimi-core-InformationEntry-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 0,
@@ -70,7 +76,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -91,7 +98,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -112,7 +119,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -139,7 +146,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -168,6 +175,12 @@
       {
         "id": "cimi-core-InformationEntry-model.personOfRecord",
         "path": "cimi-core-InformationEntry-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 0,
@@ -179,7 +192,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -200,7 +214,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -221,7 +235,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -248,7 +262,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,

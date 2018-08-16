@@ -15,7 +15,7 @@
   "name": "ExcludeFlagModel",
   "title": "ODH ExcludeFlag Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-entity-ExcludeFlag-model.value",
         "short": "Boolean representing if true, exclude the subjects that match the criterion.",
         "definition": "Boolean representing if true, exclude the subjects that match the criterion.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "cimi-entity-ExcludeFlag-model.value",
         "short": "Boolean representing if true, exclude the subjects that match the criterion.",
         "definition": "Boolean representing if true, exclude the subjects that match the criterion.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {

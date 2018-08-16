@@ -15,7 +15,7 @@
   "name": "CreationTimeModel",
   "title": "ODH CreationTime Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-datatypes-CreationTime-model.value",
         "short": "DateTime representing the point in time when the information was recorded in the system of record.",
         "definition": "DateTime representing the point in time when the information was recorded in the system of record.",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "cimi-datatypes-CreationTime-model.value",
         "short": "DateTime representing the point in time when the information was recorded in the system of record.",
         "definition": "DateTime representing the point in time when the information was recorded in the system of record.",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {

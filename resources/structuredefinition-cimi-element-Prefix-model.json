@@ -15,7 +15,7 @@
   "name": "PrefixModel",
   "title": "ODH Prefix Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "cimi-element-Prefix-model.value",
         "short": "String representing contains a set of honorific terms that typically appear before a person's name, for example Mr., Mrs., Dr., etc.",
         "definition": "String representing contains a set of honorific terms that typically appear before a person's name, for example Mr., Mrs., Dr., etc.",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "cimi-element-Prefix-model.value",
         "short": "String representing contains a set of honorific terms that typically appear before a person's name, for example Mr., Mrs., Dr., etc.",
         "definition": "String representing contains a set of honorific terms that typically appear before a person's name, for example Mr., Mrs., Dr., etc.",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

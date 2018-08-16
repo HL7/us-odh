@@ -15,7 +15,7 @@
   "name": "RangeModel",
   "title": "ODH Range Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -64,7 +64,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-LowerBound-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -85,7 +85,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-UpperBound-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -125,7 +125,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-LowerBound-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,
@@ -146,7 +146,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-UpperBound-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-SimpleQuantity-model"
           }
         ],
         "mustSupport": false,

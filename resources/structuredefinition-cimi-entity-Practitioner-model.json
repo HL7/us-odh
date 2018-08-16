@@ -15,7 +15,7 @@
   "name": "PractitionerModel",
   "title": "ODH Practitioner Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -98,7 +98,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.humanName",
+          "path": "cimi-entity-Practitioner-model.person.humanName",
           "min": 1,
           "max": "*"
         },
@@ -129,13 +129,16 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.dateOfBirth",
+          "path": "cimi-entity-Practitioner-model.person.dateOfBirth",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DateOfBirth-model"
+            "code": "date"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -156,18 +159,24 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.administrativeGender",
+          "path": "cimi-entity-Practitioner-model.person.administrativeGender",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AdministrativeGender-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.person.address",
@@ -183,7 +192,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.address",
+          "path": "cimi-entity-Practitioner-model.person.address",
           "min": 0,
           "max": "*"
         },
@@ -204,13 +213,13 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.headshot",
+          "path": "cimi-entity-Practitioner-model.person.headshot",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Headshot-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -231,7 +240,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.contactPoint",
+          "path": "cimi-entity-Practitioner-model.person.contactPoint",
           "min": 0,
           "max": "*"
         },
@@ -252,7 +261,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.languageUsed",
+          "path": "cimi-entity-Practitioner-model.person.languageUsed",
           "min": 0,
           "max": "*"
         },
@@ -273,18 +282,51 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.activeFlag",
+          "path": "cimi-entity-Practitioner-model.person.activeFlag",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Practitioner-model.person.maritalStatus",
+        "path": "cimi-entity-Practitioner-model.person.maritalStatus",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0024819"
+          }
+        ],
+        "short": "The most recent marital status of a person.",
+        "definition": "The most recent marital status of a person.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Practitioner-model.person.maritalStatus",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/marital-status"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.nationalProviderIdentifier",
@@ -401,7 +443,7 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.humanName",
+          "path": "cimi-entity-Practitioner-model.person.humanName",
           "min": 1,
           "max": "*"
         },
@@ -432,13 +474,16 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.dateOfBirth",
+          "path": "cimi-entity-Practitioner-model.person.dateOfBirth",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DateOfBirth-model"
+            "code": "date"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -459,18 +504,24 @@
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.administrativeGender",
+          "path": "cimi-entity-Practitioner-model.person.administrativeGender",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-AdministrativeGender-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.person.address",
@@ -486,7 +537,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.address",
+          "path": "cimi-entity-Practitioner-model.person.address",
           "min": 0,
           "max": "*"
         },
@@ -507,13 +558,13 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.headshot",
+          "path": "cimi-entity-Practitioner-model.person.headshot",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Headshot-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Media-model"
           }
         ],
         "mustSupport": false,
@@ -534,7 +585,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.contactPoint",
+          "path": "cimi-entity-Practitioner-model.person.contactPoint",
           "min": 0,
           "max": "*"
         },
@@ -555,7 +606,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-entity-Person-model.languageUsed",
+          "path": "cimi-entity-Practitioner-model.person.languageUsed",
           "min": 0,
           "max": "*"
         },
@@ -576,18 +627,51 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-entity-Person-model.activeFlag",
+          "path": "cimi-entity-Practitioner-model.person.activeFlag",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "cimi-entity-Practitioner-model.person.maritalStatus",
+        "path": "cimi-entity-Practitioner-model.person.maritalStatus",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0024819"
+          }
+        ],
+        "short": "The most recent marital status of a person.",
+        "definition": "The most recent marital status of a person.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "cimi-entity-Practitioner-model.person.maritalStatus",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/marital-status"
+          }
+        }
       },
       {
         "id": "cimi-entity-Practitioner-model.nationalProviderIdentifier",

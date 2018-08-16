@@ -15,7 +15,7 @@
   "name": "RetirementDateModel",
   "title": "ODH RetirementDate Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -60,6 +60,12 @@
       {
         "id": "odh-RetirementDate-model.personOfRecord",
         "path": "odh-RetirementDate-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 1,
@@ -71,7 +77,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -92,7 +99,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -113,7 +120,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -140,7 +147,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -161,30 +168,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.contextCode.value",
-        "path": "odh-RetirementDate-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -193,8 +176,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.id",
-        "path": "odh-RetirementDate-model.contextCode.value.id",
+        "id": "odh-RetirementDate-model.contextCode.id",
+        "path": "odh-RetirementDate-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -220,8 +203,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.extension",
-        "path": "odh-RetirementDate-model.contextCode.value.extension",
+        "id": "odh-RetirementDate-model.contextCode.extension",
+        "path": "odh-RetirementDate-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -235,10 +218,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -259,8 +238,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.system",
-        "path": "odh-RetirementDate-model.contextCode.value.system",
+        "id": "odh-RetirementDate-model.contextCode.system",
+        "path": "odh-RetirementDate-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -295,8 +274,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.version",
-        "path": "odh-RetirementDate-model.contextCode.value.version",
+        "id": "odh-RetirementDate-model.contextCode.version",
+        "path": "odh-RetirementDate-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -329,8 +308,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.code",
-        "path": "odh-RetirementDate-model.contextCode.value.code",
+        "id": "odh-RetirementDate-model.contextCode.code",
+        "path": "odh-RetirementDate-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -364,14 +343,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.display",
+        "id": "odh-RetirementDate-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.contextCode.value.display",
+        "path": "odh-RetirementDate-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -404,8 +383,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.userSelected",
-        "path": "odh-RetirementDate-model.contextCode.value.userSelected",
+        "id": "odh-RetirementDate-model.contextCode.userSelected",
+        "path": "odh-RetirementDate-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -500,12 +479,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.relevantTime",
@@ -521,7 +506,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -542,12 +530,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.media",
@@ -584,30 +578,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.topicCode.value",
-        "path": "odh-RetirementDate-model.topicCode.value",
-        "short": "Date of Retirement",
-        "definition": "Date of Retirement",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -616,8 +586,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.id",
-        "path": "odh-RetirementDate-model.topicCode.value.id",
+        "id": "odh-RetirementDate-model.topicCode.id",
+        "path": "odh-RetirementDate-model.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -643,8 +613,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.extension",
-        "path": "odh-RetirementDate-model.topicCode.value.extension",
+        "id": "odh-RetirementDate-model.topicCode.extension",
+        "path": "odh-RetirementDate-model.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -658,10 +628,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -682,8 +648,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.system",
-        "path": "odh-RetirementDate-model.topicCode.value.system",
+        "id": "odh-RetirementDate-model.topicCode.system",
+        "path": "odh-RetirementDate-model.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -718,8 +684,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.version",
-        "path": "odh-RetirementDate-model.topicCode.value.version",
+        "id": "odh-RetirementDate-model.topicCode.version",
+        "path": "odh-RetirementDate-model.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -752,8 +718,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.code",
-        "path": "odh-RetirementDate-model.topicCode.value.code",
+        "id": "odh-RetirementDate-model.topicCode.code",
+        "path": "odh-RetirementDate-model.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -787,14 +753,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.display",
+        "id": "odh-RetirementDate-model.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.topicCode.value.display",
+        "path": "odh-RetirementDate-model.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -827,8 +793,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.userSelected",
-        "path": "odh-RetirementDate-model.topicCode.value.userSelected",
+        "id": "odh-RetirementDate-model.topicCode.userSelected",
+        "path": "odh-RetirementDate-model.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -887,9 +853,6 @@
         "path": "odh-RetirementDate-model.resultValue.valueDateTime",
         "short": "dateTime",
         "definition": "dateTime",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -917,30 +880,6 @@
           "path": "odh-RetirementDate-model.exceptionValue",
           "min": 0,
           "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.exceptionValue.value",
-        "path": "odh-RetirementDate-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -977,12 +916,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.category",
@@ -998,30 +943,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.category.value",
-        "path": "odh-RetirementDate-model.category.value",
-        "short": "Code representing the type, kind, or class of this item.",
-        "definition": "Code representing the type, kind, or class of this item.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1030,8 +951,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.category.value.id",
-        "path": "odh-RetirementDate-model.category.value.id",
+        "id": "odh-RetirementDate-model.category.id",
+        "path": "odh-RetirementDate-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1057,8 +978,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.extension",
-        "path": "odh-RetirementDate-model.category.value.extension",
+        "id": "odh-RetirementDate-model.category.extension",
+        "path": "odh-RetirementDate-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1072,10 +993,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1096,8 +1013,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.system",
-        "path": "odh-RetirementDate-model.category.value.system",
+        "id": "odh-RetirementDate-model.category.system",
+        "path": "odh-RetirementDate-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1132,8 +1049,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.version",
-        "path": "odh-RetirementDate-model.category.value.version",
+        "id": "odh-RetirementDate-model.category.version",
+        "path": "odh-RetirementDate-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1166,8 +1083,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.code",
-        "path": "odh-RetirementDate-model.category.value.code",
+        "id": "odh-RetirementDate-model.category.code",
+        "path": "odh-RetirementDate-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1201,14 +1118,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.display",
+        "id": "odh-RetirementDate-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.category.value.display",
+        "path": "odh-RetirementDate-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1241,8 +1158,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.userSelected",
-        "path": "odh-RetirementDate-model.category.value.userSelected",
+        "id": "odh-RetirementDate-model.category.userSelected",
+        "path": "odh-RetirementDate-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1358,7 +1275,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -1437,8 +1358,14 @@
       {
         "id": "odh-RetirementDate-model.focalSubjectModifier",
         "path": "odh-RetirementDate-model.focalSubjectModifier",
-        "short": "The focus of the observation, if someone other than the person of record (subject).",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "0",
         "base": {
@@ -1448,12 +1375,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
       }
     ]
   },
@@ -1477,6 +1410,12 @@
       {
         "id": "odh-RetirementDate-model.personOfRecord",
         "path": "odh-RetirementDate-model.personOfRecord",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0027361"
+          }
+        ],
         "short": "The person this entry belongs to.",
         "definition": "The person this entry belongs to.",
         "min": 1,
@@ -1488,7 +1427,8 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-PersonOfRecord-model"
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
           }
         ],
         "mustSupport": false,
@@ -1509,7 +1449,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Recorded-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -1530,7 +1470,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Signed-model"
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-Attribution-model"
           }
         ],
         "mustSupport": false,
@@ -1557,7 +1497,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-core-AdditionalText-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -1578,30 +1518,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.contextCode.value",
-        "path": "odh-RetirementDate-model.contextCode.value",
-        "short": "Record Entity",
-        "definition": "Record Entity",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ContextCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -1610,8 +1526,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.id",
-        "path": "odh-RetirementDate-model.contextCode.value.id",
+        "id": "odh-RetirementDate-model.contextCode.id",
+        "path": "odh-RetirementDate-model.contextCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -1637,8 +1553,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.extension",
-        "path": "odh-RetirementDate-model.contextCode.value.extension",
+        "id": "odh-RetirementDate-model.contextCode.extension",
+        "path": "odh-RetirementDate-model.contextCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -1652,10 +1568,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -1676,8 +1588,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.system",
-        "path": "odh-RetirementDate-model.contextCode.value.system",
+        "id": "odh-RetirementDate-model.contextCode.system",
+        "path": "odh-RetirementDate-model.contextCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -1712,8 +1624,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.version",
-        "path": "odh-RetirementDate-model.contextCode.value.version",
+        "id": "odh-RetirementDate-model.contextCode.version",
+        "path": "odh-RetirementDate-model.contextCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -1746,8 +1658,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.code",
-        "path": "odh-RetirementDate-model.contextCode.value.code",
+        "id": "odh-RetirementDate-model.contextCode.code",
+        "path": "odh-RetirementDate-model.contextCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -1781,14 +1693,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.display",
+        "id": "odh-RetirementDate-model.contextCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.contextCode.value.display",
+        "path": "odh-RetirementDate-model.contextCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -1821,8 +1733,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.contextCode.value.userSelected",
-        "path": "odh-RetirementDate-model.contextCode.value.userSelected",
+        "id": "odh-RetirementDate-model.contextCode.userSelected",
+        "path": "odh-RetirementDate-model.contextCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -1917,12 +1829,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Interpretation-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.relevantTime",
@@ -1938,7 +1856,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-RelevantTime-model"
+            "code": "dateTime"
+          },
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-TimePeriod-model"
           }
         ],
         "mustSupport": false,
@@ -1959,12 +1880,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-FindingMethod-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "preferred",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.media",
@@ -2001,30 +1928,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-topic-TopicCode-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.topicCode.value",
-        "path": "odh-RetirementDate-model.topicCode.value",
-        "short": "Date of Retirement",
-        "definition": "Date of Retirement",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-topic-TopicCode-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2033,8 +1936,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.id",
-        "path": "odh-RetirementDate-model.topicCode.value.id",
+        "id": "odh-RetirementDate-model.topicCode.id",
+        "path": "odh-RetirementDate-model.topicCode.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2060,8 +1963,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.extension",
-        "path": "odh-RetirementDate-model.topicCode.value.extension",
+        "id": "odh-RetirementDate-model.topicCode.extension",
+        "path": "odh-RetirementDate-model.topicCode.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2075,10 +1978,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2099,8 +1998,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.system",
-        "path": "odh-RetirementDate-model.topicCode.value.system",
+        "id": "odh-RetirementDate-model.topicCode.system",
+        "path": "odh-RetirementDate-model.topicCode.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2135,8 +2034,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.version",
-        "path": "odh-RetirementDate-model.topicCode.value.version",
+        "id": "odh-RetirementDate-model.topicCode.version",
+        "path": "odh-RetirementDate-model.topicCode.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2169,8 +2068,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.code",
-        "path": "odh-RetirementDate-model.topicCode.value.code",
+        "id": "odh-RetirementDate-model.topicCode.code",
+        "path": "odh-RetirementDate-model.topicCode.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2204,14 +2103,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.display",
+        "id": "odh-RetirementDate-model.topicCode.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.topicCode.value.display",
+        "path": "odh-RetirementDate-model.topicCode.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2244,8 +2143,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.topicCode.value.userSelected",
-        "path": "odh-RetirementDate-model.topicCode.value.userSelected",
+        "id": "odh-RetirementDate-model.topicCode.userSelected",
+        "path": "odh-RetirementDate-model.topicCode.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2304,9 +2203,6 @@
         "path": "odh-RetirementDate-model.resultValue.valueDateTime",
         "short": "dateTime",
         "definition": "dateTime",
-        "alias": [
-          "dateTime"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -2334,30 +2230,6 @@
           "path": "odh-RetirementDate-model.exceptionValue",
           "min": 0,
           "max": "0"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ExceptionValue-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.exceptionValue.value",
-        "path": "odh-RetirementDate-model.exceptionValue.value",
-        "short": "Code representing reason that a value associated with a test or other finding is missing.",
-        "definition": "Code representing reason that a value associated with a test or other finding is missing.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-statement-ExceptionValue-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -2394,12 +2266,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-DeltaFlag-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-DeltaFlagVS"
+          }
+        }
       },
       {
         "id": "odh-RetirementDate-model.category",
@@ -2415,30 +2293,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Category-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.category.value",
-        "path": "odh-RetirementDate-model.category.value",
-        "short": "Code representing the type, kind, or class of this item.",
-        "definition": "Code representing the type, kind, or class of this item.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-Category-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -2447,8 +2301,8 @@
         "isSummary": false
       },
       {
-        "id": "odh-RetirementDate-model.category.value.id",
-        "path": "odh-RetirementDate-model.category.value.id",
+        "id": "odh-RetirementDate-model.category.id",
+        "path": "odh-RetirementDate-model.category.id",
         "representation": [
           "xmlAttr"
         ],
@@ -2474,8 +2328,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.extension",
-        "path": "odh-RetirementDate-model.category.value.extension",
+        "id": "odh-RetirementDate-model.category.extension",
+        "path": "odh-RetirementDate-model.category.extension",
         "slicing": {
           "discriminator": [
             {
@@ -2489,10 +2343,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -2513,8 +2363,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.system",
-        "path": "odh-RetirementDate-model.category.value.system",
+        "id": "odh-RetirementDate-model.category.system",
+        "path": "odh-RetirementDate-model.category.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -2549,8 +2399,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.version",
-        "path": "odh-RetirementDate-model.category.value.version",
+        "id": "odh-RetirementDate-model.category.version",
+        "path": "odh-RetirementDate-model.category.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -2583,8 +2433,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.code",
-        "path": "odh-RetirementDate-model.category.value.code",
+        "id": "odh-RetirementDate-model.category.code",
+        "path": "odh-RetirementDate-model.category.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -2618,14 +2468,14 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.display",
+        "id": "odh-RetirementDate-model.category.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "odh-RetirementDate-model.category.value.display",
+        "path": "odh-RetirementDate-model.category.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -2658,8 +2508,8 @@
         ]
       },
       {
-        "id": "odh-RetirementDate-model.category.value.userSelected",
-        "path": "odh-RetirementDate-model.category.value.userSelected",
+        "id": "odh-RetirementDate-model.category.userSelected",
+        "path": "odh-RetirementDate-model.category.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -2775,7 +2625,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Precondition-model"
+            "code": "Coding"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-Observation-model"
           }
         ],
         "mustSupport": false,
@@ -2854,8 +2708,14 @@
       {
         "id": "odh-RetirementDate-model.focalSubjectModifier",
         "path": "odh-RetirementDate-model.focalSubjectModifier",
-        "short": "The focus of the observation, if someone other than the person of record (subject).",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0015608"
+          }
+        ],
+        "short": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "0",
         "base": {
@@ -2865,12 +2725,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-FocalSubjectModifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+          }
+        }
       }
     ]
   }

@@ -15,7 +15,7 @@
   "name": "GroupCharacteristicModel",
   "title": "ODH GroupCharacteristic Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,11 +61,6 @@
         "path": "cimi-entity-GroupCharacteristic-model.value[x]",
         "short": "Choice of types representing an inclusion or exclusion criterion as part of defining a cohort. If the criterion is an unary, then TopicCode must be SCT#385432009 (not applicable)",
         "definition": "Choice of types representing an inclusion or exclusion criterion as part of defining a cohort. If the criterion is an unary, then TopicCode must be SCT#385432009 (not applicable)",
-        "alias": [
-          "boolean",
-          "quantity",
-          "range"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -102,7 +97,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-GroupCharacteristicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -129,7 +124,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExcludeFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -187,11 +182,6 @@
         "path": "cimi-entity-GroupCharacteristic-model.value[x]",
         "short": "Choice of types representing an inclusion or exclusion criterion as part of defining a cohort. If the criterion is an unary, then TopicCode must be SCT#385432009 (not applicable)",
         "definition": "Choice of types representing an inclusion or exclusion criterion as part of defining a cohort. If the criterion is an unary, then TopicCode must be SCT#385432009 (not applicable)",
-        "alias": [
-          "boolean",
-          "quantity",
-          "range"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -228,7 +218,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-GroupCharacteristicCode-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
@@ -255,7 +245,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExcludeFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,

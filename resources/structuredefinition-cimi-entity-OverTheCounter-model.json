@@ -15,7 +15,7 @@
   "name": "OverTheCounterModel",
   "title": "ODH OverTheCounter Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-entity-OverTheCounter-model.value",
         "short": "Boolean representing true if the medication is available to consumers without a prescription.",
         "definition": "Boolean representing true if the medication is available to consumers without a prescription.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-entity-OverTheCounter-model.value",
         "short": "Boolean representing true if the medication is available to consumers without a prescription.",
         "definition": "Boolean representing true if the medication is available to consumers without a prescription.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {

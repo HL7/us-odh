@@ -15,7 +15,7 @@
   "name": "GeopoliticalLocationModel",
   "title": "ODH GeopoliticalLocation Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,22 +55,6 @@
         "mustSupport": false,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-        "path": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-          "min": 0,
-          "max": "0"
-        },
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
       }
     ]
   },
@@ -86,22 +70,6 @@
           "path": "shr-core-GeopoliticalLocation-model",
           "min": 0,
           "max": "*"
-        },
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-        "path": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-        "short": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "definition": "Workaround for limitation in IG publisher: StructureDefinitions must have at least one field",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "shr-core-GeopoliticalLocation-model.intentionallyBlank",
-          "min": 0,
-          "max": "0"
         },
         "mustSupport": false,
         "isModifier": false,

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person",
   "name": "PersonProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -422,6 +422,20 @@
         "sliceName": "activeflag"
       },
       {
+        "id": "Basic:cimi-entity-Person.extension:maritalstatus",
+        "path": "Basic.extension",
+        "definition": "The most recent marital status of a person.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-MaritalStatus-extension"
+          }
+        ],
+        "sliceName": "maritalstatus"
+      },
+      {
         "id": "Basic:cimi-entity-Person.modifierExtension",
         "path": "Basic.modifierExtension",
         "short": "Extensions that cannot be ignored",
@@ -736,6 +750,20 @@
           }
         ],
         "sliceName": "activeflag"
+      },
+      {
+        "id": "Basic:cimi-entity-Person.extension:maritalstatus",
+        "path": "Basic.extension",
+        "definition": "The most recent marital status of a person.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-MaritalStatus-extension"
+          }
+        ],
+        "sliceName": "maritalstatus"
       },
       {
         "id": "Basic:cimi-entity-Person.code",

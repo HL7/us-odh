@@ -15,7 +15,7 @@
   "name": "StateModel",
   "title": "ODH State Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "shr-core-State-model.value",
         "short": "String representing sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).",
         "definition": "String representing sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "shr-core-State-model.value",
         "short": "String representing sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).",
         "definition": "String representing sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). (Source: HL7 FHIR).",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

@@ -15,7 +15,7 @@
   "name": "UrlModel",
   "title": "ODH Url Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-entity-Url-model.value",
         "short": "Uri representing a unique URL on which the device may be contacted directly.",
         "definition": "Uri representing a unique URL on which the device may be contacted directly.",
-        "alias": [
-          "uri"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-entity-Url-model.value",
         "short": "Uri representing a unique URL on which the device may be contacted directly.",
         "definition": "Uri representing a unique URL on which the device may be contacted directly.",
-        "alias": [
-          "uri"
-        ],
         "min": 1,
         "max": "1",
         "base": {

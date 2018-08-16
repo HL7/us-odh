@@ -15,7 +15,7 @@
   "name": "PreconditionModel",
   "title": "ODH Precondition Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,10 +55,6 @@
         "path": "cimi-statement-Precondition-model.value[x]",
         "short": "Code or Observation representing a description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "Code or Observation representing a description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
-        "alias": [
-          "codeableConcept",
-          "observation"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -103,10 +99,6 @@
         "path": "cimi-statement-Precondition-model.value[x]",
         "short": "Code or Observation representing a description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
         "definition": "Code or Observation representing a description of the conditions or context of an observation, for example, under sedation, fasting or post-exercise. Body position and body site are also qualifiers, but handled separately. A qualifier cannot modify the measurement type; for example, a fasting blood sugar is still a blood sugar.",
-        "alias": [
-          "codeableConcept",
-          "observation"
-        ],
         "min": 1,
         "max": "1",
         "base": {

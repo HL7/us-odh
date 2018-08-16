@@ -15,7 +15,7 @@
   "name": "PostalCodeModel",
   "title": "ODH PostalCode Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "shr-core-PostalCode-model.value",
         "short": "String representing a sequence of letters and digits used as part of a postal address, often designating a geographic region",
         "definition": "String representing a sequence of letters and digits used as part of a postal address, often designating a geographic region",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "shr-core-PostalCode-model.value",
         "short": "String representing a sequence of letters and digits used as part of a postal address, often designating a geographic region",
         "definition": "String representing a sequence of letters and digits used as part of a postal address, often designating a geographic region",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

@@ -15,7 +15,7 @@
   "name": "TelecomNumberOrAddressModel",
   "title": "ODH TelecomNumberOrAddress Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-core-TelecomNumberOrAddress-model.value",
         "short": "String representing a user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
         "definition": "String representing a user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "shr-core-TelecomNumberOrAddress-model.value",
         "short": "String representing a user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
         "definition": "String representing a user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID.",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

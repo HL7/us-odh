@@ -15,7 +15,7 @@
   "name": "SocialHistorySectionModel",
   "title": "ODH SocialHistorySection Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "odh-SocialHistorySection-model.socialHistoryObservation",
         "short": "A simplified observation for social histories.",
         "definition": "A simplified observation for social histories.",
-        "alias": [
-          "clinicalStatement"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -98,9 +95,6 @@
         "path": "odh-SocialHistorySection-model.socialHistoryObservation",
         "short": "A simplified observation for social histories.",
         "definition": "A simplified observation for social histories.",
-        "alias": [
-          "clinicalStatement"
-        ],
         "min": 0,
         "max": "*",
         "base": {

@@ -15,7 +15,7 @@
   "name": "SignatureModel",
   "title": "ODH Signature Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -56,6 +56,10 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          },
+          {
+            "system": "http://ncimeta.nci.nih.gov",
             "code": "C0332307"
           }
         ],
@@ -67,36 +71,6 @@
           "path": "cimi-element-Signature-model.signatureType",
           "min": 1,
           "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-SignatureType-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-element-Signature-model.signatureType.value",
-        "path": "cimi-element-Signature-model.signatureType.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing type of signature",
-        "definition": "Code representing type of signature",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-SignatureType-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -133,7 +107,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-CreationTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -154,7 +128,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Signatory-model"
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Entity-model"
           }
         ],
         "mustSupport": false,
@@ -175,7 +153,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-OnBehalfOf-model"
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,
@@ -196,7 +178,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ContentType-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
@@ -217,7 +199,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-BinaryData-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,
@@ -249,6 +231,10 @@
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          },
+          {
+            "system": "http://ncimeta.nci.nih.gov",
             "code": "C0332307"
           }
         ],
@@ -260,36 +246,6 @@
           "path": "cimi-element-Signature-model.signatureType",
           "min": 1,
           "max": "*"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-SignatureType-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-element-Signature-model.signatureType.value",
-        "path": "cimi-element-Signature-model.signatureType.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing type of signature",
-        "definition": "Code representing type of signature",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "cimi-element-SignatureType-model.value",
-          "min": 1,
-          "max": "1"
         },
         "type": [
           {
@@ -326,7 +282,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-CreationTime-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -347,7 +303,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-Signatory-model"
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Entity-model"
           }
         ],
         "mustSupport": false,
@@ -368,7 +328,11 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-element-OnBehalfOf-model"
+            "code": "uri"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Organization-model"
           }
         ],
         "mustSupport": false,
@@ -389,7 +353,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-ContentType-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
@@ -410,7 +374,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-BinaryData-model"
+            "code": "base64Binary"
           }
         ],
         "mustSupport": false,

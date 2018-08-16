@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "odh-OccupationalDataSummary",
+  "id": "odh-OccupationalDataForHealth",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataSummary Profile</b></p>\n  <p>Current and past activities for profit, wages, salary, or as a service to others.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.OccupationalDataSummary maps to Composition:\n  OccupationalDataSection maps to section\n  OccupationalDataSection.SocialHistoryObservation maps to section.entry  (slice on = reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataForHealth Profile</b></p>\n  <p>Current and past activities for profit, wages, salary, or as a service to others.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.OccupationalDataForHealth maps to Composition:\n  OccupationalDataSection maps to section\n  OccupationalDataSection.SocialHistoryObservation maps to section.entry  (slice on = reference.resolve(); slice on type = profile; slice strategy = includes)\n</pre></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataSummary",
-  "name": "OccupationalDataSummaryProfile",
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth",
+  "name": "OccupationalDataForHealthProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -48,9 +48,9 @@
   "snapshot": {
     "element": [
       {
-        "id": "Composition:odh-OccupationalDataSummary",
+        "id": "Composition:odh-OccupationalDataForHealth",
         "path": "Composition",
-        "short": "ODH OccupationalDataSummary Profile",
+        "short": "ODH OccupationalDataForHealth Profile",
         "definition": "Current and past activities for profit, wages, salary, or as a service to others.",
         "comment": "While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.",
         "min": 0,
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.id",
+        "id": "Composition:odh-OccupationalDataForHealth.id",
         "path": "Composition.id",
         "short": "Logical id of this artifact",
         "definition": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -129,7 +129,7 @@
         "isSummary": true
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.meta",
+        "id": "Composition:odh-OccupationalDataForHealth.meta",
         "path": "Composition.meta",
         "short": "Metadata about the resource",
         "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
@@ -148,7 +148,7 @@
         "isSummary": true
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.implicitRules",
+        "id": "Composition:odh-OccupationalDataForHealth.implicitRules",
         "path": "Composition.implicitRules",
         "short": "A set of rules under which this content was created",
         "definition": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
@@ -169,7 +169,7 @@
         "isSummary": true
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.language",
+        "id": "Composition:odh-OccupationalDataForHealth.language",
         "path": "Composition.language",
         "short": "Language of the resource content",
         "definition": "The base language in which the resource is written.",
@@ -211,7 +211,7 @@
         }
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.text",
+        "id": "Composition:odh-OccupationalDataForHealth.text",
         "path": "Composition.text",
         "short": "Text summary of the resource, for human interpretation",
         "definition": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
@@ -245,7 +245,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.contained",
+        "id": "Composition:odh-OccupationalDataForHealth.contained",
         "path": "Composition.contained",
         "short": "Contained, inline Resources",
         "definition": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
@@ -275,7 +275,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.extension",
+        "id": "Composition:odh-OccupationalDataForHealth.extension",
         "path": "Composition.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -304,7 +304,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.modifierExtension",
+        "id": "Composition:odh-OccupationalDataForHealth.modifierExtension",
         "path": "Composition.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -334,7 +334,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.identifier",
+        "id": "Composition:odh-OccupationalDataForHealth.identifier",
         "path": "Composition.identifier",
         "short": "Logical identifier of composition (version-independent)",
         "definition": "Logical identifier for the composition, assigned when created. This identifier stays constant as the composition is changed over time.",
@@ -363,7 +363,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.status",
+        "id": "Composition:odh-OccupationalDataForHealth.status",
         "path": "Composition.status",
         "short": "preliminary | final | amended | entered-in-error",
         "definition": "The workflow/clinical status of this composition. The status is a marker for the clinical standing of the document.",
@@ -407,7 +407,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.type",
+        "id": "Composition:odh-OccupationalDataForHealth.type",
         "path": "Composition.type",
         "short": "Kind of composition (LOINC if possible)",
         "definition": "Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition.",
@@ -450,7 +450,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.class",
+        "id": "Composition:odh-OccupationalDataForHealth.class",
         "path": "Composition.class",
         "short": "Categorization of Composition",
         "definition": "A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.",
@@ -493,7 +493,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.subject",
+        "id": "Composition:odh-OccupationalDataForHealth.subject",
         "path": "Composition.subject",
         "short": "Who and/or what the composition is about",
         "definition": "Who or what the composition is about. The composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).",
@@ -524,7 +524,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.encounter",
+        "id": "Composition:odh-OccupationalDataForHealth.encounter",
         "path": "Composition.encounter",
         "short": "Context of the Composition",
         "definition": "Describes the clinical encounter or type of care this documentation is associated with.",
@@ -554,7 +554,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.date",
+        "id": "Composition:odh-OccupationalDataForHealth.date",
         "path": "Composition.date",
         "short": "Composition editing time",
         "definition": "The composition editing time, when the composition was last logically changed by the author.",
@@ -584,7 +584,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.author",
+        "id": "Composition:odh-OccupationalDataForHealth.author",
         "path": "Composition.author",
         "short": "Who and/or what authored the composition",
         "definition": "Identifies who is responsible for the information in the composition, not necessarily who typed it in.",
@@ -626,7 +626,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.title",
+        "id": "Composition:odh-OccupationalDataForHealth.title",
         "path": "Composition.title",
         "short": "Human Readable name/title",
         "definition": "Official human-readable label for the composition.",
@@ -651,7 +651,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.confidentiality",
+        "id": "Composition:odh-OccupationalDataForHealth.confidentiality",
         "path": "Composition.confidentiality",
         "short": "As defined by affinity domain",
         "definition": "The code specifying the level of confidentiality of the Composition.",
@@ -690,7 +690,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester",
+        "id": "Composition:odh-OccupationalDataForHealth.attester",
         "path": "Composition.attester",
         "short": "Attests to accuracy of composition",
         "definition": "A participant who has attested to the accuracy of the composition/document.",
@@ -726,7 +726,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.id",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.id",
         "path": "Composition.attester.id",
         "representation": [
           "xmlAttr"
@@ -753,7 +753,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.extension",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.extension",
         "path": "Composition.attester.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -782,7 +782,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.modifierExtension",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.modifierExtension",
         "path": "Composition.attester.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -814,7 +814,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.mode",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.mode",
         "path": "Composition.attester.mode",
         "short": "personal | professional | legal | official",
         "definition": "The type of attestation the authenticator offers.",
@@ -853,7 +853,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.time",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.time",
         "path": "Composition.attester.time",
         "short": "When the composition was attested",
         "definition": "When the composition was attested by the party.",
@@ -878,7 +878,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.attester.party",
+        "id": "Composition:odh-OccupationalDataForHealth.attester.party",
         "path": "Composition.attester.party",
         "short": "Who attested the composition",
         "definition": "Who attested the composition in the specified way.",
@@ -916,7 +916,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.custodian",
+        "id": "Composition:odh-OccupationalDataForHealth.custodian",
         "path": "Composition.custodian",
         "short": "Organization which maintains the composition",
         "definition": "Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information.",
@@ -943,7 +943,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo",
         "path": "Composition.relatesTo",
         "short": "Relationships to other compositions/documents",
         "definition": "Relationships that this composition has with other compositions or documents that already exist.",
@@ -978,7 +978,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo.id",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo.id",
         "path": "Composition.relatesTo.id",
         "representation": [
           "xmlAttr"
@@ -1005,7 +1005,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo.extension",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo.extension",
         "path": "Composition.relatesTo.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1034,7 +1034,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo.modifierExtension",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo.modifierExtension",
         "path": "Composition.relatesTo.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1066,7 +1066,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo.code",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo.code",
         "path": "Composition.relatesTo.code",
         "short": "replaces | transforms | signs | appends",
         "definition": "The type of relationship that this composition has with anther composition or document.",
@@ -1104,7 +1104,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.relatesTo.target[x]",
+        "id": "Composition:odh-OccupationalDataForHealth.relatesTo.target[x]",
         "path": "Composition.relatesTo.target[x]",
         "short": "Target of the relationship",
         "definition": "The target composition/document of this relationship.",
@@ -1132,7 +1132,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event",
+        "id": "Composition:odh-OccupationalDataForHealth.event",
         "path": "Composition.event",
         "short": "The clinical service(s) being documented",
         "definition": "The clinical service, such as a colonoscopy or an appendectomy, being documented.",
@@ -1168,7 +1168,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.id",
+        "id": "Composition:odh-OccupationalDataForHealth.event.id",
         "path": "Composition.event.id",
         "representation": [
           "xmlAttr"
@@ -1195,7 +1195,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.extension",
+        "id": "Composition:odh-OccupationalDataForHealth.event.extension",
         "path": "Composition.event.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1224,7 +1224,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.modifierExtension",
+        "id": "Composition:odh-OccupationalDataForHealth.event.modifierExtension",
         "path": "Composition.event.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1256,7 +1256,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.code",
+        "id": "Composition:odh-OccupationalDataForHealth.event.code",
         "path": "Composition.event.code",
         "short": "Code(s) that apply to the event being documented",
         "definition": "This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a \"History and Physical Report\" in which the procedure being documented is necessarily a \"History and Physical\" act.",
@@ -1294,7 +1294,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.period",
+        "id": "Composition:odh-OccupationalDataForHealth.event.period",
         "path": "Composition.event.period",
         "short": "The period covered by the documentation",
         "definition": "The period of time covered by the documentation. There is no assertion that the documentation is a complete representation for this period, only that it documents events during this time.",
@@ -1318,7 +1318,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.event.detail",
+        "id": "Composition:odh-OccupationalDataForHealth.event.detail",
         "path": "Composition.event.detail",
         "short": "The event(s) being documented",
         "definition": "The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy.",
@@ -1343,7 +1343,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section",
+        "id": "Composition:odh-OccupationalDataForHealth.section",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1396,7 +1396,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.id",
+        "id": "Composition:odh-OccupationalDataForHealth.section.id",
         "path": "Composition.section.id",
         "representation": [
           "xmlAttr"
@@ -1423,7 +1423,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.extension",
+        "id": "Composition:odh-OccupationalDataForHealth.section.extension",
         "path": "Composition.section.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -1452,7 +1452,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.modifierExtension",
+        "id": "Composition:odh-OccupationalDataForHealth.section.modifierExtension",
         "path": "Composition.section.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -1484,7 +1484,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.title",
+        "id": "Composition:odh-OccupationalDataForHealth.section.title",
         "path": "Composition.section.title",
         "short": "Label for section (e.g. for ToC)",
         "definition": "The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.",
@@ -1514,7 +1514,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.code",
+        "id": "Composition:odh-OccupationalDataForHealth.section.code",
         "path": "Composition.section.code",
         "short": "Classification of section (recommended)",
         "definition": "A code identifying the kind of content contained within the section. This must be consistent with the section title.",
@@ -1552,7 +1552,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.text",
+        "id": "Composition:odh-OccupationalDataForHealth.section.text",
         "path": "Composition.section.text",
         "short": "Text summary of the section, for human interpretation",
         "definition": "A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative.",
@@ -1579,7 +1579,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.mode",
+        "id": "Composition:odh-OccupationalDataForHealth.section.mode",
         "path": "Composition.section.mode",
         "short": "working | snapshot | changes",
         "definition": "How the entry list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted.",
@@ -1623,7 +1623,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.orderedBy",
+        "id": "Composition:odh-OccupationalDataForHealth.section.orderedBy",
         "path": "Composition.section.orderedBy",
         "short": "Order of section entries",
         "definition": "Specifies the order applied to the items in the section entries.",
@@ -1661,7 +1661,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry",
         "path": "Composition.section.entry",
         "short": "A reference to data that supports this section",
         "definition": "A reference to the actual resource from which the narrative in the section is derived.",
@@ -1700,7 +1700,7 @@
         }
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-PersonEmploymentStatus",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-PersonEmploymentStatus",
         "path": "Composition.section.entry",
         "short": "PersonEmploymentStatus",
         "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
@@ -1728,7 +1728,7 @@
         "sliceName": "odh-PersonEmploymentStatus"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-RetirementDate",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-RetirementDate",
         "path": "Composition.section.entry",
         "short": "RetirementDate",
         "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
@@ -1756,7 +1756,7 @@
         "sliceName": "odh-RetirementDate"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-CombatZonePeriod",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-CombatZonePeriod",
         "path": "Composition.section.entry",
         "short": "CombatZonePeriod",
         "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
@@ -1784,7 +1784,7 @@
         "sliceName": "odh-CombatZonePeriod"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-UsualWork",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-UsualWork",
         "path": "Composition.section.entry",
         "short": "UsualWork",
         "definition": "Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time.\nKnowledge of person's Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person's Usual Work on their health and guide appropriate use of screening tests to detect early disease.\nExample: a person has worked for a total of 30 years as a 'secretary' (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is 'secretary' and her Usual Industry is 'hotel construction.'\nUsual Work does not include work that was unpaid or voluntary.   Usual Work does not include work that was unpaid or voluntary.",
@@ -1812,7 +1812,7 @@
         "sliceName": "odh-UsualWork"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-PastOrPresentJob",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-PastOrPresentJob",
         "path": "Composition.section.entry",
         "short": "PastOrPresentJob",
         "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
@@ -1840,7 +1840,7 @@
         "sliceName": "odh-PastOrPresentJob"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.emptyReason",
+        "id": "Composition:odh-OccupationalDataForHealth.section.emptyReason",
         "path": "Composition.section.emptyReason",
         "short": "Why the section is empty",
         "definition": "If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason.",
@@ -1881,7 +1881,7 @@
         ]
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.section",
+        "id": "Composition:odh-OccupationalDataForHealth.section.section",
         "path": "Composition.section.section",
         "short": "Nested Section",
         "definition": "A nested sub-section within this section.",
@@ -1908,19 +1908,19 @@
   "differential": {
     "element": [
       {
-        "id": "Composition:odh-OccupationalDataSummary",
+        "id": "Composition:odh-OccupationalDataForHealth",
         "path": "Composition",
-        "short": "ODH OccupationalDataSummary Profile",
+        "short": "ODH OccupationalDataForHealth Profile",
         "definition": "Current and past activities for profit, wages, salary, or as a service to others."
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section",
+        "id": "Composition:odh-OccupationalDataForHealth.section",
         "path": "Composition.section",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -1941,7 +1941,7 @@
         }
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-PersonEmploymentStatus",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-PersonEmploymentStatus",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -1956,7 +1956,7 @@
         "max": "*"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-RetirementDate",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-RetirementDate",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -1971,7 +1971,7 @@
         "max": "*"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-CombatZonePeriod",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-CombatZonePeriod",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -1986,7 +1986,7 @@
         "max": "*"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-UsualWork",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-UsualWork",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -2001,7 +2001,7 @@
         "max": "1"
       },
       {
-        "id": "Composition:odh-OccupationalDataSummary.section.entry:odh-PastOrPresentJob",
+        "id": "Composition:odh-OccupationalDataForHealth.section.entry:odh-PastOrPresentJob",
         "path": "Composition.section.entry",
         "type": [
           {
@@ -2020,8 +2020,8 @@
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/odh",
-      "value": "odh.OccupationalDataSummary"
+      "value": "odh.OccupationalDataForHealth"
     }
   ],
-  "title": "ODH OccupationalDataSummary Profile"
+  "title": "ODH OccupationalDataForHealth Profile"
 }

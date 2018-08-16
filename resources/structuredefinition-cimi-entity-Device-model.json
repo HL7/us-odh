@@ -15,7 +15,7 @@
   "name": "DeviceModel",
   "title": "ODH Device Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -70,30 +70,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Device-model.type.value",
-        "path": "cimi-entity-Device-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -121,7 +97,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DeviceUdi-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -142,7 +118,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-VendorModelNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -163,7 +139,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ManufacturerName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -184,7 +160,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ManufactureDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -205,7 +181,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -232,7 +208,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Version-model"
+            "code": "string"
+          },
+          {
+            "code": "id"
           }
         ],
         "mustSupport": false,
@@ -253,7 +232,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Url-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,
@@ -299,30 +278,6 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Device-model.type.value",
-        "path": "cimi-entity-Device-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
             "code": "Coding"
           }
         ],
@@ -350,7 +305,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-DeviceUdi-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -371,7 +326,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-VendorModelNumber-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -392,7 +347,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ManufacturerName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -413,7 +368,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ManufactureDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -434,7 +389,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ExpirationDate-model"
+            "code": "dateTime"
           }
         ],
         "mustSupport": false,
@@ -461,7 +416,10 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Version-model"
+            "code": "string"
+          },
+          {
+            "code": "id"
           }
         ],
         "mustSupport": false,
@@ -482,7 +440,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Url-model"
+            "code": "uri"
           }
         ],
         "mustSupport": false,

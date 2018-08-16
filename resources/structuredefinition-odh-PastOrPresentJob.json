@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob",
   "name": "PastOrPresentJobProfile",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -415,7 +415,7 @@
       {
         "id": "Observation:odh-PastOrPresentJob.modifierExtension:focalsubjectmodifier",
         "path": "Observation.modifierExtension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "type": [
@@ -1635,7 +1635,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186"
           }
@@ -3029,7 +3029,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187"
           }
@@ -3979,7 +3979,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7597"
           }
@@ -4928,7 +4928,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7613"
           }
@@ -7793,7 +7793,7 @@
         ],
         "isSummary": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7130"
           }
@@ -10529,7 +10529,7 @@
       {
         "id": "Observation:odh-PastOrPresentJob.modifierExtension:focalsubjectmodifier",
         "path": "Observation.modifierExtension",
-        "definition": "The focus of the observation, if someone other than the person of record (subject).",
+        "definition": "The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.",
         "min": 0,
         "max": "1",
         "type": [
@@ -10667,7 +10667,7 @@
           }
         ],
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186"
           }
@@ -10769,7 +10769,7 @@
           }
         ],
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187"
           }
@@ -10855,7 +10855,7 @@
           }
         ],
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7597"
           }
@@ -10940,7 +10940,7 @@
           }
         ],
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7613"
           }
@@ -11183,7 +11183,7 @@
           }
         ],
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSetReference": {
             "reference": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7130"
           }

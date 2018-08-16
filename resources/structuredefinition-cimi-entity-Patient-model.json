@@ -3,7 +3,7 @@
   "id": "cimi-entity-Patient-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Patient Logical Model</b></p>\n  <p>A person in the role of a patient, including extended demographic information about the subject of this health record.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH Patient Logical Model</b></p>\n  <p>A person in the role of a patient.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Patient-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "PatientModel",
   "title": "ODH Patient Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+  "description": "A person in the role of a patient.",
   "keyword": [
     {
       "system": "http://ncimeta.nci.nih.gov",
@@ -44,7 +44,7 @@
       {
         "id": "cimi-entity-Patient-model",
         "path": "cimi-entity-Patient-model",
-        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "definition": "A person in the role of a patient.",
         "min": 0,
         "max": "*",
         "base": {
@@ -78,33 +78,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Patient-model.maritalStatus",
-        "path": "cimi-entity-Patient-model.maritalStatus",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0024819"
-          }
-        ],
-        "short": "The most recent marital status of a person.",
-        "definition": "The most recent marital status of a person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Patient-model.maritalStatus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-MaritalStatus-model"
           }
         ],
         "mustSupport": false,
@@ -118,7 +91,7 @@
       {
         "id": "cimi-entity-Patient-model",
         "path": "cimi-entity-Patient-model",
-        "definition": "A person in the role of a patient, including extended demographic information about the subject of this health record.",
+        "definition": "A person in the role of a patient.",
         "min": 0,
         "max": "*",
         "base": {
@@ -152,33 +125,6 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-Person-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Patient-model.maritalStatus",
-        "path": "cimi-entity-Patient-model.maritalStatus",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0024819"
-          }
-        ],
-        "short": "The most recent marital status of a person.",
-        "definition": "The most recent marital status of a person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "cimi-entity-Patient-model.maritalStatus",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-MaritalStatus-model"
           }
         ],
         "mustSupport": false,

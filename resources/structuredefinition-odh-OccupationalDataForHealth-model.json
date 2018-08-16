@@ -1,21 +1,21 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "odh-OccupationalDataSummary-model",
+  "id": "odh-OccupationalDataForHealth-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataSummary Logical Model</b></p>\n  <p>Current and past activities for profit, wages, salary, or as a service to others.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalDataForHealth Logical Model</b></p>\n  <p>Current and past activities for profit, wages, salary, or as a service to others.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataSummary-model",
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth-model",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/odh",
-      "value": "odh.OccupationalDataSummary"
+      "value": "odh.OccupationalDataForHealth"
     }
   ],
-  "name": "OccupationalDataSummaryModel",
-  "title": "ODH OccupationalDataSummary Logical Model",
+  "name": "OccupationalDataForHealthModel",
+  "title": "ODH OccupationalDataForHealth Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -36,19 +36,19 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "odh-OccupationalDataSummary-model",
+  "type": "odh-OccupationalDataForHealth-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
     "element": [
       {
-        "id": "odh-OccupationalDataSummary-model",
-        "path": "odh-OccupationalDataSummary-model",
+        "id": "odh-OccupationalDataForHealth-model",
+        "path": "odh-OccupationalDataForHealth-model",
         "definition": "Current and past activities for profit, wages, salary, or as a service to others.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSummary-model",
+          "path": "odh-OccupationalDataForHealth-model",
           "min": 0,
           "max": "*"
         },
@@ -57,17 +57,14 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSummary-model.occupationalDataSection",
-        "path": "odh-OccupationalDataSummary-model.occupationalDataSection",
+        "id": "odh-OccupationalDataForHealth-model.occupationalDataSection",
+        "path": "odh-OccupationalDataForHealth-model.occupationalDataSection",
         "short": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
         "definition": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
-        "alias": [
-          "section"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-OccupationalDataSummary-model.occupationalDataSection",
+          "path": "odh-OccupationalDataForHealth-model.occupationalDataSection",
           "min": 1,
           "max": "1"
         },
@@ -85,13 +82,13 @@
   "differential": {
     "element": [
       {
-        "id": "odh-OccupationalDataSummary-model",
-        "path": "odh-OccupationalDataSummary-model",
+        "id": "odh-OccupationalDataForHealth-model",
+        "path": "odh-OccupationalDataForHealth-model",
         "definition": "Current and past activities for profit, wages, salary, or as a service to others.",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "odh-OccupationalDataSummary-model",
+          "path": "odh-OccupationalDataForHealth-model",
           "min": 0,
           "max": "*"
         },
@@ -100,17 +97,14 @@
         "isSummary": false
       },
       {
-        "id": "odh-OccupationalDataSummary-model.occupationalDataSection",
-        "path": "odh-OccupationalDataSummary-model.occupationalDataSection",
+        "id": "odh-OccupationalDataForHealth-model.occupationalDataSection",
+        "path": "odh-OccupationalDataForHealth-model.occupationalDataSection",
         "short": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
         "definition": "Single section in the current OccupationalDataSummary, containing the person's history of employment and occupation, past and present.",
-        "alias": [
-          "section"
-        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-OccupationalDataSummary-model.occupationalDataSection",
+          "path": "odh-OccupationalDataForHealth-model.occupationalDataSection",
           "min": 1,
           "max": "1"
         },

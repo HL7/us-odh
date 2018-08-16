@@ -15,7 +15,7 @@
   "name": "OrganizationModel",
   "title": "ODH Organization Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -70,7 +70,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OrganizationName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -91,7 +91,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OrganizationAlias-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -134,30 +134,6 @@
         "max": "1",
         "base": {
           "path": "cimi-entity-Organization-model.type",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Organization-model.type.value",
-        "path": "cimi-entity-Organization-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
           "min": 1,
           "max": "1"
         },
@@ -244,7 +220,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -283,10 +259,6 @@
         ],
         "short": "A social or legal structure formed by human beings.",
         "definition": "A social or legal structure formed by human beings.",
-        "alias": [
-          "independent",
-          "organization"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -337,7 +309,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OrganizationName-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -358,7 +330,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-OrganizationAlias-model"
+            "code": "string"
           }
         ],
         "mustSupport": false,
@@ -401,30 +373,6 @@
         "max": "1",
         "base": {
           "path": "cimi-entity-Organization-model.type",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Type-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "cimi-entity-Organization-model.type.value",
-        "path": "cimi-entity-Organization-model.type.value",
-        "short": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "definition": "Code representing the most specific code (lowest level term) describing the kind or sort of thing being represented.",
-        "alias": [
-          "codeableConcept"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Type-model.value",
           "min": 1,
           "max": "1"
         },
@@ -511,7 +459,7 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-ActiveFlag-model"
+            "code": "boolean"
           }
         ],
         "mustSupport": false,
@@ -550,10 +498,6 @@
         ],
         "short": "A social or legal structure formed by human beings.",
         "definition": "A social or legal structure formed by human beings.",
-        "alias": [
-          "independent",
-          "organization"
-        ],
         "min": 1,
         "max": "1",
         "base": {

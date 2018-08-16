@@ -15,7 +15,7 @@
   "name": "CityModel",
   "title": "ODH City Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         "path": "shr-core-City-model.value",
         "short": "String representing the name of a municipality, city, town, village or other community or delivery center. (Source: HL7 FHIR).",
         "definition": "String representing the name of a municipality, city, town, village or other community or delivery center. (Source: HL7 FHIR).",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -104,9 +101,6 @@
         "path": "shr-core-City-model.value",
         "short": "String representing the name of a municipality, city, town, village or other community or delivery center. (Source: HL7 FHIR).",
         "definition": "String representing the name of a municipality, city, town, village or other community or delivery center. (Source: HL7 FHIR).",
-        "alias": [
-          "string"
-        ],
         "min": 1,
         "max": "1",
         "base": {

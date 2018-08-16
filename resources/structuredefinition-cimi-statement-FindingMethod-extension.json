@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "description": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
@@ -175,7 +175,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
           }
         }
       }
@@ -219,7 +219,7 @@
         "binding": {
           "strength": "preferred",
           "valueSetReference": {
-            "reference": "http://loinc.org"
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-statement-FindingMethodVS"
           }
         }
       }

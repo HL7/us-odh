@@ -15,7 +15,7 @@
   "name": "LanguageUsedModel",
   "title": "ODH LanguageUsed Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -61,9 +61,6 @@
         ],
         "short": "Language representing language used for communication by a human, either the subject of record, parent, or other involved person.",
         "definition": "Language representing language used for communication by a human, either the subject of record, parent, or other involved person.",
-        "alias": [
-          "language"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -73,12 +70,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/languages"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.spokenLanguageProficiency",
@@ -100,12 +103,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpokenLanguageProficiency-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.writtenLanguageProficiency",
@@ -127,12 +136,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-WrittenLanguageProficiency-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.languageQualifier",
@@ -148,12 +163,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-LanguageQualifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-entity-LanguageQualifierVS"
+          }
+        }
       }
     ]
   },
@@ -185,9 +206,6 @@
         ],
         "short": "Language representing language used for communication by a human, either the subject of record, parent, or other involved person.",
         "definition": "Language representing language used for communication by a human, either the subject of record, parent, or other involved person.",
-        "alias": [
-          "language"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -197,12 +215,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-datatypes-Language-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/languages"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.spokenLanguageProficiency",
@@ -224,12 +248,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpokenLanguageProficiency-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.writtenLanguageProficiency",
@@ -251,12 +281,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-WrittenLanguageProficiency-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-PerformanceGradingScaleVS"
+          }
+        }
       },
       {
         "id": "cimi-entity-LanguageUsed-model.languageQualifier",
@@ -272,12 +308,18 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-LanguageQualifier-model"
+            "code": "Coding"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/cimi-entity-LanguageQualifierVS"
+          }
+        }
       }
     ]
   }

@@ -15,7 +15,7 @@
   "name": "IsActiveIngredientModel",
   "title": "ODH IsActiveIngredient Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "cimi-entity-IsActiveIngredient-model.value",
         "short": "Boolean representing true if the ingredient is an active ingredient in the medication.",
         "definition": "Boolean representing true if the ingredient is an active ingredient in the medication.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -98,9 +95,6 @@
         "path": "cimi-entity-IsActiveIngredient-model.value",
         "short": "Boolean representing true if the ingredient is an active ingredient in the medication.",
         "definition": "Boolean representing true if the ingredient is an active ingredient in the medication.",
-        "alias": [
-          "boolean"
-        ],
         "min": 1,
         "max": "1",
         "base": {

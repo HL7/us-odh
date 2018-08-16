@@ -15,7 +15,7 @@
   "name": "IntegerQuantityModel",
   "title": "ODH IntegerQuantity Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,9 +55,6 @@
         "path": "shr-core-IntegerQuantity-model.value",
         "short": "Decimal representing a Quantity that is an integer.",
         "definition": "Decimal representing a Quantity that is an integer.",
-        "alias": [
-          "decimal"
-        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -88,16 +85,28 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Comparator-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/quantity-comparator"
+          }
+        }
       },
       {
         "id": "shr-core-IntegerQuantity-model.units",
         "path": "shr-core-IntegerQuantity-model.units",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Code for the unit of measure of the quantity.",
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
@@ -105,36 +114,6 @@
         "base": {
           "path": "shr-core-IntegerQuantity-model.units",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Units-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-IntegerQuantity-model.units.value",
-        "path": "shr-core-IntegerQuantity-model.units.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing code for the unit of measure of the quantity.",
-        "definition": "Code representing code for the unit of measure of the quantity.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Units-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -147,8 +126,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.id",
-        "path": "shr-core-IntegerQuantity-model.units.value.id",
+        "id": "shr-core-IntegerQuantity-model.units.id",
+        "path": "shr-core-IntegerQuantity-model.units.id",
         "representation": [
           "xmlAttr"
         ],
@@ -174,8 +153,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.extension",
-        "path": "shr-core-IntegerQuantity-model.units.value.extension",
+        "id": "shr-core-IntegerQuantity-model.units.extension",
+        "path": "shr-core-IntegerQuantity-model.units.extension",
         "slicing": {
           "discriminator": [
             {
@@ -189,10 +168,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -213,8 +188,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.system",
-        "path": "shr-core-IntegerQuantity-model.units.value.system",
+        "id": "shr-core-IntegerQuantity-model.units.system",
+        "path": "shr-core-IntegerQuantity-model.units.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -249,8 +224,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.version",
-        "path": "shr-core-IntegerQuantity-model.units.value.version",
+        "id": "shr-core-IntegerQuantity-model.units.version",
+        "path": "shr-core-IntegerQuantity-model.units.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -283,8 +258,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.code",
-        "path": "shr-core-IntegerQuantity-model.units.value.code",
+        "id": "shr-core-IntegerQuantity-model.units.code",
+        "path": "shr-core-IntegerQuantity-model.units.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -318,14 +293,14 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.display",
+        "id": "shr-core-IntegerQuantity-model.units.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-core-IntegerQuantity-model.units.value.display",
+        "path": "shr-core-IntegerQuantity-model.units.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -358,8 +333,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.userSelected",
-        "path": "shr-core-IntegerQuantity-model.units.value.userSelected",
+        "id": "shr-core-IntegerQuantity-model.units.userSelected",
+        "path": "shr-core-IntegerQuantity-model.units.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
@@ -416,9 +391,6 @@
         "path": "shr-core-IntegerQuantity-model.value",
         "short": "Decimal representing a Quantity that is an integer.",
         "definition": "Decimal representing a Quantity that is an integer.",
-        "alias": [
-          "decimal"
-        ],
         "min": 0,
         "max": "1",
         "base": {
@@ -449,16 +421,28 @@
         },
         "type": [
           {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Comparator-model"
+            "code": "code"
           }
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/quantity-comparator"
+          }
+        }
       },
       {
         "id": "shr-core-IntegerQuantity-model.units",
         "path": "shr-core-IntegerQuantity-model.units",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C0805701"
+          }
+        ],
         "short": "Code for the unit of measure of the quantity.",
         "definition": "Code for the unit of measure of the quantity.",
         "min": 0,
@@ -466,36 +450,6 @@
         "base": {
           "path": "shr-core-IntegerQuantity-model.units",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/shr-core-Units-model"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "shr-core-IntegerQuantity-model.units.value",
-        "path": "shr-core-IntegerQuantity-model.units.value",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C0805701"
-          }
-        ],
-        "short": "Code representing code for the unit of measure of the quantity.",
-        "definition": "Code representing code for the unit of measure of the quantity.",
-        "alias": [
-          "coding"
-        ],
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "shr-core-Units-model.value",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -508,8 +462,8 @@
         "isSummary": false
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.id",
-        "path": "shr-core-IntegerQuantity-model.units.value.id",
+        "id": "shr-core-IntegerQuantity-model.units.id",
+        "path": "shr-core-IntegerQuantity-model.units.id",
         "representation": [
           "xmlAttr"
         ],
@@ -535,8 +489,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.extension",
-        "path": "shr-core-IntegerQuantity-model.units.value.extension",
+        "id": "shr-core-IntegerQuantity-model.units.extension",
+        "path": "shr-core-IntegerQuantity-model.units.extension",
         "slicing": {
           "discriminator": [
             {
@@ -550,10 +504,6 @@
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -574,8 +524,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.system",
-        "path": "shr-core-IntegerQuantity-model.units.value.system",
+        "id": "shr-core-IntegerQuantity-model.units.system",
+        "path": "shr-core-IntegerQuantity-model.units.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
@@ -610,8 +560,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.version",
-        "path": "shr-core-IntegerQuantity-model.units.value.version",
+        "id": "shr-core-IntegerQuantity-model.units.version",
+        "path": "shr-core-IntegerQuantity-model.units.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
         "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
@@ -644,8 +594,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.code",
-        "path": "shr-core-IntegerQuantity-model.units.value.code",
+        "id": "shr-core-IntegerQuantity-model.units.code",
+        "path": "shr-core-IntegerQuantity-model.units.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
@@ -679,14 +629,14 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.display",
+        "id": "shr-core-IntegerQuantity-model.units.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
             "valueBoolean": true
           }
         ],
-        "path": "shr-core-IntegerQuantity-model.units.value.display",
+        "path": "shr-core-IntegerQuantity-model.units.display",
         "short": "Representation defined by the system",
         "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
         "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
@@ -719,8 +669,8 @@
         ]
       },
       {
-        "id": "shr-core-IntegerQuantity-model.units.value.userSelected",
-        "path": "shr-core-IntegerQuantity-model.units.value.userSelected",
+        "id": "shr-core-IntegerQuantity-model.units.userSelected",
+        "path": "shr-core-IntegerQuantity-model.units.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
         "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",

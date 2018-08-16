@@ -15,7 +15,7 @@
   "name": "RelevantTimeModel",
   "title": "ODH RelevantTime Logical Model",
   "status": "draft",
-  "date": "2018-08-13",
+  "date": "2018-08-16",
   "publisher": "HL7",
   "contact": [
     {
@@ -55,10 +55,6 @@
         "path": "cimi-statement-RelevantTime-model.value[x]",
         "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
         "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "alias": [
-          "dateTime",
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {
@@ -102,10 +98,6 @@
         "path": "cimi-statement-RelevantTime-model.value[x]",
         "short": "DateTime or TimePeriod representing the time or time period that the finding addresses.",
         "definition": "DateTime or TimePeriod representing the time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "alias": [
-          "dateTime",
-          "timePeriod"
-        ],
         "min": 1,
         "max": "1",
         "base": {

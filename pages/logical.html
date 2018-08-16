@@ -42,7 +42,7 @@
 Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
-        <td><a href="StructureDefinition-odh-OccupationalDataSummary-model.html">OccupationalDataSummary</a></td>
+        <td><a href="StructureDefinition-odh-OccupationalDataForHealth-model.html">OccupationalDataForHealth</a></td>
         <td>{% capture md_text %}Current and past activities for profit, wages, salary, or as a service to others.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -357,7 +357,7 @@ This information is most useful coupled with weekly work days and helps to revea
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-FocalSubjectModifier-model.html">FocalSubjectModifier</a></td>
-        <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject).{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The focus of the observation, if someone other than the person of record (subject), identified only by the relationship to the PersonOfRecord.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-GeopoliticalLocation-model.html">GeopoliticalLocation</a></td>
@@ -580,7 +580,7 @@ Examples are the measurements that compose a complete blood count (CBC), or the 
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Patient-model.html">Patient</a></td>
-        <td>{% capture md_text %}A person in the role of a patient, including extended demographic information about the subject of this health record.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}A person in the role of a patient.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-Person-model.html">Person</a></td>
