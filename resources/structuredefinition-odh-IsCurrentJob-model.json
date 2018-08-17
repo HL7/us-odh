@@ -1,19 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cimi-statement-CodedEvaluationComponent-model",
+  "id": "odh-IsCurrentJob-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CodedEvaluationComponent Logical Model</b></p>\n  <p>An evaluation component whose value is a code (concept).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH IsCurrentJob Logical Model</b></p>\n  <p>A flag indicating if this is the person&#039;s current job (at the time the resource was last updated).</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-CodedEvaluationComponent-model",
+  "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-IsCurrentJob-model",
   "identifier": [
     {
       "system": "http://hl7.org/fhir/us/odh",
-      "value": "cimi.statement.CodedEvaluationComponent"
+      "value": "odh.IsCurrentJob"
     }
   ],
-  "name": "CodedEvaluationComponentModel",
-  "title": "ODH CodedEvaluationComponent Logical Model",
+  "name": "IsCurrentJobModel",
+  "title": "ODH IsCurrentJob Logical Model",
   "status": "draft",
   "date": "2018-08-17",
   "publisher": "HL7",
@@ -27,22 +27,22 @@
       ]
     }
   ],
-  "description": "An evaluation component whose value is a code (concept).",
+  "description": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
   "kind": "logical",
   "abstract": false,
-  "type": "cimi-statement-CodedEvaluationComponent-model",
+  "type": "odh-IsCurrentJob-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
     "element": [
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model",
-        "path": "cimi-statement-CodedEvaluationComponent-model",
-        "definition": "An evaluation component whose value is a code (concept).",
+        "id": "odh-IsCurrentJob-model",
+        "path": "odh-IsCurrentJob-model",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model",
+          "path": "odh-IsCurrentJob-model",
           "min": 0,
           "max": "*"
         },
@@ -51,14 +51,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.value",
-        "path": "cimi-statement-CodedEvaluationComponent-model.value",
-        "short": "Code representing an evaluation component whose value is a code (concept).",
-        "definition": "Code representing an evaluation component whose value is a code (concept).",
+        "id": "odh-IsCurrentJob-model.value",
+        "path": "odh-IsCurrentJob-model.value",
+        "short": "Code representing a flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "definition": "Code representing a flag indicating if this is the person's current job (at the time the resource was last updated).",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.value",
+          "path": "odh-IsCurrentJob-model.value",
           "min": 1,
           "max": "1"
         },
@@ -69,17 +69,23 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-YesNoVS"
+          }
+        }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.topicCode",
-        "path": "cimi-statement-CodedEvaluationComponent-model.topicCode",
+        "id": "odh-IsCurrentJob-model.topicCode",
+        "path": "odh-IsCurrentJob-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic  of the action or the finding.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.topicCode",
+          "path": "odh-IsCurrentJob-model.topicCode",
           "min": 0,
           "max": "1"
         },
@@ -93,14 +99,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
-        "path": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
+        "id": "odh-IsCurrentJob-model.exceptionValue",
+        "path": "odh-IsCurrentJob-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
+          "path": "odh-IsCurrentJob-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -120,8 +126,8 @@
         }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.interpretation",
-        "path": "cimi-statement-CodedEvaluationComponent-model.interpretation",
+        "id": "odh-IsCurrentJob-model.interpretation",
+        "path": "odh-IsCurrentJob-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -133,7 +139,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.interpretation",
+          "path": "odh-IsCurrentJob-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -153,8 +159,8 @@
         }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
-        "path": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
+        "id": "odh-IsCurrentJob-model.referenceRange",
+        "path": "odh-IsCurrentJob-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -166,7 +172,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
+          "path": "odh-IsCurrentJob-model.referenceRange",
           "min": 0,
           "max": "0"
         },
@@ -184,13 +190,13 @@
   "differential": {
     "element": [
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model",
-        "path": "cimi-statement-CodedEvaluationComponent-model",
-        "definition": "An evaluation component whose value is a code (concept).",
+        "id": "odh-IsCurrentJob-model",
+        "path": "odh-IsCurrentJob-model",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model",
+          "path": "odh-IsCurrentJob-model",
           "min": 0,
           "max": "*"
         },
@@ -199,14 +205,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.value",
-        "path": "cimi-statement-CodedEvaluationComponent-model.value",
-        "short": "Code representing an evaluation component whose value is a code (concept).",
-        "definition": "Code representing an evaluation component whose value is a code (concept).",
+        "id": "odh-IsCurrentJob-model.value",
+        "path": "odh-IsCurrentJob-model.value",
+        "short": "Code representing a flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "definition": "Code representing a flag indicating if this is the person's current job (at the time the resource was last updated).",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.value",
+          "path": "odh-IsCurrentJob-model.value",
           "min": 1,
           "max": "1"
         },
@@ -217,17 +223,23 @@
         ],
         "mustSupport": false,
         "isModifier": false,
-        "isSummary": false
+        "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-YesNoVS"
+          }
+        }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.topicCode",
-        "path": "cimi-statement-CodedEvaluationComponent-model.topicCode",
+        "id": "odh-IsCurrentJob-model.topicCode",
+        "path": "odh-IsCurrentJob-model.topicCode",
         "short": "The concept representing the finding or action that is the topic of the statement.",
         "definition": "The concept representing the finding or action that is the topic of the statement.\n\nFor action topics, the TopicCode represents the action being described. For findings, the TopicCode represents the 'question' or property being investigated. For evaluation result findings, the TopicCode contains a concept for an observable entity, such as systolic blood pressure. For assertion findings, the TopicCode contains a code representing the condition, allergy, or other item being asserted. In all cases, the TopicCode describes the topic  of the action or the finding.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.topicCode",
+          "path": "odh-IsCurrentJob-model.topicCode",
           "min": 0,
           "max": "1"
         },
@@ -241,14 +253,14 @@
         "isSummary": false
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
-        "path": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
+        "id": "odh-IsCurrentJob-model.exceptionValue",
+        "path": "odh-IsCurrentJob-model.exceptionValue",
         "short": "Reason that a value associated with a test or other finding is missing.",
         "definition": "Reason that a value associated with a test or other finding is missing.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.exceptionValue",
+          "path": "odh-IsCurrentJob-model.exceptionValue",
           "min": 0,
           "max": "1"
         },
@@ -268,8 +280,8 @@
         }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.interpretation",
-        "path": "cimi-statement-CodedEvaluationComponent-model.interpretation",
+        "id": "odh-IsCurrentJob-model.interpretation",
+        "path": "odh-IsCurrentJob-model.interpretation",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -281,7 +293,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.interpretation",
+          "path": "odh-IsCurrentJob-model.interpretation",
           "min": 0,
           "max": "1"
         },
@@ -301,8 +313,8 @@
         }
       },
       {
-        "id": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
-        "path": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
+        "id": "odh-IsCurrentJob-model.referenceRange",
+        "path": "odh-IsCurrentJob-model.referenceRange",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
@@ -314,7 +326,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "cimi-statement-CodedEvaluationComponent-model.referenceRange",
+          "path": "odh-IsCurrentJob-model.referenceRange",
           "min": 0,
           "max": "0"
         },

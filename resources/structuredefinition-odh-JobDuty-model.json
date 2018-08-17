@@ -3,7 +3,7 @@
   "id": "odh-JobDuty-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH JobDuty Logical Model</b></p>\n  <p>Regular actions performed at work. A person may have the occupation of &#039;construction laborer&#039; and his specific job duty to carry construction supplies.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH JobDuty Logical Model</b></p>\n  <p>A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be &#039;carry construction supplies&#039; for a job with the Occupation &#039;construction laborer.&#039;</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-JobDuty-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "JobDutyModel",
   "title": "ODH JobDuty Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+  "description": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-JobDuty-model",
         "path": "odh-JobDuty-model",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "odh-JobDuty-model.value",
         "path": "odh-JobDuty-model.value",
-        "short": "String representing regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
-        "definition": "String representing regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "short": "String representing a regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
+        "definition": "String representing a regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 1,
         "max": "1",
         "base": {
@@ -434,7 +434,7 @@
       {
         "id": "odh-JobDuty-model",
         "path": "odh-JobDuty-model",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*",
         "base": {
@@ -449,8 +449,8 @@
       {
         "id": "odh-JobDuty-model.value",
         "path": "odh-JobDuty-model.value",
-        "short": "String representing regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
-        "definition": "String representing regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "short": "String representing a regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
+        "definition": "String representing a regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 1,
         "max": "1",
         "base": {

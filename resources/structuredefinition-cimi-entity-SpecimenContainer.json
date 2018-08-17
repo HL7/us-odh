@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-entity-SpecimenContainer",
   "name": "SpecimenContainerProfile",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {

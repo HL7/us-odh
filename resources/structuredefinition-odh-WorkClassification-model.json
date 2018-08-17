@@ -3,7 +3,7 @@
   "id": "odh-WorkClassification-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH WorkClassification Logical Model</b></p>\n  <p>Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH WorkClassification Logical Model</b></p>\n  <p>Type of compensation and sector for a person&#039;s job, such as &#039;paid work, self-employed&#039; or &#039;voluntary work&#039;, as reported by the person.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-WorkClassification-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "WorkClassificationModel",
   "title": "ODH WorkClassification Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+  "description": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "odh-WorkClassification-model",
         "path": "odh-WorkClassification-model",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "*",
         "base": {
@@ -60,8 +60,8 @@
       {
         "id": "odh-WorkClassification-model.value",
         "path": "odh-WorkClassification-model.value",
-        "short": "Code representing employment attributes for a given job.",
-        "definition": "Code representing employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "short": "Code representing type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
+        "definition": "Code representing type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 1,
         "max": "1",
         "base": {
@@ -441,7 +441,7 @@
       {
         "id": "odh-WorkClassification-model",
         "path": "odh-WorkClassification-model",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "*",
         "base": {
@@ -456,8 +456,8 @@
       {
         "id": "odh-WorkClassification-model.value",
         "path": "odh-WorkClassification-model.value",
-        "short": "Code representing employment attributes for a given job.",
-        "definition": "Code representing employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "short": "Code representing type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
+        "definition": "Code representing type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 1,
         "max": "1",
         "base": {

@@ -3,7 +3,7 @@
   "id": "odh-PastOrPresentJob-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PastOrPresentJob Logical Model</b></p>\n  <p>Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person&#039;s job can be a social determinant of their health and information about a person&#039;s job can support patient care, population health, and public health. In patient care, knowledge of a person&#039;s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person&#039;s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PastOrPresentJob Logical Model</b></p>\n  <p>Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person&#039;s job can be a social determinant of their health and information about a person&#039;s job can support patient care, population health, and public health. In patient care, knowledge of a person&#039;s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person&#039;s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "PastOrPresentJobModel",
   "title": "ODH PastOrPresentJob Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
+  "description": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "odh-PastOrPresentJob-model",
         "path": "odh-PastOrPresentJob-model",
-        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
         "min": 0,
         "max": "*",
         "base": {
@@ -495,39 +495,18 @@
       {
         "id": "odh-PastOrPresentJob-model.relevantTime",
         "path": "odh-PastOrPresentJob-model.relevantTime",
-        "short": "The time or time period that the finding addresses.",
-        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-PastOrPresentJob-model.relevantTime",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
-        "path": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
             "code": "C1948053"
           }
         ],
-        "short": "A period of time defined by a start and end time, date, or year.",
-        "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
+        "short": "The time or time period that the finding addresses.",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
+          "path": "odh-PastOrPresentJob-model.relevantTime",
           "min": 1,
           "max": "1"
         },
@@ -861,27 +840,6 @@
         "base": {
           "path": "odh-PastOrPresentJob-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-        "path": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-        "short": "A set of codes drawn from different coding systems, representing the same concept.",
-        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1396,8 +1354,8 @@
             "display": "Compensation and sector employment type"
           }
         ],
-        "short": "Employment attributes for a given job.",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "short": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1423,8 +1381,8 @@
             "code": "87707-6"
           }
         ],
-        "short": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "short": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1450,8 +1408,8 @@
             "code": "63761-1"
           }
         ],
-        "short": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "short": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*",
         "base": {
@@ -1477,8 +1435,8 @@
             "code": "87729-0"
           }
         ],
-        "short": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "short": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1504,8 +1462,8 @@
             "code": "74159-5"
           }
         ],
-        "short": "An individual's typical arrangement of working hours for an occupation.",
-        "definition": "An individual's typical arrangement of working hours for an occupation.\nFor example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule, such as a rotating shift, split shift, etc.",
+        "short": "Typical arrangement of working hours for a person's job, as reported by the person.",
+        "definition": "Typical arrangement of working hours for a person's job, as reported by the person.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1531,8 +1489,8 @@
             "code": "74160-3"
           }
         ],
-        "short": "The typical number of days per week that a person spends performing their duties for work.",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "short": "The average number of days per week that a person spends performing their duties for work.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1558,8 +1516,8 @@
             "code": "87512-0"
           }
         ],
-        "short": "The typical number of hours in a day that a person spends performing their duties for work.",
-        "definition": "The typical number of hours in a day that a person spends performing their duties for work.\nThis information is most useful coupled with weekly work days and helps to reveal compressed schedules, long work hours, and overtime.",
+        "short": "The average number of hours in a day that a person spends performing their duties for work.",
+        "definition": "The average number of hours in a day that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1570,6 +1528,27 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DailyWorkHours-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+        "path": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+        "short": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-IsCurrentJob-model"
           }
         ],
         "mustSupport": false,
@@ -1670,7 +1649,7 @@
       {
         "id": "odh-PastOrPresentJob-model",
         "path": "odh-PastOrPresentJob-model",
-        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
         "min": 0,
         "max": "*",
         "base": {
@@ -2120,39 +2099,18 @@
       {
         "id": "odh-PastOrPresentJob-model.relevantTime",
         "path": "odh-PastOrPresentJob-model.relevantTime",
-        "short": "The time or time period that the finding addresses.",
-        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-PastOrPresentJob-model.relevantTime",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
-        "path": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
         "code": [
           {
             "system": "http://ncimeta.nci.nih.gov",
             "code": "C1948053"
           }
         ],
-        "short": "A period of time defined by a start and end time, date, or year.",
-        "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
+        "short": "The time or time period that the finding addresses.",
+        "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "odh-PastOrPresentJob-model.relevantTime.valueTimePeriod",
+          "path": "odh-PastOrPresentJob-model.relevantTime",
           "min": 1,
           "max": "1"
         },
@@ -2486,27 +2444,6 @@
         "base": {
           "path": "odh-PastOrPresentJob-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-        "path": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-        "short": "A set of codes drawn from different coding systems, representing the same concept.",
-        "definition": "A set of codes drawn from different coding systems, representing the same concept.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-PastOrPresentJob-model.resultValue.valueCodeableConcept",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -3021,8 +2958,8 @@
             "display": "Compensation and sector employment type"
           }
         ],
-        "short": "Employment attributes for a given job.",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "short": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3048,8 +2985,8 @@
             "code": "87707-6"
           }
         ],
-        "short": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "short": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3075,8 +3012,8 @@
             "code": "63761-1"
           }
         ],
-        "short": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "short": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*",
         "base": {
@@ -3102,8 +3039,8 @@
             "code": "87729-0"
           }
         ],
-        "short": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "short": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*",
         "base": {
@@ -3129,8 +3066,8 @@
             "code": "74159-5"
           }
         ],
-        "short": "An individual's typical arrangement of working hours for an occupation.",
-        "definition": "An individual's typical arrangement of working hours for an occupation.\nFor example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule, such as a rotating shift, split shift, etc.",
+        "short": "Typical arrangement of working hours for a person's job, as reported by the person.",
+        "definition": "Typical arrangement of working hours for a person's job, as reported by the person.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3156,8 +3093,8 @@
             "code": "74160-3"
           }
         ],
-        "short": "The typical number of days per week that a person spends performing their duties for work.",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "short": "The average number of days per week that a person spends performing their duties for work.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3183,8 +3120,8 @@
             "code": "87512-0"
           }
         ],
-        "short": "The typical number of hours in a day that a person spends performing their duties for work.",
-        "definition": "The typical number of hours in a day that a person spends performing their duties for work.\nThis information is most useful coupled with weekly work days and helps to reveal compressed schedules, long work hours, and overtime.",
+        "short": "The average number of hours in a day that a person spends performing their duties for work.",
+        "definition": "The average number of hours in a day that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "base": {
@@ -3195,6 +3132,27 @@
         "type": [
           {
             "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-DailyWorkHours-model"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+        "path": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+        "short": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "odh-PastOrPresentJob-model.evaluationComponent.isCurrentJob",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-IsCurrentJob-model"
           }
         ],
         "mustSupport": false,

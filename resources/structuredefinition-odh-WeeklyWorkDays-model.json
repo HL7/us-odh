@@ -3,7 +3,7 @@
   "id": "odh-WeeklyWorkDays-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH WeeklyWorkDays Logical Model</b></p>\n  <p>The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH WeeklyWorkDays Logical Model</b></p>\n  <p>The average number of days per week that a person spends performing their duties for work.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-WeeklyWorkDays-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "WeeklyWorkDaysModel",
   "title": "ODH WeeklyWorkDays Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+  "description": "The average number of days per week that a person spends performing their duties for work.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-WeeklyWorkDays-model",
         "path": "odh-WeeklyWorkDays-model",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "odh-WeeklyWorkDays-model.value",
         "path": "odh-WeeklyWorkDays-model.value",
-        "short": "Quantity representing the typical number of days per week that a person spends performing their duties for work.",
-        "definition": "Quantity representing the typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "short": "Quantity representing the average number of days per week that a person spends performing their duties for work.",
+        "definition": "Quantity representing the average number of days per week that a person spends performing their duties for work.",
         "min": 1,
         "max": "1",
         "base": {
@@ -509,7 +509,7 @@
       {
         "id": "odh-WeeklyWorkDays-model",
         "path": "odh-WeeklyWorkDays-model",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "*",
         "base": {
@@ -524,8 +524,8 @@
       {
         "id": "odh-WeeklyWorkDays-model.value",
         "path": "odh-WeeklyWorkDays-model.value",
-        "short": "Quantity representing the typical number of days per week that a person spends performing their duties for work.",
-        "definition": "Quantity representing the typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "short": "Quantity representing the average number of days per week that a person spends performing their duties for work.",
+        "definition": "Quantity representing the average number of days per week that a person spends performing their duties for work.",
         "min": 1,
         "max": "1",
         "base": {

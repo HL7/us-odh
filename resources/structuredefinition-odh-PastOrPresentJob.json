@@ -3,12 +3,12 @@
   "id": "odh-PastOrPresentJob",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PastOrPresentJob Profile</b></p>\n  <p>Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person&#039;s job can be a social determinant of their health and information about a person&#039;s job can support patient care, population health, and public health. In patient care, knowledge of a person&#039;s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person&#039;s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.PastOrPresentJob maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  ResultValue maps to value[x]\n  RelevantTime maps to effective[x]\n  constrain bodySite to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PastOrPresentJob Profile</b></p>\n  <p>Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person&#039;s job can be a social determinant of their health and information about a person&#039;s job can support patient care, population health, and public health. In patient care, knowledge of a person&#039;s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person&#039;s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.PastOrPresentJob maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  ResultValue maps to value[x]\n  RelevantTime maps to effective[x]\n  constrain bodySite to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob",
   "name": "PastOrPresentJobProfile",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
+  "description": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
   "purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
   "fhirVersion": "3.0.1",
   "mapping": [
@@ -66,7 +66,7 @@
         "id": "Observation:odh-PastOrPresentJob",
         "path": "Observation",
         "short": "ODH PastOrPresentJob Profile",
-        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -346,7 +346,7 @@
           }
         ],
         "slicing": {
-          "id": "19",
+          "id": "20",
           "discriminator": [
             {
               "type": "value",
@@ -401,7 +401,7 @@
           }
         ],
         "slicing": {
-          "id": "20",
+          "id": "21",
           "discriminator": [
             {
               "type": "value",
@@ -3416,7 +3416,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-WorkClassification",
         "path": "Observation.component",
         "short": "WorkClassification",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "1",
         "type": [
@@ -4366,7 +4366,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-SupervisoryLevel",
         "path": "Observation.component",
         "short": "SupervisoryLevel",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "1",
         "type": [
@@ -5315,7 +5315,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-JobDuty",
         "path": "Observation.component",
         "short": "JobDuty",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*",
         "type": [
@@ -6273,7 +6273,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-OccupationalHazard",
         "path": "Observation.component",
         "short": "OccupationalHazard",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*",
         "type": [
@@ -7231,7 +7231,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-WorkSchedule",
         "path": "Observation.component",
         "short": "WorkSchedule",
-        "definition": "An individual's typical arrangement of working hours for an occupation.\nFor example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule, such as a rotating shift, split shift, etc.",
+        "definition": "Typical arrangement of working hours for a person's job, as reported by the person.",
         "min": 0,
         "max": "1",
         "type": [
@@ -8180,7 +8180,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-WeeklyWorkDays",
         "path": "Observation.component",
         "short": "WeeklyWorkDays",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "type": [
@@ -9343,7 +9343,7 @@
         "id": "Observation:odh-PastOrPresentJob.component:odh-DailyWorkHours",
         "path": "Observation.component",
         "short": "DailyWorkHours",
-        "definition": "The typical number of hours in a day that a person spends performing their duties for work.\nThis information is most useful coupled with weekly work days and helps to reveal compressed schedules, long work hours, and overtime.",
+        "definition": "The average number of hours in a day that a person spends performing their duties for work.",
         "min": 0,
         "max": "1",
         "type": [
@@ -10501,6 +10501,577 @@
             "map": "value:ST"
           }
         ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob",
+        "path": "Observation.component",
+        "short": "IsCurrentJob",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "Element"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "containment by OBX-4?"
+          },
+          {
+            "identity": "rim",
+            "map": "outBoundRelationship[typeCode=COMP]"
+          }
+        ],
+        "sliceName": "odh-IsCurrentJob"
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.id",
+        "path": "Observation.component.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.extension",
+        "path": "Observation.component.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.modifierExtension",
+        "path": "Observation.component.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.code",
+        "path": "Observation.component.code",
+        "short": "Type of component observation (code / type)",
+        "definition": "Describes what was observed. Sometimes this is called the observation \"code\".",
+        "requirements": "Knowing what kind of observation is being made is essential to understanding the observation.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCode"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes identifying names of simple observations.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-codes"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 363787002 |Observable entity| OR \r< 386053000 |Evaluation procedure|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-3"
+          },
+          {
+            "identity": "rim",
+            "map": "code"
+          },
+          {
+            "identity": "w5",
+            "map": "what"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "short": "Actual component result",
+        "definition": "The information determined as a result of making the observation, if the information has a simple value.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.component.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-YesNoVS"
+          }
+        }
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "short": "Why the component result is missing",
+        "definition": "Provides a reason why the expected value in the element Observation.value[x] is missing.",
+        "comment": "\"Null\" or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  \"detected\", \"not detected\", \"inconclusive\", or  \"test not done\".   The alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code \"error\" could be used when the measurement was not completed.  Because of these options, use-case agreements are required to interpret general observations for exceptional values.",
+        "requirements": "For many results it is necessary to handle exceptional values in measurements.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "condition": [
+          "obs-6"
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "N/A"
+          },
+          {
+            "identity": "rim",
+            "map": "value.nullFlavor"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.interpretation",
+        "path": "Observation.component.interpretation",
+        "short": "High, low, normal, etc.",
+        "definition": "The assessment made based on the result of the observation.  Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.",
+        "comment": "The component interpretation applies only to the individual component value.  For an overall interpretation all components together use thes Observation.interpretation element.",
+        "requirements": "For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.",
+        "alias": [
+          "Abnormal Flag"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationInterpretation"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes identifying interpretations of observations.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/observation-interpretation"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 260245000 |Findings values|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-8"
+          },
+          {
+            "identity": "rim",
+            "map": "interpretationCode"
+          },
+          {
+            "identity": "sct-attr",
+            "map": "363713009 |Has interpretation|"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "short": "Provides guide for interpretation of component result",
+        "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
+        "comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this may not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
+        "requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
+        "min": 0,
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX.7"
+          },
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]"
+          }
+        ],
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.id",
+        "path": "Observation.component.referenceRange.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.extension",
+        "path": "Observation.component.referenceRange.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.modifierExtension",
+        "path": "Observation.component.referenceRange.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.low",
+        "path": "Observation.component.referenceRange.low",
+        "short": "Low Range, if relevant",
+        "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+          }
+        ],
+        "condition": [
+          "obs-3"
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:IVL_PQ.low"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.high",
+        "path": "Observation.component.referenceRange.high",
+        "short": "High Range, if relevant",
+        "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+          }
+        ],
+        "condition": [
+          "obs-3"
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:IVL_PQ.high"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.type",
+        "path": "Observation.component.referenceRange.type",
+        "short": "Reference range qualifier",
+        "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
+        "comment": "This SHOULD be populated if there is more than one range.  If this element is not present then the normal range is assumed.",
+        "requirements": "Need to be able to say what kind of reference range this is - normal, recommended, therapeutic, etc,  - for proper interpretation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeMeaning"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Code for the meaning of a reference range.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-10"
+          },
+          {
+            "identity": "rim",
+            "map": "interpretationCode"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.appliesTo",
+        "path": "Observation.component.referenceRange.appliesTo",
+        "short": "Reference range population",
+        "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.",
+        "comment": "This SHOULD be populated if there is more than one range.  If this element is not present then the normal population is assumed.",
+        "requirements": "Need to be able to identify the target population for proper interpretation.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeType"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes identifying the population the reference range applies to.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-10"
+          },
+          {
+            "identity": "rim",
+            "map": "interpretationCode"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.age",
+        "path": "Observation.component.referenceRange.age",
+        "short": "Applicable age range, if relevant",
+        "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
+        "requirements": "Some analytes vary greatly over age.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=\"age\"].value"
+          }
+        ]
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange.text",
+        "path": "Observation.component.referenceRange.text",
+        "short": "Text based reference range in an observation",
+        "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of 'normals'.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:ST"
+          }
+        ]
       }
     ]
   },
@@ -10510,7 +11081,7 @@
         "id": "Observation:odh-PastOrPresentJob",
         "path": "Observation",
         "short": "ODH PastOrPresentJob Profile",
-        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s)."
+        "definition": "Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.\nA person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.\nA person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.\nAt a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s)."
       },
       {
         "id": "Observation:odh-PastOrPresentJob.extension:employer",
@@ -10796,7 +11367,7 @@
         "path": "Observation.component",
         "sliceName": "odh-WorkClassification",
         "short": "WorkClassification",
-        "definition": "Employment attributes for a given job.\nThis specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.",
+        "definition": "Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.",
         "min": 0,
         "max": "1"
       },
@@ -10882,7 +11453,7 @@
         "path": "Observation.component",
         "sliceName": "odh-SupervisoryLevel",
         "short": "SupervisoryLevel",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "1"
       },
@@ -10967,7 +11538,7 @@
         "path": "Observation.component",
         "sliceName": "odh-JobDuty",
         "short": "JobDuty",
-        "definition": "Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.",
+        "definition": "A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'",
         "min": 0,
         "max": "*"
       },
@@ -11046,7 +11617,7 @@
         "path": "Observation.component",
         "sliceName": "odh-OccupationalHazard",
         "short": "OccupationalHazard",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*"
       },
@@ -11125,7 +11696,7 @@
         "path": "Observation.component",
         "sliceName": "odh-WorkSchedule",
         "short": "WorkSchedule",
-        "definition": "An individual's typical arrangement of working hours for an occupation.\nFor example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule, such as a rotating shift, split shift, etc.",
+        "definition": "Typical arrangement of working hours for a person's job, as reported by the person.",
         "min": 0,
         "max": "1"
       },
@@ -11210,7 +11781,7 @@
         "path": "Observation.component",
         "sliceName": "odh-WeeklyWorkDays",
         "short": "WeeklyWorkDays",
-        "definition": "The typical number of days per week that a person spends performing their duties for work.\nThis information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.",
+        "definition": "The average number of days per week that a person spends performing their duties for work.",
         "min": 0,
         "max": "1"
       },
@@ -11299,7 +11870,7 @@
         "path": "Observation.component",
         "sliceName": "odh-DailyWorkHours",
         "short": "DailyWorkHours",
-        "definition": "The typical number of hours in a day that a person spends performing their duties for work.\nThis information is most useful coupled with weekly work days and helps to reveal compressed schedules, long work hours, and overtime.",
+        "definition": "The average number of hours in a day that a person spends performing their duties for work.",
         "min": 0,
         "max": "1"
       },
@@ -11379,6 +11950,46 @@
       },
       {
         "id": "Observation:odh-PastOrPresentJob.component:odh-DailyWorkHours.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob",
+        "path": "Observation.component",
+        "sliceName": "odh-IsCurrentJob",
+        "short": "IsCurrentJob",
+        "definition": "A flag indicating if this is the person's current job (at the time the resource was last updated).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/us/odh/ValueSet/shr-core-YesNoVS"
+          }
+        }
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+          }
+        }
+      },
+      {
+        "id": "Observation:odh-PastOrPresentJob.component:odh-IsCurrentJob.referenceRange",
         "path": "Observation.component.referenceRange",
         "min": 0,
         "max": "0"

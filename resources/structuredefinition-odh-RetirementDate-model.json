@@ -3,7 +3,7 @@
   "id": "odh-RetirementDate-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH RetirementDate Logical Model</b></p>\n  <p>A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person&#039;s &#039;employment status&#039; and might include values such as &#039;retired.&#039; However, in ODH Employment Status is used to characterize a person&#039;s relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be &#039;employed&#039; (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH RetirementDate Logical Model</b></p>\n  <p>A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple FHIR resources.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person&#039;s &#039;employment status&#039; and might include values such as &#039;retired.&#039; However, in ODH Employment Status is used to characterize a person&#039;s relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be &#039;employed&#039; (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "RetirementDateModel",
   "title": "ODH RetirementDate Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
+  "description": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple FHIR resources.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "odh-RetirementDate-model",
         "path": "odh-RetirementDate-model",
-        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
+        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple FHIR resources.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
         "min": 0,
         "max": "*",
         "base": {
@@ -837,27 +837,6 @@
         "base": {
           "path": "odh-RetirementDate-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.resultValue.valueDateTime",
-        "path": "odh-RetirementDate-model.resultValue.valueDateTime",
-        "short": "dateTime",
-        "definition": "dateTime",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-RetirementDate-model.resultValue.valueDateTime",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1395,7 +1374,7 @@
       {
         "id": "odh-RetirementDate-model",
         "path": "odh-RetirementDate-model",
-        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
+        "definition": "A self-reported date that a person considers themselves to have ‘retired’.\nA person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple FHIR resources.\nOutside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
         "min": 0,
         "max": "*",
         "base": {
@@ -2187,27 +2166,6 @@
         "base": {
           "path": "odh-RetirementDate-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-RetirementDate-model.resultValue.valueDateTime",
-        "path": "odh-RetirementDate-model.resultValue.valueDateTime",
-        "short": "dateTime",
-        "definition": "dateTime",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-RetirementDate-model.resultValue.valueDateTime",
-          "min": 1,
           "max": "1"
         },
         "type": [

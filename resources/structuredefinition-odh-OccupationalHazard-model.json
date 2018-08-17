@@ -3,7 +3,7 @@
   "id": "odh-OccupationalHazard-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalHazard Logical Model</b></p>\n  <p>Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH OccupationalHazard Logical Model</b></p>\n  <p>A hazard that is specific to a person&#039;s work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalHazard-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "OccupationalHazardModel",
   "title": "ODH OccupationalHazard Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+  "description": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-OccupationalHazard-model",
         "path": "odh-OccupationalHazard-model",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "odh-OccupationalHazard-model.value",
         "path": "odh-OccupationalHazard-model.value",
-        "short": "String representing actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).",
-        "definition": "String representing actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "short": "String representing a hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
+        "definition": "String representing a hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 1,
         "max": "1",
         "base": {
@@ -434,7 +434,7 @@
       {
         "id": "odh-OccupationalHazard-model",
         "path": "odh-OccupationalHazard-model",
-        "definition": "Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "definition": "A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 0,
         "max": "*",
         "base": {
@@ -449,8 +449,8 @@
       {
         "id": "odh-OccupationalHazard-model.value",
         "path": "odh-OccupationalHazard-model.value",
-        "short": "String representing actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).",
-        "definition": "String representing actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).\nInformation on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.",
+        "short": "String representing a hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
+        "definition": "String representing a hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.",
         "min": 1,
         "max": "1",
         "base": {

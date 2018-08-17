@@ -3,7 +3,7 @@
   "id": "odh-SupervisoryLevel-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH SupervisoryLevel Logical Model</b></p>\n  <p>The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH SupervisoryLevel Logical Model</b></p>\n  <p>A coded indicator of responsibilities for directing work and personnel management responsibilities for a person&#039;s job, as reported by the person. For US military jobs, this is pay grade.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-SupervisoryLevel-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "SupervisoryLevelModel",
   "title": "ODH SupervisoryLevel Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+  "description": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-SupervisoryLevel-model",
         "path": "odh-SupervisoryLevel-model",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "*",
         "base": {
@@ -59,8 +59,8 @@
       {
         "id": "odh-SupervisoryLevel-model.value",
         "path": "odh-SupervisoryLevel-model.value",
-        "short": "Code representing the supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
-        "definition": "Code representing the supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "short": "Code representing a coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
+        "definition": "Code representing a coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 1,
         "max": "1",
         "base": {
@@ -440,7 +440,7 @@
       {
         "id": "odh-SupervisoryLevel-model",
         "path": "odh-SupervisoryLevel-model",
-        "definition": "The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "definition": "A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 0,
         "max": "*",
         "base": {
@@ -455,8 +455,8 @@
       {
         "id": "odh-SupervisoryLevel-model.value",
         "path": "odh-SupervisoryLevel-model.value",
-        "short": "Code representing the supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
-        "definition": "Code representing the supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.",
+        "short": "Code representing a coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
+        "definition": "Code representing a coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.",
         "min": 1,
         "max": "1",
         "base": {

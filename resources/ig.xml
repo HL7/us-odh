@@ -674,6 +674,13 @@
         <resource>
             <example value="false" />
             <sourceReference>
+                <reference value="ValueSet/shr-core-YesNoVS" />
+                <display value="ODH YesNoVS ValueSet" />
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false" />
+            <sourceReference>
                 <reference value="CodeSystem/cimi-element-AnatomicalDirectionCS" />
                 <display value="ODH AnatomicalDirectionCS CodeSystem" />
             </sourceReference>
@@ -1292,6 +1299,13 @@
               <sourceReference>
                   <reference value="StructureDefinition/cimi-entity-IsActiveIngredient-model" />
                   <display value="IsActiveIngredientModel" />
+              </sourceReference>
+          </resource>
+          <resource>
+              <example value="false" />
+              <sourceReference>
+                  <reference value="StructureDefinition/odh-IsCurrentJob-model" />
+                  <display value="IsCurrentJobModel" />
               </sourceReference>
           </resource>
           <resource>

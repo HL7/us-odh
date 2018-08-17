@@ -39,7 +39,7 @@
     <tr>
         <td><a href="StructureDefinition-odh-CombatZonePeriod-model.html">CombatZonePeriod</a></td>
         <td>{% capture md_text %}Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.
-Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.{% endcapture %}{{ md_text | markdownify }}</td>
+Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-OccupationalDataForHealth-model.html">OccupationalDataForHealth</a></td>
@@ -48,7 +48,7 @@ Both civilian workers, such as Department of Defense contractors, and military s
       <tr>
         <td><a href="StructureDefinition-odh-PastOrPresentJob-model.html">PastOrPresentJob</a></td>
         <td>{% capture md_text %}Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period.
-A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity.
+A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob.
 A person's job can be a social determinant of their health and information about a person's job can support patient care, population health, and public health. In patient care, knowledge of a person's past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working.
 At a minimum, it is important to have a record of a person's current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
@@ -61,7 +61,7 @@ Outside of ODH, the employment arrangement between an employer and a person (one
       <tr>
         <td><a href="StructureDefinition-odh-RetirementDate-model.html">RetirementDate</a></td>
         <td>{% capture md_text %}A self-reported date that a person considers themselves to have ‘retired’.
-A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job.
+A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple FHIR resources.
 Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status' and might include values such as 'retired.' However, in ODH Employment Status is used to characterize a person's relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be 'employed' (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
@@ -249,8 +249,7 @@ The ClinicalStatement class provides the core pattern for more specific clinical
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-DailyWorkHours-model.html">DailyWorkHours</a></td>
-        <td>{% capture md_text %}The typical number of hours in a day that a person spends performing their duties for work.
-This information is most useful coupled with weekly work days and helps to reveal compressed schedules, long work hours, and overtime.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The average number of hours in a day that a person spends performing their duties for work.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-DateOfBirth-model.html">DateOfBirth</a></td>
@@ -429,12 +428,16 @@ This information is most useful coupled with weekly work days and helps to revea
         <td>{% capture md_text %}True if the ingredient is an active ingredient in the medication.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
+        <td><a href="StructureDefinition-odh-IsCurrentJob-model.html">IsCurrentJob</a></td>
+        <td>{% capture md_text %}A flag indicating if this is the person's current job (at the time the resource was last updated).{% endcapture %}{{ md_text | markdownify }}</td>
+      </tr>
+      <tr>
         <td><a href="StructureDefinition-cimi-element-Issuer-model.html">Issuer</a></td>
         <td>{% capture md_text %}An organization who issues a qualification, identifier, or license.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-JobDuty-model.html">JobDuty</a></td>
-        <td>{% capture md_text %}Regular actions performed at work. A person may have the occupation of 'construction laborer' and his specific job duty to carry construction supplies.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}A regular action performed by a person at a job, as reported by the person. For example, a Job Duty could be 'carry construction supplies' for a job with the Occupation 'construction laborer.'{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-datatypes-Language-model.html">Language</a></td>
@@ -531,8 +534,7 @@ Observation has a value representing the result (answer), or an ExceptionValue i
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-OccupationalHazard-model.html">OccupationalHazard</a></td>
-        <td>{% capture md_text %}Actual contact or interaction with a specific hazard that increases an individual’s risk of a detrimental physical or mental health outcome (e.g., ingestion or inhalation of a toxic chemical).
-Information on an exposure may include the measurement of duration/intensity of contact or interaction with the specific hazard.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}A hazard that is specific to a person's work or work environment at one job and with which the person might come in contact, as reported by the person. A hazard is a source of potential harm to a person’s physical or mental health. Hazards can be biological, physical, psychological, chemical, or radiological in nature.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-element-OnBehalfOf-model.html">OnBehalfOf</a></td>
@@ -772,7 +774,7 @@ StatementTopic class attributes are aligned with SNOMED CT Concept Model attribu
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-SupervisoryLevel-model.html">SupervisoryLevel</a></td>
-        <td>{% capture md_text %}The supervisory or management responsibilities for an individual’s job. For military jobs, this is pay grade.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}A coded indicator of responsibilities for directing work and personnel management responsibilities for a person's job, as reported by the person. For US military jobs, this is pay grade.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-shr-core-TelecomNumberOrAddress-model.html">TelecomNumberOrAddress</a></td>
@@ -836,18 +838,15 @@ For example, a person who has spent 30 years as a secretary in various industrie
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-WeeklyWorkDays-model.html">WeeklyWorkDays</a></td>
-        <td>{% capture md_text %}The typical number of days per week that a person spends performing their duties for work.
-This information is most useful coupled with daily work hours and helps to reveal compressed schedules or a 7-day work-week.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}The average number of days per week that a person spends performing their duties for work.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-WorkClassification-model.html">WorkClassification</a></td>
-        <td>{% capture md_text %}Employment attributes for a given job.
-This specifies information about the worker’s job, such as self-employed or unpaid, and is similar to the U.S. Bureau of Labor Statistics ‘class of worker’ and the International Labor Organization ‘classification of status in employment’. Knowing a patient is self-employed, for example, can assist in discussing return-to-work options.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}Type of compensation and sector for a person's job, such as 'paid work, self-employed' or 'voluntary work', as reported by the person.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-odh-WorkSchedule-model.html">WorkSchedule</a></td>
-        <td>{% capture md_text %}An individual's typical arrangement of working hours for an occupation.
-For example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule, such as a rotating shift, split shift, etc.{% endcapture %}{{ md_text | markdownify }}</td>
+        <td>{% capture md_text %}Typical arrangement of working hours for a person's job, as reported by the person.{% endcapture %}{{ md_text | markdownify }}</td>
       </tr>
       <tr>
         <td><a href="StructureDefinition-cimi-entity-WrittenLanguageProficiency-model.html">WrittenLanguageProficiency</a></td>

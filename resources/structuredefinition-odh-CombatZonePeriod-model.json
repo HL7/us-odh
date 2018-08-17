@@ -3,7 +3,7 @@
   "id": "odh-CombatZonePeriod-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Logical Model</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Logical Model</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod-model",
   "identifier": [
@@ -15,7 +15,7 @@
   "name": "CombatZonePeriodModel",
   "title": "ODH CombatZonePeriod Logical Model",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
+  "description": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "id": "odh-CombatZonePeriod-model",
         "path": "odh-CombatZonePeriod-model",
-        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.",
         "min": 0,
         "max": "*",
         "base": {
@@ -829,6 +829,12 @@
       {
         "id": "odh-CombatZonePeriod-model.resultValue",
         "path": "odh-CombatZonePeriod-model.resultValue",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1948053"
+          }
+        ],
         "short": "The finding itself, such as the blood pressure value recorded.",
         "definition": "The finding itself, such as the blood pressure value recorded.",
         "min": 0,
@@ -836,33 +842,6 @@
         "base": {
           "path": "odh-CombatZonePeriod-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-        "path": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1948053"
-          }
-        ],
-        "short": "A period of time defined by a start and end time, date, or year.",
-        "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-          "min": 1,
           "max": "1"
         },
         "type": [
@@ -1400,7 +1379,7 @@
       {
         "id": "odh-CombatZonePeriod-model",
         "path": "odh-CombatZonePeriod-model",
-        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.",
         "min": 0,
         "max": "*",
         "base": {
@@ -2185,6 +2164,12 @@
       {
         "id": "odh-CombatZonePeriod-model.resultValue",
         "path": "odh-CombatZonePeriod-model.resultValue",
+        "code": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C1948053"
+          }
+        ],
         "short": "The finding itself, such as the blood pressure value recorded.",
         "definition": "The finding itself, such as the blood pressure value recorded.",
         "min": 0,
@@ -2192,33 +2177,6 @@
         "base": {
           "path": "odh-CombatZonePeriod-model.resultValue",
           "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-        "path": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-        "code": [
-          {
-            "system": "http://ncimeta.nci.nih.gov",
-            "code": "C1948053"
-          }
-        ],
-        "short": "A period of time defined by a start and end time, date, or year.",
-        "definition": "A period of time defined by a start and end time, date, or year.\nIf the start element is missing, the start of the period is not known. If the end element is missing, it means that the period is ongoing, or the start may be in the past, and the end date in the future, which means that period is expected/planned to end at the specified time. The end value includes any matching date/time. For example, the period 2011-05-23 to 2011-05-27 includes all the times from the start of the 23rd May through to the end of the 27th of May.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "odh-CombatZonePeriod-model.resultValue.valueTimePeriod",
-          "min": 1,
           "max": "1"
         },
         "type": [

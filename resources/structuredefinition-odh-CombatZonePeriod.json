@@ -3,12 +3,12 @@
   "id": "odh-CombatZonePeriod",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Profile</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.CombatZonePeriod maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  ResultValue maps to value[x]\n  RelevantTime maps to effective[x]\n  constrain bodySite to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH CombatZonePeriod Profile</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.</p>\n  <p><b>ODH Mapping Summary</b></p>\n  <p><pre>odh.CombatZonePeriod maps to Observation:\n  PersonOfRecord maps to subject\n  TopicCode maps to code\n  Category maps to category\n  EvaluationComponent maps to component (slice on = coding.code; slice strategy = includes)\n  EvaluationComponent._Concept maps to component.code\n  EvaluationComponent.Quantity maps to component.value[x]\n  EvaluationComponent.CodeableConcept maps to component.value[x]\n  EvaluationComponent.string maps to component.value[x]\n  EvaluationComponent.Range maps to component.value[x]\n  EvaluationComponent.Ratio maps to component.value[x]\n  EvaluationComponent.Media maps to component.value[x]\n  EvaluationComponent.time maps to component.value[x]\n  EvaluationComponent.dateTime maps to component.value[x]\n  EvaluationComponent.TimePeriod maps to component.value[x]\n  EvaluationComponent.IntegerQuantity maps to component.value[x]\n  EvaluationComponent.ExceptionValue maps to component.dataAbsentReason\n  EvaluationComponent.Interpretation maps to component.interpretation\n  EvaluationComponent.ReferenceRange maps to component.referenceRange\n  ResultValue maps to value[x]\n  RelevantTime maps to effective[x]\n  constrain bodySite to 0..0\n  constrain specimen to 0..0\n  constrain device to 0..0\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod",
   "name": "CombatZonePeriodProfile",
   "status": "draft",
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "publisher": "HL7",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
+  "description": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.",
   "purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
   "fhirVersion": "3.0.1",
   "mapping": [
@@ -66,7 +66,7 @@
         "id": "Observation:odh-CombatZonePeriod",
         "path": "Observation",
         "short": "ODH CombatZonePeriod Profile",
-        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones.",
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources.",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -2995,7 +2995,7 @@
         "id": "Observation:odh-CombatZonePeriod",
         "path": "Observation",
         "short": "ODH CombatZonePeriod Profile",
-        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones."
+        "definition": "Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work.\nBoth civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple FHIR resources."
       },
       {
         "id": "Observation:odh-CombatZonePeriod.category",

@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "description": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

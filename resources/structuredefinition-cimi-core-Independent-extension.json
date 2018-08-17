@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "description": "Base class for classes in CIMI that stand alone. Analogous to FHIR's DomainResource.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

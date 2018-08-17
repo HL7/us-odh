@@ -389,6 +389,9 @@
     "ValueSet/shr-core-PerformanceGradingScaleVS": {
       "base": "ValueSet-shr-core-PerformanceGradingScaleVS.html"
     },
+    "ValueSet/shr-core-YesNoVS": {
+      "base": "ValueSet-shr-core-YesNoVS.html"
+    },
     "CodeSystem/cimi-element-AnatomicalDirectionCS": {
       "base": "CodeSystem-cimi-element-AnatomicalDirectionCS.html"
     },
@@ -991,6 +994,13 @@
     },
     "StructureDefinition/cimi-entity-IsActiveIngredient-model": {
       "base": "StructureDefinition-cimi-entity-IsActiveIngredient-model.html",
+      "template-base": "sd-logical.html",
+      "pseudo-json": false,
+      "pseudo-xml": false,
+      "pseudo-ttl": false
+    },
+    "StructureDefinition/odh-IsCurrentJob-model": {
+      "base": "StructureDefinition-odh-IsCurrentJob-model.html",
       "template-base": "sd-logical.html",
       "pseudo-json": false,
       "pseudo-xml": false,

@@ -56,8 +56,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:a946b9b4-8d73-4952-aba9-bfff358cd859",
-    "timestamp" : "2018-08-17T01:37:08.613Z",
+    "identifier" : "urn:uuid:66cccaa9-cbc8-4c5e-916b-716b168e7d78",
+    "timestamp" : "2018-08-17T18:55:00.364Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5093,8 +5093,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:930311b2-6ac4-415b-bad6-7f989e79643b",
-    "timestamp" : "2018-08-17T01:37:52.222Z",
+    "identifier" : "urn:uuid:a0f7257c-a347-4cac-8e1c-817c190fb6ef",
+    "timestamp" : "2018-08-17T18:55:42.614Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -5174,8 +5174,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:2164e877-e70d-4125-bb20-2b763e674a34",
-    "timestamp" : "2018-08-17T01:37:52.800Z",
+    "identifier" : "urn:uuid:12f5ed48-a32a-49d6-b158-b07b8c49a7ab",
+    "timestamp" : "2018-08-17T18:55:43.192Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -10183,6 +10183,52 @@ e: {
       "system" : "http://snomed.info/sct",
       "code" : "257231006",
       "display" : "Barnes forceps"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373066001",
+        "display" : "Yes (qualifier value)"
+      },
+      {
+        "code" : "373067005",
+        "display" : "No (qualifier value)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:45d95ae2-1fa1-469e-8cd8-9c75d9b4bf31",
+    "timestamp" : "2018-08-17T18:56:31.332Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20161031"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "373066001",
+      "display" : "Yes (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "373067005",
+      "display" : "No (qualifier value)"
     }]
   }
 },

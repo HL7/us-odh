@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "description": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",

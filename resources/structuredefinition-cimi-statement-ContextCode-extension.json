@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "date": "2018-08-16",
+  "date": "2018-08-17",
   "description": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
