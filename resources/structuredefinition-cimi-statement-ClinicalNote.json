@@ -273,16 +273,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 1,
         "max": "1",
@@ -297,16 +287,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:recorded",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
         "min": 0,
         "max": "1",
@@ -321,16 +301,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:signed",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Provenance information specific to the signing of the clinical statement.",
         "min": 0,
         "max": "1",
@@ -345,16 +315,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:additionaltext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 1,
         "max": "1",
@@ -369,16 +329,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
         "min": 0,
         "max": "1",
@@ -389,6 +339,132 @@
           }
         ],
         "sliceName": "contextcode"
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.id",
+        "path": "DomainResource.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.extension:extension",
+        "path": "DomainResource.extension.extension",
+        "sliceName": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.url",
+        "path": "DomainResource.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/cimi-statement-ContextCode-extension",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.valueCodeableConcept",
+        "path": "DomainResource.extension.valueCodeableConcept",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.valueCodeableConcept.id",
+        "path": "DomainResource.extension.valueCodeableConcept.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
       },
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode.valueCodeableConcept.extension",
@@ -745,16 +821,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:statementtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
@@ -769,16 +835,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:encounter",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "min": 0,
         "max": "1",
@@ -793,16 +849,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:interpretation",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
         "min": 0,
         "max": "1",
@@ -817,16 +863,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:relevanttime",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
         "min": 0,
         "max": "1",
@@ -841,16 +877,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingmethod",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
@@ -865,16 +891,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:media",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "*",
@@ -940,16 +956,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 1,
         "max": "1",
@@ -964,16 +970,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:recorded",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
         "min": 0,
         "max": "1",
@@ -988,16 +984,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:signed",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Provenance information specific to the signing of the clinical statement.",
         "min": 0,
         "max": "1",
@@ -1012,16 +998,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:additionaltext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 1,
         "max": "1",
@@ -1036,16 +1012,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:contextcode",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
         "min": 0,
         "max": "1",
@@ -1106,16 +1072,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:statementtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
@@ -1130,16 +1086,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:encounter",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "min": 0,
         "max": "1",
@@ -1154,16 +1100,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:interpretation",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A clinical interpretation of a finding (applies to both assertions and observation).",
         "min": 0,
         "max": "1",
@@ -1178,16 +1114,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:relevanttime",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The time or time period that the finding addresses.\nThe clinically relevant time is not necessarily when the information is gathered or when a test is carried out, but for example, when a specimen was collected, or the time period referred to by the question. Use a TimePeriod for a measurement or specimen collection continued over a significant period of time (e.g. 24 hour Urine Sodium).",
         "min": 0,
         "max": "1",
@@ -1202,16 +1128,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:findingmethod",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The technique used to create the finding, for example, the specific imaging technical, lab test code, or assessment vehicle.",
         "min": 0,
         "max": "1",
@@ -1226,16 +1142,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalNote.extension:media",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A file that contains audio, video, image, or similar content.",
         "min": 0,
         "max": "*",

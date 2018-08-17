@@ -273,16 +273,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 0,
         "max": "1",
@@ -297,16 +287,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:recorded",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
         "min": 0,
         "max": "1",
@@ -321,16 +301,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:signed",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Provenance information specific to the signing of the clinical statement.",
         "min": 0,
         "max": "1",
@@ -345,16 +315,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:additionaltext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
         "max": "1",
@@ -369,16 +329,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:contextcode",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
         "min": 0,
         "max": "1",
@@ -393,16 +343,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:statementtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
@@ -417,16 +357,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:encounter",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "min": 0,
         "max": "1",
@@ -486,16 +416,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:personofrecord",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person this entry belongs to.",
         "min": 0,
         "max": "1",
@@ -510,16 +430,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:recorded",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.",
         "min": 0,
         "max": "1",
@@ -534,16 +444,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:signed",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Provenance information specific to the signing of the clinical statement.",
         "min": 0,
         "max": "1",
@@ -558,16 +458,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:additionaltext",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A text note containing additional details, explanation, description, comment, or summarization. Details can discuss, support, explain changes to, or dispute information.",
         "min": 0,
         "max": "1",
@@ -582,16 +472,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:contextcode",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Code representing the sense in which the statement is interpreted, for example, the degree of presence in a PresenceStatement.",
         "min": 0,
         "max": "1",
@@ -606,16 +486,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:statementtopic",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "Compositional and reusable grouping of clinical statement attributes that make up the clinical focus of a statement.\n\nStatementTopic class attributes are aligned with SNOMED CT Concept Model attributes when such an overlap exists. Note that this class does not include contextual attributes such as the nature of the action (ordered, proposed, planned, etc...), the nature of the patient state being described (e.g., present, suspected present, absent), and the attribution of this information (the who, when, where, how, why of the information recorded).",
         "min": 0,
         "max": "1",
@@ -630,16 +500,6 @@
       {
         "id": "DomainResource:cimi-statement-ClinicalStatement.extension:encounter",
         "path": "DomainResource.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
         "definition": "A description of an interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
         "min": 0,
         "max": "1",

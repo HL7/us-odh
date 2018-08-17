@@ -3,7 +3,7 @@
   "id": "odh-PersonEmploymentStatus-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PersonEmploymentStatus Logical Model</b></p>\n  <p>A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>ODH PersonEmploymentStatus Logical Model</b></p>\n  <p>The self-reported current and historical data about a person&#039;s economic relationship to work (e.g. having one or more jobs), including start and end dates.\nA person&#039;s Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force.\nOutside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person&#039;s &#039;employment status.&#039; However, in ODH Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.</p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PersonEmploymentStatus-model",
   "identifier": [
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+  "description": "The self-reported current and historical data about a person's economic relationship to work (e.g. having one or more jobs), including start and end dates.\nA person's Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force.\nOutside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status.' However, in ODH Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.",
   "keyword": [
     {
       "system": "http://loinc.org",
@@ -45,7 +45,7 @@
       {
         "id": "odh-PersonEmploymentStatus-model",
         "path": "odh-PersonEmploymentStatus-model",
-        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "definition": "The self-reported current and historical data about a person's economic relationship to work (e.g. having one or more jobs), including start and end dates.\nA person's Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force.\nOutside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status.' However, in ODH Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.",
         "min": 0,
         "max": "*",
         "base": {
@@ -1401,7 +1401,7 @@
       {
         "id": "odh-PersonEmploymentStatus-model",
         "path": "odh-PersonEmploymentStatus-model",
-        "definition": "A person’s state of being employed during the time period specified.\nGenerally, employment status refers to whether or not a person has a job (e.g. employed, unemployed, not in labor force). In a healthcare setting employment status may be used to determine appropriate probing questions for occupational hazards and occupational history. For example, someone who is unemployed or has chosen not to work may be prompted to provide information about previous jobs. Employment status is not the same as work classification, which describes characteristics of a given job such as self-employed.",
+        "definition": "The self-reported current and historical data about a person's economic relationship to work (e.g. having one or more jobs), including start and end dates.\nA person's Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force.\nOutside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person's 'employment status.' However, in ODH Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.",
         "min": 0,
         "max": "*",
         "base": {
