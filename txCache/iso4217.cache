@@ -12,8 +12,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c137887d-5548-4820-8f45-9eaf89a23c75",
-    "timestamp" : "2018-08-17T18:55:00.083Z",
+    "identifier" : "urn:uuid:da7c530c-12a6-4e0b-b782-987e9feebc97",
+    "timestamp" : "2018-08-18T00:50:20.513Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
