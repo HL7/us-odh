@@ -1,8 +1,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="hl7.fhir.us.odh-1.1.0" />
-    <url value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh-1.1.0" />
+    <id value="hl7.fhir.us.odh-1.0.0" />
+    <url value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh-1.0.0" />
     <name value="HL7_FHIR_Profile_Occupational_Data_for_Health_ODH_Release_1_1_Standard_for_Trial_Use" />
-    <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.1 (Standard for Trial Use)" />
+    <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.0 (Standard for Trial Use)" />
     <status value="draft" />
     <publisher value="HL7 International Public Health Work Group"/>
     <contact>
@@ -603,7 +603,7 @@
       
         <page>
             <nameUrl value="index.html" />
-            <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.1 (Standard for Trial Use)" />
+            <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.0 (Standard for Trial Use)" />
             <generation value="html" />
         </page>
     </definition>
