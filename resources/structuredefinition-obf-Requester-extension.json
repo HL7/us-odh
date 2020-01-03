@@ -7,9 +7,9 @@
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/obf-Requester-extension",
   "name": "Requester",
-  "title": "obf-Requester",
+  "title": "Requester",
   "status": "draft",
-  "date": "2019-09-04",
+  "date": "2020-01-03",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -201,7 +201,8 @@
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device",
+              "http://hl7.org/fhir/us/odh/StructureDefinition/obf-PractitionerRole"
             ]
           }
         ],
@@ -254,7 +255,8 @@
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device",
+              "http://hl7.org/fhir/us/odh/StructureDefinition/obf-PractitionerRole"
             ]
           }
         ]

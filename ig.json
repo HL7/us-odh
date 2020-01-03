@@ -54,20 +54,11 @@
     "StructureDefinition/obf-AccessionIdentifier": {
       "base": "StructureDefinition-obf-AccessionIdentifier.html"
     },
-    "StructureDefinition/obf-ActionPerformed": {
-      "base": "StructureDefinition-obf-ActionPerformed.html"
-    },
     "StructureDefinition/obf-ActionRequest": {
       "base": "StructureDefinition-obf-ActionRequest.html"
     },
     "StructureDefinition/obf-ActionStatement": {
       "base": "StructureDefinition-obf-ActionStatement.html"
-    },
-    "StructureDefinition/obf-ClinicalStatement": {
-      "base": "StructureDefinition-obf-ClinicalStatement.html"
-    },
-    "StructureDefinition/odh-CodedSocialHistoryObservation": {
-      "base": "StructureDefinition-odh-CodedSocialHistoryObservation.html"
     },
     "StructureDefinition/odh-CombatZonePeriod": {
       "base": "StructureDefinition-odh-CombatZonePeriod.html"
@@ -75,35 +66,20 @@
     "StructureDefinition/obf-Composition": {
       "base": "StructureDefinition-obf-Composition.html"
     },
-    "StructureDefinition/obf-DomainResource": {
-      "base": "StructureDefinition-obf-DomainResource.html"
-    },
     "StructureDefinition/odh-EmploymentStatus": {
       "base": "StructureDefinition-odh-EmploymentStatus.html"
     },
-    "StructureDefinition/obf-EncounterOrEpisode": {
-      "base": "StructureDefinition-obf-EncounterOrEpisode.html"
+    "StructureDefinition/obf-Endpoint": {
+      "base": "StructureDefinition-obf-Endpoint.html"
     },
-    "StructureDefinition/obf-Entity": {
-      "base": "StructureDefinition-obf-Entity.html"
-    },
-    "StructureDefinition/obf-EntityOrRole": {
-      "base": "StructureDefinition-obf-EntityOrRole.html"
-    },
-    "StructureDefinition/obf-InformationItem": {
-      "base": "StructureDefinition-obf-InformationItem.html"
-    },
-    "StructureDefinition/obf-MedicationAction": {
-      "base": "StructureDefinition-obf-MedicationAction.html"
+    "StructureDefinition/obf-HealthcareService": {
+      "base": "StructureDefinition-obf-HealthcareService.html"
     },
     "StructureDefinition/obf-MedicationDispense": {
       "base": "StructureDefinition-obf-MedicationDispense.html"
     },
     "StructureDefinition/obf-NationalProviderIdentifier": {
       "base": "StructureDefinition-obf-NationalProviderIdentifier.html"
-    },
-    "StructureDefinition/obf-NonLaboratoryObservation": {
-      "base": "StructureDefinition-obf-NonLaboratoryObservation.html"
     },
     "StructureDefinition/obf-Observation": {
       "base": "StructureDefinition-obf-Observation.html"
@@ -114,17 +90,11 @@
     "StructureDefinition/odh-PastOrPresentJob": {
       "base": "StructureDefinition-odh-PastOrPresentJob.html"
     },
+    "StructureDefinition/obf-PractitionerRole": {
+      "base": "StructureDefinition-obf-PractitionerRole.html"
+    },
     "StructureDefinition/odh-RetirementDate": {
       "base": "StructureDefinition-odh-RetirementDate.html"
-    },
-    "StructureDefinition/obf-Role": {
-      "base": "StructureDefinition-obf-Role.html"
-    },
-    "StructureDefinition/obf-SituationStatement": {
-      "base": "StructureDefinition-obf-SituationStatement.html"
-    },
-    "StructureDefinition/odh-SocialHistoryObservation": {
-      "base": "StructureDefinition-odh-SocialHistoryObservation.html"
     },
     "StructureDefinition/obf-TaxIdentificationNumber": {
       "base": "StructureDefinition-obf-TaxIdentificationNumber.html"
@@ -156,24 +126,12 @@
       "base": "StructureDefinition-obf-datatype-Code-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/obf-Condition-extension": {
-      "base": "StructureDefinition-obf-Condition-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-DiagnosisCode-extension": {
-      "base": "StructureDefinition-obf-DiagnosisCode-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/obf-Dosage-extension": {
       "base": "StructureDefinition-obf-Dosage-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/odh-Employer-extension": {
       "base": "StructureDefinition-odh-Employer-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-EncounterDiagnosis-extension": {
-      "base": "StructureDefinition-obf-EncounterDiagnosis-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/obf-ExpectedPerformanceTime-extension": {
@@ -192,22 +150,6 @@
       "base": "StructureDefinition-obf-datatype-Identifier-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/obf-datatype-LandmarkLocation-extension": {
-      "base": "StructureDefinition-obf-datatype-LandmarkLocation-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-LandmarkToBodyLocationDirection-extension": {
-      "base": "StructureDefinition-obf-datatype-LandmarkToBodyLocationDirection-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-LandmarkToBodyLocationDistance-extension": {
-      "base": "StructureDefinition-obf-datatype-LandmarkToBodyLocationDistance-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-LandmarkType-extension": {
-      "base": "StructureDefinition-obf-datatype-LandmarkType-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/obf-datatype-Laterality-extension": {
       "base": "StructureDefinition-obf-datatype-Laterality-extension.html",
       "template-base": "sd-extension.html"
@@ -216,48 +158,16 @@
       "base": "StructureDefinition-obf-MedicationCodeOrReference-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/obf-Method-extension": {
-      "base": "StructureDefinition-obf-Method-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension": {
       "base": "StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-OnBehalfOf-extension": {
-      "base": "StructureDefinition-obf-OnBehalfOf-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-Organization-extension": {
-      "base": "StructureDefinition-obf-Organization-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-PartOf-extension": {
-      "base": "StructureDefinition-obf-PartOf-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-Participant-extension": {
-      "base": "StructureDefinition-obf-Participant-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/obf-Participation-extension": {
       "base": "StructureDefinition-obf-Participation-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/obf-ParticipationPeriod-extension": {
-      "base": "StructureDefinition-obf-ParticipationPeriod-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-ParticipationType-extension": {
-      "base": "StructureDefinition-obf-ParticipationType-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/obf-datatype-PriorityCode-extension": {
       "base": "StructureDefinition-obf-datatype-PriorityCode-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-PriorityRank-extension": {
-      "base": "StructureDefinition-obf-datatype-PriorityRank-extension.html",
       "template-base": "sd-extension.html"
     },
     "StructureDefinition/obf-ReasonCode-extension": {
@@ -288,20 +198,8 @@
       "base": "StructureDefinition-obf-Status-extension.html",
       "template-base": "sd-extension.html"
     },
-    "StructureDefinition/obf-StatusHistory-extension": {
-      "base": "StructureDefinition-obf-StatusHistory-extension.html",
-      "template-base": "sd-extension.html"
-    },
     "StructureDefinition/obf-SubjectOfRecord-extension": {
       "base": "StructureDefinition-obf-SubjectOfRecord-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-TimePeriod-extension": {
-      "base": "StructureDefinition-obf-datatype-TimePeriod-extension.html",
-      "template-base": "sd-extension.html"
-    },
-    "StructureDefinition/obf-datatype-Type-extension": {
-      "base": "StructureDefinition-obf-datatype-Type-extension.html",
       "template-base": "sd-extension.html"
     },
     "ValueSet/obf-datatype-AnatomicalDirectionVS": {
@@ -310,11 +208,11 @@
     "ValueSet/obf-datatype-AnatomicalOrientationVS": {
       "base": "ValueSet-obf-datatype-AnatomicalOrientationVS.html"
     },
-    "ValueSet/obf-CarePlanChangeReasonVS": {
-      "base": "ValueSet-obf-CarePlanChangeReasonVS.html"
-    },
     "ValueSet/obf-datatype-LandmarkTypeVS": {
       "base": "ValueSet-obf-datatype-LandmarkTypeVS.html"
+    },
+    "ValueSet/obf-datatype-LateralityVS": {
+      "base": "ValueSet-obf-datatype-LateralityVS.html"
     },
     "ValueSet/obf-ResearchSubjectTerminationReasonVS": {
       "base": "ValueSet-obf-ResearchSubjectTerminationReasonVS.html"

@@ -39,15 +39,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:28538b1b-283a-410a-aba5-bae49f5ef967",
-    "timestamp" : "2019-09-04T17:38:37.355Z",
+    "identifier" : "urn:uuid:1c39b8b1-cc95-4f4a-8381-650bb97fe362",
+    "timestamp" : "2020-01-01T19:29:52.614Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://unitsofmeasure.org?version=2.0.1"
+      "valueString" : "http://unitsofmeasure.org|2.0.1"
     }],
     "contains" : [{
       "system" : "http://unitsofmeasure.org",

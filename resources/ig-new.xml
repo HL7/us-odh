@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.odh-1.0.0"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\mkramer\Documents\GitHub\shr-cli-6.10.3\out\fhir\guide\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\mkramer\Documents\GitHub\shr-cli-6.10.3\out\fhir\guide\pages"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh-1.0.0"/>
+  <version value="1.0.0"/>
+  <name value="HL7_FHIR_Profile_Occupational_Data_for_Health_ODH_Release_1_0_Standard_for_Trial_Use"/>
+  <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.0 (Standard for Trial Use)"/>
+  <status value="draft"/>
+  <publisher value="HL7 International Public Health Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.odh"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <definition>
+    <grouping>
+      <name value="Profiles in this Implementation Guide"/>
+      <description value="Profiles in this Implementation Guide"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-AccessionIdentifier"/>
+      </reference>
+      <name value="Accession Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ActionRequest"/>
+      </reference>
+      <name value="Action Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ActionStatement"/>
+      </reference>
+      <name value="Action Statement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-CombatZonePeriod"/>
+      </reference>
+      <name value="Combat Zone Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Composition"/>
+      </reference>
+      <name value="Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-EmploymentStatus"/>
+      </reference>
+      <name value="Employment Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Endpoint"/>
+      </reference>
+      <name value="Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-HealthcareService"/>
+      </reference>
+      <name value="Healthcare Service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationDispense"/>
+      </reference>
+      <name value="Medication Dispense"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-NationalProviderIdentifier"/>
+      </reference>
+      <name value="National Provider Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Observation"/>
+      </reference>
+      <name value="Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-OccupationalDataForHealth"/>
+      </reference>
+      <name value="Occupational Data For Health"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-PastOrPresentJob"/>
+      </reference>
+      <name value="Past Or Present Job"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-PractitionerRole"/>
+      </reference>
+      <name value="Practitioner Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-RetirementDate"/>
+      </reference>
+      <name value="Retirement Date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-TaxIdentificationNumber"/>
+      </reference>
+      <name value="Tax Identification Number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-UsualWork"/>
+      </reference>
+      <name value="Usual Work"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-AnatomicalOrientation-extension"/>
+      </reference>
+      <name value="Anatomical Orientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Annotation-extension"/>
+      </reference>
+      <name value="Annotation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-BasedOn-extension"/>
+      </reference>
+      <name value="Based On"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-CareContext-extension"/>
+      </reference>
+      <name value="Care Context"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Category-extension"/>
+      </reference>
+      <name value="Category"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Code-extension"/>
+      </reference>
+      <name value="Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Dosage-extension"/>
+      </reference>
+      <name value="Dosage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/odh-Employer-extension"/>
+      </reference>
+      <name value="Employer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformanceTime-extension"/>
+      </reference>
+      <name value="Expected Performance Time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformer-extension"/>
+      </reference>
+      <name value="Expected Performer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformerType-extension"/>
+      </reference>
+      <name value="Expected Performer Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Identifier-extension"/>
+      </reference>
+      <name value="Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Laterality-extension"/>
+      </reference>
+      <name value="Laterality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationCodeOrReference-extension"/>
+      </reference>
+      <name value="Medication Code Or Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension"/>
+      </reference>
+      <name value="Occurrence Time Or Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Participation-extension"/>
+      </reference>
+      <name value="Participation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-PriorityCode-extension"/>
+      </reference>
+      <name value="Priority Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ReasonCode-extension"/>
+      </reference>
+      <name value="Reason Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-ReasonReference-extension"/>
+      </reference>
+      <name value="Reason Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-RelationToLandmark-extension"/>
+      </reference>
+      <name value="Relation To Landmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-RequestIntent-extension"/>
+      </reference>
+      <name value="Request Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Requester-extension"/>
+      </reference>
+      <name value="Requester"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-StatementDateTime-extension"/>
+      </reference>
+      <name value="Statement Date Time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-Status-extension"/>
+      </reference>
+      <name value="Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/obf-SubjectOfRecord-extension"/>
+      </reference>
+      <name value="Subject Of Record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-AnatomicalDirectionVS"/>
+      </reference>
+      <name value="Anatomical Direction VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-AnatomicalOrientationVS"/>
+      </reference>
+      <name value="Anatomical Orientation VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-LandmarkTypeVS"/>
+      </reference>
+      <name value="Landmark Type VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-LateralityVS"/>
+      </reference>
+      <name value="Laterality VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-ResearchSubjectTerminationReasonVS"/>
+      </reference>
+      <name value="Research Subject Termination Reason VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-SettingVS"/>
+      </reference>
+      <name value="Setting VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-StudyArmTypeVS"/>
+      </reference>
+      <name value="Study Arm Type VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-TreatmentIntentVS"/>
+      </reference>
+      <name value="Treatment Intent VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-TreatmentTerminationReasonVS"/>
+      </reference>
+      <name value="Treatment Termination Reason VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-UnitsOfLengthVS"/>
+      </reference>
+      <name value="Units Of Length VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/obf-datatype-YesNoVS"/>
+      </reference>
+      <name value="Yes No VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/obf-ResearchSubjectTerminationReasonCS"/>
+      </reference>
+      <name value="Research Subject Termination Reason CS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/obf-datatype-SettingCS"/>
+      </reference>
+      <name value="Setting CS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.0 (Standard for Trial Use)"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
