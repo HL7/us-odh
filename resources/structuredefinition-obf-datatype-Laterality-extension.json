@@ -7,9 +7,9 @@
   },
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/obf-datatype-Laterality-extension",
   "name": "Laterality",
-  "title": "obf-datatype-Laterality",
+  "title": "Laterality",
   "status": "draft",
-  "date": "2019-09-04",
+  "date": "2020-01-03",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -208,7 +208,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
+          "valueSet": "http://hl7.org/fhir/us/odh/ValueSet/obf-datatype-LateralityVS"
         }
       }
     ]
@@ -250,7 +250,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodysite-laterality"
+          "valueSet": "http://hl7.org/fhir/us/odh/ValueSet/obf-datatype-LateralityVS"
         }
       }
     ]

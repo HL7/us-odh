@@ -20,15 +20,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:3e8c9d9f-f0aa-4f53-9729-e91427d86cf2",
-    "timestamp" : "2019-09-04T17:36:48.496Z",
+    "identifier" : "urn:uuid:b783823a-92be-4bac-92b8-76c6c8766f12",
+    "timestamp" : "2020-01-01T19:27:34.301Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -43,7 +43,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "7771000",
-      "display" : "Left side"
+      "display" : "Left"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -58,7 +58,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "24028007",
-      "display" : "Rt - Right"
+      "display" : "Right"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -333,7 +333,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "255551008",
-      "display" : "Back of"
+      "display" : "Posterior"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -628,7 +628,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "260421001",
-      "display" : "LLO projection"
+      "display" : "Left lateral oblique"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -638,7 +638,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "260424009",
-      "display" : "RLO projection"
+      "display" : "Right lateral oblique"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -778,12 +778,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "260458001",
-      "display" : "Slit Towne"
+      "display" : "Slit anteroposterior"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "260459009",
-      "display" : "Reverse Towne"
+      "display" : "Reverse Towne's"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -798,12 +798,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "260463002",
-      "display" : "Left Stenver"
+      "display" : "Left Stenver's"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "260464008",
-      "display" : "Right Stenver"
+      "display" : "Right Stenver's"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -928,7 +928,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "260492003",
-      "display" : "Brewerton projection"
+      "display" : "Brewerton's projection"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -1318,7 +1318,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "261146002",
-      "display" : "Peri-aortic"
+      "display" : "Para-aortic"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4125,114 +4125,6 @@ e: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "405613005",
-        "display" : "Planned Procedure (situation)"
-      },
-      {
-        "code" : "266721009",
-        "display" : "Absent response to treatment (situation)"
-      },
-      {
-        "code" : "281647001",
-        "display" : "Adverse reaction (disorder)"
-      },
-      {
-        "code" : "160932005",
-        "display" : "Financial problem (finding)"
-      },
-      {
-        "code" : "105480006",
-        "display" : "Refusal of treatment by patient (situation)"
-      },
-      {
-        "code" : "182890002",
-        "display" : "Patient requests alternative treatment (finding)"
-      },
-      {
-        "code" : "184081006",
-        "display" : "Patient has moved away (finding)"
-      },
-      {
-        "code" : "309846006",
-        "display" : "Treatment not available (situation)"
-      },
-      {
-        "code" : "182992009",
-        "display" : "Treatment completed (situation)"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:ffe005b3-c380-4d7e-8e06-ce484e03bf5c",
-    "timestamp" : "2019-09-04T17:37:36.542Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
-    }],
-    "contains" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "405613005",
-      "display" : "Planned Procedure (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "266721009",
-      "display" : "Absent response to treatment (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "281647001",
-      "display" : "Adverse reaction (disorder)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "160932005",
-      "display" : "Financial problem (finding)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "105480006",
-      "display" : "Refusal of treatment by patient (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "182890002",
-      "display" : "Patient requests alternative treatment (finding)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "184081006",
-      "display" : "Patient has moved away (finding)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "309846006",
-      "display" : "Treatment not available (situation)"
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "code" : "182992009",
-      "display" : "Treatment completed (situation)"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
       "filter" : [{
         "property" : "concept",
         "op" : "is-a",
@@ -4253,15 +4145,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:d0619bff-3d7b-4e30-a422-b5bef67821c5",
-    "timestamp" : "2019-09-04T17:37:36.808Z",
+    "identifier" : "urn:uuid:5931292e-d8c6-4a6c-b0ef-f172e7c337d1",
+    "timestamp" : "2020-01-01T19:28:48.864Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -4276,12 +4168,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "2282003",
-      "display" : "Breast implant"
+      "display" : "Breast prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "3319006",
-      "display" : "Artificial liver, device"
+      "display" : "Artificial liver"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4291,7 +4183,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "8451008",
-      "display" : "Intramedullary nail"
+      "display" : "Intramedullary rod"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4301,7 +4193,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "12183004",
-      "display" : "Upper limb prosthesis"
+      "display" : "Arm prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4311,7 +4203,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "14106009",
-      "display" : "Cardiac pacemaker implant"
+      "display" : "Cardiac pacemaker"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4326,112 +4218,112 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "15447007",
-      "display" : "Arthroplasty prosthesis"
+      "display" : "Joint prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "17107009",
-      "display" : "Prosthetic mitral valve"
+      "display" : "Mitral valve prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "19443004",
-      "display" : "Radioactive implant, device"
+      "display" : "Radioactive implant"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "20195009",
-      "display" : "Leg prosthesis, device"
+      "display" : "Leg prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "20867006",
-      "display" : "Experimental implant, device"
+      "display" : "Experimental implant"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "22852002",
-      "display" : "Therapeutic implant, device"
+      "display" : "Therapeutic implant"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "24073000",
-      "display" : "Mechanical cardiac valve prosthesis"
+      "display" : "Artificial cardiac valve prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "24290003",
-      "display" : "Cardiac valve bioprosthesis"
+      "display" : "Biologic cardiac valve prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "24767007",
-      "display" : "Eustachian tube prosthesis, device"
+      "display" : "Eustachian tube prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "25510005",
-      "display" : "Heart valve prosthesis"
+      "display" : "Cardiac valve prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "26719000",
-      "display" : "Celestin tube, device"
+      "display" : "Celestin tube"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "31031000",
-      "display" : "Internal fixator"
+      "display" : "Orthopedic internal fixation system"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "36965003",
-      "display" : "Hemodialysis machine, device"
+      "display" : "Hemodialysis machine"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "43252007",
-      "display" : "Cochlear implant"
+      "display" : "Cochlear prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "44056008",
-      "display" : "Caliper, device"
+      "display" : "Caliper"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "45633005",
-      "display" : "Peritoneal dialyzer, device"
+      "display" : "Peritoneal dialyzer"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "53217009",
-      "display" : "Artificial lung, device"
+      "display" : "Artificial lung"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "53996008",
-      "display" : "Penile prosthesis, device"
+      "display" : "Penile prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "55206006",
-      "display" : "Suture button, device"
+      "display" : "Suture button"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "55986002",
-      "display" : "Tong, device"
+      "display" : "Tong"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "56353002",
-      "display" : "Staple, device"
+      "display" : "Staple"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "56961003",
-      "display" : "Cardiac transvenous pacemaker, device"
+      "display" : "Cardiac transvenous pacemaker"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4481,7 +4373,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "74444006",
-      "display" : "AL - Artificial limb"
+      "display" : "Limb prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4491,12 +4383,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "76428000",
-      "display" : "Elbow joint prosthesis"
+      "display" : "Elbow prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "77444004",
-      "display" : "Pins"
+      "display" : "Bone pin"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4786,7 +4678,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257296003",
-      "display" : "Fixation device"
+      "display" : "Fixator"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4841,12 +4733,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257321002",
-      "display" : "Dynamic compression plate (DCP) plate"
+      "display" : "DCP plate"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "257322009",
-      "display" : "Limited contact dynamic compression plate (LC-DCP)"
+      "display" : "LC-DCP plate"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4871,12 +4763,12 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257327003",
-      "display" : "Dynamic hip screw (DHS) plate"
+      "display" : "DHS plate"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "257328008",
-      "display" : "Dynamic condylar screw (DCS) plate"
+      "display" : "DCS plate"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4901,7 +4793,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257336004",
-      "display" : "ACIOL - anterior chamber intraocular lens implant"
+      "display" : "Anterior chamber lens"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -4976,7 +4868,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257354000",
-      "display" : "VP shunt"
+      "display" : "Ventriculoperitoneal shunt"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5031,7 +4923,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "257366006",
-      "display" : "Double pigtail stent"
+      "display" : "JJ-stent"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5156,7 +5048,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "261161001",
-      "display" : "PCIOL - posterior chamber intraocular lens implant"
+      "display" : "Posterior chamber lens"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5226,7 +5118,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "261375002",
-      "display" : "Intraconal orbital implant"
+      "display" : "Intraconal ball implant"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5246,7 +5138,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "261680000",
-      "display" : "Urethral sphincter prosthesis system"
+      "display" : "Artificial urinary sphincter"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5261,7 +5153,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "261791001",
-      "display" : "Extraconal orbital implant"
+      "display" : "Extraconal implant"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5321,7 +5213,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "271321009",
-      "display" : "Speech bulb"
+      "display" : "Palatal obturator"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5416,7 +5308,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "272256008",
-      "display" : "Removable partial denture"
+      "display" : "P/P - Partial denture"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5496,7 +5388,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "272299003",
-      "display" : "Dental bridge"
+      "display" : "Bridge - dental"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5601,7 +5493,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "278120006",
-      "display" : "Onlay denture"
+      "display" : "Overlay denture"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5721,7 +5613,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "303276004",
-      "display" : "Glaucoma tube shunt"
+      "display" : "Anterior chamber drainage tube"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -5811,7 +5703,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "303608005",
-      "display" : "Eye implant"
+      "display" : "Ophthalmological implant"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -6036,7 +5928,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "313236002",
-      "display" : "Intraocular lens"
+      "display" : "Intraocular lens implant"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -6301,7 +6193,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "360098007",
-      "display" : "Keratoprosthesis"
+      "display" : "Corneal prosthesis"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -6326,7 +6218,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "360109008",
-      "display" : "Tracheoesophageal valve"
+      "display" : "Tracheo-esophageal valve"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -6336,17 +6228,17 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "360119002",
-      "display" : "Intrastromal corneal ring segment"
+      "display" : "Intracorneal ring implant"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "360120008",
-      "display" : "Molteno shunt"
+      "display" : "Molteno tube"
     },
     {
       "system" : "http://snomed.info/sct",
       "code" : "360121007",
-      "display" : "ACTSEB-anterior chamber tube shunt to an encircling band"
+      "display" : "Schocket tube"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -6451,7 +6343,7 @@ e: {
     {
       "system" : "http://snomed.info/sct",
       "code" : "361158001",
-      "display" : "Artificial heart, device"
+      "display" : "Prosthetic heart"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -9304,8 +9196,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:54a4b70d-22d9-4b85-bfc2-94458780587a",
-    "timestamp" : "2019-09-04T17:38:35.667Z",
+    "identifier" : "urn:uuid:89839d06-18a3-493f-8e5c-ee8cf0105f45",
+    "timestamp" : "2020-01-01T19:29:48.848Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -9316,7 +9208,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9359,6 +9251,69 @@ e: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
+        "code" : "51440002",
+        "display" : "Right and left"
+      },
+      {
+        "code" : "399488007",
+        "display" : "Midline"
+      },
+      {
+        "code" : "85421007",
+        "display" : "Structure of right half of body"
+      },
+      {
+        "code" : "31156008",
+        "display" : "Structure of left half of body"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:912e7287-acca-4936-b33d-0ac5b2c0cc75",
+    "timestamp" : "2020-01-01T19:29:49.411Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "51440002",
+      "display" : "Right and left"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399488007",
+      "display" : "Midline"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "85421007",
+      "display" : "Structure of right half of body"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "31156008",
+      "display" : "Structure of left half of body"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
         "code" : "373808002",
         "display" : "Curative - procedure intent"
       },
@@ -9373,15 +9328,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:0bc2e8a4-928a-429a-9f17-dc0b0e2af2e8",
-    "timestamp" : "2019-09-04T17:38:36.792Z",
+    "identifier" : "urn:uuid:2675ec58-2326-4020-ab25-cea1d417f918",
+    "timestamp" : "2020-01-01T19:29:51.457Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9408,8 +9363,8 @@ e: {
         "display" : "Treatment completed (situation)"
       },
       {
-        "code" : "435501000124106",
-        "display" : "Medication not effective (finding)"
+        "code" : "58848006",
+        "display" : "Lack of drug action (finding)"
       },
       {
         "code" : "281647001",
@@ -9438,15 +9393,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:28bfa19e-b068-4351-8e01-ed4218938044",
-    "timestamp" : "2019-09-04T17:38:37.058Z",
+    "identifier" : "urn:uuid:c3b0fd95-32ab-4c05-9a8a-3bac7d7ace44",
+    "timestamp" : "2020-01-01T19:29:52.036Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9455,8 +9410,8 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "code" : "435501000124106",
-      "display" : "Medication not effective (finding)"
+      "code" : "58848006",
+      "display" : "Lack of drug action (finding)"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -9508,15 +9463,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:0e0e2b66-71dd-47b9-a1a4-51356311b283",
-    "timestamp" : "2019-09-04T17:38:37.605Z",
+    "identifier" : "urn:uuid:74612b0a-d319-4c32-9621-e9ace687475e",
+    "timestamp" : "2020-01-01T19:29:53.145Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",

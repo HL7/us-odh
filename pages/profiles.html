@@ -40,32 +40,32 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-odh-CombatZonePeriod.html">CombatZonePeriod</a></td>
+      <td><a href="StructureDefinition-odh-CombatZonePeriod.html">Combat Zone Period</a></td>
       <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
       <td>{% capture md_text %}Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work. Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple instances of this profile.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-EmploymentStatus.html">EmploymentStatus</a></td>
+      <td><a href="StructureDefinition-odh-EmploymentStatus.html">Employment Status</a></td>
       <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
       <td>{% capture md_text %}The self-reported current and/or historical status about a person’s economic relationship to work (e.g. having one or more jobs), including start and end dates. A person’s Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force. Outside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person’s ‘employment status.’ However, in ODH, Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-OccupationalDataForHealth.html">OccupationalDataForHealth</a></td>
+      <td><a href="StructureDefinition-odh-OccupationalDataForHealth.html">Occupational Data For Health</a></td>
       <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
       <td>{% capture md_text %}Information about a person's work and volunteer positions to support patient care, population health and public health activities.. The profile is based on FHIR Composition that contains a single section, OccupationalDataSection.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-PastOrPresentJob.html">PastOrPresentJob</a></td>
+      <td><a href="StructureDefinition-odh-PastOrPresentJob.html">Past Or Present Job</a></td>
       <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
       <td>{% capture md_text %}Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period. A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob. A person’s job can be a social determinant of their health and information about a person’s job can support patient care, population health, and public health. In patient care, knowledge of a person’s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working. At a minimum, it is important to have a record of a person’s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-RetirementDate.html">RetirementDate</a></td>
+      <td><a href="StructureDefinition-odh-RetirementDate.html">Retirement Date</a></td>
       <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
       <td>{% capture md_text %}A self-reported date that a person considers themselves to have ‘retired’. A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple instance of this profile. Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person’s ‘employment status’ and might include values such as ‘retired.’ However, in ODH, Employment Status is used to characterize a person’s relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be ‘employed’ (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-odh-UsualWork.html">UsualWork</a></td>
+      <td><a href="StructureDefinition-odh-UsualWork.html">Usual Work</a></td>
       <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
       <td>{% capture md_text %}Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person’s current job and regardless of whether or not the person performed this work for a continuous time. Knowledge of person’s Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person’s Usual Work on their health and guide appropriate use of screening tests to detect early disease. Example: a person has worked for a total of 30 years as a building carpenter (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is ‘building carpenter’ and her Usual Industry is ‘hotel construction.’ Usual Work does not include work that was unpaid or voluntary.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
@@ -92,34 +92,19 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-obf-AccessionIdentifier.html">AccessionIdentifier</a></td>
+      <td><a href="StructureDefinition-obf-AccessionIdentifier.html">Accession Identifier</a></td>
       <td><a href="http://hl7.org/fhir/R4/datatypes.html#identifier">Identifier</a></td>
       <td>{% capture md_text %}Identifier assigned by the lab{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-ActionPerformed.html">ActionPerformed</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Abstract class representing an event occurrence or performance of any type of action.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-ActionRequest.html">ActionRequest</a></td>
+      <td><a href="StructureDefinition-obf-ActionRequest.html">Action Request</a></td>
       <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
       <td>{% capture md_text %}Abstract class representing a request for any type of action to be performed.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-ActionStatement.html">ActionStatement</a></td>
+      <td><a href="StructureDefinition-obf-ActionStatement.html">Action Statement</a></td>
       <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
       <td>{% capture md_text %}Abstract class representing any type of action or event.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-ClinicalStatement.html">ClinicalStatement</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}This abstract class provides properties and behaviors common to entries in a medical record. Patient and Encounter are ubiquitous in clinical statements. This class also allows for common representation of simple data provenance elements asserter, recorder, and creation date.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-odh-CodedSocialHistoryObservation.html">CodedSocialHistoryObservation</a></td>
-      <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
-      <td>{% capture md_text %}The result of social history questions, whose answer is expressed as a code.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-obf-Composition.html">Composition</a></td>
@@ -127,51 +112,24 @@
       <td>{% capture md_text %}A composition represents a set of Entries sharing common provenance, a document such as an extract from a patient record, a knowledge artifact, or a catalog definition.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-DomainResource.html">DomainResource</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Parent class for any item in clinical or administrative health-related system. A DomainResource can belong to a single person's health record, or represent an entity that surfaces in multiple records, such as organizations, providers, payments, decision support artifacts, etc.
-
-Note to FHIR implementers: Objective FHIR includes Status and Identifier fields on DomainResource because these two attributes occur in almost every FHIR resource. The most significant exception are 3 or 4 resources that use an 'active' flag instead of coded status value. There is no apparent pattern to this inconsistency. FHIR resources that use a coded status have active and inactive as status values. In the spirit of providing a consistent object-oriented logical model for FHIR, Objective FHIR uses status across all domain resources.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td><a href="StructureDefinition-obf-Endpoint.html">Endpoint</a></td>
+      <td><a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a></td>
+      <td>{% capture md_text %}PractitionerRole covers the recording of the location and types of services that Practitioners are able to provide for an organization.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-EncounterOrEpisode.html">EncounterOrEpisode</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Abstract element representing a group of services delivered to a patient.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td><a href="StructureDefinition-obf-HealthcareService.html">Healthcare Service</a></td>
+      <td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td>
+      <td>{% capture md_text %}The details of a healthcare service available at a location.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-Entity.html">Entity</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Root class for entities such as people, organizations, and devices that have a separately identifiable existence.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-EntityOrRole.html">EntityOrRole</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Abstract parent class for both Entity and Role.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-InformationItem.html">InformationItem</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}An abstract class representing items such as administrative records, knowledge artifacts, definitional items, and entities such as organizations and entities. These items are often independent of a single patient, and do not represent clinical judgements or observations about a patient.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-MedicationAction.html">MedicationAction</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Abstract class representing medication exposure, independent of whether reported in a medication statement or medication administration. Does not include medication requests (prescriptions).{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-MedicationDispense.html">MedicationDispense</a></td>
+      <td><a href="StructureDefinition-obf-MedicationDispense.html">Medication Dispense</a></td>
       <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
       <td>{% capture md_text %}Indicates that a medication product has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-NationalProviderIdentifier.html">NationalProviderIdentifier</a></td>
+      <td><a href="StructureDefinition-obf-NationalProviderIdentifier.html">National Provider Identifier</a></td>
       <td><a href="http://hl7.org/fhir/R4/datatypes.html#identifier">Identifier</a></td>
       <td>{% capture md_text %}NPI: a unique 10 digit number to allow US healthcare providers to identify themselves in a standard way throughout the healthcare industry.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-NonLaboratoryObservation.html">NonLaboratoryObservation</a></td>
-      <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
-      <td>{% capture md_text %}An observation that is not based on a specimen.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-obf-Observation.html">Observation</a></td>
@@ -181,22 +139,12 @@ Observation has a value representing the result (answer), or an DataAbsentReason
 For an Observation, the Code describes the aspect or property of the subject being observed or measured. The Code is the 'question code' that pairs to the 'answer' contained in the Value.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-Role.html">Role</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}Capacity in which an actor is involved in an activity. For instance, 'attending physician'. Note that attributes of the actor (an entity) that remain constant regardless of the role the actor plays should be part of the entity and not the role. For instance, a person may be a practitioner and a patient. In both cases their date of birth will be the same and thus such information should not be part of the role.{% endcapture %}{{ md_text | markdownify }}</td>
+      <td><a href="StructureDefinition-obf-PractitionerRole.html">Practitioner Role</a></td>
+      <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
+      <td>{% capture md_text %}PractitionerRole covers the recording of the location and types of services that Practitioners are able to provide for an organization.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-obf-SituationStatement.html">SituationStatement</a></td>
-      <td><a href="http://hl7.org/fhir/R4/domainresource.html">DomainResource</a></td>
-      <td>{% capture md_text %}An assertion, determination, opinion, evaluation, result, observation, or measurement made by a person or device.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-odh-SocialHistoryObservation.html">SocialHistoryObservation</a></td>
-      <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
-      <td>{% capture md_text %}A simplified observation for social histories.{% endcapture %}{{ md_text | markdownify }}</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-obf-TaxIdentificationNumber.html">TaxIdentificationNumber</a></td>
+      <td><a href="StructureDefinition-obf-TaxIdentificationNumber.html">Tax Identification Number</a></td>
       <td><a href="http://hl7.org/fhir/R4/datatypes.html#identifier">Identifier</a></td>
       <td>{% capture md_text %}Tax identification number for the practitioner.{% endcapture %}{{ md_text | markdownify }}</td>
     </tr>
