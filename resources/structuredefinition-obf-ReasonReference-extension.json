@@ -9,7 +9,7 @@
   "name": "ReasonReference",
   "title": "Reason Reference",
   "status": "draft",
-  "date": "2020-01-03",
+  "date": "2020-01-04",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -197,11 +197,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+              "http://hl7.org/fhir/StructureDefinition/Condition",
               "http://hl7.org/fhir/us/odh/StructureDefinition/obf-Observation",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
             ]
           }
         ],
@@ -250,11 +250,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+              "http://hl7.org/fhir/StructureDefinition/Condition",
               "http://hl7.org/fhir/us/odh/StructureDefinition/obf-Observation",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
             ]
           }
         ]

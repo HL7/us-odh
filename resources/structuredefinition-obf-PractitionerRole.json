@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/obf-PractitionerRole",
   "name": "PractitionerRole",
   "status": "draft",
-  "date": "2020-01-03",
+  "date": "2020-01-04",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -705,7 +705,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
             ]
           }
         ],
@@ -744,7 +744,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ],
@@ -895,7 +895,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+              "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
         ],
@@ -1766,30 +1766,6 @@
         "sliceName": "identifier"
       },
       {
-        "id": "PractitionerRole.practitioner",
-        "path": "PractitionerRole.practitioner",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "PractitionerRole.organization",
-        "path": "PractitionerRole.organization",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-            ]
-          }
-        ]
-      },
-      {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
         "binding": {
@@ -1803,18 +1779,6 @@
           "description": "The role a person plays representing an organization.",
           "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role"
         }
-      },
-      {
-        "id": "PractitionerRole.location",
-        "path": "PractitionerRole.location",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
-            ]
-          }
-        ]
       },
       {
         "id": "PractitionerRole.healthcareService",
