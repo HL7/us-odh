@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/obf-HealthcareService",
   "name": "HealthcareService",
   "status": "draft",
-  "date": "2020-01-03",
+  "date": "2020-01-04",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -532,7 +532,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ],
@@ -723,7 +723,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+              "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
         ],
@@ -949,7 +949,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+              "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
         ],
@@ -2159,18 +2159,6 @@
         "isSummary": false
       },
       {
-        "id": "HealthcareService.providedBy",
-        "path": "HealthcareService.providedBy",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-            ]
-          }
-        ]
-      },
-      {
         "id": "HealthcareService.category",
         "path": "HealthcareService.category",
         "binding": {
@@ -2214,30 +2202,6 @@
           "description": "A specialty that a healthcare service may provide.",
           "valueSet": "http://hl7.org/fhir/ValueSet/c80-practice-codes"
         }
-      },
-      {
-        "id": "HealthcareService.location",
-        "path": "HealthcareService.location",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "HealthcareService.coverageArea",
-        "path": "HealthcareService.coverageArea",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
-            ]
-          }
-        ]
       },
       {
         "id": "HealthcareService.serviceProvisionCode",

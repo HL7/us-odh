@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus",
   "name": "EmploymentStatus",
   "status": "active",
-  "date": "2020-01-03",
+  "date": "2020-01-04",
   "publisher": "HL7 International Public Health Work Group",
   "contact": [
     {
@@ -606,7 +606,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
             ]
           }
         ],
@@ -2074,7 +2074,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
             ]
           }
         ],
@@ -2224,8 +2224,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
@@ -2663,7 +2663,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           }
         ],
@@ -3227,7 +3227,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "http://hl7.org/fhir/StructureDefinition/Media",
               "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "http://hl7.org/fhir/us/odh/StructureDefinition/obf-Observation"
@@ -4184,7 +4184,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
             ]
           }
         ],
@@ -4326,18 +4326,6 @@
         "max": "0"
       },
       {
-        "id": "Observation.encounter",
-        "path": "Observation.encounter",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.effectivePeriod",
         "path": "Observation.effectivePeriod",
         "short": "The time period the employment status addresses. If the employment is current, the ending time of the time period should be omitted.",
@@ -4355,8 +4343,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
@@ -4428,7 +4416,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           }
         ]
@@ -4490,7 +4478,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
               "http://hl7.org/fhir/StructureDefinition/Media",
               "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
               "http://hl7.org/fhir/us/odh/StructureDefinition/obf-Observation"
