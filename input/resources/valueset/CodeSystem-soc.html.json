@@ -1,0 +1,15 @@
+{
+	"resourceType": "ValueSet",
+	"id": "CodeSystem-soc.html",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2021-03-25T16:42:06.557+00:00",
+		"source": "#aXfIIUzelbMNJ51h"
+	},
+	"url": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7901",
+	"version": "1",
+	"name": "PHVS_Occupation_ONETSOC_Detail_ODH",
+	"title": "Occupation ONETSOC Detail (ODH)",
+	"status": "draft",
+	"description": "Concepts describing a person's self-reported type of work, i.e., the set of activities or tasks that the person is paid to perform or, if unpaid, the person's contribution to a household/family business/community. The value set was created by coding the O*NET-SOC alternate titles, which are relatable to the general public, to facilitate collection and validation by patients. A downloadable file available from the PHIN VADS ODH Hot Topics section is structured to support computer-assisted searching of this value set. The file also contains a crosswalk from the concepts in this value set to Occupation_CDC_Census value set concepts."
+}

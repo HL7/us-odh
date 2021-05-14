@@ -1,34 +1,43 @@
 {
-  "package-id": "hl7.fhir.us.odh",
-  "title": "HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.0 (Standard for Trial Use)",
-  "canonical": "http://hl7.org/fhir/us/odh",
-  "list": [
-    {
-      "version": "current",
-      "desc": "Continuous Integration Build (latest in version control)",
-      "path": "https://build.fhir.org/ig/HL7/us-odh",
-      "status": "ci-build",
-      "current": true
-    },
-    {
-      "version": "1.0.0",
-      "date": "2020-01-01",
-      "desc": "Release 1.0.0 STU1",
-      "path": "http://hl7.org/fhir/us/odh/STU1",
-      "status": "trial-use",
-      "sequence": "STU 1",
-      "fhirversion": "4.0.1",
-      "current": true
-    },
-    {
-      "version": "0.1.0",
-      "date": "2018-09-01",
-      "desc": "Release 0.1.0 STU1 Ballot 1",
-      "path": "http://hl7.org/fhir/us/odh/2018Sep",
-      "status": "draft",
-      "sequence": "STU 1",
-      "fhirversion": "3.0.1",
-      "current": false
-    }
-  ]
+	"list": [
+		{
+			"version": "current",
+			"path": "http://build.fhir.org/ig/HL7/us-odh/",
+			"desc": "Occupational Data for Health (ODH) FHIR IG",
+			"fhirversion": "4.0.1",
+			"status": "ci-build",
+			"current": true,
+			"date": "2020-08-01"
+		},
+		{
+			"version": "0.1.0",
+			"current": false,
+			"path": "http://hl7.org/fhir/us/odh/2018Sep/ ",
+			"desc": "Release 0.1.0 STU1 Ballot 1",
+			"fhirversion": "\t3.0.1",
+			"date": "2018-09-01",
+			"status": "ballot"
+		},
+		{
+			"version": "1.0.0",
+			"current": true,
+			"path": "http://hl7.org/fhir/us/odh/STU1/ ",
+			"desc": "Release 1.0.0 STU1 (Permanent Home)",
+			"fhirversion": "4.0.1",
+			"date": "2020-08-01",
+			"status": "trial-use"
+		},
+		{
+			"version": "1.1.0",
+			"current": true,
+			"desc": "Release 1.1.0 STU1 (Build)",
+			"path": "http://build.fhir.org/ig/HL7/us-odh-dot1",
+			"fhirversion": "4.0.1",
+			"date": "2021-04-29",
+			"status": "draft"
+		}
+	],
+	"package-id": "ODH",
+	"canonical": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+	"title": "Occupational Data for Health"
 }

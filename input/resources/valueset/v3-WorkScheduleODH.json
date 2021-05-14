@@ -1,0 +1,21 @@
+{
+	"resourceType": "ValueSet",
+	"id": "v3-WorkScheduleODH",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2021-03-25T16:44:43.886+00:00",
+		"source": "#Nj2Akjc9V9epj0Us"
+	},
+	"url": "http://terminology.hl7.org/ValueSet/v3-WorkScheduleODH",
+	"identifier": [
+		{
+			"use": "official",
+			"value": "2.16.840.1.113883.1.11.20561"
+		}
+	],
+	"version": "2.0.0",
+	"name": "WorkScheduleODH",
+	"title": "WorkScheduleODH",
+	"status": "draft",
+	"description": "Describes an individual's typical arrangement of working hours for an occupation"
+}

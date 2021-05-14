@@ -1,0 +1,15 @@
+{
+	"resourceType": "ValueSet",
+	"id": "codesystem-industry-cdc-census-2010.html",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-09-23T03:33:29.355+00:00",
+		"source": "#93mWW2ADKw9I1XKp"
+	},
+	"url": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187",
+	"version": "1",
+	"name": "PHVS_Industry_CDC_Census2010",
+	"title": "Industry CDC Census 2010",
+	"status": "draft",
+	"description": "2010 Industry coding system used by CDC (NIOSH & NCHS) for coding industry text. Industry describes an economic/business sector comprised of businesses/ enterprises concerned with the output of a specified category of products or services (e.g., the construction industry or the agriculture industry). This industry code system includes 2007 U.S. Census Bureau industry codes and three additional codes developed by CDC for unpaid workers. The 2010 Census industry categories are based on the 2007 North American Industry Classification System (NAICS). The PH_Occupation_CDC_Census2010 code system should be used in conjunction with this industry code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for CDC-Census I&O coding at: http://www.cdc.gov/niosh/topics/coding/"
+}

@@ -1,0 +1,15 @@
+{
+	"resourceType": "ValueSet",
+	"id": "v3-employmentStatusODH",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2020-09-23T03:32:33.280+00:00",
+		"source": "#RlUIuwhKBsS0etxR"
+	},
+	"url": "http://terminology.hl7.org/ValueSet/v3-employmentStatusODH",
+	"version": "2.0.0",
+	"name": "EmploymentStatusODH",
+	"title": "EmploymentStatusODH",
+	"status": "draft",
+	"description": "Concepts representing whether a person does or does not currently have a job or is not currently in the labor pool seeking employment."
+}
