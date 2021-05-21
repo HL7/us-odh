@@ -40,7 +40,7 @@
 			"text": "United States of America"
 		}
 	],
-	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external ",
+	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external",
 	"packageId": "hl7.fhir.us.odh",
 	"dependsOn": [
 		{
@@ -60,7 +60,7 @@
 		"grouping": [
 			{
 				"id": "primary-profiles",
-				"name": "Primary Profiles "
+				"name": "Primary Profiles"
 			}
 		],
 		"resource": [
@@ -159,7 +159,7 @@
 				},
 				"name": "Occupational Data For Health",
 				"groupingId": "primary-profiles",
-				"description": "covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting. "
+				"description": "covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting."
 			},
 			{
 				"exampleBoolean": false,
