@@ -128,14 +128,6 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "ValueSet/fLTlR0AJ",
-					"display": "Job Supervisory Level or Pay Grade (ODH)"
-				},
-				"name": "Job Supervisory Level or Pay Grade (ODH)"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
 					"reference": "ValueSet/CodeSystem-PHOccupationalDataForHealthODH.html",
 					"display": "Job Supervisory Level or Pay Grade (ODH)"
 				},
