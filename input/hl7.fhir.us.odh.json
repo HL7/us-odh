@@ -67,7 +67,7 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "ValueSet/NamingSystem-naics.html.json"
+					"reference": "ValueSet/NamingSystem-naics.html"
 				},
 				"description": "Concepts describing the kind of business that compensates the person for work (e.g., wages, training) or assigns work to a volunteer, as reported by the person. The kind of business is determined based on the primary business activity conducted by the company, organization, or individual (for those who are self-employed), or, for a military position, the self-reported branch of service. The value set was created by coding the NAICS index terms, which are relatable to the general public, to facilitate collection and validation by patients. A downloadable file available from the PHIN VADS ODH Hot Topics section is structured to support computer-assisted searching of this value set. The file also contains a crosswalk from the concepts in this value set to Occupation_CDC_Census value set concepts."
 			},
