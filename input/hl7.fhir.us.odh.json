@@ -6,12 +6,6 @@
 		"source": "#lPxw3EZgnxGFxf4Y"
 	},
 	"resourceType": "ImplementationGuide",
-	"extension": [
-		{
-			"url": "https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-pub-template",
-			"valueString": "hl7.fhir.template#current"
-		}
-	],
 	"status": "draft",
 	"fhirVersion": [
 		"4.0.1"
