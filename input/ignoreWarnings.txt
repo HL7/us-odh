@@ -17,6 +17,7 @@ INFORMATION: ValueSet/obf-datatype-YesNoVS: ValueSet: Validate resource against 
 INFORMATION: ValueSet/v3-WorkClassificationODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/v3-WorkScheduleODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/v3-employmentStatusODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ImplementationGuide/hl7.fhir.us.odh: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 
 # The use of Observation is not a conflict, because the use is not within us-core
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
