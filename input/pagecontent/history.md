@@ -1,5 +1,3 @@
-[Previous Page - Home Page](index.html)
-
 # Publication (Version) History
 
 -----

@@ -113,6 +113,3 @@ HL7 International - Public Health	http://www.hl7.org/Special/committees/pher
 </table>
 
 
-
-
-[Next Page - History](history.html)
