@@ -2,9 +2,13 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-Employer-extension",
 	"meta": {
-		"versionId": "8",
-		"lastUpdated": "2021-05-21T22:01:00.759+00:00",
-		"source": "#dOIMYvYAsekgAEqK"
+		"versionId": "9",
+		"lastUpdated": "2021-05-25T19:13:03.099+00:00",
+		"source": "#6IU87W8rGA1IVFpn"
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Employer Extension</b></p>\n  <p>A person or organization that hires the services of another.</p>\n</div>"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension",
 	"name": "Employer",
@@ -22,6 +26,7 @@
 			]
 		}
 	],
+	"description": "A person or organization that hires the services of another.",
 	"fhirVersion": "4.0.1",
 	"kind": "complex-type",
 	"abstract": false,
@@ -33,5 +38,47 @@
 	],
 	"type": "Extension",
 	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-	"derivation": "constraint"
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Extension",
+				"path": "Extension",
+				"short": "Employer",
+				"definition": "A person or organization that hires the services of another.",
+				"min": 0,
+				"max": "*"
+			},
+			{
+				"id": "Extension.extension",
+				"path": "Extension.extension",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Extension.url",
+				"path": "Extension.url",
+				"type": [
+					{
+						"code": "uri"
+					}
+				],
+				"fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"
+			},
+			{
+				"id": "Extension.valueReference",
+				"path": "Extension.valueReference",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+							"http://hl7.org/fhir/StructureDefinition/Organization"
+						]
+					}
+				]
+			}
+		]
+	}
 }

@@ -2,9 +2,13 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-RetirementDate",
 	"meta": {
-		"versionId": "6",
-		"lastUpdated": "2021-05-21T22:01:00.760+00:00",
-		"source": "#xbGPk4zn8htrX9vX"
+		"versionId": "7",
+		"lastUpdated": "2021-05-25T19:10:31.010+00:00",
+		"source": "#ysEgJcPay7kyLOoL"
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>RetirementDate Profile</b></p><p>A self-reported date that a person considers themselves to have ‘retired’. A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple instance of this profile. Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person’s ‘employment status’ and might include values such as ‘retired.’ However, in ODH, Employment Status is used to characterize a person’s relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be ‘employed’ (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).</p><p><b>Mapping Summary</b></p><p><pre>odh.RetirementDate maps to Observation:\n  Language maps to language\n  ImplicitRules maps to implicitRules\n  Metadata.VersionId maps to meta.versionId\n  Metadata.SourceSystem maps to meta.source\n  Metadata.Profile maps to meta.profile\n  Metadata.LastUpdated maps to meta.lastUpdated\n  Metadata.SecurityLabel maps to meta.security\n  Metadata.Tag maps to meta.tag\n  Narrative maps to text\n  Identifier maps to identifier\n  SocialHistoryObservationBasedOn maps to basedOn\n  ProceduralObservationPartOf maps to partOf\n  Status maps to status\n  Category maps to category\n  Code maps to code\n  ObservationSubjectOfRecord maps to subject\n  FocalSubject maps to focus\n  CareContext maps to encounter\n  RelevantTime maps to effective[x] // Add Types Timing, instant\n  StatementDateTime maps to issued\n  Performer maps to performer // Added Target Types PractitionerRole, CareTeam\n  DataValue maps to value[x] // Add Type integer, remove Type Attachment\n  DataAbsentReason maps to dataAbsentReason\n  Interpretation maps to interpretation\n  Annotation maps to note\n  BodyLocation.Code maps to bodySite\n  BodyLocation.Laterality maps to bodySite.extension\n  BodyLocation.AnatomicalOrientation maps to bodySite.extension\n  BodyLocation.RelationToLandmark maps to bodySite.extension\n  Method maps to method\n  Specimen maps to specimen\n  Device maps to device\n  ReferenceRange maps to referenceRange\n  ReferenceRange.LowerBound maps to referenceRange.low\n  ReferenceRange.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  ReferenceRange.Text maps to referenceRange.text\n  PanelMembers.Observation maps to hasMember (slice on = $this.resolve().code.coding.code; slice strategy = includes)\n  ObservationDerivedFrom maps to derivedFrom\n  Components.ObservationComponent maps to component (slice on = code.coding.code; slice strategy = includes)\n  Components.ObservationComponent.Code maps to component.code\n  Components.ObservationComponent.DataValue maps to component.value[x]\n  Components.ObservationComponent.DataAbsentReason maps to component.dataAbsentReason\n  Components.ObservationComponent.Interpretation maps to component.interpretation\n  Components.ObservationComponent.ReferenceRange maps to component.referenceRange\n  Components.ObservationComponent.ReferenceRange.LowerBound maps to component.referenceRange.low\n  Components.ObservationComponent.ReferenceRange.UpperBound maps to component.referenceRange.high\n  Components.ObservationComponent.ReferenceRange.Type maps to component.referenceRange.type\n  Components.ObservationComponent.ReferenceRange.ApplicableSubpopulation maps to component.referenceRange.appliesTo\n  Components.ObservationComponent.ReferenceRange.ApplicableAgeRange maps to component.referenceRange.age\n  Components.ObservationComponent.ReferenceRange.Text maps to component.referenceRange.text\n</pre></p></div>"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate",
 	"version": "1.0.0",
@@ -23,10 +27,441 @@
 			]
 		}
 	],
+	"description": "A Date of Retirement Observation is a clinical statement about a self-reported date (at least year) that a person considers themselves to have ‘retired’. If present, the person has retired. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job.",
+	"purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
 	"fhirVersion": "4.0.1",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		},
+		{
+			"identity": "sct-concept",
+			"uri": "http://snomed.info/conceptdomain",
+			"name": "SNOMED CT Concept Domain Binding"
+		},
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		},
+		{
+			"identity": "sct-attr",
+			"uri": "http://snomed.org/attributebinding",
+			"name": "SNOMED CT Attribute Binding"
+		}
+	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Observation",
 	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
-	"derivation": "constraint"
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Observation",
+				"path": "Observation",
+				"short": "Retirement Date",
+				"definition": "A self-reported date that a person considers themselves to have ‘retired’. A person can be both retired and employed (an Employment Status); most often, a person would be retired from one job and employed in another job. A person also can have more than one retirement date; for example, a person could retire from military service, then later retire from a civilian job. Multiple retirement dates should be recorded using multiple instance of this profile. Outside of ODH, a characterization of the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person’s ‘employment status’ and might include values such as ‘retired.’ However, in ODH, Employment Status is used to characterize a person’s relationship to working (e.g., employed, unemployed) and Retirement Date is used to characterize whether or not a person self-identifies as retired. For example, a person could be ‘employed’ (Employment Status) and have retired from a previous job (recorded at the Person level as a Retirement Date).",
+				"isModifier": false,
+				"isSummary": false
+			},
+			{
+				"id": "Observation.basedOn",
+				"path": "Observation.basedOn",
+				"short": "The plan, proposal or order that is fulfilled in whole or in part by this observation",
+				"definition": "The plan, proposal or order that is fulfilled in whole or in part by this observation.",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.partOf",
+				"path": "Observation.partOf",
+				"short": "The larger procedure that this particular observation is a component or step",
+				"definition": "The larger procedure that this particular observation is a component or step.",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/Procedure"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.category",
+				"path": "Observation.category",
+				"min": 0,
+				"max": "1"
+			},
+			{
+				"id": "Observation.category.coding",
+				"path": "Observation.category.coding",
+				"slicing": {
+					"id": "1",
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "code"
+						}
+					],
+					"ordered": false,
+					"rules": "open"
+				},
+				"min": 1,
+				"max": "*"
+			},
+			{
+				"id": "Observation.category.coding:Fixed_social-history",
+				"path": "Observation.category.coding",
+				"sliceName": "Fixed_social-history",
+				"short": "Social History",
+				"definition": "Social History",
+				"min": 1,
+				"max": "1",
+				"base": {
+					"path": "CodeableConcept.coding",
+					"min": 0,
+					"max": "*"
+				},
+				"type": [
+					{
+						"code": "Coding"
+					}
+				],
+				"isSummary": true
+			},
+			{
+				"id": "Observation.category.coding:Fixed_social-history.system",
+				"path": "Observation.category.coding.system",
+				"min": 1,
+				"max": "1",
+				"fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
+			},
+			{
+				"id": "Observation.category.coding:Fixed_social-history.code",
+				"path": "Observation.category.coding.code",
+				"min": 1,
+				"max": "1",
+				"fixedCode": "social-history"
+			},
+			{
+				"id": "Observation.code",
+				"path": "Observation.code"
+			},
+			{
+				"id": "Observation.code.coding",
+				"path": "Observation.code.coding",
+				"slicing": {
+					"id": "2",
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "code"
+						}
+					],
+					"ordered": false,
+					"rules": "open"
+				},
+				"min": 1,
+				"max": "*"
+			},
+			{
+				"id": "Observation.code.coding:Fixed_87510-4",
+				"path": "Observation.code.coding",
+				"sliceName": "Fixed_87510-4",
+				"short": "Date of Retirement",
+				"definition": "Date of Retirement",
+				"min": 1,
+				"max": "1",
+				"base": {
+					"path": "CodeableConcept.coding",
+					"min": 0,
+					"max": "*"
+				},
+				"type": [
+					{
+						"code": "Coding"
+					}
+				],
+				"isSummary": true
+			},
+			{
+				"id": "Observation.code.coding:Fixed_87510-4.system",
+				"path": "Observation.code.coding.system",
+				"min": 1,
+				"max": "1",
+				"fixedUri": "http://loinc.org"
+			},
+			{
+				"id": "Observation.code.coding:Fixed_87510-4.code",
+				"path": "Observation.code.coding.code",
+				"min": 1,
+				"max": "1",
+				"fixedCode": "87510-4"
+			},
+			{
+				"id": "Observation.subject",
+				"path": "Observation.subject",
+				"short": "The subject of an observation",
+				"definition": "The subject of an observation.",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.focus",
+				"path": "Observation.focus",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.effective[x]",
+				"path": "Observation.effective[x]",
+				"min": 0,
+				"max": "0",
+				"type": [
+					{
+						"code": "dateTime"
+					},
+					{
+						"code": "Period"
+					}
+				]
+			},
+			{
+				"id": "Observation.performer",
+				"path": "Observation.performer",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/Practitioner",
+							"http://hl7.org/fhir/StructureDefinition/Organization",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.valueDateTime",
+				"path": "Observation.valueDateTime",
+				"type": [
+					{
+						"code": "dateTime"
+					}
+				]
+			},
+			{
+				"id": "Observation.dataAbsentReason",
+				"path": "Observation.dataAbsentReason",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.interpretation",
+				"path": "Observation.interpretation",
+				"min": 0,
+				"max": "1"
+			},
+			{
+				"id": "Observation.bodySite",
+				"path": "Observation.bodySite",
+				"min": 0,
+				"max": "0",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "BodySite"
+						}
+					],
+					"strength": "preferred",
+					"description": "Codes describing anatomical locations. May include laterality.",
+					"valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+				}
+			},
+			{
+				"id": "Observation.method",
+				"path": "Observation.method",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.specimen",
+				"path": "Observation.specimen",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.device",
+				"path": "Observation.device",
+				"min": 0,
+				"max": "0",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/Device"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.referenceRange",
+				"path": "Observation.referenceRange",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.referenceRange.type",
+				"path": "Observation.referenceRange.type",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "ObservationRangeMeaning"
+						}
+					],
+					"strength": "extensible",
+					"description": "Code for the meaning of a reference range.",
+					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+				}
+			},
+			{
+				"id": "Observation.referenceRange.appliesTo",
+				"path": "Observation.referenceRange.appliesTo",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "ObservationRangeType"
+						}
+					],
+					"strength": "extensible",
+					"description": "Codes identifying the population the reference range applies to.",
+					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+				}
+			},
+			{
+				"id": "Observation.hasMember",
+				"path": "Observation.hasMember",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.derivedFrom",
+				"path": "Observation.derivedFrom",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/DocumentReference",
+							"http://hl7.org/fhir/StructureDefinition/Media",
+							"http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+							"http://hl7.org/fhir/StructureDefinition/Observation"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.component",
+				"path": "Observation.component",
+				"min": 0,
+				"max": "0"
+			},
+			{
+				"id": "Observation.component.value[x]",
+				"path": "Observation.component.value[x]",
+				"type": [
+					{
+						"code": "Quantity"
+					},
+					{
+						"code": "CodeableConcept"
+					},
+					{
+						"code": "string"
+					},
+					{
+						"code": "Range"
+					},
+					{
+						"code": "Ratio"
+					},
+					{
+						"code": "SampledData"
+					},
+					{
+						"code": "time"
+					},
+					{
+						"code": "dateTime"
+					},
+					{
+						"code": "Period"
+					}
+				]
+			},
+			{
+				"id": "Observation.component.referenceRange",
+				"path": "Observation.component.referenceRange"
+			},
+			{
+				"id": "Observation.component.referenceRange.type",
+				"path": "Observation.component.referenceRange.type",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "ObservationRangeMeaning"
+						}
+					],
+					"strength": "extensible",
+					"description": "Code for the meaning of a reference range.",
+					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+				}
+			},
+			{
+				"id": "Observation.component.referenceRange.appliesTo",
+				"path": "Observation.component.referenceRange.appliesTo",
+				"binding": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+							"valueString": "ObservationRangeType"
+						}
+					],
+					"strength": "extensible",
+					"description": "Codes identifying the population the reference range applies to.",
+					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+				}
+			}
+		]
+	}
 }
