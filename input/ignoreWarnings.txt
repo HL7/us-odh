@@ -55,4 +55,4 @@ INFORMATION: ValueSet/v3-employmentStatusODH: ValueSet: Validate resource agains
 INFORMATION: Organization/organization-odh-south-hospital: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Organization/organization-odh-south-hospital: Organization: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
-INFORMATION: Organization/organization-odh-south-hospital: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organizatio
+INFORMATION: Organization/organization-odh-south-hospital: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
