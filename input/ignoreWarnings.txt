@@ -5,6 +5,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDe
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: Observation/observation-odh-past-or-present-job-sample: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7613 because the value set or code system is not known to the validator]
 # Extensions - all extensions have examples inside the main profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no examples for this profile
 # Suppress informational messages
@@ -51,3 +52,6 @@ INFORMATION: ValueSet/obf-datatype-YesNoVS: ValueSet: Validate resource against 
 INFORMATION: ValueSet/v3-WorkClassificationODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/v3-WorkScheduleODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/v3-employmentStatusODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Organization/organization-odh-south-hospital: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/organization-odh-south-hospital: Organization: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
