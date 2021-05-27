@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "100",
-		"lastUpdated": "2021-05-24T14:42:24.643+00:00",
-		"source": "#WwLCyfh49gISE7l4"
+		"versionId": "132",
+		"lastUpdated": "2021-05-27T14:18:24.549+00:00",
+		"source": "#66orI7xqqWtvXbjg"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -208,8 +208,8 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "StructureDefinition/odh-isCurrentJob",
-					"display": "odh is Current Job"
+					"reference": "StructureDefinition/odh-isCurrentJob-extension",
+					"display": "ODHIsCurrentJov"
 				},
 				"name": "odh is Current Job",
 				"description": "A flag indicating if this is the person's current job (at the time the resource was last updated)"
@@ -217,11 +217,82 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "ValueSet/CodeSystem-PHOccupationalDataForHealthODH.html",
+					"reference": "ValueSet/CodeSystem-PHOccupationalDataForHealthODH",
 					"display": "Job Supervisory Level or Pay Grade (ODH)"
 				},
 				"name": "Job Supervisory Level or Pay Grade (ODH)",
 				"description": "An indicator of responsibilities of a person's job for directing work and personnel management, as reported by the person. Pay grade is used to represent supervisory or personnel management responsibilities for U.S. military service, because it conveys similar meaning across branches of service."
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-past-or-present-job-sample"
+				},
+				"name": "Past or Present Job Example",
+				"description": "This is an example of a Past or Present Job for patient, Maya Gordon. This example includes coded Occupation, Industry, Work Classification (compensation sector and employment type), Work Schedule, Weekly Work Days, Daily Work Hours, Job Duties, and Occupational Hazard.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-combat-zone-period-sample"
+				},
+				"name": "Combat Zone Period Example",
+				"description": "This example includes a combat zone period of 1 year for patient Maya Gordon.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-employment-status-sample"
+				},
+				"name": "Employment Status Example",
+				"description": "This example shows an employment status of 'Employed' for patient Maya Gordon.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-retirement-date-sample"
+				},
+				"name": "Retirement Date Example",
+				"description": "This example shows a retirement date for test patient Maya Gordon.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Patient/patient-odh-maya-gordon"
+				},
+				"name": "ODH Patient Maya Gordon",
+				"description": "This is an example of patient, Maya Gordon, that is associated with the work profile examples."
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-usual-work-sample"
+				},
+				"name": "Usual Work Example",
+				"description": "Example for the Usual Work profile",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "CodeSystem/PHOccupationalDataForHealthODH",
+					"display": "Occupational Data for Health (ODH)"
+				},
+				"name": "Occupational Data for Health (ODH)",
+				"description": "Occupational Data For Health Code System"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Organization/organization-odh-south-hospital",
+					"display": "South Hospital"
+				},
+				"name": "US Core Organization - South Hospital Example",
+				"description": "US Core Organization - South Hospital Example"
 			}
 		],
 		"page": {

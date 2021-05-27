@@ -1,1 +1,53 @@
 == Suppressed Messages ==
+# APPROVED by HL7 Cross Group Projects WG May 27, 2021: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+# Extensions - all extensions have examples inside the main profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no examples for this profile
+# Suppress informational messages
+INFORMATION: CodeSystem/PHOccupationalDataForHealthODH: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: Observation/observation-odh-combat-zone-period-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod
+INFORMATION: Observation/observation-odh-employment-status-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-retirement-date-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork
+INFORMATION: Patient/patient-odh-maya-gordon: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/patient-odh-maya-gordon: Patient: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
+INFORMATION: StructureDefinition/odh-CombatZonePeriod: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: ImplementationGuide/hl7.fhir.us.odh: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+INFORMATION: StructureDefinition/odh-Employer-extension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-EmploymentStatus: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-OccupationalDataForHealth: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-PastOrPresentJob: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-RetirementDate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-UsualWork: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/odh-isCurrentJob-extension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: ValueSet/CodeSystem-PHOccupationCDCCensus2010: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/CodeSystem-PHOccupationalDataForHealthODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/CodeSystem-soc: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/NamingSystem-naics: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/codesystem-industry-cdc-census-2010: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/obf-datatype-YesNoVS: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/v3-WorkClassificationODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/v3-WorkScheduleODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/v3-employmentStatusODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

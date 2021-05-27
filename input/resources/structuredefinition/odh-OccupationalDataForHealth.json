@@ -2,20 +2,16 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-OccupationalDataForHealth",
 	"meta": {
-		"versionId": "9",
-		"lastUpdated": "2021-05-25T19:15:49.076+00:00",
-		"source": "#0KXrcwuLAzappyI1"
-	},
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>OccupationalDataForHealth Profile</b></p>\n  <p>Information about a person's work and volunteer positions to support patient care, population health and public health activities.. The profile is based on FHIR Composition that contains a single section, OccupationalDataSection.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>odh.OccupationalDataForHealth maps to Composition:\n  Language maps to language\n  ImplicitRules maps to implicitRules\n  Metadata.VersionId maps to meta.versionId\n  Metadata.SourceSystem maps to meta.source\n  Metadata.Profile maps to meta.profile\n  Metadata.LastUpdated maps to meta.lastUpdated\n  Metadata.SecurityLabel maps to meta.security\n  Metadata.Tag maps to meta.tag\n  Narrative maps to text\n  Identifier maps to identifier\n  Status maps to status\n  Type maps to type\n  Category maps to category\n  FocalSubject maps to subject\n  CareContext maps to encounter\n  StatementDateTime maps to date\n  Author maps to author\n  Title maps to title\n  ConfidentialityCode maps to confidentiality\n  Attestation.AttestationMode maps to attester.mode\n  Attestation.CreationDateTime maps to attester.time\n  Attestation.Attester maps to attester.party\n  ManagingOrganization maps to custodian\n  RelatedDocument.Relationship maps to relatesTo.code\n  RelatedDocument.TargetDocument maps to relatesTo.target[x]\n  EventContext.Code maps to event.code\n  EventContext.TimePeriod maps to event.period\n  EventContext.SupportingInformation maps to event.detail\n  OccupationalDataSection maps to section (slice on = code.coding.code; slice strategy = includes)\n  OccupationalDataSection.Title maps to section.title\n  OccupationalDataSection.Code maps to section.code\n  OccupationalDataSection.Author maps to section.author\n  OccupationalDataSection.FocalSubject maps to section.focus\n  OccupationalDataSection.Narrative maps to section.text\n  OccupationalDataSection.Type maps to section.mode\n  OccupationalDataSection.SortOrder maps to section.orderedBy // terrible FHIR name!\n  OccupationalDataSection.Resource maps to section.entry  (slice on = reference.resolve(); slice on type = profile; slice strategy = includes)\n  OccupationalDataSection.EmptyReason maps to section.emptyReason\n  OccupationalDataSection.Section maps to section.section\n</pre></p>\n</div>"
+		"versionId": "12",
+		"lastUpdated": "2021-05-27T08:31:22.821+00:00",
+		"source": "#aTQDWIvmTJ5vG6NH"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth",
 	"version": "1.0.0",
 	"name": "OccupationalDataForHealth",
 	"title": "Occupational Data For Health",
 	"status": "draft",
-	"date": "2020-01-04T00:00:00+00:00",
+	"date": "2021-01-04",
 	"publisher": "HL7 International Public Health Work Group",
 	"contact": [
 		{
@@ -27,36 +23,8 @@
 			]
 		}
 	],
-	"description": "covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting. ",
-	"purpose": "To support documents, and also to capture the EN13606 notion of an attested commit to the patient EHR, and to allow a set of disparate resources at the information/engineering level to be gathered into a clinical statement.",
+	"description": "This Composition covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting. ",
 	"fhirVersion": "4.0.1",
-	"mapping": [
-		{
-			"identity": "workflow",
-			"uri": "http://hl7.org/fhir/workflow",
-			"name": "Workflow Pattern"
-		},
-		{
-			"identity": "rim",
-			"uri": "http://hl7.org/v3",
-			"name": "RIM Mapping"
-		},
-		{
-			"identity": "cda",
-			"uri": "http://hl7.org/v3/cda",
-			"name": "CDA (R2)"
-		},
-		{
-			"identity": "fhirdocumentreference",
-			"uri": "http://hl7.org/fhir/documentreference",
-			"name": "FHIR DocumentReference"
-		},
-		{
-			"identity": "w5",
-			"uri": "http://hl7.org/fhir/fivews",
-			"name": "FiveWs Pattern Mapping"
-		}
-	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Composition",

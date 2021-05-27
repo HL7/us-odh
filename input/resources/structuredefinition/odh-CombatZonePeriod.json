@@ -2,13 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-CombatZonePeriod",
 	"meta": {
-		"versionId": "10",
-		"lastUpdated": "2021-05-25T19:00:34.511+00:00",
-		"source": "#wiLcustiL3KV7WtQ"
-	},
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CombatZonePeriod Profile</b></p>\n  <p>Self-reported date range(s) when a person worked in what is considered a combat zone; sometimes called a hazardous duty work. Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Multiple periods in combat zone should be recorded using multiple instances of this profile.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>odh.CombatZonePeriod maps to Observation:\n  Language maps to language\n  ImplicitRules maps to implicitRules\n  Metadata.VersionId maps to meta.versionId\n  Metadata.SourceSystem maps to meta.source\n  Metadata.Profile maps to meta.profile\n  Metadata.LastUpdated maps to meta.lastUpdated\n  Metadata.SecurityLabel maps to meta.security\n  Metadata.Tag maps to meta.tag\n  Narrative maps to text\n  Identifier maps to identifier\n  SocialHistoryObservationBasedOn maps to basedOn\n  ProceduralObservationPartOf maps to partOf\n  Status maps to status\n  Category maps to category\n  Code maps to code\n  ObservationSubjectOfRecord maps to subject\n  FocalSubject maps to focus\n  CareContext maps to encounter\n  RelevantTime maps to effective[x] // Add Types Timing, instant\n  StatementDateTime maps to issued\n  Performer maps to performer // Added Target Types PractitionerRole, CareTeam\n  CombatZonePeriodValue maps to value[x] // Add Type integer, remove Type Attachment\n  DataAbsentReason maps to dataAbsentReason\n  Interpretation maps to interpretation\n  Annotation maps to note\n  BodyLocation.Code maps to bodySite\n  BodyLocation.Laterality maps to bodySite.extension\n  BodyLocation.AnatomicalOrientation maps to bodySite.extension\n  BodyLocation.RelationToLandmark maps to bodySite.extension\n  Method maps to method\n  Specimen maps to specimen\n  Device maps to device\n  ReferenceRange maps to referenceRange\n  ReferenceRange.LowerBound maps to referenceRange.low\n  ReferenceRange.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  ReferenceRange.Text maps to referenceRange.text\n  PanelMembers.Observation maps to hasMember (slice on = $this.resolve().code.coding.code; slice strategy = includes)\n  ObservationDerivedFrom maps to derivedFrom\n  Components.ObservationComponent maps to component (slice on = code.coding.code; slice strategy = includes)\n  Components.ObservationComponent.Code maps to component.code\n  Components.ObservationComponent.DataValue maps to component.value[x]\n  Components.ObservationComponent.DataAbsentReason maps to component.dataAbsentReason\n  Components.ObservationComponent.Interpretation maps to component.interpretation\n  Components.ObservationComponent.ReferenceRange maps to component.referenceRange\n  Components.ObservationComponent.ReferenceRange.LowerBound maps to component.referenceRange.low\n  Components.ObservationComponent.ReferenceRange.UpperBound maps to component.referenceRange.high\n  Components.ObservationComponent.ReferenceRange.Type maps to component.referenceRange.type\n  Components.ObservationComponent.ReferenceRange.ApplicableSubpopulation maps to component.referenceRange.appliesTo\n  Components.ObservationComponent.ReferenceRange.ApplicableAgeRange maps to component.referenceRange.age\n  Components.ObservationComponent.ReferenceRange.Text maps to component.referenceRange.text\n</pre></p>\n</div>"
+		"versionId": "12",
+		"lastUpdated": "2021-05-27T08:27:42.629+00:00",
+		"source": "#8TkTTE5Z1Gw1uoHF"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod",
 	"version": "1.0.0",
@@ -28,40 +24,7 @@
 		}
 	],
 	"description": "A Combat Zone Period Observation is a clinical statement indicating the self-reported date range(s)when a person worked in what is considered a combat zone. Both civilian workers, such as Department of Defense contractors, and military service members could have worked in combat zones. Many people who have served in the military seek care first outside of the Veterans Health Administration system. Collecting this observation can facilitate important conversations about possible related health concerns, potentially prompting referral to the Department of Veterans’ Affairs (VA).",
-	"purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
 	"fhirVersion": "4.0.1",
-	"mapping": [
-		{
-			"identity": "workflow",
-			"uri": "http://hl7.org/fhir/workflow",
-			"name": "Workflow Pattern"
-		},
-		{
-			"identity": "sct-concept",
-			"uri": "http://snomed.info/conceptdomain",
-			"name": "SNOMED CT Concept Domain Binding"
-		},
-		{
-			"identity": "v2",
-			"uri": "http://hl7.org/v2",
-			"name": "HL7 v2 Mapping"
-		},
-		{
-			"identity": "rim",
-			"uri": "http://hl7.org/v3",
-			"name": "RIM Mapping"
-		},
-		{
-			"identity": "w5",
-			"uri": "http://hl7.org/fhir/fivews",
-			"name": "FiveWs Pattern Mapping"
-		},
-		{
-			"identity": "sct-attr",
-			"uri": "http://snomed.org/attributebinding",
-			"name": "SNOMED CT Attribute Binding"
-		}
-	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Observation",

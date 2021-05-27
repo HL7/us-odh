@@ -2,13 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-UsualWork",
 	"meta": {
-		"versionId": "25",
-		"lastUpdated": "2021-05-25T18:57:41.908+00:00",
-		"source": "#Zwuhc7BMUOTmX8A4"
-	},
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>UsualWork Profile</b></p><p>Related data elements about the work a person reports having performed for the longest amount of time during his or her life, regardless of the person’s current job and regardless of whether or not the person performed this work for a continuous time. Knowledge of person’s Usual Work can potentially assist in diagnosis, treatment and/or prevention of chronic condition(s) or conditions with a long latency. The potential for exposure to Occupational Hazard(s) related to an Occupation and/or an Industry can change over time, and a person could have been in and out of their Usual Work over time, so additional data are helpful to fully evaluate the possible impact of the person’s Usual Work on their health and guide appropriate use of screening tests to detect early disease. Example: a person has worked for a total of 30 years as a building carpenter (Occupation), but in various industries, mostly hotel construction. Her Usual Occupation is ‘building carpenter’ and her Usual Industry is ‘hotel construction.’ Usual Work does not include work that was unpaid or voluntary.</p><p><b>Mapping Summary</b></p><p><pre>odh.UsualWork maps to Observation:\n  Language maps to language\n  ImplicitRules maps to implicitRules\n  Metadata.VersionId maps to meta.versionId\n  Metadata.SourceSystem maps to meta.source\n  Metadata.Profile maps to meta.profile\n  Metadata.LastUpdated maps to meta.lastUpdated\n  Metadata.SecurityLabel maps to meta.security\n  Metadata.Tag maps to meta.tag\n  Narrative maps to text\n  Identifier maps to identifier\n  SocialHistoryObservationBasedOn maps to basedOn\n  ProceduralObservationPartOf maps to partOf\n  Status maps to status\n  Category maps to category\n  Code maps to code\n  ObservationSubjectOfRecord maps to subject\n  FocalSubject maps to focus\n  CareContext maps to encounter\n  RelevantTime maps to effective[x] // Add Types Timing, instant\n  StatementDateTime maps to issued\n  Performer maps to performer // Added Target Types PractitionerRole, CareTeam\n  DataValue maps to value[x] // Add Type integer, remove Type Attachment\n  DataAbsentReason maps to dataAbsentReason\n  Interpretation maps to interpretation\n  Annotation maps to note\n  BodyLocation.Code maps to bodySite\n  BodyLocation.Laterality maps to bodySite.extension\n  BodyLocation.AnatomicalOrientation maps to bodySite.extension\n  BodyLocation.RelationToLandmark maps to bodySite.extension\n  Method maps to method\n  Specimen maps to specimen\n  Device maps to device\n  ReferenceRange maps to referenceRange\n  ReferenceRange.LowerBound maps to referenceRange.low\n  ReferenceRange.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  ReferenceRange.Text maps to referenceRange.text\n  PanelMembers.Observation maps to hasMember (slice on = $this.resolve().code.coding.code; slice strategy = includes)\n  ObservationDerivedFrom maps to derivedFrom\n  Components.ObservationComponent maps to component (slice on = code.coding.code; slice strategy = includes)\n  Components.ObservationComponent.Code maps to component.code\n  Components.ObservationComponent.DataValue maps to component.value[x]\n  Components.ObservationComponent.DataAbsentReason maps to component.dataAbsentReason\n  Components.ObservationComponent.Interpretation maps to component.interpretation\n  Components.ObservationComponent.ReferenceRange maps to component.referenceRange\n  Components.ObservationComponent.ReferenceRange.LowerBound maps to component.referenceRange.low\n  Components.ObservationComponent.ReferenceRange.UpperBound maps to component.referenceRange.high\n  Components.ObservationComponent.ReferenceRange.Type maps to component.referenceRange.type\n  Components.ObservationComponent.ReferenceRange.ApplicableSubpopulation maps to component.referenceRange.appliesTo\n  Components.ObservationComponent.ReferenceRange.ApplicableAgeRange maps to component.referenceRange.age\n  Components.ObservationComponent.ReferenceRange.Text maps to component.referenceRange.text\n</pre></p></div>"
+		"versionId": "30",
+		"lastUpdated": "2021-05-27T08:41:28.835+00:00",
+		"source": "#Mr02xONhpkN51gTK"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork",
 	"version": "1.1.0",
@@ -44,38 +40,6 @@
 	"purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
 	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external ",
 	"fhirVersion": "4.0.1",
-	"mapping": [
-		{
-			"identity": "workflow",
-			"uri": "http://hl7.org/fhir/workflow",
-			"name": "Workflow Pattern"
-		},
-		{
-			"identity": "sct-concept",
-			"uri": "http://snomed.info/conceptdomain",
-			"name": "SNOMED CT Concept Domain Binding"
-		},
-		{
-			"identity": "v2",
-			"uri": "http://hl7.org/v2",
-			"name": "HL7 v2 Mapping"
-		},
-		{
-			"identity": "rim",
-			"uri": "http://hl7.org/v3",
-			"name": "RIM Mapping"
-		},
-		{
-			"identity": "w5",
-			"uri": "http://hl7.org/fhir/fivews",
-			"name": "FiveWs Pattern Mapping"
-		},
-		{
-			"identity": "sct-attr",
-			"uri": "http://snomed.org/attributebinding",
-			"name": "SNOMED CT Attribute Binding"
-		}
-	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Observation",
@@ -461,15 +425,7 @@
 					"discriminator": [
 						{
 							"type": "value",
-							"path": "code.coding.code"
-						},
-						{
-							"type": "value",
-							"path": "component:odh-UsualIndustry.valueCodeableConcept:1"
-						},
-						{
-							"type": "value",
-							"path": "component:odh-UsualIndustry.valueCodeableConcept:2"
+							"path": "code"
 						}
 					],
 					"ordered": false,
@@ -477,76 +433,6 @@
 				},
 				"min": 1,
 				"max": "*"
-			},
-			{
-				"id": "Observation.component.value[x]",
-				"path": "Observation.component.value[x]",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Quantity"
-					},
-					{
-						"code": "CodeableConcept"
-					},
-					{
-						"code": "string"
-					},
-					{
-						"code": "Range"
-					},
-					{
-						"code": "Ratio"
-					},
-					{
-						"code": "SampledData"
-					},
-					{
-						"code": "time"
-					},
-					{
-						"code": "dateTime"
-					},
-					{
-						"code": "Period"
-					}
-				],
-				"mustSupport": true
-			},
-			{
-				"id": "Observation.component.referenceRange",
-				"path": "Observation.component.referenceRange"
-			},
-			{
-				"id": "Observation.component.referenceRange.type",
-				"path": "Observation.component.referenceRange.type",
-				"binding": {
-					"extension": [
-						{
-							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-							"valueString": "ObservationRangeMeaning"
-						}
-					],
-					"strength": "extensible",
-					"description": "Code for the meaning of a reference range.",
-					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
-				}
-			},
-			{
-				"id": "Observation.component.referenceRange.appliesTo",
-				"path": "Observation.component.referenceRange.appliesTo",
-				"binding": {
-					"extension": [
-						{
-							"url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-							"valueString": "ObservationRangeType"
-						}
-					],
-					"strength": "extensible",
-					"description": "Codes identifying the population the reference range applies to.",
-					"valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
-				}
 			},
 			{
 				"id": "Observation.component:odh-UsualIndustry",
@@ -559,58 +445,16 @@
 			},
 			{
 				"id": "Observation.component:odh-UsualIndustry.code",
-				"path": "Observation.component.code"
-			},
-			{
-				"id": "Observation.component:odh-UsualIndustry.code.coding",
-				"path": "Observation.component.code.coding",
-				"slicing": {
-					"id": "4",
-					"discriminator": [
-						{
-							"type": "value",
-							"path": "code"
-						}
-					],
-					"ordered": false,
-					"rules": "open"
-				},
-				"min": 1,
-				"max": "*"
-			},
-			{
-				"id": "Observation.component:odh-UsualIndustry.code.coding:Fixed_21844-6",
-				"path": "Observation.component.code.coding",
-				"sliceName": "Fixed_21844-6",
+				"path": "Observation.component.code",
 				"short": "History of Usual industry",
-				"definition": "History of Usual industry",
-				"min": 1,
-				"max": "1",
-				"base": {
-					"path": "CodeableConcept.coding",
-					"min": 0,
-					"max": "*"
-				},
-				"type": [
-					{
-						"code": "Coding"
-					}
-				],
-				"isSummary": true
-			},
-			{
-				"id": "Observation.component:odh-UsualIndustry.code.coding:Fixed_21844-6.system",
-				"path": "Observation.component.code.coding.system",
-				"min": 1,
-				"max": "1",
-				"fixedUri": "http://loinc.org"
-			},
-			{
-				"id": "Observation.component:odh-UsualIndustry.code.coding:Fixed_21844-6.code",
-				"path": "Observation.component.code.coding.code",
-				"min": 1,
-				"max": "1",
-				"fixedCode": "21844-6"
+				"patternCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "21844-6"
+						}
+					]
+				}
 			},
 			{
 				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept",
@@ -720,58 +564,16 @@
 			},
 			{
 				"id": "Observation.component:odh-UsualOccupationDuration.code",
-				"path": "Observation.component.code"
-			},
-			{
-				"id": "Observation.component:odh-UsualOccupationDuration.code.coding",
-				"path": "Observation.component.code.coding",
-				"slicing": {
-					"id": "5",
-					"discriminator": [
-						{
-							"type": "value",
-							"path": "code"
-						}
-					],
-					"ordered": false,
-					"rules": "open"
-				},
-				"min": 1,
-				"max": "*"
-			},
-			{
-				"id": "Observation.component:odh-UsualOccupationDuration.code.coding:Fixed_74163-7",
-				"path": "Observation.component.code.coding",
-				"sliceName": "Fixed_74163-7",
+				"path": "Observation.component.code",
 				"short": "Usual occupation duration",
-				"definition": "Usual occupation duration",
-				"min": 1,
-				"max": "1",
-				"base": {
-					"path": "CodeableConcept.coding",
-					"min": 0,
-					"max": "*"
-				},
-				"type": [
-					{
-						"code": "Coding"
-					}
-				],
-				"isSummary": true
-			},
-			{
-				"id": "Observation.component:odh-UsualOccupationDuration.code.coding:Fixed_74163-7.system",
-				"path": "Observation.component.code.coding.system",
-				"min": 1,
-				"max": "1",
-				"fixedUri": "http://loinc.org"
-			},
-			{
-				"id": "Observation.component:odh-UsualOccupationDuration.code.coding:Fixed_74163-7.code",
-				"path": "Observation.component.code.coding.code",
-				"min": 1,
-				"max": "1",
-				"fixedCode": "74163-7"
+				"patternCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "74163-7"
+						}
+					]
+				}
 			},
 			{
 				"id": "Observation.component:odh-UsualOccupationDuration.valueQuantity",

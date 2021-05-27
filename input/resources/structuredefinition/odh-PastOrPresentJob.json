@@ -2,13 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-PastOrPresentJob",
 	"meta": {
-		"versionId": "85",
-		"lastUpdated": "2021-05-25T19:07:49.975+00:00",
-		"source": "#pIhI3k0ePJxGJsaQ"
-	},
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>PastOrPresentJob Profile</b></p><p>Related data elements for a current or previous job, as reported by the person, i.e., a work situation or position held for a specified time period. A person can have more than one job at the same time and multiple jobs over time, so the data related to each job must remain in the record in perpetuity. Each job should be recorded in a separate instance of PastOrPresentJob. A person’s job can be a social determinant of their health and information about a person’s job can support patient care, population health, and public health. In patient care, knowledge of a person’s past or present job(s) can impact recognition, diagnosis, management, and treatment of injuries and illnesses. These data also can be used for clinical decision support and to prompt discussion of preventive care measures. For example, a record of jobs that require prolonged time in the sun might prompt a health care provider to inquire if the person wears protective clothing or sunscreen while working. At a minimum, it is important to have a record of a person’s current job(s); i.e., the job(s) in which a person is engaged at the time that he or she presents to a health care provider, regardless of duration, and to retain that information over time. In the event a person recently stopped working (e.g. retired without another job, became unemployed or disabled and unable to work), the most recent job(s) is used instead of the current job(s).</p><p><b>Mapping Summary</b></p><p><pre>odh.PastOrPresentJob maps to Observation:\r\n  Language maps to language\r\n  ImplicitRules maps to implicitRules\r\n  Metadata.VersionId maps to meta.versionId\r\n  Metadata.SourceSystem maps to meta.source\r\n  Metadata.Profile maps to meta.profile\r\n  Metadata.LastUpdated maps to meta.lastUpdated\r\n  Metadata.SecurityLabel maps to meta.security\r\n  Metadata.Tag maps to meta.tag\r\n  Narrative maps to text\r\n  Identifier maps to identifier\r\n  SocialHistoryObservationBasedOn maps to basedOn\r\n  ProceduralObservationPartOf maps to partOf\r\n  Status maps to status\r\n  Category maps to category\r\n  Code maps to code\r\n  ObservationSubjectOfRecord maps to subject\r\n  FocalSubject maps to focus\r\n  CareContext maps to encounter\r\n  RelevantTime maps to effective[x] // Add Types Timing, instant\r\n  StatementDateTime maps to issued\r\n  Performer maps to performer // Added Target Types PractitionerRole, CareTeam\r\n  DataValue maps to value[x] // Add Type integer, remove Type Attachment\r\n  DataAbsentReason maps to dataAbsentReason\r\n  Interpretation maps to interpretation\r\n  Annotation maps to note\r\n  BodyLocation.Code maps to bodySite\r\n  BodyLocation.Laterality maps to bodySite.extension\r\n  BodyLocation.AnatomicalOrientation maps to bodySite.extension\r\n  BodyLocation.RelationToLandmark maps to bodySite.extension\r\n  Method maps to method\r\n  Specimen maps to specimen\r\n  Device maps to device\r\n  ReferenceRange maps to referenceRange\r\n  ReferenceRange.LowerBound maps to referenceRange.low\r\n  ReferenceRange.UpperBound maps to referenceRange.high\r\n  ReferenceRange.Type maps to referenceRange.type\r\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\r\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\r\n  ReferenceRange.Text maps to referenceRange.text\r\n  PanelMembers.Observation maps to hasMember (slice on = $this.resolve().code.coding.code; slice strategy = includes)\r\n  ObservationDerivedFrom maps to derivedFrom\r\n  Components.ObservationComponent maps to component (slice on = code.coding.code; slice strategy = includes)\r\n  Components.ObservationComponent.Code maps to component.code\r\n  Components.ObservationComponent.DataValue maps to component.value[x]\r\n  Components.ObservationComponent.DataAbsentReason maps to component.dataAbsentReason\r\n  Components.ObservationComponent.Interpretation maps to component.interpretation\r\n  Components.ObservationComponent.ReferenceRange maps to component.referenceRange\r\n  Components.ObservationComponent.ReferenceRange.LowerBound maps to component.referenceRange.low\r\n  Components.ObservationComponent.ReferenceRange.UpperBound maps to component.referenceRange.high\r\n  Components.ObservationComponent.ReferenceRange.Type maps to component.referenceRange.type\r\n  Components.ObservationComponent.ReferenceRange.ApplicableSubpopulation maps to component.referenceRange.appliesTo\r\n  Components.ObservationComponent.ReferenceRange.ApplicableAgeRange maps to component.referenceRange.age\r\n  Components.ObservationComponent.ReferenceRange.Text maps to component.referenceRange.text\r\n</pre></p></div>"
+		"versionId": "94",
+		"lastUpdated": "2021-05-27T09:54:48.256+00:00",
+		"source": "#9F8YU9YE9xABhehl"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob",
 	"version": "1.1.0",
@@ -28,7 +24,7 @@
 			]
 		}
 	],
-	"description": "A Past or Present Occupation Observation is a clinical statement about the type of work done by a person in a job, as reported by that person. It includes a set of self-reported, related observations that remain associated with one-another to characterize the job and provide clinically-relevant information. It also can be used in a minor's record for the job(s) of people who share a home with the person (see optional related subject). A job is defined as a work situation, training position, or (potentially clinically-relevant) volunteer position held for a specified time period; for a given job, updates to Job Occupation, Past or Present Industry (Job Industry), Supervisory Level, or Employer would constitute a new job or volunteer position. A person can have more than one job at the same time and multiple jobs over time.\r\n\r\nKnowledge about a person's job(s) informs diagnosis and management of illness and injury; it also informs management of health in the work environment, regardless of whether a condition is work-related. While knowing about a person’s current job(s) is likely to be most important, some work-related health conditions can manifest after a long latency so a history of jobs can also provide valuable information. This set of related Job observations also can provide information for public health to locate infectious disease outbreaks and intervene to prevent further illness. Public health can also use these data to analyze work-related conditions such as silicosis, pesticide poisoning, and some types of cancer to identify Occupations, Industry sectors and Employers for whom interventions are needed to mitigate risk.",
+	"description": "A Past or Present Occupation Observation is a clinical statement about the type of work done by a person in a job, as reported by that person. It includes a set of self-reported, related observations that remain associated with one-another to characterize the job and provide clinically-relevant information. It also can be used in a minor's record for the job(s) of people who share a home with the person (see optional related subject). A job is defined as a work situation, training position, or (potentially clinically-relevant) volunteer position held for a specified time period; for a given job, updates to Job Occupation, Past or Present Industry (Job Industry), Supervisory Level, or Employer would constitute a new job or volunteer position. A person can have more than one job at the same time and multiple jobs over time.\n\nKnowledge about a person's job(s) informs diagnosis and management of illness and injury; it also informs management of health in the work environment, regardless of whether a condition is work-related. While knowing about a person’s current job(s) is likely to be most important, some work-related health conditions can manifest after a long latency so a history of jobs can also provide valuable information. This set of related Job observations also can provide information for public health to locate infectious disease outbreaks and intervene to prevent further illness. Public health can also use these data to analyze work-related conditions such as silicosis, pesticide poisoning, and some types of cancer to identify Occupations, Industry sectors and Employers for whom interventions are needed to mitigate risk.",
 	"jurisdiction": [
 		{
 			"coding": [
@@ -41,41 +37,7 @@
 			"text": "United States of America"
 		}
 	],
-	"purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
-	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external ",
 	"fhirVersion": "4.0.1",
-	"mapping": [
-		{
-			"identity": "workflow",
-			"uri": "http://hl7.org/fhir/workflow",
-			"name": "Workflow Pattern"
-		},
-		{
-			"identity": "sct-concept",
-			"uri": "http://snomed.info/conceptdomain",
-			"name": "SNOMED CT Concept Domain Binding"
-		},
-		{
-			"identity": "v2",
-			"uri": "http://hl7.org/v2",
-			"name": "HL7 v2 Mapping"
-		},
-		{
-			"identity": "rim",
-			"uri": "http://hl7.org/v3",
-			"name": "RIM Mapping"
-		},
-		{
-			"identity": "w5",
-			"uri": "http://hl7.org/fhir/fivews",
-			"name": "FiveWs Pattern Mapping"
-		},
-		{
-			"identity": "sct-attr",
-			"uri": "http://snomed.org/attributebinding",
-			"name": "SNOMED CT Attribute Binding"
-		}
-	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Observation",
@@ -95,14 +57,12 @@
 				"id": "Observation.extension",
 				"path": "Observation.extension",
 				"slicing": {
-					"id": "14",
 					"discriminator": [
 						{
 							"type": "value",
 							"path": "url"
 						}
 					],
-					"ordered": false,
 					"rules": "open"
 				}
 			},
@@ -110,14 +70,8 @@
 				"id": "Observation.extension:employer",
 				"path": "Observation.extension",
 				"sliceName": "employer",
-				"definition": "A person or organization that hires the services of another.",
-				"min": 0,
+				"short": "A person or organization that hires the services of another.",
 				"max": "1",
-				"base": {
-					"path": "DomainResource.extension",
-					"min": 0,
-					"max": "*"
-				},
 				"type": [
 					{
 						"code": "Extension",
@@ -125,68 +79,22 @@
 							"http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"
 						]
 					}
-				],
-				"constraint": [
-					{
-						"key": "ele-1",
-						"severity": "error",
-						"human": "All FHIR elements must have a @value or children",
-						"expression": "hasValue() or (children().count() > id.count())",
-						"xpath": "@value|f:*|h:div",
-						"source": "http://hl7.org/fhir/StructureDefinition/Element"
-					},
-					{
-						"key": "ext-1",
-						"severity": "error",
-						"human": "Must have either extensions or value[x], not both",
-						"expression": "extension.exists() != value.exists()",
-						"xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-						"source": "http://hl7.org/fhir/StructureDefinition/Extension"
-					}
-				],
-				"isModifier": false,
-				"isSummary": false
+				]
 			},
 			{
-				"id": "Observation.extension:odh-isCurrentJob",
+				"id": "Observation.extension:odhIsCurrentJob",
 				"path": "Observation.extension",
 				"sliceName": "odhIsCurrentJob",
-				"definition": "Indication of whether or not this job with the current job at the time the information was documented.",
-				"min": 0,
+				"short": "Indication of whether or not this job with the current job at the time the information was documented.",
 				"max": "1",
-				"base": {
-					"path": "DomainResource.extension",
-					"min": 0,
-					"max": "*"
-				},
 				"type": [
 					{
 						"code": "Extension",
 						"profile": [
-							"http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob"
+							"http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension"
 						]
 					}
-				],
-				"constraint": [
-					{
-						"key": "ele-1",
-						"severity": "error",
-						"human": "All FHIR elements must have a @value or children",
-						"expression": "hasValue() or (children().count() > id.count())",
-						"xpath": "@value|f:*|h:div",
-						"source": "http://hl7.org/fhir/StructureDefinition/Element"
-					},
-					{
-						"key": "ext-1",
-						"severity": "error",
-						"human": "Must have either extensions or value[x], not both",
-						"expression": "extension.exists() != value.exists()",
-						"xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-						"source": "http://hl7.org/fhir/StructureDefinition/Extension"
-					}
-				],
-				"isModifier": false,
-				"isSummary": false
+				]
 			},
 			{
 				"id": "Observation.basedOn",

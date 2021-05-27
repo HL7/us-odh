@@ -2,13 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-Employer-extension",
 	"meta": {
-		"versionId": "9",
-		"lastUpdated": "2021-05-25T19:13:03.099+00:00",
-		"source": "#6IU87W8rGA1IVFpn"
-	},
-	"text": {
-		"status": "generated",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Employer Extension</b></p>\n  <p>A person or organization that hires the services of another.</p>\n</div>"
+		"versionId": "14",
+		"lastUpdated": "2021-05-27T10:00:10.927+00:00",
+		"source": "#1k9YkMdvDW1UR2gN"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension",
 	"name": "Employer",
@@ -16,16 +12,6 @@
 	"status": "draft",
 	"date": "2020-01-04",
 	"publisher": "HL7 International Public Health Work Group",
-	"contact": [
-		{
-			"telecom": [
-				{
-					"system": "url",
-					"value": "http://www.hl7.org/Special/committees/pher/index.cfm"
-				}
-			]
-		}
-	],
 	"description": "A person or organization that hires the services of another.",
 	"fhirVersion": "4.0.1",
 	"kind": "complex-type",
@@ -33,7 +19,7 @@
 	"context": [
 		{
 			"type": "element",
-			"expression": "*"
+			"expression": "Observation"
 		}
 	],
 	"type": "Extension",
@@ -50,20 +36,23 @@
 				"max": "*"
 			},
 			{
-				"id": "Extension.extension",
-				"path": "Extension.extension",
-				"min": 0,
-				"max": "0"
-			},
-			{
 				"id": "Extension.url",
 				"path": "Extension.url",
+				"fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"
+			},
+			{
+				"id": "Extension.value[x]",
+				"path": "Extension.value[x]",
+				"min": 1,
 				"type": [
 					{
-						"code": "uri"
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+							"http://hl7.org/fhir/StructureDefinition/Organization"
+						]
 					}
-				],
-				"fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"
+				]
 			},
 			{
 				"id": "Extension.valueReference",
