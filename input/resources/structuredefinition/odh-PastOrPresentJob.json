@@ -82,7 +82,7 @@
 				]
 			},
 			{
-				"id": "Observation.extension:odhIsCurrentJob",
+				"id": "Observation.extension:odh-isCurrentJob-extension",
 				"path": "Observation.extension",
 				"sliceName": "odhIsCurrentJob",
 				"short": "Indication of whether or not this job with the current job at the time the information was documented.",
