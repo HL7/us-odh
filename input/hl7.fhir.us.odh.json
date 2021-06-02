@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "132",
-		"lastUpdated": "2021-05-27T14:18:24.549+00:00",
-		"source": "#66orI7xqqWtvXbjg"
+		"versionId": "163",
+		"lastUpdated": "2021-06-02T01:38:56.176+00:00",
+		"source": "#QskbqtVpccK6BFiI"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -209,9 +209,9 @@
 				"exampleBoolean": false,
 				"reference": {
 					"reference": "StructureDefinition/odh-isCurrentJob-extension",
-					"display": "ODHIsCurrentJov"
+					"display": "ODHIsCurrentJob-extension"
 				},
-				"name": "odh is Current Job",
+				"name": "odh is Current Job Extension",
 				"description": "A flag indicating if this is the person's current job (at the time the resource was last updated)"
 			},
 			{
@@ -222,15 +222,6 @@
 				},
 				"name": "Job Supervisory Level or Pay Grade (ODH)",
 				"description": "An indicator of responsibilities of a person's job for directing work and personnel management, as reported by the person. Pay grade is used to represent supervisory or personnel management responsibilities for U.S. military service, because it conveys similar meaning across branches of service."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "Observation/observation-odh-past-or-present-job-sample"
-				},
-				"name": "Past or Present Job Example",
-				"description": "This is an example of a Past or Present Job for patient, Maya Gordon. This example includes coded Occupation, Industry, Work Classification (compensation sector and employment type), Work Schedule, Weekly Work Days, Daily Work Hours, Job Duties, and Occupational Hazard.",
-				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
 			},
 			{
 				"exampleBoolean": false,
@@ -286,13 +277,32 @@
 				"description": "Occupational Data For Health Code System"
 			},
 			{
-				"exampleBoolean": true,
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Composition/composition-odh-occupational-data-for-health-sample",
+					"display": "Occupational Data Composition for Maya Gordon"
+				},
+				"name": "Occupational Data Composition for Maya Gordon",
+				"description": "Complete composition example of work information for patient Maya Gordon.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth"
+			},
+			{
+				"exampleBoolean": false,
 				"reference": {
 					"reference": "Organization/organization-odh-south-hospital",
 					"display": "South Hospital"
 				},
-				"name": "US Core Organization - South Hospital Example",
+				"name": "South Hospital",
 				"description": "US Core Organization - South Hospital Example"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "Observation/observation-odh-past-or-present-job-sample"
+				},
+				"name": "Past or Present Job Example",
+				"description": "This is an example of a Past or Present Job for patient, Maya Gordon. This example includes coded Occupation, Industry, Work Classification (compensation sector and employment type), Work Schedule, Weekly Work Days, Daily Work Hours, Job Duties, and Occupational Hazard.",
+				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
 			}
 		],
 		"page": {

@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-PastOrPresentJob",
 	"meta": {
-		"versionId": "94",
-		"lastUpdated": "2021-05-27T09:54:48.256+00:00",
-		"source": "#9F8YU9YE9xABhehl"
+		"versionId": "97",
+		"lastUpdated": "2021-06-01T16:17:52.740+00:00",
+		"source": "#li6ah5I9SA8DsMJS"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob",
 	"version": "1.1.0",
@@ -82,9 +82,9 @@
 				]
 			},
 			{
-				"id": "Observation.extension:odh-isCurrentJob-extension",
+				"id": "Observation.extension:odhIsCurrentJobExtension",
 				"path": "Observation.extension",
-				"sliceName": "odhIsCurrentJob",
+				"sliceName": "ODHIsCurrentJobExtension",
 				"short": "Indication of whether or not this job with the current job at the time the information was documented.",
 				"max": "1",
 				"type": [

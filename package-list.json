@@ -23,7 +23,7 @@
 		{
 			"version": "1.0.0",
 			"current": true,
-			"path": "http://hl7.org/fhir/us/odh/STU1/ ",
+			"path": "http://hl7.org/fhir/us/odh/STU1/",
 			"desc": "Release 1.0.0 STU1 (Permanent Home)",
 			"fhirversion": "4.0.1",
 			"date": "2020-08-01",
