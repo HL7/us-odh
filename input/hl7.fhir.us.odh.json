@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "163",
-		"lastUpdated": "2021-06-02T01:38:56.176+00:00",
-		"source": "#QskbqtVpccK6BFiI"
+		"versionId": "165",
+		"lastUpdated": "2021-06-02T01:59:21.541+00:00",
+		"source": "#ydZCgOEE4y77JPUz"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -287,7 +287,7 @@
 				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth"
 			},
 			{
-				"exampleBoolean": false,
+				"exampleBoolean": true,
 				"reference": {
 					"reference": "Organization/organization-odh-south-hospital",
 					"display": "South Hospital"
