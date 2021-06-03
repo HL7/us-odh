@@ -23,7 +23,7 @@
 		{
 			"version": "1.0.0",
 			"current": true,
-			"path": "http://hl7.org/fhir/us/odh/STU1/",
+			"path": "http://hl7.org/fhir/us/odh/STU1",
 			"desc": "Release 1.0.0 STU1 (Permanent Home)",
 			"fhirversion": "4.0.1",
 			"date": "2020-08-01",
@@ -34,14 +34,14 @@
 			"version": "1.1.0",
 			"current": true,
 			"desc": "Release 1.1.0 STU1 (Build)",
-			"path": "http://build.fhir.org/ig/HL7/us-odh-dot1",
+			"path": "http://hl7.org/fhir/us/odh/STU1.1",
 			"fhirversion": "4.0.1",
 			"date": "2021-04-29",
-			"status": "draft",
+			"status": "trial-use",
 			"sequence": "STU 1 on FHIR R4"
 		}
 	],
-	"package-id": "hl7.fhir.us.odh",
+	"package-id": "hl7.fhir.us.ohd",
 	"canonical": "http://hl7.org/fhir/us/odh",
 	"title": "Occupational Data for Health",
 	"category": "Clinical Records"
