@@ -1,16 +1,16 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "175",
-		"lastUpdated": "2021-06-03T18:32:45.528+00:00",
-		"source": "#APRGsiBx0W7rH2TJ"
+		"versionId": "181",
+		"lastUpdated": "2021-06-10T21:45:18.213+00:00",
+		"source": "#NZfd8JQas5YK9pnr"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
 	"fhirVersion": [
 		"4.0.1"
 	],
-	"url": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.ohd",
+	"url": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
 	"version": "1.1.0",
 	"name": "HL7_FHIR_Profile_Occupational_Data_for_Health_ODH_Release_1_1_Standard_for_Trial_Use",
 	"title": "HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.1 (Standard for Trial Use)",
@@ -41,7 +41,7 @@
 		}
 	],
 	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external",
-	"packageId": "hl7.fhir.us.ohd",
+	"packageId": "hl7.fhir.us.odh",
 	"dependsOn": [
 		{
 			"id": "hl7fhiruscore",
@@ -318,6 +318,10 @@
 			]
 		},
 		"parameter": [
+			{
+				"code": "jira-code",
+				"value": "ohd"
+			},
 			{
 				"code": "copyrightyear",
 				"value": "2020+"

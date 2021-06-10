@@ -41,7 +41,7 @@
 			"sequence": "STU 1 on FHIR R4"
 		}
 	],
-	"package-id": "hl7.fhir.us.ohd",
+	"package-id": "hl7.fhir.us.odh",
 	"canonical": "http://hl7.org/fhir/us/odh",
 	"title": "Occupational Data for Health",
 	"category": "Clinical Records"
