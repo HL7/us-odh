@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-odh-past-or-present-job-sample"/>
+    <meta>
+        <versionId value="10"/>
+        <lastUpdated value="2021-05-27T09:19:44.894+00:00"/>
+        <source value="#kx1P9fdzw85WYorA"/>
+        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension">
+        <valueBoolean value="true"/>
+    </extension>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11341-5"/>
+            <display value="History of Occupation"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-odh-maya-gordon"/>
+        <display value="Maya Gordon"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2015-04-24"/>
+    </effectivePeriod>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html"/>
+            <code value="3600"/>
+            <display value="Nursing, psychiatric, and home health aides"/>
+        </coding>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
+            <code value="31-1014.00.007136"/>
+            <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
+        </coding>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="86188-0"/>
+                <display value="History of Occupation Industry"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
+                <code value="8270"/>
+                <display value="Nursing care facilities"/>
+            </coding>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
+                <code value="621610.008495"/>
+                <display value="Home nursing services"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="85104-8"/>
+                <display value="Compensation and sector employment type"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-WorkClassificationODH"/>
+                <code value="PWNSE"/>
+                <display value="Paid non-governmental work, not self-employed"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="87707-6"/>
+                <display value="Job supervisory level or pay grade"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
+                <code value="C-6"/>
+                <display value="Manager"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="63761-1"/>
+                <display value="What were your main activities or duties for this job [NHANES]"/>
+            </coding>
+        </code>
+        <valueString value="Patient Care"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="87729-0"/>
+                <display value="History of Occupational hazard"/>
+            </coding>
+        </code>
+        <valueString value="Infectious Disease"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74159-5"/>
+                <display value="Work schedule NIOSH"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+                <code value="RSWN"/>
+                <display value="rotating shift with nights"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74160-3"/>
+                <display value="Work days per week"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="5"/>
+            <unit value="d"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+        </valueQuantity>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="87512-0"/>
+                <display value="Work hours per day"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="8"/>
+            <unit value="h"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h"/>
+        </valueQuantity>
+    </component>
+</Observation>
