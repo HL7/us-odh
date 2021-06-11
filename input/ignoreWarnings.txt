@@ -10,7 +10,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDe
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension'): The Implementation Guide contains no examples for this extension
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension')StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
-# These are profiles defined in this IG
+# These are profiles defined in this IG 
 INFORMATION: Observation/observation-odh-combat-zone-period-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod
 INFORMATION: Observation/observation-odh-employment-status-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus
 INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob
