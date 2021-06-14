@@ -2,7 +2,7 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "http://build.fhir.org/ig/HL7/us-odh/",
+			"path": "http://build.fhir.org/ig/HL7/us-odh",
 			"desc": "Occupational Data for Health (ODH) FHIR IG",
 			"fhirversion": "4.0.1",
 			"status": "ci-build",
@@ -13,7 +13,7 @@
 		{
 			"version": "0.1.0",
 			"current": false,
-			"path": "http://hl7.org/fhir/us/odh/2018Sep/ ",
+			"path": "http://hl7.org/fhir/us/odh/2018Sep",
 			"desc": "Release 0.1.0 STU1 Ballot 1",
 			"fhirversion": "3.0.1",
 			"date": "2018-09-01",
@@ -22,7 +22,7 @@
 		},
 		{
 			"version": "1.0.0",
-			"current": true,
+			"current": false,
 			"path": "http://hl7.org/fhir/us/odh/STU1",
 			"desc": "Release 1.0.0 STU1 (Permanent Home)",
 			"fhirversion": "4.0.1",

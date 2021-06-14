@@ -1,0 +1,14 @@
+{
+	"resourceType": "ValueSet",
+	"id": "CodeSystem-PHOccupationalDataForHealthODH",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2021-05-26T13:45:25.128+00:00",
+		"source": "#vjjHCPBHOADvb658"
+	},
+	"url": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7613",
+	"version": "2",
+	"name": "PHVS_JobSupervisoryLevelorPayGrade_ODH",
+	"title": "Job Supervisory Level or Pay Grade (ODH)",
+	"status": "draft"
+}
