@@ -1,0 +1,14 @@
+{
+	"resourceType": "ValueSet",
+	"id": "codesystem-industry-cdc-census-2010",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2021-05-21T22:01:00.961+00:00",
+		"source": "#eMUPdswKfiUOSz9z"
+	},
+	"url": "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187",
+	"version": "1",
+	"name": "PHVS_Industry_CDC_Census2010",
+	"title": "Industry CDC Census 2010",
+	"status": "draft"
+}
