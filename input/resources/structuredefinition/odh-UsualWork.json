@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-UsualWork",
 	"meta": {
-		"versionId": "30",
-		"lastUpdated": "2021-05-27T08:41:28.835+00:00",
-		"source": "#Mr02xONhpkN51gTK"
+		"versionId": "48",
+		"lastUpdated": "2022-06-29T13:25:52.974+00:00",
+		"source": "#QwLjMa0jU8OLH7nE"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork",
 	"version": "1.1.0",
@@ -226,7 +226,9 @@
 			{
 				"id": "Observation.effectivePeriod",
 				"path": "Observation.effectivePeriod",
-				"min": 1,
+				"short": "The period.start asserts when the usual occupation began.  NOTE: If the period.start element is missing, the start of the usual occupation is not known. The period.end asserts when the usual occupation ended. If usual occupation is current, period.end should be omitted.",
+				"definition": "The period.start asserts when the Usual Occupation began.  NOTE: If the period.start element is missing, the start of the Usual Occupation is not known. The period.end asserts when the Usual Occupation ended. If Usual Occupation is current, period.end should be omitted.",
+				"min": 0,
 				"max": "1",
 				"type": [
 					{
@@ -252,12 +254,15 @@
 			{
 				"id": "Observation.valueCodeableConcept",
 				"path": "Observation.valueCodeableConcept",
+				"short": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
+				"definition": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
+				"min": 0,
+				"max": "1",
 				"type": [
 					{
 						"code": "CodeableConcept"
 					}
-				],
-				"mustSupport": true
+				]
 			},
 			{
 				"id": "Observation.valueCodeableConcept.coding",
@@ -271,9 +276,8 @@
 					],
 					"rules": "open"
 				},
-				"min": 1,
-				"max": "*",
-				"mustSupport": true
+				"min": 0,
+				"max": "*"
 			},
 			{
 				"id": "Observation.valueCodeableConcept.coding:occupationCDCCensus2010",
@@ -283,7 +287,6 @@
 				"definition": "Occupation CDC Census 2010",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Occupation CDC Census 2010",
@@ -298,7 +301,6 @@
 				"definition": "Occupation ONETSOC Detail (ODH)",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Occupation ONETSOC Detail (ODH)",
@@ -306,16 +308,40 @@
 				}
 			},
 			{
+				"id": "Observation.valueCodeableConcept.coding:occupationCDCCensus2018",
+				"path": "Observation.valueCodeableConcept.coding",
+				"sliceName": "occupationCDCCensus2018",
+				"short": "Occupation CDC Census 2018",
+				"definition": "Occupation CDC Census 2018",
+				"min": 0,
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"description": "Occupation CDC Census 2018",
+					"valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065"
+				}
+			},
+			{
+				"id": "Observation.valueCodeableConcept.text",
+				"path": "Observation.valueCodeableConcept.text",
+				"short": "Use the narrative description if there is no coded value available for the Occupation.",
+				"definition": "Use the narrative description if there is no coded value available for the Occupation.",
+				"min": 0,
+				"max": "1"
+			},
+			{
 				"id": "Observation.dataAbsentReason",
 				"path": "Observation.dataAbsentReason",
+				"short": "The reason that there is no value available for the Occupation.",
+				"definition": "The reason that there is no value available for the Occupation.",
 				"min": 0,
-				"max": "0"
+				"max": "1"
 			},
 			{
 				"id": "Observation.interpretation",
 				"path": "Observation.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.bodySite",
@@ -438,7 +464,7 @@
 				"id": "Observation.component:odh-UsualIndustry",
 				"path": "Observation.component",
 				"sliceName": "odh-UsualIndustry",
-				"short": "UsualIndustry: The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation",
+				"short": "UsualIndustry: The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation. Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
 				"definition": "The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation. For example, a person who has spent 30 years as a building carpenter in various industries, but mostly in construction, would record a usual occupation of building carpenter and a usual industry of construction.",
 				"min": 1,
 				"max": "1"
@@ -459,6 +485,10 @@
 			{
 				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept",
 				"path": "Observation.component.valueCodeableConcept",
+				"short": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"definition": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"min": 1,
+				"max": "1",
 				"type": [
 					{
 						"code": "CodeableConcept"
@@ -477,9 +507,8 @@
 					],
 					"rules": "open"
 				},
-				"min": 1,
-				"max": "*",
-				"mustSupport": true
+				"min": 0,
+				"max": "*"
 			},
 			{
 				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryCDCCensus2010",
@@ -489,7 +518,6 @@
 				"definition": "Industry CDC Census 2010",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Industry CDC Census 2010",
@@ -504,7 +532,6 @@
 				"definition": "Industry NAICS Detail (ODH)",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Industry NAICS Detail (ODH)",
@@ -512,10 +539,40 @@
 				}
 			},
 			{
+				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryCDCCensus2018",
+				"path": "Observation.component.valueCodeableConcept.coding",
+				"sliceName": "industryCDCCensus2018",
+				"short": "Industry CDC Census 2018",
+				"definition": "Industry CDC Census 2018",
+				"min": 0,
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"description": "Industry CDC Census 2018",
+					"valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066"
+				}
+			},
+			{
+				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept.text",
+				"path": "Observation.component.valueCodeableConcept.text",
+				"short": "Use the narrative description if there is no coded value available for the Industry.",
+				"definition": "Use the narrative description if there is no coded value available for the Industry.",
+				"min": 0,
+				"max": "1"
+			},
+			{
+				"id": "Observation.component:odh-UsualIndustry.dataAbsentReason",
+				"path": "Observation.component.dataAbsentReason",
+				"short": "The reason that there is no value available for the Industry.",
+				"definition": "The reason that there is no value available for the Industry.",
+				"min": 0,
+				"max": "1"
+			},
+			{
 				"id": "Observation.component:odh-UsualIndustry.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-UsualIndustry.referenceRange",
@@ -603,13 +660,13 @@
 				"id": "Observation.component:odh-UsualOccupationDuration.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-UsualOccupationDuration.referenceRange",
 				"path": "Observation.component.referenceRange",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-UsualOccupationDuration.referenceRange.type",

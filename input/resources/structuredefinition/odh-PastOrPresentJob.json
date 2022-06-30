@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-PastOrPresentJob",
 	"meta": {
-		"versionId": "97",
-		"lastUpdated": "2021-06-01T16:17:52.740+00:00",
-		"source": "#li6ah5I9SA8DsMJS"
+		"versionId": "105",
+		"lastUpdated": "2022-06-29T14:10:51.363+00:00",
+		"source": "#kZjkfSpQut6GaGSo"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob",
 	"version": "1.1.0",
@@ -295,12 +295,13 @@
 			{
 				"id": "Observation.valueCodeableConcept",
 				"path": "Observation.valueCodeableConcept",
+				"short": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
+				"definition": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
 				"type": [
 					{
 						"code": "CodeableConcept"
 					}
-				],
-				"mustSupport": true
+				]
 			},
 			{
 				"id": "Observation.valueCodeableConcept.coding",
@@ -314,9 +315,8 @@
 					],
 					"rules": "open"
 				},
-				"min": 1,
-				"max": "*",
-				"mustSupport": true
+				"min": 0,
+				"max": "*"
 			},
 			{
 				"id": "Observation.valueCodeableConcept.coding:occupationCDCCensus2010",
@@ -326,7 +326,6 @@
 				"definition": "Occupation CDC Census 2010",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Occupation CDC Census 2010",
@@ -341,7 +340,6 @@
 				"definition": "Occupation ONETSOC Detail (ODH)",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Occupation ONETSOC Detail (ODH)",
@@ -349,17 +347,40 @@
 				}
 			},
 			{
-				"id": "Observation.dataAbsentReason",
-				"path": "Observation.dataAbsentReason",
+				"id": "Observation.valueCodeableConcept.coding:occupationCDCCensus2018",
+				"path": "Observation.valueCodeableConcept.coding",
+				"sliceName": "occupationCDCCensus2018",
+				"short": "Occupation CDC Census 2018",
+				"definition": "Occupation CDC Census 2018",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true
+				"binding": {
+					"strength": "required",
+					"description": "Occupation CDC Census 2018",
+					"valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065"
+				}
+			},
+			{
+				"id": "Observation.valueCodeableConcept.text",
+				"path": "Observation.valueCodeableConcept.text",
+				"short": "Use the narrative description if there is no coded value available for the Occupation.",
+				"definition": "Use the narrative description if there is no coded value available for the Occupation.",
+				"min": 0,
+				"max": "1"
+			},
+			{
+				"id": "Observation.dataAbsentReason",
+				"path": "Observation.dataAbsentReason",
+				"short": "The reason that there is no value available for the Occupation.",
+				"definition": "The reason that there is no value available for the Occupation.",
+				"min": 0,
+				"max": "1"
 			},
 			{
 				"id": "Observation.interpretation",
 				"path": "Observation.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.bodySite",
@@ -520,8 +541,8 @@
 				"id": "Observation.component:odh-PastOrPresentIndustry",
 				"path": "Observation.component",
 				"sliceName": "odh-PastOrPresentIndustry",
-				"short": "PastOrPresentIndustry: The type(s) of business (industry) associated with the patient's past and present occupation(s)",
-				"definition": "The type(s) of business (industry) associated with the patient's past and present occupation(s).",
+				"short": "The type(s) of business (industry) associated with the patient's past and present occupation(s). Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"definition": "The type(s) of business (industry) associated with the patient's past and present occupation(s). Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
 				"min": 0,
 				"max": "1"
 			},
@@ -583,12 +604,15 @@
 			{
 				"id": "Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept",
 				"path": "Observation.component.valueCodeableConcept",
+				"short": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"definition": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"min": 0,
+				"max": "1",
 				"type": [
 					{
 						"code": "CodeableConcept"
 					}
-				],
-				"mustSupport": true
+				]
 			},
 			{
 				"id": "Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept.coding",
@@ -602,9 +626,8 @@
 					],
 					"rules": "open"
 				},
-				"min": 1,
-				"max": "*",
-				"mustSupport": true
+				"min": 0,
+				"max": "*"
 			},
 			{
 				"id": "Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept.coding:industryCDCCensus2010",
@@ -614,7 +637,6 @@
 				"definition": "Industry CDC Census 2010",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Industry CDC Census 2010",
@@ -629,7 +651,6 @@
 				"definition": "Industry NAICS Detail (ODH)",
 				"min": 0,
 				"max": "1",
-				"mustSupport": true,
 				"binding": {
 					"strength": "required",
 					"description": "Industry NAICS Detail (ODH)",
@@ -637,8 +658,32 @@
 				}
 			},
 			{
+				"id": "Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept.coding:industryCDCCensus2018",
+				"path": "Observation.component.valueCodeableConcept.coding",
+				"sliceName": "industryCDCCensus2018",
+				"short": "Industry CDC Census 2018",
+				"definition": "Industry CDC Census 2018",
+				"min": 0,
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"description": "Industry CDC Census 2018",
+					"valueSet": "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066"
+				}
+			},
+			{
+				"id": "Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept.text",
+				"path": "Observation.component.valueCodeableConcept.text",
+				"short": "Use the narrative description if there is no coded value available for the Industry.",
+				"definition": "Use the narrative description if there is no coded value available for the Industry.",
+				"min": 0,
+				"max": "1"
+			},
+			{
 				"id": "Observation.component:odh-PastOrPresentIndustry.dataAbsentReason",
 				"path": "Observation.component.dataAbsentReason",
+				"short": "The reason that there is no value available for the Industry.",
+				"definition": "The reason that there is no value available for the Industry.",
 				"min": 0,
 				"max": "1"
 			},
@@ -646,7 +691,7 @@
 				"id": "Observation.component:odh-PastOrPresentIndustry.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-PastOrPresentIndustry.referenceRange",
@@ -762,16 +807,10 @@
 				}
 			},
 			{
-				"id": "Observation.component:odh-WorkClassification.dataAbsentReason",
-				"path": "Observation.component.dataAbsentReason",
-				"min": 0,
-				"max": "1"
-			},
-			{
 				"id": "Observation.component:odh-WorkClassification.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-WorkClassification.referenceRange",
@@ -887,16 +926,10 @@
 				}
 			},
 			{
-				"id": "Observation.component:odh-SupervisoryLevel.dataAbsentReason",
-				"path": "Observation.component.dataAbsentReason",
-				"min": 0,
-				"max": "1"
-			},
-			{
 				"id": "Observation.component:odh-SupervisoryLevel.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-SupervisoryLevel.referenceRange",
@@ -1008,6 +1041,12 @@
 				]
 			},
 			{
+				"id": "Observation.component:odh-JobDuty.interpretation",
+				"path": "Observation.component.interpretation",
+				"min": 0,
+				"max": "0"
+			},
+			{
 				"id": "Observation.component:odh-JobDuty.referenceRange",
 				"path": "Observation.component.referenceRange",
 				"min": 0,
@@ -1115,6 +1154,12 @@
 						"code": "string"
 					}
 				]
+			},
+			{
+				"id": "Observation.component:odh-OccupationalHazard.interpretation",
+				"path": "Observation.component.interpretation",
+				"min": 0,
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-OccupationalHazard.referenceRange",
@@ -1230,16 +1275,10 @@
 				}
 			},
 			{
-				"id": "Observation.component:odh-WorkSchedule.dataAbsentReason",
-				"path": "Observation.component.dataAbsentReason",
-				"min": 0,
-				"max": "1"
-			},
-			{
 				"id": "Observation.component:odh-WorkSchedule.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-WorkSchedule.referenceRange",
@@ -1369,7 +1408,7 @@
 				"id": "Observation.component:odh-WeeklyWorkDays.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-WeeklyWorkDays.referenceRange",
@@ -1501,7 +1540,7 @@
 				"id": "Observation.component:odh-DailyWorkHours.interpretation",
 				"path": "Observation.component.interpretation",
 				"min": 0,
-				"max": "1"
+				"max": "0"
 			},
 			{
 				"id": "Observation.component:odh-DailyWorkHours.referenceRange",
