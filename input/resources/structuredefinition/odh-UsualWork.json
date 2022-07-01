@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-UsualWork",
 	"meta": {
-		"versionId": "48",
-		"lastUpdated": "2022-06-29T13:25:52.974+00:00",
-		"source": "#QwLjMa0jU8OLH7nE"
+		"versionId": "49",
+		"lastUpdated": "2022-06-30T21:25:51.120+00:00",
+		"source": "#v66oyVWfFsrB5hlq"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork",
 	"version": "1.1.0",
@@ -227,7 +227,7 @@
 				"id": "Observation.effectivePeriod",
 				"path": "Observation.effectivePeriod",
 				"short": "The period.start asserts when the usual occupation began.  NOTE: If the period.start element is missing, the start of the usual occupation is not known. The period.end asserts when the usual occupation ended. If usual occupation is current, period.end should be omitted.",
-				"definition": "The period.start asserts when the Usual Occupation began.  NOTE: If the period.start element is missing, the start of the Usual Occupation is not known. The period.end asserts when the Usual Occupation ended. If Usual Occupation is current, period.end should be omitted.",
+				"definition": "The period.start asserts when the usual occupation began.  NOTE: If the period.start element is missing, the start of the usual occupation is not known. The period.end asserts when the usual occupation ended. If Usual Occupation is current, period.end should be omitted. If the period.end is missing, it may also mean that the end of the usual occupation is not known.",
 				"min": 0,
 				"max": "1",
 				"type": [
@@ -254,8 +254,8 @@
 			{
 				"id": "Observation.valueCodeableConcept",
 				"path": "Observation.valueCodeableConcept",
-				"short": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
-				"definition": "Express the Occupation using a coded value. If no coded value is available, use text. If the Occupation is not available, explain using dataAbsentReason.",
+				"short": "Express the usual occupation using a coded value. If no coded value is available, use text. If the usual occupation is not available, explain using dataAbsentReason.",
+				"definition": "Express the usual occupation using a coded value. If no coded value is available, use text. If the usual occupation is not available, explain using dataAbsentReason.",
 				"min": 0,
 				"max": "1",
 				"type": [
@@ -324,8 +324,8 @@
 			{
 				"id": "Observation.valueCodeableConcept.text",
 				"path": "Observation.valueCodeableConcept.text",
-				"short": "Use the narrative description if there is no coded value available for the Occupation.",
-				"definition": "Use the narrative description if there is no coded value available for the Occupation.",
+				"short": "Use the narrative description if there is no coded value available for the usual occupation.",
+				"definition": "Use the narrative description if there is no coded value available for the usual occupation.",
 				"min": 0,
 				"max": "1"
 			},
@@ -464,7 +464,7 @@
 				"id": "Observation.component:odh-UsualIndustry",
 				"path": "Observation.component",
 				"sliceName": "odh-UsualIndustry",
-				"short": "UsualIndustry: The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation. Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
+				"short": "UsualIndustry: The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation. Express the usual industry using a coded value. If no coded value is available, use text. If the usual industry is not available, explain using dataAbsentReason.",
 				"definition": "The industry (type of business) in which the subject has worked for the longest duration while in the usual occupation. For example, a person who has spent 30 years as a building carpenter in various industries, but mostly in construction, would record a usual occupation of building carpenter and a usual industry of construction.",
 				"min": 1,
 				"max": "1"
@@ -487,7 +487,7 @@
 				"path": "Observation.component.valueCodeableConcept",
 				"short": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
 				"definition": "Express the Industry using a coded value. If no coded value is available, use text. If the Industry is not available, explain using dataAbsentReason.",
-				"min": 1,
+				"min": 0,
 				"max": "1",
 				"type": [
 					{
@@ -555,8 +555,8 @@
 			{
 				"id": "Observation.component:odh-UsualIndustry.valueCodeableConcept.text",
 				"path": "Observation.component.valueCodeableConcept.text",
-				"short": "Use the narrative description if there is no coded value available for the Industry.",
-				"definition": "Use the narrative description if there is no coded value available for the Industry.",
+				"short": "Use the narrative description if there is no coded value available for the usual industry.",
+				"definition": "Use the narrative description if there is no coded value available for the usual industry.",
 				"min": 0,
 				"max": "1"
 			},
@@ -614,8 +614,8 @@
 				"id": "Observation.component:odh-UsualOccupationDuration",
 				"path": "Observation.component",
 				"sliceName": "odh-UsualOccupationDuration",
-				"short": "UsualOccupationDuration: The total time spent on an activity, inclusive of all time intervals, whether continuous or interrupted",
-				"definition": "The total time spent on an activity, inclusive of all time intervals, whether continuous or interrupted.",
+				"short": "UsualOccupationDuration: The total of all periods of time (in years) the subject has spent in their Usual Occupation, not including intermittent period(s) when they were not working in that occupation (type of work).",
+				"definition": "UsualOccupationDuration: The total of all periods of time (in years) the subject has spent in their Usual Occupation, not including intermittent period(s) when they were not working in that occupation (type of work).",
 				"min": 0,
 				"max": "1"
 			},
