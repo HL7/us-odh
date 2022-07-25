@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "222",
-		"lastUpdated": "2022-06-29T16:15:22.040+00:00",
-		"source": "#wTG3JcGQ5p7DZ1Dl"
+		"versionId": "223",
+		"lastUpdated": "2022-07-15T13:13:49.489+00:00",
+		"source": "#2SELwhFdSAejwtf5"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -211,7 +211,7 @@
 					"reference": "StructureDefinition/odh-isCurrentJob-extension",
 					"display": "ODHIsCurrentJob-extension"
 				},
-				"name": "odh is Current Job Extension",
+				"name": "ODHIsCurrentJob-extension",
 				"description": "A flag indicating if this is the person's current job (at the time the resource was last updated)"
 			},
 			{
