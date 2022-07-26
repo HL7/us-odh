@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "228",
-		"lastUpdated": "2022-07-25T21:53:03.010+00:00",
-		"source": "#reD4dNeRTVvQZuWC"
+		"versionId": "237",
+		"lastUpdated": "2022-07-26T19:37:14.702+00:00",
+		"source": "#TRzmbO95ycwmkfg8"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -127,7 +127,7 @@
 					"display": "Industry CDC Census 2010"
 				},
 				"name": "Industry CDC Census 2010",
-				"description": "2010 Occupation coding system used by CDC (NIOSH & NCHS) for coding occupation text. Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person’s contribution to a household/family business/community. This code system includes 2010 U.S. Census Bureau occupation codes with modifications made by CDC for unpaid workers and military occupations. The 2010 Census occupation categories are based on the 2010 BLS Standard Occupational Classification (SOC) system. The PH_Industry_CDC_Census2010 code system should be used in conjunction with this occupation code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for CDC-Census I&O coding at: http://www.cdc.gov/niosh/topics/coding/"
+				"description": "2010 Industry coding system used by CDC (NIOSH & NCHS) for coding industry text. Industry describes an economic/business sector comprised of businesses/ enterprises concerned with the output of a specified category of products or services (e.g., the construction industry or the agriculture industry). This industry code system includes 2007 U.S. Census Bureau industry codes and three additional codes developed by CDC for unpaid workers. The 2010 Census industry categories are based on the 2007 North American Industry Classification System (NAICS). The PH_Occupation_CDC_Census2010 code system should be used in conjunction with this industry code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for CDC-Census I&O coding at: http://www.cdc.gov/niosh/topics/coding/"
 			},
 			{
 				"exampleBoolean": false,
@@ -310,7 +310,8 @@
 					"reference": "ValueSet/codesystem-industry-cdc-census-2018",
 					"display": "Industry CDC Census 2018"
 				},
-				"name": "Industry CDC Census 2018"
+				"name": "Industry CDC Census 2018",
+				"description": "2018 Industry coding system used by CDC (NIOSH & NCHS) for coding industry text. Industry describes an economic/business sector comprised of businesses/ enterprises concerned with the output of a specified category of products or services (e.g., the construction industry or the agriculture industry). This industry code system includes 2018 U.S. Census Bureau industry codes and three additional codes developed by CDC for unpaid workers. The 2018 Census industry categories are based on the 2017 North American Industry Classification System (NAICS). The PH_Occupation_CDC_Census2018 code system should be used in conjunction with this industry code system when coding both industry and occupation. For more information and instructions on using this coding system, see NIOSH/CDC Collecting and Using Industry and Occupation data (https://www.cdc.gov/niosh/topics/coding/)."
 			},
 			{
 				"exampleBoolean": false,
@@ -318,7 +319,8 @@
 					"reference": "ValueSet/codesystem-occupation-cdc-census-2018",
 					"display": "Occupation CDC Census 2018"
 				},
-				"name": "Occupation CDC Census 2018"
+				"name": "Occupation CDC Census 2018",
+				"description": "2018 Occupation coding system used by CDC (NIOSH & NCHS) for coding occupation text. Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person’s contribution to a household/family business/community. This code system includes 2018 U.S. Census Bureau occupation codes with modifications made by CDC for unpaid workers and military occupations. The 2018 Census occupation categories are based on the 2018 Standard Occupational Classification (SOC) system. The PH_Industry_CDC_Census2018 code system should be used in conjunction with this occupation code system when coding both industry and occupation. For more information and instructions on using this coding system, see NIOSH/CDC Collecting and Using Industry and Occupation Data (https://www.cdc.gov/niosh/topics/coding/)."
 			}
 		],
 		"page": {
