@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "223",
-		"lastUpdated": "2022-07-15T13:13:49.489+00:00",
-		"source": "#2SELwhFdSAejwtf5"
+		"versionId": "228",
+		"lastUpdated": "2022-07-25T21:53:03.010+00:00",
+		"source": "#reD4dNeRTVvQZuWC"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -53,7 +53,7 @@
 			"id": "uscdcphinvads",
 			"uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
 			"packageId": "us.cdc.phinvads",
-			"version": "0.7.0"
+			"version": "0.11.0"
 		}
 	],
 	"definition": {
@@ -340,11 +340,11 @@
 			},
 			{
 				"code": "defaultVersion",
-				"value": "1.1.0"
+				"value": "1.2.0"
 			},
 			{
 				"code": "releaselabel",
-				"value": "STU 1.1"
+				"value": "STU 1.2"
 			},
 			{
 				"code": "copyrightyear",
