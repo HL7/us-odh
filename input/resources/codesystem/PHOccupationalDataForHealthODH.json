@@ -2,15 +2,16 @@
 	"resourceType": "CodeSystem",
 	"id": "PHOccupationalDataForHealthODH",
 	"meta": {
-		"versionId": "1",
-		"lastUpdated": "2021-05-26T15:44:00.481+00:00",
-		"source": "#a6MFUZo3q71EfrZY"
+		"versionId": "2",
+		"lastUpdated": "2022-07-26T22:30:17.204+00:00",
+		"source": "#nVVw7Z0LJhhClRla"
 	},
 	"url": "http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH",
 	"name": "PHOccupationalDataForHealthODH",
 	"title": "Occupational Data for Health (ODH)",
 	"status": "draft",
 	"publisher": "CDC-PHINVADS",
+	"caseSensitive": true,
 	"valueSet": "https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.327",
 	"content": "complete"
 }
