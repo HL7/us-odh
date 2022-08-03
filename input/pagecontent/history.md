@@ -11,7 +11,7 @@ The following versisons of the Occupational Data for Health (ODH) FHIR IG have b
 | -------- | -------- | -------- | -------- | -------- | 
 | **Current Versions**  |
 | [2022-07-25](http://hl7.org/fhir/us/odh/)    | 1.2.0     | [4.0.1](http://hl7.org/fhir/R4/)     | Release 1.2.0 STU1.2     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
-| [(current)](http://build.fhir.org/ig/HL7/us-odh/)    | (last commit)     |      | Continuous Integration Build (latest in version control)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />     |
+| [(current)](https://build.fhir.org/ig/HL7/us-odh/)    | (last commit)     |      | Continuous Integration Build (latest in version control)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />     |
 | **STU 1.1 Sequence** (Current)  |
 | [2021-04-29](https://hl7.org/fhir/us/odh/STU1.1/)     | 1.1.0     | [4.0.1](http://hl7.org/fhir/R4/)     | 	Release 1.1.0 STU1.1 (*Permanent Home*)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
 | [2020-01-08](https://hl7.org/fhir/us/odh/STU1/)     | 1.0.0     | [4.0.1](http://hl7.org/fhir/R4/)     | 	Release 1.0.0 STU1 (*Permanent Home*)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
