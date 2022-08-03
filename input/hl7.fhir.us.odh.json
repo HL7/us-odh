@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "246",
-		"lastUpdated": "2022-07-31T14:37:35.716+00:00",
-		"source": "#XN2BBFHypDY1TBX5"
+		"versionId": "249",
+		"lastUpdated": "2022-08-03T12:42:05.731+00:00",
+		"source": "#IFFQt0rikGBCu1wL"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -220,7 +220,7 @@
 					"reference": "ValueSet/CodeSystem-PHOccupationalDataForHealthODH",
 					"display": "Job Supervisory Level or Pay Grade (ODH)"
 				},
-				"name": "Occupational Data for Health (ODH)",
+				"name": "Occupational Data for Health (ODH) ValueSet",
 				"description": "An indicator of responsibilities of a person's job for directing work and personnel management, as reported by the person. Pay grade is used to represent supervisory or personnel management responsibilities for U.S. military service, because it conveys similar meaning across branches of service."
 			},
 			{
@@ -271,9 +271,9 @@
 				"exampleBoolean": false,
 				"reference": {
 					"reference": "CodeSystem/PHOccupationalDataForHealthODH",
-					"display": "Occupational Data for Health (ODH)"
+					"display": "Occupational Data for Health (ODH) CodeSystem"
 				},
-				"name": "Occupational Data for Health (ODH)",
+				"name": "Occupational Data for Health (ODH) CodeSystem",
 				"description": "Occupational Data For Health Code System"
 			},
 			{
