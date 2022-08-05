@@ -52,7 +52,7 @@
 	"title": "Occupational Data for Health (ODH)",
 	"canonical": "http://hl7.org/fhir/us/odh",
 	"introduction": "US ODH FHIR IG",
-	"category": "Public Health"  
+	"category": "Public Health"   
 =======
 ﻿{
   "package-id": "hl7.fhir.template",
