@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="v3-WorkScheduleODH"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-21T22:01:00.843+00:00"/>
+        <source value="#wEjNWmDGZyIzt5Mz"/>
+    </meta>
+    <url value="http://terminology.hl7.org/ValueSet/v3-WorkScheduleODH"/>
+    <identifier>
+        <use value="official"/>
+        <value value="2.16.840.1.113883.1.11.20561"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="WorkScheduleODH"/>
+    <title value="WorkScheduleODH"/>
+    <status value="draft"/>
+</ValueSet>
