@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-odh-usual-work-sample"/>
+    <meta>
+        <versionId value="23"/>
+        <lastUpdated value="2021-05-26T23:18:45.020+00:00"/>
+        <source value="#Z8v7wbIsRnZcpksX"/>
+        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+                <tr>
+                    <td style="font-weight: bold">id</td>
+                    <td>
+                        <div title="id">observation-odh-usual-work-sample</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">meta</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">versionId</td>
+                                <td>
+                                    <div title="versionId">1</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">lastUpdated</td>
+                                <td>
+                                    <div title="lastUpdated">2021-05-24T8:53:14.000-04:00</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">profile</td>
+                                <td>
+                                    <div title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">status</td>
+                    <td>
+                        <div title="status">final</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">code</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">History of Usual occupation</div>  (
+                                        
+                                        
+                                        
+                                        <div title="code">21843-8</div> )
+          
+                                    
+                                    
+                                    
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="http://loinc.org">http://loinc.org</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">subject</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li/>
+                            <li>
+                                <a href="Patient-patient-odh-maya-gordon.html">Maya Gordon</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">effectivePeriod</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">start</td>
+                                <td>
+                                    <div title="start">2000-06-01</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">end</td>
+                                <td>
+                                    <div title="end">2021-05-20</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">valueCodeableConcept</td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>
+                                <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                    <li>
+                                        <div title="display">Nursing, psychiatric, and home health aides</div>  (
+                                        
+                                        
+                                        
+                                        <div title="code">3600</div> )
+          
+                                    
+                                    
+                                    
+                                    </li>
+                                    <li>
+                                        <div title="system">
+                                            <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">component</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold">code</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">History of Usual industry</div>  (
+                                                    
+                                                    
+                                                    
+                                                    <div title="code">21844-6</div> )
+          
+                                                
+                                                
+                                                
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="http://loinc.org">http://loinc.org</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold">valueCodeableConcept</td>
+                                <td>
+                                    <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                        <li>
+                                            <ul style="list-style:none; padding-left:0; margin:0 0;">
+                                                <li>
+                                                    <div title="display">Nursing care facilities</div>  (
+                                                    
+                                                    
+                                                    
+                                                    <div title="code">8270</div> )
+          
+                                                
+                                                
+                                                
+                                                </li>
+                                                <li>
+                                                    <div title="system">
+                                                        <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21843-8"/>
+            <display value="History of Usual occupation"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-odh-maya-gordon"/>
+        <display value="Maya Gordon"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2018-06-01"/>
+        <end value="2021-05-07"/>
+    </effectivePeriod>
+    <valueCodeableConcept>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.314"/>
+            <code value="3600"/>
+            <display value="Nursing, psychiatric, and home health aides"/>
+        </coding>
+        <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.5.327"/>
+            <code value="31-1014.00.007136"/>
+            <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
+        </coding>
+    </valueCodeableConcept>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="21844-6"/>
+                <display value="History of Usual industry"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
+                <code value="8270"/>
+                <display value="Nursing care facilities"/>
+            </coding>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
+                <code value="621610.008495"/>
+                <display value="Home nursing services"/>
+            </coding>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74163-7"/>
+                <display value="Usual occupation duration"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="21"/>
+            <unit value="a"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="a"/>
+        </valueQuantity>
+    </component>
+</Observation>

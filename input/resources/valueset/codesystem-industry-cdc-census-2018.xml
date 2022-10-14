@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="codesystem-industry-cdc-census-2018"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-06-29T12:18:24.865+00:00"/>
+        <source value="#94sVRqDEFAyDKH9O"/>
+    </meta>
+    <url value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8066"/>
+    <version value="1.0"/>
+    <name value="PHVS_Industry_CDC_Census2018"/>
+    <title value="Industry CDC Census 2018"/>
+    <status value="active"/>
+</ValueSet>
