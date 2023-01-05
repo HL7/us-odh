@@ -1,0 +1,10 @@
+{
+	"package-id": "hl7.fhir.us.odh",
+	"title": "Occupational Data for Health",
+	"category": "Clinical Records",
+	"version": "1.3.0",
+	"desc": "Release 1.2.0 STU1.3 (Build)",
+	"path": "http://hl7.org/fhir/us/odh/STU1.3",
+	"status": "trial-use",
+	"sequence": "STU 1.3 on FHIR R4"
+}
