@@ -1,0 +1,73 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "odh-Employer-extension",
+	"meta": {
+		"versionId": "15",
+		"lastUpdated": "2022-12-08T14:45:21.035+00:00",
+		"source": "#VPDaDWGk2K8E7TYM"
+	},
+	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension",
+	"name": "Employer",
+	"title": "Employer",
+	"status": "draft",
+	"date": "2020-01-04",
+	"publisher": "HL7 International Public Health Work Group",
+	"description": "A person or organization that hires the services of another.",
+	"fhirVersion": "4.0.1",
+	"kind": "complex-type",
+	"abstract": false,
+	"context": [
+		{
+			"type": "element",
+			"expression": "Observation"
+		}
+	],
+	"type": "Extension",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Extension",
+				"path": "Extension",
+				"short": "Employer",
+				"definition": "A person or organization that hires the services of another.",
+				"min": 0,
+				"max": "*"
+			},
+			{
+				"id": "Extension.url",
+				"path": "Extension.url",
+				"fixedUri": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"
+			},
+			{
+				"id": "Extension.value[x]",
+				"path": "Extension.value[x]",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+							"http://hl7.org/fhir/StructureDefinition/Organization"
+						]
+					}
+				]
+			},
+			{
+				"id": "Extension.valueReference",
+				"path": "Extension.valueReference",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+							"http://hl7.org/fhir/StructureDefinition/Organization"
+						]
+					}
+				]
+			}
+		]
+	}
+}
