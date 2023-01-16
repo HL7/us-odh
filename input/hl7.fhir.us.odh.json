@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.odh",
 	"meta": {
-		"versionId": "251",
-		"lastUpdated": "2022-10-07T15:06:04.762+00:00",
-		"source": "#HfYS5drjvpZTS7FG"
+		"versionId": "262",
+		"lastUpdated": "2022-12-13T23:36:22.798+00:00",
+		"source": "#UnFUlqs1w76uu5wO"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -67,24 +67,6 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "ValueSet/NamingSystem-naics",
-					"display": "Industry NAICS Detail (ODH)"
-				},
-				"name": "PHVS_Industry_NAICS_Detail_ODH",
-				"description": "Concepts describing the kind of business that compensates the person for work (e.g., wages, training) or assigns work to a volunteer, as reported by the person. The kind of business is determined based on the primary business activity conducted by the company, organization, or individual (for those who are self-employed), or, for a military position, the self-reported branch of service. The value set was created by coding the NAICS index terms, which are relatable to the general public, to facilitate collection and validation by patients. A downloadable file available from the PHIN VADS ODH Hot Topics section is structured to support computer-assisted searching of this value set. The file also contains a crosswalk from the concepts in this value set to Occupation_CDC_Census value set concepts."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/CodeSystem-soc",
-					"display": "Occupation ONETSOC Detail (ODH)"
-				},
-				"name": "PHVS_Occupation_ONETSOC_Detail_ODH",
-				"description": "Concepts describing a person's self-reported type of work, i.e., the set of activities or tasks that the person is paid to perform or, if unpaid, the person's contribution to a household/family business/community. The value set was created by coding the O*NET-SOC alternate titles, which are relatable to the general public, to facilitate collection and validation by patients. A downloadable file available from the PHIN VADS ODH Hot Topics section is structured to support computer-assisted searching of this value set. The file also contains a crosswalk from the concepts in this value set to Occupation_CDC_Census value set concepts."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
 					"reference": "StructureDefinition/odh-CombatZonePeriod",
 					"display": "Combat Zone Period"
 				},
@@ -110,33 +92,6 @@
 				"name": "Employment Status",
 				"description": "The self-reported current and/or historical status about a person’s economic relationship to work (e.g. having one or more jobs), including start and end dates. A person’s Employment Status could change over time, for example, a person could be employed following a period of choosing to not be in the labor force. Outside of ODH, the employment arrangement between an employer and a person (one job) has sometimes been referred to as a person’s ‘employment status.’ However, in ODH, Employment Status is used to characterize a person, Work Classification is used to characterize a job, and Retirement Date is used to characterize a person as retired.",
 				"groupingId": "primary-profiles"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/v3-employmentStatusODH",
-					"display": "EmploymentStatusODH"
-				},
-				"name": "EmploymentStatusODH",
-				"description": "Concepts representing whether a person does or does not currently have a job or is not currently in the labor pool seeking employment."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/codesystem-industry-cdc-census-2010",
-					"display": "Industry CDC Census 2010"
-				},
-				"name": "Industry CDC Census 2010",
-				"description": "2010 Industry coding system used by CDC (NIOSH & NCHS) for coding industry text. Industry describes an economic/business sector comprised of businesses/ enterprises concerned with the output of a specified category of products or services (e.g., the construction industry or the agriculture industry). This industry code system includes 2007 U.S. Census Bureau industry codes and three additional codes developed by CDC for unpaid workers. The 2010 Census industry categories are based on the 2007 North American Industry Classification System (NAICS). The PH_Occupation_CDC_Census2010 code system should be used in conjunction with this industry code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for CDC-Census I&O coding at: http://www.cdc.gov/niosh/topics/coding/"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/CodeSystem-PHOccupationCDCCensus2010",
-					"display": "Occupation CDC Census 2010"
-				},
-				"name": "Occupation CDC Census 2010",
-				"description": "2010 Occupation coding system used by CDC (NIOSH & NCHS) for coding occupation text. Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person’s contribution to a household/family business/community. This code system includes 2010 U.S. Census Bureau occupation codes with modifications made by CDC for unpaid workers and military occupations. The 2010 Census occupation categories are based on the 2010 BLS Standard Occupational Classification (SOC) system. The PH_Industry_CDC_Census2010 code system should be used in conjunction with this occupation code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for CDC-Census I&O coding at: http://www.cdc.gov/niosh/topics/coding/"
 			},
 			{
 				"exampleBoolean": false,
@@ -181,24 +136,6 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "ValueSet/v3-WorkClassificationODH",
-					"display": "WorkClassificationODH"
-				},
-				"name": "WorkClassificationODH",
-				"description": "Code system of concepts representing a person’s job type as defined by compensation and sector (e.g. paid vs. unpaid, self-employed vs. not self-employed, government vs. private, etc.)."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/v3-WorkScheduleODH",
-					"display": "WorkScheduleODH"
-				},
-				"name": "WorkScheduleODH",
-				"description": "Describes an individual’s typical arrangement of working hours for an occupation"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
 					"reference": "ValueSet/obf-datatype-YesNoVS",
 					"display": "Yes No VS"
 				},
@@ -213,15 +150,6 @@
 				},
 				"name": "ODHIsCurrentJob-extension",
 				"description": "A flag indicating if this is the person's current job (at the time the resource was last updated)"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/CodeSystem-PHOccupationalDataForHealthODH",
-					"display": "Job Supervisory Level or Pay Grade (ODH)"
-				},
-				"name": "Occupational Data for Health (ODH) ValueSet",
-				"description": "An indicator of responsibilities of a person's job for directing work and personnel management, as reported by the person. Pay grade is used to represent supervisory or personnel management responsibilities for U.S. military service, because it conveys similar meaning across branches of service."
 			},
 			{
 				"exampleBoolean": false,
@@ -270,15 +198,6 @@
 			{
 				"exampleBoolean": false,
 				"reference": {
-					"reference": "CodeSystem/PHOccupationalDataForHealthODH",
-					"display": "Occupational Data for Health (ODH) CodeSystem"
-				},
-				"name": "Occupational Data for Health (ODH) CodeSystem",
-				"description": "Occupational Data For Health Code System"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
 					"reference": "Composition/composition-odh-occupational-data-for-health-sample",
 					"display": "Occupational Data Composition for Maya Gordon"
 				},
@@ -303,24 +222,6 @@
 				"name": "Past or Present Job Example",
 				"description": "This is an example of a Past or Present Job for patient, Maya Gordon. This example includes coded Occupation, Industry, Work Classification (compensation sector and employment type), Work Schedule, Weekly Work Days, Daily Work Hours, Job Duties, and Occupational Hazard.",
 				"exampleCanonical": "http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/codesystem-industry-cdc-census-2018",
-					"display": "Industry CDC Census 2018"
-				},
-				"name": "Industry CDC Census 2018",
-				"description": "2018 Industry coding system used by CDC (NIOSH & NCHS) for coding industry text. Industry describes an economic/business sector comprised of businesses/ enterprises concerned with the output of a specified category of products or services (e.g., the construction industry or the agriculture industry). This industry code system includes 2018 U.S. Census Bureau industry codes and three additional codes developed by CDC for unpaid workers. The 2018 Census industry categories are based on the 2017 North American Industry Classification System (NAICS). The PH_Occupation_CDC_Census2018 code system should be used in conjunction with this industry code system when coding both industry and occupation. For more information and instructions on using this coding system, see NIOSH/CDC Collecting and Using Industry and Occupation data (https://www.cdc.gov/niosh/topics/coding/)."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/codesystem-occupation-cdc-census-2018",
-					"display": "Occupation CDC Census 2018"
-				},
-				"name": "Occupation CDC Census 2018",
-				"description": "2018 Occupation coding system used by CDC (NIOSH & NCHS) for coding occupation text. Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person’s contribution to a household/family business/community. This code system includes 2018 U.S. Census Bureau occupation codes with modifications made by CDC for unpaid workers and military occupations. The 2018 Census occupation categories are based on the 2018 Standard Occupational Classification (SOC) system. The PH_Industry_CDC_Census2018 code system should be used in conjunction with this occupation code system when coding both industry and occupation. For more information and instructions on using this coding system, see NIOSH/CDC Collecting and Using Industry and Occupation Data (https://www.cdc.gov/niosh/topics/coding/)."
 			}
 		],
 		"page": {
@@ -342,11 +243,11 @@
 			},
 			{
 				"code": "defaultVersion",
-				"value": "1.2.0"
+				"value": "1.3.0"
 			},
 			{
 				"code": "releaselabel",
-				"value": "STU 1.2"
+				"value": "STU 1.3"
 			},
 			{
 				"code": "copyrightyear",
