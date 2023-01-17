@@ -10,9 +10,10 @@ The following versisons of the Occupational Data for Health (ODH) FHIR IG have b
 | **Date** | **IG Version** | **FHIR Version** | **Description** | **Links** |
 | -------- | -------- | -------- | -------- | -------- | 
 | **Current Versions**  |
-| [2022-07-25](http://hl7.org/fhir/us/odh/)    | 1.2.0     | [4.0.1](http://hl7.org/fhir/R4/)     | Release 1.2.0 STU1.2     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
+| [2023-01-17](http://hl7.org/fhir/us/odh/)    | 1.3.0     | [4.0.1](http://hl7.org/fhir/R4/)     | Release 1.3.0 STU1.3     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
 | [(current)](https://build.fhir.org/ig/HL7/us-odh/)    | (last commit)     |      | Continuous Integration Build (latest in version control)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />     |
 | **STU 1.1 Sequence** (Current)  |
+| [2022-07-25](http://hl7.org/fhir/us/odh/)    | 1.2.0     | [4.0.1](http://hl7.org/fhir/R4/)     | Release 1.2.0 STU1.2     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
 | [2021-04-29](https://hl7.org/fhir/us/odh/STU1.1/)     | 1.1.0     | [4.0.1](http://hl7.org/fhir/R4/)     | 	Release 1.1.0 STU1.1 (*Permanent Home*)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
 | [2020-01-08](https://hl7.org/fhir/us/odh/STU1/)     | 1.0.0     | [4.0.1](http://hl7.org/fhir/R4/)     | 	Release 1.0.0 STU1 (*Permanent Home*)     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
 | [2018-09-01](http://hl7.org/fhir/us/odh/2018Sep/)     | 0.1.0     | [3.0.1](http://hl7.org/fhir/STU3/)    | Release 0.1.0 STU1 Ballot 1     | <img src="HL7 arrow sidways image.png" /> <img src="HL7 arrow down image.png" /><img src="HL7 triangle icon.png" /> <img src="HL7 box icon.png" />  |
