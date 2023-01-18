@@ -24,8 +24,15 @@ INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.of
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
 INFORMATION: Patient/patient-odh-maya-gordon: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-odh-maya-gordon: Patient.extension[1].extension[0].value.ofType(Coding) (l39/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated 
-
-
+INFORMATION: Patient/patient-odh-maya-gordon: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated 
 
 # The slice is defined by value sets from PHINVADS. Since the validator is not able to access those values, it is not able to distinguish the slices even though they are correctly instantiated.
+SLICING INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob|1.3.0 
+SLICING INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob|1.3.0
+SLICING INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob|1.3.0
+SLICING INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob|1.3.0
+SLICING INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
+SLICING INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
+SLICING INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
+SLICING INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
+ 
