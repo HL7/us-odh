@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="odh-Employer-extension"/>
+    <meta>
+        <versionId value="15"/>
+        <lastUpdated value="2022-12-08T14:45:21.035+00:00"/>
+        <source value="#VPDaDWGk2K8E7TYM"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"/>
+    <name value="Employer"/>
+    <title value="Employer"/>
+    <status value="draft"/>
+    <date value="2020-01-04"/>
+    <publisher value="HL7 International Public Health Work Group"/>
+    <description value="A person or organization that hires the services of another."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Observation"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Employer"/>
+            <definition value="A person or organization that hires the services of another."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+            </type>
+        </element>
+        <element id="Extension.valueReference">
+            <path value="Extension.valueReference"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
