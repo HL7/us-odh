@@ -1,12 +1,29 @@
 == Suppressed Messages ==
 # APPROVED by HL7 Cross Group Projects WG May 27, 2021: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # Extensions - all extensions have examples inside the main profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension'): The Implementation Guide contains no examples for this extension
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension')StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
 
-# These are profiles defined in this IG
-
-# The value sets and code systems are  from PHINVADS  
+# The value sets and code systems are from PHINVADS Since the validator is not able to access those values, it is not able to validate 
+INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l37/c5): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l42/c5): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l62/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l67/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation.component[2].value.ofType(CodeableConcept).coding[0] (l107/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+WARNING: Observation.component[2].value.ofType(CodeableConcept) (l105/c5): [Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated]
+INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l36/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
+INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l41/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
+INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l61/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l66/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Patient.extension[0].extension[0].value.ofType(Coding) (l22/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient.extension[1].extension[0].value.ofType(Coding) (l39/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated 
 
 # The slice is defined by value sets from PHINVADS. Since the validator is not able to access those values, it is not able to distinguish the slices even though they are correctly instantiated.
-
-# These profiles are externally defined

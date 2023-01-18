@@ -2,9 +2,9 @@
 	"resourceType": "Patient",
 	"id": "patient-odh-maya-gordon",
 	"meta": {
-		"versionId": "7",
-		"lastUpdated": "2021-05-26T05:26:19.702+00:00",
-		"source": "#eD7o8OYZOgILPt18",
+		"versionId": "9",
+		"lastUpdated": "2023-01-18T02:49:38.421+00:00",
+		"source": "#vIkBn0hZ5FDnsTs2",
 		"profile": [
 			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
 		]
@@ -20,7 +20,7 @@
 				{
 					"url": "ombCategory",
 					"valueCoding": {
-						"system": "urn:oid:2.16.840.1.113883.6.238",
+						"system": "urn:oid:2.16.840.1.113883.4.642.2.575",
 						"code": "2106-3",
 						"display": "White"
 					}
@@ -37,7 +37,6 @@
 				{
 					"url": "ombCategory",
 					"valueCoding": {
-						"system": "urn:oid:2.16.840.1.113883.6.238",
 						"code": "2186-5",
 						"display": "Not Hispanic or Latino"
 					}
