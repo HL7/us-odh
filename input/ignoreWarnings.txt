@@ -27,7 +27,7 @@ INFORMATION: StructureDefinition/odh-UsualWork: StructureDefinition: Validate re
 INFORMATION: StructureDefinition/odh-isCurrentJob-extension: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: Composition/composition-odh-occupational-data-for-health-sample: Composition: Validate resource against profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth
 INFORMATION: ImplementationGuide/hl7.fhir.us.ohd: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-# The value sets and code systems are  from PHINVADS
+# The value sets and code systems are  from PHINVADS  
 INFORMATION: ValueSet/CodeSystem-PHOccupationCDCCensus2010: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/CodeSystem-PHOccupationalDataForHealthODH: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/CodeSystem-soc: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
