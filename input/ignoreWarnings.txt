@@ -35,4 +35,9 @@ INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.of
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.3.0
- 
+
+# IG Publisher Bugs
+WARNING: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
