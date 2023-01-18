@@ -13,29 +13,18 @@ INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/Structu
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
 
 # The value sets and code systems are from PHINVADS Since the validator is not able to access those values, it is not able to validate 
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l37/c5): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l42/c5): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l62/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l67/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Observation.component[2].value.ofType(CodeableConcept).coding[0] (l107/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-WARNING: Observation.component[2].value.ofType(CodeableConcept) (l105/c5): [Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated]
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l36/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l41/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l61/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l66/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Patient.extension[0].extension[0].value.ofType(Coding) (l22/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient.extension[1].extension[0].value.ofType(Coding) (l39/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated 
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l37/c5): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l42/c5): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l62/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l67/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-WARNING: Observation.component[2].value.ofType(CodeableConcept) (l105/c5): [Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated]
-INFORMATION: Observation.component[2].value.ofType(CodeableConcept).coding[0] (l107/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[0] (l36/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
-INFORMATION: Observation.value.ofType(CodeableConcept).coding[1] (l41/c5): Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l61/c7): Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
-INFORMATION: Observation.component[0].value.ofType(CodeableConcept).coding[1] (l66/c7): Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
-INFORMATION: Patient.extension[0].extension[0].value.ofType(Coding) (l22/c7): Code System URI 'urn:oid:2.16.840.1.113883.4.642.2.575' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-past-or-present-job-sample: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+WARNING: Observation/observation-odh-past-or-present-job-sample: Observation.component[2].value.ofType(CodeableConcept): [Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated]
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html' is unknown so the code cannot be validated
+INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-odh-maya-gordon: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-odh-maya-gordon: Patient.extension[1].extension[0].value.ofType(Coding) (l39/c7): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated 
 
 
 
