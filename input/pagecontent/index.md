@@ -19,7 +19,7 @@ The incorporation of ODH into Electronic Health Records (EHRs) and other health 
 
 The Occupational Data for Health (ODH) FHIR IG covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting. The scope of the work information in ODH includes:
 
-•	Employment Status
+•	Employment Status  
 
 •	Retirement Date
 
