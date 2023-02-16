@@ -5,7 +5,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDe
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-# Extensions - all extensions have examples inside the main profiles
+# Extensions - all extensions have examples inside the main profiles   
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no examples for this profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension'): The Implementation Guide contains no examples for this extension
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension')StructureDefinition.where(url = 'http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension'): The Implementation Guide contains no explicitly linked examples for this profile
