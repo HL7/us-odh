@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-15T13:13:49.231+00:00"/>
         <source value="#yXDPOzfIr6NfBAcb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension"/>
     <name value="ODHIsCurrentJobExtension"/>
     <title value="ODHIsCurrentJob-extension"/>
     <status value="active"/>
@@ -28,7 +28,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension"/>
+            <fixedUri value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

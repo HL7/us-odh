@@ -7,7 +7,7 @@
         <lastUpdated value="2022-06-29T14:10:51.363+00:00"/>
         <source value="#kZjkfSpQut6GaGSo"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
     <version value="1.1.0"/>
     <name value="PastOrPresentJob"/>
     <title value="Past Or Present Job"/>
@@ -61,7 +61,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"/>
+                <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-Employer-extension"/>
             </type>
         </element>
         <element id="Observation.extension:odhIsCurrentJobExtension">
@@ -71,7 +71,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension"/>
+                <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension"/>
             </type>
         </element>
         <element id="Observation.basedOn">

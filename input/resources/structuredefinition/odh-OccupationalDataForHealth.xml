@@ -7,7 +7,7 @@
         <lastUpdated value="2021-05-27T08:31:22.821+00:00"/>
         <source value="#aTQDWIvmTJ5vG6NH"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth"/>
     <version value="1.0.0"/>
     <name value="OccupationalDataForHealth"/>
     <title value="Occupational Data For Health"/>
@@ -168,7 +168,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
+                <targetProfile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus"/>
             </type>
         </element>
         <element id="Composition.section.entry:odh-RetirementDate">
@@ -180,7 +180,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate"/>
+                <targetProfile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
             </type>
         </element>
         <element id="Composition.section.entry:odh-CombatZonePeriod">
@@ -192,7 +192,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod"/>
+                <targetProfile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod"/>
             </type>
         </element>
         <element id="Composition.section.entry:odh-UsualWork">
@@ -204,7 +204,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+                <targetProfile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork"/>
             </type>
         </element>
         <element id="Composition.section.entry:odh-PastOrPresentJob">
@@ -216,7 +216,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+                <targetProfile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
             </type>
         </element>
     </differential>

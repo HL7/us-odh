@@ -7,7 +7,7 @@
         <lastUpdated value="2022-12-08T14:45:21.035+00:00"/>
         <source value="#VPDaDWGk2K8E7TYM"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-Employer-extension"/>
     <name value="Employer"/>
     <title value="Employer"/>
     <status value="draft"/>
@@ -34,7 +34,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension"/>
+            <fixedUri value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-Employer-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

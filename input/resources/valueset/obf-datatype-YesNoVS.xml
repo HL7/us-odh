@@ -7,7 +7,7 @@
         <lastUpdated value="2022-12-08T22:48:48.139+00:00"/>
         <source value="#y9QayohBhNdmjqm5"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/ValueSet/obf-datatype-YesNoVS"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/ValueSet/obf-datatype-YesNoVS"/>
     <version value="1.0.0"/>
     <name value="YesNoVS"/>
     <title value="Yes No VS"/>

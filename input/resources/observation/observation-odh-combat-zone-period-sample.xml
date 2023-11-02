@@ -6,7 +6,7 @@
         <versionId value="2"/>
         <lastUpdated value="2021-05-26T02:30:21.329+00:00"/>
         <source value="#RKwpT7ubUXgCKeEe"/>
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod"/>
+        <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -38,7 +38,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod</span>
+                                    <span title="profile">https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod</span>
                                 </td>
                             </tr>
                         </table>

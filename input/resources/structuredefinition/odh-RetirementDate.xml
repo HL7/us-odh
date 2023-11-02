@@ -7,7 +7,7 @@
         <lastUpdated value="2021-05-27T08:30:03.030+00:00"/>
         <source value="#p4ihBzz4LwZftT4a"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate"/>
+    <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
     <version value="1.0.0"/>
     <name value="RetirementDate"/>
     <title value="Retirement Date"/>

@@ -6,9 +6,9 @@
         <versionId value="10"/>
         <lastUpdated value="2021-05-27T09:19:44.894+00:00"/>
         <source value="#kx1P9fdzw85WYorA"/>
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+        <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension">
+    <extension url="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension">
         <valueBoolean value="true"/>
     </extension>
     <status value="final"/>

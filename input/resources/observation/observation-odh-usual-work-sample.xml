@@ -6,7 +6,7 @@
         <versionId value="25"/>
         <lastUpdated value="2023-01-18T07:09:07.892+00:00"/>
         <source value="#QJTwQZDD5rWxK8XE"/>
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+        <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -38,7 +38,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <div title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork</div>
+                                    <div title="profile">https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork</div>
                                 </td>
                             </tr>
                         </table>

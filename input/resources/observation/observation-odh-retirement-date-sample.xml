@@ -6,7 +6,7 @@
         <versionId value="1"/>
         <lastUpdated value="2021-05-26T02:20:50.364+00:00"/>
         <source value="#xIztR2ILtakKFMdW"/>
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate"/>
+        <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -38,7 +38,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate</span>
+                                    <span title="profile">https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate</span>
                                 </td>
                             </tr>
                         </table>

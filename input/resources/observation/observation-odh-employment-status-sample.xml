@@ -6,7 +6,7 @@
         <versionId value="7"/>
         <lastUpdated value="2021-05-26T17:22:34.756+00:00"/>
         <source value="#H1Oz6Eja94PABzAs"/>
-        <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
+        <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -38,7 +38,7 @@
                             <tr>
                                 <td style="font-weight: bold">profile</td>
                                 <td>
-                                    <span title="profile">http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus</span>
+                                    <span title="profile">https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus</span>
                                 </td>
                             </tr>
                         </table>

@@ -2,7 +2,7 @@
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
     <id value="ihe.pcc.odh"/>
-    <url value="http://hl7.org/fhir/us/odh/ImplementationGuide/ihe.pcc.odh"/>
+    <url value="http://profiles.ihe.net/PCC/ODH/ImplementationGuide/ihe.pcc.odh"/>
     <version value="1.3.0"/>
     <name value="IHE_PCC_ODH"/>
     <title value="IHE FHIR Profile: Occupational Data for Health (ODH) - International"/>
@@ -133,7 +133,7 @@
             <name value="Combat Zone Period Example"/>
             <description value="This example includes a combat zone period of 1 year for patient Maya Gordon."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-CombatZonePeriod"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod"/>
         </resource>
         <resource>
             <reference>
@@ -141,7 +141,7 @@
             <name value="Employment Status Example"/>
             <description value="This example shows an employment status of 'Employed' for patient Maya Gordon."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus"/>
         </resource>
         <resource>
             <reference>
@@ -149,7 +149,7 @@
             <name value="Retirement Date Example"/>
             <description value="This example shows a retirement date for test patient Maya Gordon."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-RetirementDate"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
         </resource>
         <resource>
             <reference>
@@ -164,7 +164,7 @@
             <name value="Usual Work Example"/>
             <description value="Example for the Usual Work profile"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork"/>
         </resource>
         <resource>
             <reference>
@@ -174,7 +174,7 @@
             <name value="Occupational Data Composition for Maya Gordon"/>
             <description value="Complete composition example of work information for patient Maya Gordon."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-OccupationalDataForHealth"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth"/>
         </resource>
         <resource>
             <reference>
@@ -191,7 +191,7 @@
             <name value="Past or Present Job Example"/>
             <description value="This is an example of a Past or Present Job for patient, Maya Gordon. This example includes coded Occupation, Industry, Work Classification (compensation sector and employment type), Work Schedule, Weekly Work Days, Daily Work Hours, Job Duties, and Occupational Hazard."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
+            <exampleCanonical value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
