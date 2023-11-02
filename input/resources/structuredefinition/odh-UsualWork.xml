@@ -2,36 +2,14 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="odh-UsualWork"/>
-    <meta>
-        <versionId value="49"/>
-        <lastUpdated value="2022-06-30T21:25:51.120+00:00"/>
-        <source value="#v66oyVWfFsrB5hlq"/>
-    </meta>
     <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork"/>
     <version value="1.1.0"/>
     <name value="UsualWork"/>
     <title value="Usual Work"/>
     <status value="active"/>
     <date value="2020-01-04T00:00:00+00:00"/>
-    <publisher value="HL7 International Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
     <description value="A Usual Occupation Observation is a clinical statement about the type of work (paid or unpaid) done by a person for the longest amount of time during his or her life, not including voluntary work. It includes a set of self-reported, related components about the work a person performed for the longest amount of time during his or her life, regardless of the person's current job and regardless of whether or not the person performed this work for a continuous time. It also can be used in a minor's record for the Usual Work of people who share a home with the person (see optional related subject). Usual Work supports recognition of new and known chronic conditions which evolve over many years and may become evident after the person is no longer performing that type of work, e.g., some respiratory conditions and cancers. These data also are used by public health entities and medical researchers to investigate the relationship between conditions and exposures at work and illnesses, causes of death, or cancer."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-        <text value="United States of America"/>
-    </jurisdiction>
     <purpose value="Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms."/>
-    <copyright value="©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.&#xA;Links: Home | QA Report | Search | Version History external | CC0 external | Propose a change external "/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -164,7 +142,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
             </type>
         </element>
         <element id="Observation.focus">
@@ -190,7 +168,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             </type>
         </element>
@@ -224,7 +202,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation CDC Census 2010"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7186"/>
             </binding>
@@ -237,7 +215,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation ONETSOC Detail (ODH)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901"/>
             </binding>
@@ -250,7 +228,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation CDC Census 2018"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065"/>
             </binding>
@@ -409,7 +387,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry CDC Census 2010"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7187"/>
             </binding>
@@ -422,7 +400,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry NAICS Detail (ODH)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900"/>
             </binding>
@@ -435,7 +413,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry CDC Census 2018"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066"/>
             </binding>

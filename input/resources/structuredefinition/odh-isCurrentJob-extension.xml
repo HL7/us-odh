@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="odh-isCurrentJob-extension"/>
-    <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2022-07-15T13:13:49.231+00:00"/>
-        <source value="#yXDPOzfIr6NfBAcb"/>
-    </meta>
     <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension"/>
     <name value="ODHIsCurrentJobExtension"/>
     <title value="ODHIsCurrentJob-extension"/>

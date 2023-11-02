@@ -26,10 +26,6 @@
 
     <packageId value="ihe.pcc.odh"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
-        <packageId value="hl7.fhir.us.core"/>
-        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
@@ -182,7 +178,7 @@
                 <display value="South Hospital"/>
             </reference>
             <name value="South Hospital"/>
-            <description value="US Core Organization - South Hospital Example"/>
+            <description value="Organization - South Hospital Example"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>

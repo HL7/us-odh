@@ -2,24 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="odh-RetirementDate"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-27T08:30:03.030+00:00"/>
-        <source value="#p4ihBzz4LwZftT4a"/>
-    </meta>
     <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
     <version value="1.0.0"/>
     <name value="RetirementDate"/>
     <title value="Retirement Date"/>
     <status value="active"/>
-    <date value="2020-01-04"/>
-    <publisher value="HL7 International Public Health Work Group"/>
-    <contact>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-    </contact>
     <description value="A Date of Retirement Observation is a clinical statement about a self-reported date (at least year) that a person considers themselves to have ‘retired’. If present, the person has retired. A person can be both retired and employed; most often, a person would be retired from one job and employed in another job."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -153,7 +140,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
             </type>
         </element>
         <element id="Observation.focus">
@@ -178,7 +165,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             </type>
         </element>

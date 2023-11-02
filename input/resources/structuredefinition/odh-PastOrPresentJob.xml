@@ -2,34 +2,12 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="odh-PastOrPresentJob"/>
-    <meta>
-        <versionId value="105"/>
-        <lastUpdated value="2022-06-29T14:10:51.363+00:00"/>
-        <source value="#kZjkfSpQut6GaGSo"/>
-    </meta>
     <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
     <version value="1.1.0"/>
     <name value="PastOrPresentJob"/>
     <title value="Past Or Present Job"/>
     <status value="active"/>
-    <date value="2020-01-04"/>
-    <publisher value="HL7 International Public Health Work Group"/>
-    <contact>
-        <name value="HL7 International - Public Health"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher"/>
-        </telecom>
-    </contact>
     <description value="A Past or Present Occupation Observation is a clinical statement about the type of work done by a person in a job, as reported by that person. It includes a set of self-reported, related observations that remain associated with one-another to characterize the job and provide clinically-relevant information. It also can be used in a minor's record for the job(s) of people who share a home with the person (see optional related subject). A job is defined as a work situation, training position, or (potentially clinically-relevant) volunteer position held for a specified time period; for a given job, updates to Job Occupation, Past or Present Industry (Job Industry), Supervisory Level, or Employer would constitute a new job or volunteer position. A person can have more than one job at the same time and multiple jobs over time.&#xA;&#xA;Knowledge about a person's job(s) informs diagnosis and management of illness and injury; it also informs management of health in the work environment, regardless of whether a condition is work-related. While knowing about a person’s current job(s) is likely to be most important, some work-related health conditions can manifest after a long latency so a history of jobs can also provide valuable information. This set of related Job observations also can provide information for public health to locate infectious disease outbreaks and intervene to prevent further illness. Public health can also use these data to analyze work-related conditions such as silicosis, pesticide poisoning, and some types of cancer to identify Occupations, Industry sectors and Employers for whom interventions are needed to mitigate risk."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-        <text value="United States of America"/>
-    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -192,7 +170,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
             </type>
         </element>
         <element id="Observation.focus">
@@ -218,7 +196,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             </type>
         </element>
@@ -250,7 +228,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation CDC Census 2010"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7186"/>
             </binding>
@@ -263,7 +241,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation ONETSOC Detail (ODH)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901"/>
             </binding>
@@ -276,7 +254,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Occupation CDC Census 2018"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065"/>
             </binding>
@@ -504,7 +482,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry CDC Census 2010"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7187"/>
             </binding>
@@ -517,7 +495,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry NAICS Detail (ODH)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900"/>
             </binding>
@@ -530,7 +508,7 @@
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <description value="Industry CDC Census 2018"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066"/>
             </binding>
@@ -735,7 +713,7 @@
                 <code value="CodeableConcept"/>
             </type>
             <binding>
-                <strength value="required"/>
+                <strength value="example"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7613"/>
             </binding>
         </element>

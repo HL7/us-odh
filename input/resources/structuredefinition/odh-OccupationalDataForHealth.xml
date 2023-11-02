@@ -2,24 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="odh-OccupationalDataForHealth"/>
-    <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-05-27T08:31:22.821+00:00"/>
-        <source value="#aTQDWIvmTJ5vG6NH"/>
-    </meta>
     <url value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth"/>
     <version value="1.0.0"/>
     <name value="OccupationalDataForHealth"/>
     <title value="Occupational Data For Health"/>
     <status value="draft"/>
-    <date value="2021-01-04"/>
-    <publisher value="HL7 International Public Health Work Group"/>
-    <contact>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/pher/index.cfm"/>
-        </telecom>
-    </contact>
     <description value="This Composition covers information about a patient’s work, including some voluntary work, or a patient’s household members’ work. ODH is designed for the social history section of a medical record, to facilitate clinical care in multiple disciplines and delivery environments. ODH can be used for clinical decision support, population health activities and value-based care, and public health reporting. "/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -97,7 +84,7 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             </type>
@@ -109,7 +96,7 @@
             <path value="Composition.attester.party"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
@@ -143,7 +130,7 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             </type>
