@@ -1,9 +1,0 @@
-{
-	"package-id": "hl7.fhir.us.odh",
-	"version": "1.3.0",
-	"path": "http://hl7.org/fhir/us/odh/STU1.3",
-	"mode": "milestone",
-	"status": "trial-use", 
-	"sequence": "STU 1.3 on FHIR R4",
-	"desc": "Release 1.3.0 STU1.3 (Build)"
-}

@@ -1,0 +1,11 @@
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+*.db
+/temp
+/template
+/output
+/input-cache
+/fsh-generated
+/.vscode
