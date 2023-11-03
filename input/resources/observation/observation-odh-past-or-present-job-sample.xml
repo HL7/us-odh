@@ -23,6 +23,10 @@
         <reference value="Patient/patient-odh-maya-gordon"/>
         <display value="Maya Gordon"/>
     </subject>
+    <performer>
+        <reference value="Practitioner/ex-practitioner"/>
+        <display value="Simone Heps"/>
+    </performer>
     <effectivePeriod>
         <start value="2015-04-24"/>
     </effectivePeriod>

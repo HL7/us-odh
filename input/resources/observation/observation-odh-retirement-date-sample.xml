@@ -20,5 +20,9 @@
         <reference value="Patient/patient-odh-maya-gordon"/>
         <display value="Maya Gordon"/>
     </subject>
+    <performer>
+        <reference value="Practitioner/ex-practitioner"/>
+        <display value="Simone Heps"/>
+    </performer>
     <valueDateTime value="2021-05-30"/>
 </Observation>
