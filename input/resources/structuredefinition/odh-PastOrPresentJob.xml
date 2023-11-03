@@ -460,6 +460,7 @@
                 <description value="Industry International Labour Organization"/>
                 <valueSet value="https://www.ilo.org/global/industries-and-sectors/lang--en/index"/>
             </binding>
+        </element>
         <element id="Observation.component:odh-PastOrPresentIndustry.valueCodeableConcept.text">
             <path value="Observation.component.valueCodeableConcept.text"/>
             <short value="Use the narrative description if there is no coded value available for the Industry."/>
