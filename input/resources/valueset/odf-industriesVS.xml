@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="odf-industriesVS"/>
+  <url value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-industriesVS"/>
+  <version value="0.0.1"/>
+  <name value="odf-industriesVS"/>
+  <title value="industries types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="ILO.org [industries](https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm) types"/>
+
+  <compose>
+    <include>
+      <system value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+    </include>
+  </compose>
+</ValueSet>

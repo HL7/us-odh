@@ -3,9 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-employment-status-sample"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-05-26T17:22:34.756+00:00"/>
-        <source value="#H1Oz6Eja94PABzAs"/>
         <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus"/>
     </meta>
     <status value="final"/>

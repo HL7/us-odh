@@ -115,6 +115,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/odf-industriesVS"/>
+                <display value="industries"/>
+            </reference>
+            <name value="industries"/>
+            <description value="Value set indicating the ILO industries."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/odf-occupationVS"/>
+                <display value="Occupations"/>
+            </reference>
+            <name value="Occupations"/>
+            <description value="Value set indicating the ILO occupations."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/odh-isCurrentJob-extension"/>
                 <display value="ODHIsCurrentJob-extension"/>
             </reference>
@@ -151,6 +169,13 @@
                 <reference value="Patient/patient-odh-maya-gordon"/></reference>
             <name value="ODH Patient Maya Gordon"/>
             <description value="This is an example of patient, Maya Gordon, that is associated with the work profile examples."/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/ex-practitioner"/></reference>
+            <name value="ODH Practitioner Simone Heps"/>
+            <description value="This is an example of practitioner, Simone Heps."/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -198,5 +223,13 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter>
+            <code value="special-url"/>
+            <value value="https://metadata.ilo.org/thesaurus.html"/>
+        </parameter>
+        <parameter>
+            <code value="special-url"/>
+            <value value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+        </parameter>
     </definition>
 </ImplementationGuide>

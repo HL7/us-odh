@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="odf-occupationVS"/>
+  <url value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-occupationVS"/>
+  <version value="0.0.1"/>
+  <name value="odf-occupationVS"/>
+  <title value="Occupation types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="ILO.org [occupation](https://metadata.ilo.org/thesaurus.html) types"/>
+
+  <compose>
+    <include>
+      <system value="https://metadata.ilo.org/thesaurus.html"/>
+    </include>
+  </compose>
+</ValueSet>

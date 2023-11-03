@@ -3,9 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-retirement-date-sample"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-05-26T02:20:50.364+00:00"/>
-        <source value="#xIztR2ILtakKFMdW"/>
         <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate"/>
     </meta>
     <status value="final"/>

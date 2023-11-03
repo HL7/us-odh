@@ -2,12 +2,6 @@
 <Patient
     xmlns="http://hl7.org/fhir">
     <id value="patient-odh-maya-gordon"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-01-18T06:25:01.054+00:00"/>
-        <source value="#4LvzYCJBiu8tn231"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-    </meta>
     <identifier>
         <use value="usual"/>
         <type>

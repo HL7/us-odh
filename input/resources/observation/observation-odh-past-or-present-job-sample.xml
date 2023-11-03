@@ -3,9 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-past-or-present-job-sample"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-27T09:19:44.894+00:00"/>
-        <source value="#kx1P9fdzw85WYorA"/>
         <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob"/>
     </meta>
     <extension url="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-isCurrentJob-extension">
@@ -23,13 +20,14 @@
         <reference value="Patient/patient-odh-maya-gordon"/>
         <display value="Maya Gordon"/>
     </subject>
+    <effectivePeriod>
+        <start value="2015-04-24"/>
+    </effectivePeriod>
     <performer>
         <reference value="Practitioner/ex-practitioner"/>
         <display value="Simone Heps"/>
     </performer>
-    <effectivePeriod>
-        <start value="2015-04-24"/>
-    </effectivePeriod>
+
     <valueCodeableConcept>
         <coding>
             <system value="https://metadata.ilo.org/thesaurus.html"/>

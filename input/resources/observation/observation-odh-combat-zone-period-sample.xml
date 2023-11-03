@@ -3,9 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-odh-combat-zone-period-sample"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-05-26T02:30:21.329+00:00"/>
-        <source value="#RKwpT7ubUXgCKeEe"/>
         <profile value="https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod"/>
     </meta>
     <status value="final"/>
@@ -24,7 +21,6 @@
         <reference value="Practitioner/ex-practitioner"/>
         <display value="Simone Heps"/>
     </performer>
-    <effectiveDateTime = "2023-10-06T10:52:30-07:00"/>
     <valuePeriod>
         <start value="2005-04-01"/>
         <end value="2006-03-31"/>
