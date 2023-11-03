@@ -452,7 +452,7 @@
             <path value="Observation.component.valueCodeableConcept.coding"/>
             <sliceName value="industryILO"/>
             <short value="Industry International Labour Organization"/>
-            <definition value="Industry International Labour Organization"/>
+            <definition value="Industry International  Labour Organization"/>
             <min value="0"/>
             <max value="1"/>
             <binding>
