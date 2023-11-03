@@ -199,21 +199,5 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter>
-            <code value="jira-code"/>
-            <value value="ohd"/>
-        </parameter>
-        <parameter>
-            <code value="defaultVersion"/>
-            <value value="1.3.0"/>
-        </parameter>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="STU 1.3"/>
-        </parameter>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
     </definition>
 </ImplementationGuide>

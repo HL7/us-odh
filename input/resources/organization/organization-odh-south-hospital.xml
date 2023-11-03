@@ -6,7 +6,7 @@
         <versionId value="5"/>
         <lastUpdated value="2023-01-18T02:26:08.329+00:00"/>
         <source value="#vavzRr06nMLsKwdP"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
     </meta>
     <identifier>
         <system value="http://hl7.org/fhir/sid/us-npi"/>

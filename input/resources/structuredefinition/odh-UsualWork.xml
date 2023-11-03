@@ -194,45 +194,18 @@
             <min value="0"/>
             <max value="*"/>
         </element>
-        <element id="Observation.valueCodeableConcept.coding:occupationCDCCensus2010">
+        <element id="Observation.valueCodeableConcept.coding:occupationILO">
             <path value="Observation.valueCodeableConcept.coding"/>
-            <sliceName value="occupationCDCCensus2010"/>
-            <short value="Occupation CDC Census 2010"/>
-            <definition value="Occupation CDC Census 2010"/>
+            <sliceName value="occupationILO"/>
+            <short value="Occupation International Labour Organization"/>
+            <definition value="Occupation International Labour Organization"/>
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="example"/>
-                <description value="Occupation CDC Census 2010"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7186"/>
+                <strength value="preferred"/>
+                <description value="Occupation International Labour Organization"/>
+                <valueSet value="https://metadata.ilo.org"/>
             </binding>
-        </element>
-        <element id="Observation.valueCodeableConcept.coding:occupationONETSOCDetailODH">
-            <path value="Observation.valueCodeableConcept.coding"/>
-            <sliceName value="occupationONETSOCDetailODH"/>
-            <short value="Occupation ONETSOC Detail (ODH)"/>
-            <definition value="Occupation ONETSOC Detail (ODH)"/>
-            <min value="0"/>
-            <max value="1"/>
-            <binding>
-                <strength value="example"/>
-                <description value="Occupation ONETSOC Detail (ODH)"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7901"/>
-            </binding>
-        </element>
-        <element id="Observation.valueCodeableConcept.coding:occupationCDCCensus2018">
-            <path value="Observation.valueCodeableConcept.coding"/>
-            <sliceName value="occupationCDCCensus2018"/>
-            <short value="Occupation CDC Census 2018"/>
-            <definition value="Occupation CDC Census 2018"/>
-            <min value="0"/>
-            <max value="1"/>
-            <binding>
-                <strength value="example"/>
-                <description value="Occupation CDC Census 2018"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065"/>
-            </binding>
-        </element>
         <element id="Observation.valueCodeableConcept.text">
             <path value="Observation.valueCodeableConcept.text"/>
             <short value="Use the narrative description if there is no coded value available for the usual occupation."/>
@@ -379,45 +352,18 @@
             <min value="0"/>
             <max value="*"/>
         </element>
-        <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryCDCCensus2010">
+        <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryILO">
             <path value="Observation.component.valueCodeableConcept.coding"/>
-            <sliceName value="industryCDCCensus2010"/>
-            <short value="Industry CDC Census 2010"/>
-            <definition value="Industry CDC Census 2010"/>
+            <sliceName value="industryILO"/>
+            <short value="Industry International Labour Organization"/>
+            <definition value="Industry International Labour Organization"/>
             <min value="0"/>
             <max value="1"/>
             <binding>
-                <strength value="example"/>
-                <description value="Industry CDC Census 2010"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7187"/>
+                <strength value="preferred"/>
+                <description value="Industry International Labour Organization"/>
+                <valueSet value="https://www.ilo.org/global/industries-and-sectors/lang--en/index"/>
             </binding>
-        </element>
-        <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryONETSOCDetailODH">
-            <path value="Observation.component.valueCodeableConcept.coding"/>
-            <sliceName value="industryONETSOCDetailODH"/>
-            <short value="Industry NAICS Detail (ODH)"/>
-            <definition value="Industry NAICS Detail (ODH)"/>
-            <min value="0"/>
-            <max value="1"/>
-            <binding>
-                <strength value="example"/>
-                <description value="Industry NAICS Detail (ODH)"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7900"/>
-            </binding>
-        </element>
-        <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.coding:industryCDCCensus2018">
-            <path value="Observation.component.valueCodeableConcept.coding"/>
-            <sliceName value="industryCDCCensus2018"/>
-            <short value="Industry CDC Census 2018"/>
-            <definition value="Industry CDC Census 2018"/>
-            <min value="0"/>
-            <max value="1"/>
-            <binding>
-                <strength value="example"/>
-                <description value="Industry CDC Census 2018"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066"/>
-            </binding>
-        </element>
         <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.text">
             <path value="Observation.component.valueCodeableConcept.text"/>
             <short value="Use the narrative description if there is no coded value available for the usual industry."/>
