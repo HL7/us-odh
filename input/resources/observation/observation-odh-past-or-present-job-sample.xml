@@ -28,14 +28,9 @@
     </effectivePeriod>
     <valueCodeableConcept>
         <coding>
-            <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHOccupationCDCCensus2010.html"/>
-            <code value="3600"/>
+            <system value="https://metadata.ilo.org/thesaurus.html"/>
+            <code value="13.11.2"/>
             <display value="Nursing, psychiatric, and home health aides"/>
-        </coding>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
-            <code value="31-1014.00.007136"/>
-            <display value="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
         </coding>
     </valueCodeableConcept>
     <component>
@@ -48,8 +43,8 @@
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
-                <code value="8270"/>
+                <system value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+                <code value="13.11.2"/>
                 <display value="Nursing care facilities"/>
             </coding>
             <coding>

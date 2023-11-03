@@ -124,11 +124,6 @@
                                     
                                     
                                     </li>
-                                    <li>
-                                        <div title="system">
-                                            <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314</a>
-                                        </div>
-                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -182,11 +177,6 @@
                                                 
                                                 
                                                 </li>
-                                                <li>
-                                                    <div title="system">
-                                                        <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315</a>
-                                                    </div>
-                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -236,13 +226,13 @@
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="https://terminology.hl7.org/2.0.0/CodeSystem-PHIndustryCDCCensus2010.html"/>
-                <code value="8270"/>
+                <system value="https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm"/>
+                <code value="13.11.2"/>
                 <display value="Nursing care facilities"/>
             </coding>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
-                <code value="621610.008495"/>
+                <system value="https://metadata.ilo.org/thesaurus.html"/>
+                <code value="13.11.2"/>
                 <display value="Home nursing services"/>
             </coding>
         </valueCodeableConcept>
