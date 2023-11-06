@@ -5,6 +5,15 @@ WARNING: ValueSet.where(id = 'odf-industriesVS'): Error from http://tx.fhir.org/
 WARNING: ValueSet.where(id = 'odf-occupationVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://metadata.ilo.org/thesaurus.html
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm' is unknown so the code cannot be validated
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'https://metadata.ilo.org/thesaurus.html' is unknown so the code cannot be validated
+INFORMATION: Observation​.value​.ofType(CodeableConcept)​.coding[0] (l32​/c17): Code System URI 'https://metadata.ilo.org/thesaurus.html' is unknown so the code cannot be validated
+INFORMATION: Observation​.component[0]​.value​.ofType(CodeableConcept)​.coding[0] (l47​/c21): Code System URI 'https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm' is unknown so the code cannot be validated
+INFORMATION:Observation​.component[0]​.value​.ofType(CodeableConcept)​.coding[1] (l52​/c21): The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' doesnt provide any codes so the code cannot be validated
+INFORMATION: Observation​.component[2]​.value​.ofType(CodeableConcept)​.coding[0] (l84​/c21): The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' doesnt provide any codes so the code cannot be validated
+INFORMATION: Observation​.component[5]​.value​.ofType(CodeableConcept) (l119​/c31): Reference to draft item http://terminology.hl7.org/CodeSystem/v3-ObservationValue|2.1.0
+INFORMATION: Observation​.component[0]​.value​.ofType(CodeableConcept)​.coding[0] (l47​/c21): Code System URI 'https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm' is unknown so the code cannot be validated
+INFORMATION: Observation​.component[0]​.value​.ofType(CodeableConcept)​.coding[1] (l52​/c21): Code System URI 'https://metadata.ilo.org/thesaurus.html' is unknown so the code cannot be validated
+
+
 
 # used in an example
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
