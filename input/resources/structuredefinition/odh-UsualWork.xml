@@ -204,7 +204,7 @@
             <binding>
                 <strength value="preferred"/>
                 <description value="Occupation International Labour Organization"/>
-                <valueSet value="ValueSet/odf-occupationVS"/>
+                <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-occupationVS"/>
             </binding>
         </element>
         <element id="Observation.valueCodeableConcept.text">
@@ -363,7 +363,7 @@
             <binding>
                 <strength value="preferred"/>
                 <description value="Industry International Labour Organization"/>
-                <valueSet value="ValueSet/odf-industriesVS"/>
+                <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-industriesVS"/>
             </binding>
         </element>
         <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.text">

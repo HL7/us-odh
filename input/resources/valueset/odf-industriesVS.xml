@@ -4,7 +4,7 @@
   <id value="odf-industriesVS"/>
   <url value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-industriesVS"/>
   <version value="0.0.1"/>
-  <name value="odf-industriesVS"/>
+  <name value="odf_industriesVS"/>
   <title value="industries types"/>
   <status value="active"/>
   <experimental value="false"/>

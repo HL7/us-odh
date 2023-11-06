@@ -4,7 +4,7 @@
   <id value="odf-occupationVS"/>
   <url value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-occupationVS"/>
   <version value="0.0.1"/>
-  <name value="odf-occupationVS"/>
+  <name value="odf_occupationVS"/>
   <title value="Occupation types"/>
   <status value="active"/>
   <experimental value="false"/>
