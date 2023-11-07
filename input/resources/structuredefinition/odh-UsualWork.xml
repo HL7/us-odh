@@ -181,7 +181,13 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <binding>
+                <strength value="preferred"/>
+                <description value="Occupation International Labour Organization"/>
+                <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-occupationVS"/>
+            </binding>
         </element>
+        <!--
         <element id="Observation.valueCodeableConcept.coding">
             <path value="Observation.valueCodeableConcept.coding"/>
             <slicing>
@@ -207,6 +213,7 @@
                 <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-occupationVS"/>
             </binding>
         </element>
+    -->
         <element id="Observation.valueCodeableConcept.text">
             <path value="Observation.valueCodeableConcept.text"/>
             <short value="Use the narrative description if there is no coded value available for the usual occupation."/>
@@ -340,7 +347,13 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <binding>
+                <strength value="preferred"/>
+                <description value="Occupation International Labour Organization"/>
+                <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-industriesVS"/>
+            </binding>
         </element>
+<!--
         <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.coding">
             <path value="Observation.component.valueCodeableConcept.coding"/>
             <slicing>
@@ -366,6 +379,7 @@
                 <valueSet value="https://profiles.ihe.net/PCC/ODH/ValueSet/odf-industriesVS"/>
             </binding>
         </element>
+-->
         <element id="Observation.component:odh-UsualIndustry.valueCodeableConcept.text">
             <path value="Observation.component.valueCodeableConcept.text"/>
             <short value="Use the narrative description if there is no coded value available for the usual industry."/>
