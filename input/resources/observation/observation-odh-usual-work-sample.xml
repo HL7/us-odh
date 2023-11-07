@@ -17,7 +17,9 @@
         <reference value="Patient/patient-odh-maya-gordon"/>
         <display value="Maya Gordon"/>
     </subject>
-    <effectiveDateTime value="2023-10-06T10:52:30-07:00"/>
+    <effectivePeriod>
+        <start value="2023-10-06T10:52:30-07:00"/>
+    </effectivePeriod>
     <performer>
         <reference value="Practitioner/ex-practitioner"/>
         <display value="Simone Heps"/>

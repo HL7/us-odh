@@ -229,7 +229,7 @@
         </parameter>
         <parameter>
             <code value="special-url"/>
-            <value value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+            <value value="https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm"/>
         </parameter>
     </definition>
 </ImplementationGuide>

@@ -45,7 +45,7 @@
         </code>
         <valueCodeableConcept>
             <coding>
-                <system value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+                <system value="https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm"/>
                 <code value="13.11.2"/>
                 <display value="Nursing care facilities"/>
             </coding>

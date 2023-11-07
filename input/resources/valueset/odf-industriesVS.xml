@@ -8,11 +8,11 @@
   <title value="industries types"/>
   <status value="active"/>
   <experimental value="false"/>
-  <description value="ILO.org [industries](https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm) types"/>
+  <description value="ILO.org [industries](https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm) types"/>
 
   <compose>
     <include>
-      <system value="https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm"/>
+      <system value="https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm"/>
     </include>
   </compose>
 </ValueSet>

@@ -1,11 +1,23 @@
 == Suppressed Messages ==
 
-# yes we know these URLs are not yet known
-WARNING: ValueSet.where(id = 'odf-industriesVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ilo.org/global/industries-and-sectors/lang--en/index.htm
+# know we are using non normative things
+Reference to draft item http://terminology.hl7.org/CodeSystem/v3-ObservationValue|2.1.0
+
+# yes we know these codeSystem URLs are not yet known
+Code System URI 'https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm' is unknown so the code cannot be validated
+Code System URI 'https://metadata.ilo.org/thesaurus.html' is unknown so the code cannot be validated
+WARNING: ValueSet.where(id = 'odf-industriesVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm
 WARNING: ValueSet.where(id = 'odf-occupationVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://metadata.ilo.org/thesaurus.html
-INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ilo.org/global/industries-and-sectors/health-services/lang--en/index.htm' is unknown so the code cannot be validated
-INFORMATION: Observation/observation-odh-usual-work-sample: Observation.component[0].value.ofType(CodeableConcept).coding[1]: Code System URI 'https://metadata.ilo.org/thesaurus.html' is unknown so the code cannot be validated
+
+# HL7 defined codeSystem with no ValueSet
+The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH' doesnt provide any codes so the code cannot be validated
 
 # used in an example
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.314' is unknown so the code cannot be validated
 INFORMATION: Observation/observation-odh-usual-work-sample: Observation.value.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:2.16.840.1.114222.4.5.327' is unknown so the code cannot be validated
+
+# CombatZonePeriod profile forbids, but FHIR core recommends
+WARNING: Observation/observation-odh-combat-zone-period-sample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+# RetirementDate profile forbids, but FHIR core recommends
+WARNING: Observation/observation-odh-retirement-date-sample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
