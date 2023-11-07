@@ -1,6 +1,6 @@
 ### Overview
 
-**HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.3 (Standard for Trial Use)**
+This IHE Implementation Guide is an International derivative of the USA specific [HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.3](https://hl7.org/fhir/us/odh/)
 
 This Implementation Guide is a reconciled version, containing changes in response to comments received in the Sept. 2018 ballot. It has been updated to FHIR R4.0.1.
 
