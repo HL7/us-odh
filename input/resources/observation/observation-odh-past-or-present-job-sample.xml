@@ -27,7 +27,6 @@
         <reference value="Practitioner/ex-practitioner"/>
         <display value="Simone Heps"/>
     </performer>
-
     <valueCodeableConcept>
         <coding>
             <system value="https://metadata.ilo.org/thesaurus.html"/>
