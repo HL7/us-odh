@@ -4,28 +4,30 @@ The entire implementation guide (including the HTML files, definitions, validati
 
 In addition there are format specific definitions files.
 
-* [XML](definitions.xml.zip)
-* [JSON](definitions.json.zip)
-* [TTL](definitions.ttl.zip)
+- [XML](definitions.xml.zip)
+- [JSON](definitions.json.zip)
+- [TTL](definitions.ttl.zip)
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
+**Examples:**
 
-* [XML](examples.xml.zip)
-* [JSON](examples.json.zip)
-* [TTl](examples.ttl.zip)
+All the examples that are used in this Implementation Guide are available for download:
 
-#### Cross Version Analysis
+- [XML](examples.xml.zip)
+- [JSON](examples.json.zip)
+- [TTL](examples.ttl.zip)
+
+## Cross Version Analysis
 
 {% include cross-version-analysis.xhtml %}
 
-#### Dependency Table
+## Dependency Table
 
 {% include dependency-table.xhtml %}
 
-#### Globals Table
+## Globals Table
 
 {% include globals-table.xhtml %}
 
-#### IP Statements
+## IP Statements
 
 {% include ip-statements.xhtml %}
